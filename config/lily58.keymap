@@ -9,6 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+#define DEFAULT 0
+#define LOWER 1
+#define RAISE 2
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -22,10 +26,10 @@
 //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp GRAVE
-&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
-&sk LALT  &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
-&sk LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                       &sk LCTRL &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI
+&kp TAB   &kp Q  &kp W  &kp F    &kp P    &kp B                      &kp J  &kp L    &kp U     &kp Y   &kp SEMI &kp MINUS
+&sk LALT  &kp A  &kp R  &kp S    &kp T    &kp G                      &kp M  &kp N    &kp E     &kp I   &kp O    &kp SQT
+&sk LSHFT &kp Z  &kp X  &kp C    &kp D    &kp V  &kp LBKT   &kp RBKT &kp K  &kp H    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+                 &sk LCTRL &kp LGUI &mo 1 &lt RAISE TAB     &lt LOWER SPACE  &mo 2  &kp BSPC &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -40,10 +44,10 @@
 //                     |      |      |      |        |  |       |      |       |       |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans          &trans    &trans    &trans
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9          &kp F10   &kp F11   &kp F12
-&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
-&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
-                                              &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
+&kp F1     &kp F2           &kp F3            &kp F4            &kp LPAR    &kp F6                       &kp F7    &kp RPAR  &kp F9          &kp F10   &kp F11   &kp F12
+&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp LBRC    &kp PRCNT                    &kp CARET &kp RBRC  &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp TILDE
+&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &kp LBKT    &trans    &trans   &trans    &trans    &kp RBKT  &kp KP_PLUS     &kp LBRC  &kp RBRC  &kp PIPE
+                                              &trans            &trans      &trans    &trans   &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
