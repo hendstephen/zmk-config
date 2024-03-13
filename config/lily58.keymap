@@ -4,7 +4,7 @@
 /* Map Lily58's extra keys */
 
 #define X_LT \
-    _BT_SEL_KEYS_ &out OUT_TOG   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 \ 
+    _BT_SEL_KEYS_ &out OUT_TOG   &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 \
     &kp TAB
 
 #define X_RT &kp BACKSLASH
