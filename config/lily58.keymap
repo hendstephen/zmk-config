@@ -13,7 +13,7 @@
 #define X_RM &kp ENTER
 
 #define X_LB &trans
-#define X_MB &trans
+#define X_MB &trans &trans
 #define X_RB &trans
 
 #define X_LH &trans &trans
