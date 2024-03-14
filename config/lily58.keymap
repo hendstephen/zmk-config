@@ -40,17 +40,17 @@
 };
 
 /* HOMEROW MODS */
+#define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3
 #define KEYS_L \
     LT0 LT1 LT2 LT3 LT4 LT5 \
     LM0 LM1 LM2 LM3 LM4 LM5 \
     LB0 LB1 LB2 LB3 LB4 LB5 \
-    LF0 LF1 LF2 LF3 LF4 LF5 LEC // left hand
+    LF0 LF1 LF2 LF3 LF4 LF5 LEC
 #define KEYS_R \
     RT0 RT1 RT2 RT3 RT4 RT5 \
     RM0 RM1 RM2 RM3 RM4 RM5 \
     RB0 RB1 RB2 RB3 RB4 RB5 \
-    RF0 RF1 RF2 RF3 RF4 RF5 REC // right hand
-#define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3 // thumbs
+    RF0 RF1 RF2 RF3 RF4 RF5 REC
 
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
     ZMK_BEHAVIOR(NAME, hold_tap, \
@@ -64,6 +64,30 @@
     )
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
+
+/* MOD MORPHS */
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
+    ZMK_BEHAVIOR(NAME, mod_morph, \
+        mods = <(MOD_L ## MOD|MOD_R ## MOD)>; \
+        bindings = <BINDING1>, <BINDING2>; \
+    )
+
+// tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
+SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
+SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
+
+// tap: dot | shift + tap: colon | ctrl + shift + tap: >
+SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
+SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
+
+// tap: qmark | shift + tap: excl
+SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
+
+// tap: backspace | lshft + tap: delete
+ZMK_BEHAVIOR(bs_del, mod_morph,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 
 /* CUSTOM BEHAVIORS */
 // // Alt+Tab swapper, requires PR #1366
@@ -80,7 +104,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmr RGUI O   ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &kp COMMA     &kp DOT       &kp SLASH     ___ 
+    ___           &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               ___           ___           &lt SYM BSPC  &kp TAB         &kp RET      &lt NAV SPACE  ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
