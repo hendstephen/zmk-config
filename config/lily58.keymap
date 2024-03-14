@@ -14,9 +14,9 @@
 #define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
 
 // Layers
-#define BASE 0
+#define DEF 0
 #define NAV 1
-#define SYM 2
+#define NUM 2
 
 /* GLOBAL SETTINGS */
 #define QUICK_TAP_MS 175
@@ -89,6 +89,17 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
+/* COMBOS */
+// use require-prior-idle-ms for combos
+#undef COMBO_HOOK
+#define COMBO_HOOK require-prior-idle-ms = <150>;
+
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
+ZMK_COMBO(esc, &kp ESC,    LT3 LT2, DEF NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(ret, &kp RETURN, LT2 LT1, DEF NAV NUM, COMBO_TERM_FAST)
+
 /* CUSTOM BEHAVIORS */
 // Alt+Tab swapper, requires PR #1366
 ZMK_BEHAVIOR(swapper, tri_state,
@@ -112,7 +123,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           ___           &lt SYM BSPC  &kp TAB         &kp RET      &lt NAV SPACE  ___           ___           
+                                              ___           ___           &lt NAV BSPC  &kp TAB         &kp RET      &lt NUM SPACE  ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
@@ -130,7 +141,7 @@ ZMK_LAYER(nav,
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
-ZMK_LAYER(sym, 
+ZMK_LAYER(num, 
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
     ___           ___           ___           ___           ___           ___                                         ___           ___           ___           ___           ___           ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
