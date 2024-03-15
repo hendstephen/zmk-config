@@ -88,7 +88,13 @@ SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 // tap: slash | shift qmark | shift + tap: excl
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
-// tap: backspace | lshft + tap: delete
+// tap: bspc | shift + tap: del | hold: layer hold
+ZMK_BEHAVIOR(lt_bspc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&kp BSPC>;
+)
 ZMK_BEHAVIOR(bs_del, mod_morph,
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -139,7 +145,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           ___           &lt FN TAB   &lt NAV bsdel   &lt SYM SPACE  &lt NUM RET   ___           ___           
+                                              ___           ___           &lt FN TAB   &lt_bspc NAV 0  &lt SYM SPACE  &lt NUM RET   ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
