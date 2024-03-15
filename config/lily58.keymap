@@ -77,13 +77,13 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
         bindings = <BINDING1>, <BINDING2>; \
     )
 
-// tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
+// tap: comma | shift + tap: semicolon | ctrl + shift + tap: -
 SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
-SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
+SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp DASH)
 
-// tap: dot | shift + tap: colon | ctrl + shift + tap: >
+// tap: dot | shift + tap: colon | ctrl + shift + tap: _
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
-SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
+SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp UNDER)
 
 // tap: slash | shift + tap: qmark | shift + ctrl + tap: excl
 SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner)
