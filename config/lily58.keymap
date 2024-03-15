@@ -79,7 +79,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
 
 // tap: comma | shift + tap: semicolon | ctrl + shift + tap: -
 SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
-SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp DASH)
+SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp MINUS)
 
 // tap: dot | shift + tap: colon | ctrl + shift + tap: _
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
