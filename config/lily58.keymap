@@ -104,8 +104,8 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
 
 ZMK_COMBO(esc, &kp ESC,    LM3 LM2, DEF NAV NUM SYM FN, COMBO_TERM_FAST)
 ZMK_COMBO(ret, &kp RETURN, LM2 LM1, DEF NAV NUM SYM FN, COMBO_TERM_FAST)
-ZMK_COMBO(ret, &kp MINUS,  RF1 RF2, DEF NAV NUM SYM FN, COMBO_TERM_FAST)
-ZMK_COMBO(ret, &kp UNDER,  RF2 RF3, DEF NAV NUM SYM FN, COMBO_TERM_FAST)
+ZMK_COMBO(min, &kp MINUS,  RF1 RF2, DEF NAV NUM SYM FN, COMBO_TERM_FAST)
+ZMK_COMBO(und, &kp UNDER,  RF2 RF3, DEF NAV NUM SYM FN, COMBO_TERM_FAST)
 
 /* CUSTOM BEHAVIORS */
 // Alt+Tab swapper, requires PR #1366
@@ -130,7 +130,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           ___           &lt FN TAB   &lt NAV BSPC    &lt SYM SPACE  &lt NUM RET   ___           ___           
+                                              ___           ___           &lt FN TAB   &lt NAV bsdel   &lt SYM SPACE  &lt NUM RET   ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
