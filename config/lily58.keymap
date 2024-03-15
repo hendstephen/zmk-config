@@ -42,7 +42,7 @@
 
 /* CONDITIONAL LAYERS */
 // Activate NUM layer when NAV is held for vim-type navigation (e.g. 10j)
-ZMK_CONDITIONAL_LAYER(NAV, NUM)
+// ZMK_CONDITIONAL_LAYER(NAV, NUM)
 
 /* HOMEROW MODS */
 #define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3
