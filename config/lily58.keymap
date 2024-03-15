@@ -85,7 +85,7 @@ SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
 SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
 
-// tap: qmark | shift + tap: excl
+// tap: slash | shift qmark | shift + tap: excl
 SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
 
 // tap: backspace | lshft + tap: delete
@@ -93,6 +93,15 @@ ZMK_BEHAVIOR(bs_del, mod_morph,
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
+
+// tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
+ZMK_BEHAVIOR(smart_shft, mod_morph,
+    bindings = <&sk LSHFT>, <&caps_word>;
+    mods = <(MOD_LSFT)>;
+)
+&caps_word {  // mods deactivate caps-word, requires PR #1451
+    /delete-property/ ignore-modifiers;
+};
 
 /* COMBOS */
 // use require-prior-idle-ms for combos
@@ -168,7 +177,7 @@ ZMK_LAYER(sym,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           ___           ___           &kp LBKT      &kp RBKT      &kp PIPE                                    ___           &kp EQUAL     &kp LT        &kp GT        &kp EXCL      ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp CARET     &kp DLLR      &kp LBRC      &kp RBRC      &kp GRAVE                                   ___           &kp AMPS      &kp PRCNT     ___           ___           ___  
+    ___           &kp CARET     &kp DLLR      &kp LBRC      &kp RBRC      &kp GRAVE                                   ___           &kp AMPS      &kp PRCNT     &kp PLUS      &kp MINUS     ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           ___           ___           &kp LPAR      &kp RPAR      &kp TILDE     ___             ___           ___           &kp HASH      &kp STAR      ___           ___           ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
