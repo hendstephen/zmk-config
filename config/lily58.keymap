@@ -40,6 +40,10 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
+&caps_word {  // mods deactivate caps-word, requires PR #1451
+    /delete-property/ ignore-modifiers;
+};
+
 /* CONDITIONAL LAYERS */
 // ZMK_CONDITIONAL_LAYER(NAV SYM, FUN)
 
@@ -111,9 +115,14 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
     mods = <(MOD_LSFT)>;
 )
-&caps_word {  // mods deactivate caps-word, requires PR #1451
-    /delete-property/ ignore-modifiers;
-};
+
+// tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: layer hold
+ZMK_BEHAVIOR(lt_shft, mod_morph,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&smart_shft>;
+)
 
 /* COMBOS */
 // use require-prior-idle-ms for combos
@@ -123,9 +132,10 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
-ZMK_COMBO(esc, &kp ESC, LM3 LM2, BASE, COMBO_TERM_SLOW)
-ZMK_COMBO(ret, &kp RETURN, LM2 LM1, BASE, COMBO_TERM_SLOW)
-ZMK_COMBO(min, &kp MINUS, RF1 RF2, BASE, COMBO_TERM_SLOW)
+ZMK_COMBO(esc, &kp ESC, LM3 LM2, BASE SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(ret, &kp RETURN, LM2 LM1, BASE SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(tab, &kp TAB, LM1 LM0, BASE SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(min, &kp MINUS, RF1 RF2, BASE SYM, COMBO_TERM_SLOW)
 ZMK_COMBO(scln, &kp SEMICOLON, RF2 RF3, BASE SYM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(parens_combo, &parens, LM2 LM1, SYM, COMBO_TERM_SLOW)
@@ -186,7 +196,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         &kp ESC         &kp CAPS      &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           &smart_shft   &lt SYM TAB &lt_bspc NAV 0   &lt_spc NUM 0  &smart_shft   &smart_shft   ___           
+                                              ___           &smart_shft  &lt_shft SYM 0 &lt_bspc NAV 0 &lt_spc NUM 0  &smart_shft   &smart_shft   ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
