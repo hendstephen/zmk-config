@@ -117,7 +117,7 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 )
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: layer hold
-ZMK_BEHAVIOR(lt_shft, mod_morph,
+ZMK_BEHAVIOR(lt_shft, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
