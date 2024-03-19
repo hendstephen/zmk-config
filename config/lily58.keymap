@@ -97,6 +97,15 @@ ZMK_BEHAVIOR(lt_bspc, hold_tap,
     bindings = <&mo>, <&bs_del>;
 )
 
+// tap: space | shift + tap: enter | hold: layer hold
+SIMPLE_MORPH(sp_ret, SFT, &kp SPACE, &kp RETURN)
+ZMK_BEHAVIOR(lt_spc, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&sp_ret>;
+)
+
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
 ZMK_BEHAVIOR(smart_shft, mod_morph,
     bindings = <&sk LSHFT>, <&caps_word>;
@@ -114,10 +123,10 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
-ZMK_COMBO(esc, &kp ESC,    LM3 LM2, BASE, COMBO_TERM_SLOW)
+ZMK_COMBO(esc, &kp ESC, LM3 LM2, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(ret, &kp RETURN, LM2 LM1, BASE, COMBO_TERM_SLOW)
-ZMK_COMBO(min, &kp MINUS,  RF1 RF2, BASE, COMBO_TERM_SLOW)
-ZMK_COMBO(und, &kp AMPS,  RF2 RF3, BASE, COMBO_TERM_SLOW)
+ZMK_COMBO(min, &kp MINUS, RF1 RF2, BASE, COMBO_TERM_SLOW)
+ZMK_COMBO(scln, &kp SEMICOLON, RF2 RF3, BASE SYM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(parens_combo, &parens, LM2 LM1, SYM, COMBO_TERM_SLOW)
 ZMK_COMBO(brcs_combo, &brcs, LB2 LB1, SYM, COMBO_TERM_SLOW)
@@ -177,7 +186,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         &kp ESC         &kp CAPS      &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           &smart_shft   &lt FUN TAB &lt_bspc NAV 0  &lt SYM SPACE  &lt NUM RET   &smart_shft   ___           
+                                              ___           &smart_shft   &lt SYM TAB &lt_bspc NAV 0   &lt_spc NUM 0  &smart_shft   &smart_shft   ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
@@ -231,7 +240,7 @@ ZMK_LAYER(sym,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp CARET     &kp DLLR      &kp LBRC      &kp RBRC      ___                                         &kp STAR      &kp EQUAL     &kp LT        &kp GT        &kp EXCL      ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           ___           ___           &kp LBKT      &kp RBKT      ___           ___             ___           &kp PIPE      &kp AMPS      &kp MINUS     &kp PLUS      ___           ___  
+    ___           &kp TILDE     ___           &kp LBKT      &kp RBKT      ___           ___             ___           &kp PIPE      &kp AMPS      &kp MINUS     &kp PLUS      &kp SLASH     ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               ___           ___           ___           ___             ___           ___           ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
