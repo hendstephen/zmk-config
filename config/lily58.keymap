@@ -100,8 +100,8 @@ ZMK_BEHAVIOR(lt_bspc, hold_tap,
     bindings = <&mo>, <&bs_del>;
 )
 
-// tap: space | shift + tap: enter | hold: layer hold
-SIMPLE_MORPH(sp_ret, SFT, &kp SPACE, &kp RETURN)
+// tap: space | shift + tap: bspc | hold: layer hold
+SIMPLE_MORPH(sp_ret, SFT, &kp SPACE, &kp BSPC)
 ZMK_BEHAVIOR(lt_spc, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <200>;
