@@ -141,10 +141,10 @@ ZMK_COMBO(co_cut, &kp LC(X), LF4 LF3, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(co_cp, &kp LC(C), LF3 LF2, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(co_paste, &kp LC(V), LF2 LF1, BASE, COMBO_TERM_SLOW)
 
-ZMK_COMBO(parens_combo, &parens, LM2 LM1, SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(brcs_combo, &brcs, LB2 LB1, SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(bkts_combo, &bkts, LF2 LF1, SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(ltgt_combo, &ltgt, RB2 RB1, SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(parens_combo, &parens, LB4 LB1, SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(brcs_combo, &brcs, LB3 LB2, SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(bkts_combo, &bkts, LM4 LM1, SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(ltgt_combo, &ltgt, LM3 LM2, SYM, COMBO_TERM_SLOW)
 
 /* CUSTOM BEHAVIORS */
 // // Alt+Tab swapper, requires PR #1366
@@ -199,7 +199,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           &mo FUN       &smart_shft  &lt_bspc SYM 0  &lt_spc NAV 0  &smart_shft   &mo FUN       ___           
+                                              ___           &mo FUN       &smart_shft  &lt_bspc SYM 0  &lt_spc NAV 0  &kp RET       &mo FUN       ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
