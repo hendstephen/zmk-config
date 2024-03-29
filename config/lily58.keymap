@@ -39,6 +39,13 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
+// Mod-tap config
+&mt {  
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
+
 &caps_word {  // mods deactivate caps-word, requires PR #1451
     /delete-property/ ignore-modifiers;
 };
@@ -123,14 +130,6 @@ ZMK_BEHAVIOR(lt_shft, hold_tap,
     bindings = <&mo>, <&smart_shft>;
 )
 
-// tap: enter | hold: shift
-ZMK_BEHAVIOR(kp_ret, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&kp RET>, <&kp RSHFT>;
-)
-
 /* COMBOS */
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
@@ -207,7 +206,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        ___ 
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           &mo FUN       &smart_shft  &lt_bspc SYM 0  &lt_spc NAV 0  &kp_ret       &mo FUN       ___           
+                                              ___           &mo FUN       &smart_shft  &lt_bspc SYM 0  &lt_spc NAV 0 &mt RSHFT RET  &mo FUN       ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
