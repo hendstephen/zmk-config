@@ -124,7 +124,7 @@ ZMK_BEHAVIOR(lt_shft, hold_tap,
 )
 
 // tap: enter | hold: shift
-ZMK_BEHAVIOR(kp_ret, hold_tap
+ZMK_BEHAVIOR(kp_ret, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
