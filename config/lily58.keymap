@@ -153,6 +153,8 @@ ZMK_COMBO(brcs_combo, &brcs, LB3 LB2, SYM, COMBO_TERM_SLOW)
 ZMK_COMBO(bkts_combo, &bkts, LM4 LM1, SYM, COMBO_TERM_SLOW)
 ZMK_COMBO(ltgt_combo, &ltgt, LM3 LM2, SYM, COMBO_TERM_SLOW)
 
+ZMK_COMBO(cplck, &kp CAPS, LF5 RF5, BASE, COMBO_TERM_SLOW)
+
 /* CUSTOM BEHAVIORS */
 // // Alt+Tab swapper, requires PR #1366
 // ZMK_BEHAVIOR(swapper, tri_state,
