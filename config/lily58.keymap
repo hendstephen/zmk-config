@@ -186,17 +186,23 @@ ZMK_BEHAVIOR(win_right, macro,
         , <&macro_release &kp LGUI &kp LCTRL>;
 )
 
-#define BRACE_MACRO(NAME, L, R) \
-    ZMK_BEHAVIOR(NAME, macro, \
-        wait-ms = <0>; \
-        tap-ms = <1>; \
-        bindings = <&macro_tap L R &kp LEFT>; \
-    )
+// #define BRACE_MACRO(NAME, L, R) \
+//     ZMK_BEHAVIOR(NAME, macro, \
+//         wait-ms = <0>; \
+//         tap-ms = <1>; \
+//         bindings = <&macro_tap L R &kp LEFT>; \
+//     )
 
-BRACE_MACRO(bkts, &kp LBKT, &kp RBKT)
-BRACE_MACRO(brcs, &kp LBRC, &kp RBRC)
-BRACE_MACRO(parens, &kp LPAR, &kp RPAR)
-BRACE_MACRO(ltgt, &kp LT, &kp GT)
+// BRACE_MACRO(bkts, &kp LBKT, &kp RBKT)
+// BRACE_MACRO(brcs, &kp LBRC, &kp RBRC)
+// BRACE_MACRO(parens, &kp LPAR, &kp RPAR)
+// BRACE_MACRO(ltgt, &kp LT, &kp GT)
+
+ZMK_BEHAVIOR(fatarrow, macro,
+    wait-ms = <0>;
+    tap-ms = <1>;
+    bindings = <&macro_tap &kp EQUAL &kp GT>;
+)
 
 ZMK_LAYER(base, 
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
@@ -218,9 +224,9 @@ ZMK_LAYER(sym,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           &kp PRCNT     &kp LT        &kp GT        &kp AT        &kp UNDER                                   &kp PIPE      &kp COLON     &kp LBKT      &kp RBKT      ___           ___    
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    ___      &hml LGUI EXCL &hml LALT MINUS &hml LCTRL PLUS &hml LSHFT EQUAL &kp HASH                                 &kp AMPS  &hmr RSHFT LBRC &hmr RCTRL LPAR &hmr RALT RPAR &hmr RGUI SEMI   ___    
+    ___      &hml LGUI EXCL &hml LALT MINUS &hml LCTRL PLUS &hml LSHFT EQUAL &kp HASH                                 &kp AMPS  &hmr RSHFT COLON &hmr RCTRL LPAR &hmr RALT RPAR &hmr RGUI SEMI   ___    
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    ___           &kp BSLH      &kp SLASH     &kp STAR      &kp CARET     &kp GRAVE     ___             ___           &kp TILDE     &kp DLLR      &kp LBRC     &kp RBRC       ___           ___          
+    ___           &kp BSLH      &kp SLASH     &kp STAR      &kp CARET     &kp GRAVE     ___             ___           &kp TILDE     &kp DLLR      &kp LBRC     &kp RBRC       &fatarrow     ___          
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               ___           ___           ___           ___             ___           ___           ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
