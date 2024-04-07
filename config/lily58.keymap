@@ -148,10 +148,10 @@ ZMK_COMBO(co_cut, &kp LC(X), LF4 LF3, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(co_cp, &kp LC(C), LF3 LF2, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(co_paste, &kp LC(V), LF2 LF1, BASE, COMBO_TERM_SLOW)
 
-ZMK_COMBO(parens_combo, &parens, LB4 LB1, SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(brcs_combo, &brcs, LB3 LB2, SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(bkts_combo, &bkts, LM4 LM1, SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(ltgt_combo, &ltgt, LM3 LM2, SYM, COMBO_TERM_SLOW)
+// ZMK_COMBO(parens_combo, &parens, LB4 LB1, SYM, COMBO_TERM_SLOW)
+// ZMK_COMBO(brcs_combo, &brcs, LB3 LB2, SYM, COMBO_TERM_SLOW)
+// ZMK_COMBO(bkts_combo, &bkts, LM4 LM1, SYM, COMBO_TERM_SLOW)
+// ZMK_COMBO(ltgt_combo, &ltgt, LM3 LM2, SYM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(cplck, &kp CAPS, LF5 RF5, BASE, COMBO_TERM_SLOW)
 
