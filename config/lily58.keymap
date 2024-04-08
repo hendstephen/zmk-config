@@ -168,6 +168,15 @@ ZMK_COMBO(cplck, &kp CAPS, LF5 RF5, BASE, COMBO_TERM_SLOW)
 //     // ignored-key-positions = <LT2>;
 // )
 
+/* TAP DANCE */
+#define TAP_TERM_SLOW 150
+
+// tap: i | douple-tap: I | hold: alt
+ZMK_BEHAVIOR(capi, tap_dance,
+    tapping-term-ms = <TAP_TERM_SLOW>;
+    bindings = <&hmr RALT I>, <&kp LS(I)>;
+)
+
 /* MACROS */
 ZMK_BEHAVIOR(win_left, macro, 
     wait-ms = <0>;
