@@ -117,10 +117,13 @@ ZMK_BEHAVIOR(lt_spc, hold_tap,
 )
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: shift
-ZMK_BEHAVIOR(smart_shft, mod_morph,
-    bindings = <&sk LSHFT>, <&caps_word>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
+#define MAKE_SMART_SHFT(NAME, SHFTKEY) \
+    ZMK_BEHAVIOR(NAME, mod_morph, \
+        bindings = <&sk SHFTKEY>, <&caps_word>; \
+        mods = <(MOD_LSFT|MOD_RSFT)>; \
+    )
+MAKE_SMART_SHFT(smart_shftl, LSHFT)
+MAKE_SMART_SHFT(smart_shftr, RSHFT)
 
 // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: layer hold
 ZMK_BEHAVIOR(lt_shft, hold_tap,
@@ -212,7 +215,7 @@ ZMK_LAYER(base,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmr RGUI O   ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shft   &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &smart_shft 
+    &smart_shftl  &kp Z         &kp X         &kp C         &kp D         &kp V         ___             ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &smart_shftr
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               ___           &lt FUN ESC  &mt LSHFT ESC &lt_bspc SYM 0  &lt_spc NAV 0 &mt RSHFT RET  &lt FUN TAB   ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
