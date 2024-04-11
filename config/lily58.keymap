@@ -125,13 +125,13 @@ ZMK_BEHAVIOR(lt_spc, hold_tap,
 MAKE_SMART_SHFT(smart_shftl, LSHFT)
 MAKE_SMART_SHFT(smart_shftr, RSHFT)
 
-// tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: layer hold
-ZMK_BEHAVIOR(lt_shft, hold_tap,
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&smart_shft>;
-)
+// // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: layer hold
+// ZMK_BEHAVIOR(lt_shft, hold_tap,
+//     flavor = "balanced";
+//     tapping-term-ms = <200>;
+//     quick-tap-ms = <QUICK_TAP_MS>;
+//     bindings = <&mo>, <&smart_shft>;
+// )
 
 /* COMBOS */
 // use require-prior-idle-ms for combos
