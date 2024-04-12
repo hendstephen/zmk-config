@@ -160,17 +160,11 @@ ZMK_COMBO(co_paste, &kp LC(V), LF2 LF1, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(cplck, &kp CAPS, LF5 RF5, BASE, COMBO_TERM_SLOW)
 
 /* CUSTOM BEHAVIORS */
-// // Alt+Tab swapper, requires PR #1366
-// ZMK_BEHAVIOR(swapper, tri_state,
-//     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-//     ignored-key-positions = <RM2 RM3>;
-// )
-
-// // Window swapper
-// ZMK_BEHAVIOR(win_swap, tri_state,
-//     bindings = <&kt LGUI &kt LCTRL>, <&kp RIGHT>, <&kt LGUI &kt LCTRL>;
-//     // ignored-key-positions = <LT2>;
-// )
+// Alt+Tab swapper, requires PR #1366
+ZMK_BEHAVIOR(swapper, tri_state,
+    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+    ignored-key-positions = <RM2 RM3>;
+)
 
 /* MACROS */
 ZMK_BEHAVIOR(win_left, macro, 
@@ -244,7 +238,7 @@ ZMK_LAYER(nav,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___          &hml LGUI PLUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp MINUS                                   &kp TAB    &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT     ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp DOT       &kp N1        &kp N2        &kp N3        &kp EQUAL     ___             ___           &kp RET       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
+    ___           &kp DOT       &kp N1        &kp N2        &kp N3        &kp EQUAL     ___             &swapper      &kp RET       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               ___           &kp DOT       &kp N0        ___             ___           ___           ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
