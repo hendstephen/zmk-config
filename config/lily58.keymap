@@ -125,14 +125,6 @@ ZMK_BEHAVIOR(lt_spc, hold_tap,
 MAKE_SMART_SHFT(smart_shftl, LSHFT)
 MAKE_SMART_SHFT(smart_shftr, RSHFT)
 
-// // tap: sticky-shift | shift + tap/ double-tap: caps-word | hold: layer hold
-// ZMK_BEHAVIOR(lt_shft, hold_tap,
-//     flavor = "balanced";
-//     tapping-term-ms = <200>;
-//     quick-tap-ms = <QUICK_TAP_MS>;
-//     bindings = <&mo>, <&smart_shft>;
-// )
-
 /* COMBOS */
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
@@ -144,13 +136,14 @@ MAKE_SMART_SHFT(smart_shftr, RSHFT)
 ZMK_COMBO(esc, &kp ESC, LM3 LM2, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(ret, &kp RETURN, LM2 LM1, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(tab, &kp TAB, LM1 LM0, BASE, COMBO_TERM_SLOW)
-ZMK_COMBO(min, &kp MINUS, RF1 RF2, BASE SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(scln, &kp SEMICOLON, RF2 RF3, BASE SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(cln, &kp COLON, RF3 RF4, BASE SYM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(co_cut, &kp LC(X), LF4 LF3, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(co_cp, &kp LC(C), LF3 LF2, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(co_paste, &kp LC(V), LF2 LF1, BASE, COMBO_TERM_SLOW)
+
+ZMK_COMBO(min, &kp MINUS, RF1 RF2, BASE SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(scln, &kp SEMICOLON, RF2 RF3, BASE SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(cln, &kp COLON, RF3 RF4, BASE SYM, COMBO_TERM_SLOW)
 
 // ZMK_COMBO(parens_combo, &parens, LB4 LB1, SYM, COMBO_TERM_SLOW)
 // ZMK_COMBO(brcs_combo, &brcs, LB3 LB2, SYM, COMBO_TERM_SLOW)
