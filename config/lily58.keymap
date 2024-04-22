@@ -128,7 +128,7 @@ MAKE_SMART_SHFT(smart_shftr, RSHFT)
 /* COMBOS */
 // use require-prior-idle-ms for combos
 #undef COMBO_HOOK
-#define COMBO_HOOK require-prior-idle-ms = <150>;
+#define COMBO_HOOK require-prior-idle-ms = <75>;
 
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
