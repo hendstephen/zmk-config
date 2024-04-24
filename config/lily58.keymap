@@ -128,19 +128,14 @@ MAKE_SMART_SHFT(smart_shftr, RSHFT)
 
 /* COMBOS */
 // use require-prior-idle-ms for combos
-#define DEFAULT_COMBO_HOOK require-prior-idle-ms = <75>;
+#define DEFAULT_COMBO_HOOK require-prior-idle-ms = <0>;
 #undef COMBO_HOOK
 #define COMBO_HOOK DEFAULT_COMBO_HOOK
 
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
-// Esc should have no prior idle time
-#undef COMBO_HOOK
-#define COMBO_HOOK require-prior-idle-ms = <0>;
 ZMK_COMBO(esc, &kp ESC, LM3 LM2, BASE, COMBO_TERM_SLOW)
-#define COMBO_HOOK DEFAULT_COMBO_HOOK
-
 ZMK_COMBO(ret, &kp RETURN, LM2 LM1, BASE, COMBO_TERM_SLOW)
 ZMK_COMBO(tab, &kp TAB, LM1 LM0, BASE, COMBO_TERM_SLOW)
 
