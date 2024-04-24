@@ -95,8 +95,8 @@ SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp KP_MINUS)
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
 SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp UNDER)
 
-// tap: slash | shift + tap: qmark | shift + ctrl + tap: excl
-SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner)
+// tap: semicolon | shift + tap: qmark | shift + ctrl + tap: excl
+SIMPLE_MORPH(qexcl, SFT, &kp SEMI, &qexcl_inner)
 SIMPLE_MORPH(qexcl_inner, CTL, &kp QMARK, &kp EXCL)
 
 // tap: bspc | shift + tap: del | hold: layer hold
@@ -151,7 +151,7 @@ ZMK_COMBO(co_paste, &kp LC(V), LF2 LF1, BASE, COMBO_TERM_SLOW)
 
 ZMK_COMBO(under, &kp UNDER, RF0 RF1, BASE SYM, COMBO_TERM_SLOW)
 ZMK_COMBO(min, &kp MINUS, RF1 RF2, BASE SYM, COMBO_TERM_SLOW)
-ZMK_COMBO(scln, &kp SEMICOLON, RF2 RF3, BASE SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(scln, &kp SLASH, RF2 RF3, BASE SYM, COMBO_TERM_SLOW)
 ZMK_COMBO(cln, &kp COLON, RF3 RF4, BASE SYM, COMBO_TERM_SLOW)
 
 // ZMK_COMBO(parens_combo, &parens, LB4 LB1, SYM, COMBO_TERM_SLOW)
