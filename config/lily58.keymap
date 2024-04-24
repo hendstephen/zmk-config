@@ -153,15 +153,14 @@ ZMK_COMBO(cln, &kp COLON, RF3 RF4, BASE SYM, COMBO_TERM_SLOW)
 // ZMK_COMBO(brcs_combo, &brcs, LB3 LB2, SYM, COMBO_TERM_SLOW)
 // ZMK_COMBO(bkts_combo, &bkts, LM4 LM1, SYM, COMBO_TERM_SLOW)
 // ZMK_COMBO(ltgt_combo, &ltgt, LM3 LM2, SYM, COMBO_TERM_SLOW)
-
 ZMK_COMBO(cplck, &kp CAPS, LF5 RF5, BASE, COMBO_TERM_SLOW)
 
 /* CUSTOM BEHAVIORS */
 // Alt+Tab swapper, requires PR #1366
-ZMK_BEHAVIOR(swapper, tri_state,
-    bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-    ignored-key-positions = <RM2 RM3>;
-)
+// ZMK_BEHAVIOR(swapper, tri_state,
+//     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+//     ignored-key-positions = <RM2 RM3>;
+// )
 
 /* MACROS */
 ZMK_BEHAVIOR(win_left, macro, 
@@ -210,12 +209,6 @@ ZMK_BEHAVIOR(caltdel, macro,
 // BRACE_MACRO(brcs, &kp LBRC, &kp RBRC)
 // BRACE_MACRO(parens, &kp LPAR, &kp RPAR)
 // BRACE_MACRO(ltgt, &kp LT, &kp GT)
-
-ZMK_BEHAVIOR(fatarrow, macro,
-    wait-ms = <0>;
-    tap-ms = <1>;
-    bindings = <&macro_tap &kp EQUAL &kp GT>;
-)
 
 /* TAP DANCE */
 ZMK_BEHAVIOR(td_winlock, tap_dance, 
@@ -272,7 +265,7 @@ ZMK_LAYER(nav,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___          &hml LGUI PLUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp MINUS                                   &kp TAB    &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT     ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp DOT       &kp N1        &kp N2        &kp N3        &kp EQUAL     ___             &swapper      &kp RET       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
+    ___           &kp DOT       &kp N1        &kp N2        &kp N3        &kp EQUAL     ___             &kp SPACE     &kp RET       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               ___           &kp DOT       &kp N0        ___             ___           ___           ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
