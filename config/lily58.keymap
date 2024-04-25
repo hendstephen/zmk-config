@@ -21,6 +21,23 @@
 /* GLOBAL SETTINGS */
 #define QUICK_TAP_MS 175
 
+/* HOMEROW MODS POSITIONAL KEYS */
+#define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3
+#define KEYS_L \
+    LT0 LT1 LT2 LT3 LT4 LT5 \
+    LM0 LM1 LM2 LM3 LM4 LM5 \
+    LB0 LB1 LB2 LB3 LB4 LB5 \
+    LF0 LF1 LF2 LF3 LF4 LF5 LEC
+#define KEYS_R \
+    RT0 RT1 RT2 RT3 RT4 RT5 \
+    RM0 RM1 RM2 RM3 RM4 RM5 \
+    RB0 RB1 RB2 RB3 RB4 RB5 \
+    RF0 RF1 RF2 RF3 RF4 RF5 REC
+
+/* COMBO CONFIG */
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+
 // Soft off
 &soft_off {
     hold-time-ms = <1000>;
@@ -55,28 +72,12 @@
     /delete-property/ ignore-modifiers;
 };
 
-/* HOMEROW MODS POSITIONAL KEYS */
-#define THUMBS LH3 LH2 LH1 LH0 RH0 RH1 RH2 RH3
-#define KEYS_L \
-    LT0 LT1 LT2 LT3 LT4 LT5 \
-    LM0 LM1 LM2 LM3 LM4 LM5 \
-    LB0 LB1 LB2 LB3 LB4 LB5 \
-    LF0 LF1 LF2 LF3 LF4 LF5 LEC
-#define KEYS_R \
-    RT0 RT1 RT2 RT3 RT4 RT5 \
-    RM0 RM1 RM2 RM3 RM4 RM5 \
-    RB0 RB1 RB2 RB3 RB4 RB5 \
-    RF0 RF1 RF2 RF3 RF4 RF5 REC
-
-/* COMBO CONFIG */
-#define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 30
-
 / {
     behaviors {
         /* HOMEROW MODS */
-        hml: homerow_mods_left {
+        hml: hml {
             compatible = "zmk,behavior-hold-tap";
+            flavor: "balanced";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <QUICK_TAP_MS>;
@@ -85,8 +86,9 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
         };
-        hmr: homerow_mods_right {
+        hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
+            flavor: "balanced";
             #binding-cells = <2>;
             tapping-term-ms = <280>;
             quick-tap-ms = <QUICK_TAP_MS>;
@@ -101,13 +103,13 @@
         comma_inner_morph: comma_inner_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LCTRL|MOD_RCTRL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
             bindings = <&kp SEMICOLON>, <&kp KP_MINUS>;
         };
         comma_morph: comma_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp COMMA>, <&comma_inner_morph>;
         };
 
@@ -115,13 +117,13 @@
         dot_inner_morph: dot_inner_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LCTRL|MOD_RCTRL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
             bindings = <&kp COLON>, <&kp UNDER>;
         };
         dot_morph: dot_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp DOT>, <&dot_inner_morph>;
         };
 
@@ -129,13 +131,13 @@
         qexcl_inner: qexcl_inner {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LCTRL|MOD_RCTRL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
             bindings = <&kp QMARK>, <&kp EXCL>;
         };
         qexcl: qexcl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp SEMI>, <&qexcl_inner>;
         };
 
@@ -143,7 +145,7 @@
         bs_del: bs_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp BSPC>, <&kp DEL>;
         };
         lt_bspc: lt_bspc {
@@ -158,7 +160,7 @@
         sp_bspc: sp_bspc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&kp SPACE>, <&kp BSPC>;
         };
         lt_spc: lt_spc {
