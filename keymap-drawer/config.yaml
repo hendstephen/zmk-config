@@ -1,2 +1,6 @@
+parse_config:
+  zmk_combos:
+    co_all: {align: bottom}
+
 draw_config:
   dark_mode: auto
