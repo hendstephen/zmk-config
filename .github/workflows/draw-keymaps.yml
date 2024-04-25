@@ -11,10 +11,11 @@ on:
 jobs:
   draw:
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
     with:
       keymap_patterns: 'config/*.keymap'
       config_path: keymap-drawer/config.yaml
       output_folder: keymap-drawer
       install_branch: main
-      amend_commit: true
-      json_path: keymap-drawer/layouts
+      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
