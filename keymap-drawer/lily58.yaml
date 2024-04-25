@@ -23,7 +23,7 @@ layers:
   - L
   - U
   - Y
-  - ''''
+  - SQT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: A, h: LGUI}
@@ -47,17 +47,17 @@ layers:
   - {t: ▽, type: trans}
   - K
   - H
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - {t: ;, s: '?'}
+  - {t: COMMA, s: SEMICOLON}
+  - {t: DOT, s: COLON}
+  - {t: SEMI, s: QMARK}
   - {t: RSHFT, h: sticky, s: '&caps_word'}
   - {t: ▽, type: trans}
   - {t: ESC, h: FUN}
   - {t: ESC, h: LSHFT}
-  - {t: BSPC, h: NAV, s: DEL}
-  - {t: SPACE, h: SYM, s: BSPC}
-  - {t: RET, h: RSHFT}
-  - {t: TAB, h: FUN}
+  - {t: ⌫, h: NAV, s: ⌦}
+  - {t: ␣, h: SYM, s: ⌫}
+  - {t: ⏎, h: RSHFT}
+  - {t: ↹, h: FUN}
   - {t: ▽, type: trans}
   SYM:
   - {t: ▽, type: trans}
@@ -74,46 +74,46 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - <
-  - '>'
-  - '@'
-  - _
-  - '|'
-  - '-'
-  - '['
-  - ']'
+  - LT
+  - GT
+  - AT
+  - UNDER
+  - PIPE
+  - MINUS
+  - LBKT
+  - RBKT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '!', h: LGUI}
-  - {t: '-', h: LALT}
-  - {t: +, h: LCTRL}
-  - {t: '=', h: LSHFT}
-  - '#'
-  - '&'
-  - {t: ':', h: RSHFT}
-  - {t: (, h: RCTRL}
-  - {t: ), h: RALT}
-  - {t: '`', h: RGUI}
+  - {t: EXCL, h: LGUI}
+  - {t: MINUS, h: LALT}
+  - {t: PLUS, h: LCTRL}
+  - {t: EQUAL, h: LSHFT}
+  - HASH
+  - AMPS
+  - {t: COLON, h: RSHFT}
+  - {t: LPAR, h: RCTRL}
+  - {t: RPAR, h: RALT}
+  - {t: GRAVE, h: RGUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - \
-  - /
-  - '*'
-  - ^
-  - '%'
+  - BSLH
+  - SLASH
+  - STAR
+  - CARET
+  - PRCNT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '~'
-  - $
-  - '{'
-  - '}'
+  - TILDE
+  - DLLR
+  - LBRC
+  - RBRC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: NAV, s: BSPC}
+  - {t: ␣, h: NAV, s: ⌫}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -132,38 +132,38 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '*'
+  - STAR
   - '7'
   - '8'
   - '9'
-  - /
+  - SLASH
   - ESC
-  - '&win_left'
-  - Sft+ TAB
-  - TAB
-  - '&win_right'
+  - Gui+Ctl+ ←
+  - Sft+ ↹
+  - ↹
+  - Gui+Ctl+ →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: +, h: LGUI}
+  - {t: PLUS, h: LGUI}
   - {t: '4', h: LALT}
   - {t: '5', h: LCTRL}
   - {t: '6', h: LSHFT}
-  - '-'
-  - TAB
-  - {t: LEFT, h: RSHFT}
-  - {t: DOWN, h: RCTRL}
-  - {t: UP, h: RALT}
-  - {t: RIGHT, h: RGUI}
+  - MINUS
+  - ↹
+  - {t: ←, h: RSHFT}
+  - {t: ↓, h: RCTRL}
+  - {t: ↑, h: RALT}
+  - {t: →, h: RGUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
   - '1'
   - '2'
   - '3'
-  - '='
+  - EQUAL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RET
+  - ⏎
   - HOME
   - PG DN
   - PG UP
@@ -191,15 +191,15 @@ layers:
   - EP ON
   - '&soft_off'
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -244,7 +244,7 @@ combos:
   k: RETURN
   l: [BASE, SYM]
 - p: [16, 17]
-  k: TAB
+  k: ↹
   l: [BASE, SYM]
 - p: [37, 40]
   k: Ctl+ A
@@ -260,16 +260,16 @@ combos:
   k: Ctl+ V
   l: [BASE]
 - p: [44, 45]
-  k: _
+  k: UNDER
   l: [BASE, SYM]
 - p: [45, 46]
-  k: '-'
+  k: MINUS
   l: [BASE, SYM]
 - p: [46, 47]
-  k: /
+  k: SLASH
   l: [BASE, SYM]
 - p: [47, 48]
-  k: ':'
+  k: COLON
   l: [BASE, SYM]
 - p: [36, 49]
   k: CAPS
