@@ -18,4 +18,5 @@ jobs:
       config_path: keymap-drawer/config.yaml
       output_folder: keymap-drawer
       install_branch: main
-      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
+      amend_commit: true
+      # commit_message: "[Draw] ${{ github.event.head_commit.message }}"
