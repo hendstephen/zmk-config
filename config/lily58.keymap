@@ -193,7 +193,7 @@
         };
     };
 
-    combos: {
+    combos {
         compatible = "zmk,combos";
 
         esc {
