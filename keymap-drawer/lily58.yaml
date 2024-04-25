@@ -138,10 +138,10 @@ layers:
   - '9'
   - SLASH
   - ESC
-  - Gui+Ctl+ ←
+  - Desk Left
   - Sft+ ↹
   - ↹
-  - Gui+Ctl+ →
+  - Desk Right
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: PLUS, h: LGUI}

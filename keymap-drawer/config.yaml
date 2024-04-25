@@ -15,6 +15,11 @@ parse_config:
     '&bt BT_SEL 3': BT 4
     '&bt BT_SEL 4': BT 5
 
+    '&kp LG(LC(LEFT))': Desk Left
+    '&kp LG(LC(RIGHT))': Desk Right
+    '&kp LG(L)': Lock
+    '&kp LC(LA(DEL))': Ctl Alt Del
+
   zmk_keycode_map:
     UP: ↑
     DOWN: ↓
