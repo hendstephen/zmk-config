@@ -32,6 +32,8 @@ parse_config:
     TAB: ↹
     DEL: ⌦
 
+    C_PP: '$$posphor:regular/play-pause$$'
+
     # defaults
     AMPERSAND: '&'
     AMPS: '&'
