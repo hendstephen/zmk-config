@@ -224,7 +224,7 @@ layers:
   - OUT TOG
   - {t: ▽, type: trans}
   - PREV
-  - $$phosphor:regular/play-pause$$
+  - $$phosphor:bold/play-pause$$
   - NEXT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
