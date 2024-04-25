@@ -223,9 +223,9 @@ layers:
   - OUT TOG
   - OUT TOG
   - {t: ▽, type: trans}
-  - PREV
-  - $$material:play_pause$$
-  - NEXT
+  - ⏮
+  - ⏯
+  - ⏭
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

@@ -32,7 +32,9 @@ parse_config:
     TAB: ↹
     DEL: ⌦
 
-    C_PP: '$$material:play_pause$$'
+    C_PP: ⏯
+    C_PREV: ⏮ 
+    C_NEXT: ⏭
 
     # defaults
     AMPERSAND: '&'

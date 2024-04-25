@@ -1,9 +1,4 @@
 <svg width="984" height="1545" viewBox="0 0 984 1545" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>/* start glyphs */
-<svg id="material:play_pause">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-332v-296l220 148-220 148Zm340 12v-320h60v320h-60Zm160 0v-320h60v320h-60Z"/></svg>
-</svg>
-</defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -1193,15 +1188,15 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(672, 203)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">PREV</text>
+<text x="0" y="0" class="key tap">⏮</text>
 </g>
 <g transform="translate(728, 196)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#material:play_pause" xlink:href="#material:play_pause" x="-7" y="-7" height="14" width="14.0" class="key tap glyph material:play_pause"/>
+<text x="0" y="0" class="key tap">⏯</text>
 </g>
 <g transform="translate(784, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">NEXT</text>
+<text x="0" y="0" class="key tap">⏭</text>
 </g>
 <g transform="translate(840, 217)" class="key trans keypos-48">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
