@@ -156,6 +156,7 @@
         };
         lt_bspc: lt_bspc {
             compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
@@ -171,6 +172,7 @@
         };
         lt_spc: lt_spc {
             compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <QUICK_TAP_MS>;
