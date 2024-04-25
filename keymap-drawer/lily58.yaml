@@ -23,7 +23,7 @@ layers:
   - L
   - U
   - Y
-  - SQT
+  - ''''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: A, h: LGUI}
@@ -47,9 +47,9 @@ layers:
   - {t: ▽, type: trans}
   - K
   - H
-  - {t: COMMA, s: SEMICOLON}
-  - {t: DOT, s: COLON}
-  - {t: SEMI, s: QMARK}
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: ;, s: '?'}
   - {t: RSHFT, h: sticky, s: '&caps_word'}
   - {t: ▽, type: trans}
   - {t: ESC, h: FUN}
@@ -74,40 +74,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LT
-  - GT
-  - AT
-  - UNDER
-  - PIPE
-  - MINUS
-  - LBKT
-  - RBKT
+  - <
+  - '>'
+  - '@'
+  - _
+  - '|'
+  - '-'
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: EXCL, h: LGUI}
-  - {t: MINUS, h: LALT}
-  - {t: PLUS, h: LCTRL}
-  - {t: EQUAL, h: LSHFT}
-  - HASH
-  - AMPS
-  - {t: COLON, h: RSHFT}
-  - {t: LPAR, h: RCTRL}
-  - {t: RPAR, h: RALT}
-  - {t: GRAVE, h: RGUI}
+  - {t: '!', h: LGUI}
+  - {t: '-', h: LALT}
+  - {t: +, h: LCTRL}
+  - {t: '=', h: LSHFT}
+  - '#'
+  - '&'
+  - {t: ':', h: RSHFT}
+  - {t: (, h: RCTRL}
+  - {t: ), h: RALT}
+  - {t: '`', h: RGUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BSLH
-  - SLASH
-  - STAR
-  - CARET
-  - PRCNT
+  - \
+  - /
+  - '*'
+  - ^
+  - '%'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TILDE
-  - DLLR
-  - LBRC
-  - RBRC
+  - '~'
+  - $
+  - '{'
+  - '}'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -132,11 +132,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - STAR
+  - '*'
   - '7'
   - '8'
   - '9'
-  - SLASH
+  - /
   - ESC
   - Desk Left
   - Sft+ ↹
@@ -144,11 +144,11 @@ layers:
   - Desk Right
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: PLUS, h: LGUI}
+  - {t: +, h: LGUI}
   - {t: '4', h: LALT}
   - {t: '5', h: LCTRL}
   - {t: '6', h: LSHFT}
-  - MINUS
+  - '-'
   - ↹
   - {t: ←, h: RSHFT}
   - {t: ↓, h: RCTRL}
@@ -160,7 +160,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - EQUAL
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ⏎
@@ -241,7 +241,7 @@ combos:
   k: ESC
   l: [BASE, SYM]
 - p: [15, 16]
-  k: RETURN
+  k: ⏎
   l: [BASE, SYM]
 - p: [16, 17]
   k: ↹
@@ -260,16 +260,16 @@ combos:
   k: Ctl+ V
   l: [BASE]
 - p: [44, 45]
-  k: UNDER
+  k: _
   l: [BASE, SYM]
 - p: [45, 46]
-  k: MINUS
+  k: '-'
   l: [BASE, SYM]
 - p: [46, 47]
-  k: SLASH
+  k: /
   l: [BASE, SYM]
 - p: [47, 48]
-  k: COLON
+  k: ':'
   l: [BASE, SYM]
 - p: [36, 49]
   k: CAPS
