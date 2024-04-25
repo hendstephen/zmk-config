@@ -211,7 +211,7 @@
         ret {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM2 LM1>;
-            bindings = <&kp RETURN>;
+            bindings = <&kp RET>;
             layers = <BASE SYM>;
         };
         tab {
