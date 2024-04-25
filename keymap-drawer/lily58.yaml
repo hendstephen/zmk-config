@@ -191,15 +191,15 @@ layers:
   - EP ON
   - '&soft_off'
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -274,3 +274,4 @@ combos:
 - p: [36, 49]
   k: CAPS
   l: [BASE]
+  a: bottom
