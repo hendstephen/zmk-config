@@ -43,9 +43,7 @@ layers:
   - C
   - D
   - V
-  - '1: Lock
-
-    2: Ctl Alt Del'
+  - '&td_winlock'
   - ' '
   - K
   - H
