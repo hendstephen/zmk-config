@@ -36,7 +36,7 @@ layers:
   - {t: E, h: RCTRL}
   - {t: I, h: RALT}
   - {t: O, h: RGUI}
-  - {t: ▽, type: trans}
+  - A
   - {t: LSHFT, h: sticky, s: '&caps_word'}
   - Z
   - X
