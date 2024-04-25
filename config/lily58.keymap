@@ -101,13 +101,13 @@
         comma_inner_morph: comma_inner_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LCTRL | MOD_RCTRL)>;
+            mods = <(MOD_LCTRL|MOD_RCTRL)>;
             bindings = <&kp SEMICOLON>, <&kp KP_MINUS>;
         };
         comma_morph: comma_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
             bindings = <&kp COMMA>, <&comma_inner_morph>;
         };
 
@@ -115,13 +115,13 @@
         dot_inner_morph: dot_inner_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LCTRL | MOD_RCTRL)>;
+            mods = <(MOD_LCTRL|MOD_RCTRL)>;
             bindings = <&kp COLON>, <&kp UNDER>;
         };
         dot_morph: dot_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
             bindings = <&kp DOT>, <&dot_inner_morph>;
         };
 
@@ -129,13 +129,13 @@
         qexcl_inner: qexcl_inner {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LCTRL | MOD_RCTRL)>;
+            mods = <(MOD_LCTRL|MOD_RCTRL)>;
             bindings = <&kp QMARK>, <&kp EXCL>;
         };
         qexcl: qexcl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
             bindings = <&kp SEMI>, <&qexcl_inner>;
         };
 
@@ -143,7 +143,7 @@
         bs_del: bs_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
             bindings = <&kp BSPC>, <&kp DEL>;
         };
         lt_bspc: lt_bspc {
@@ -158,7 +158,7 @@
         sp_bspc: sp_bspc {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+            mods = <(MOD_LSHIFT|MOD_RSHIFT)>;
             bindings = <&kp SPACE>, <&kp BSPC>;
         };
         lt_spc: lt_spc {
@@ -173,13 +173,13 @@
         smart_shftl: smart_shftl {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&sk LSHFT>, <&caps_word>;
         };
         smart_shftr: smart_shftr {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            mods = <(MOD_LSFT | MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
             bindings = <&sk RSHFT>, <&caps_word>;
         };
 
