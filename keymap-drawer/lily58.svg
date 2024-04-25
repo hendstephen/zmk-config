@@ -291,7 +291,13 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(364, 182)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;td_winlock</tspan></text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-3.0em">1:</tspan><tspan x="0" dy="1.2em">Lock</tspan>
+<tspan x="0" dy="1.2em">2:</tspan>
+<tspan x="0" dy="1.2em">Ctl</tspan>
+<tspan x="0" dy="1.2em">Alt</tspan>
+<tspan x="0" dy="1.2em">Del</tspan>
+</text>
 </g>
 <g transform="translate(560, 182)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

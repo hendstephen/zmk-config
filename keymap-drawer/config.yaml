@@ -22,6 +22,10 @@ parse_config:
     '&kp LG(L)': Lock
     '&kp LC(LA(DEL))': Ctl Alt Del
 
+    '&td_winlock': |-
+      1: Lock
+      2: Ctl Alt Del
+
   zmk_keycode_map:
     UP: ↑
     DOWN: ↓
