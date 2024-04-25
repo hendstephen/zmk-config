@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
-  base:
+  BASE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -52,14 +52,14 @@ layers:
   - {t: ;, s: '?'}
   - {t: RSHFT, h: sticky, s: '&caps_word'}
   - {t: ▽, type: trans}
-  - {t: ESC, h: fun}
+  - {t: ESC, h: FUN}
   - {t: ESC, h: LSHFT}
-  - {t: BSPC, h: nav, s: DEL}
-  - {t: SPACE, h: sym, s: BSPC}
+  - {t: BSPC, h: NAV, s: DEL}
+  - {t: SPACE, h: SYM, s: BSPC}
   - {t: RET, h: RSHFT}
-  - {t: TAB, h: fun}
+  - {t: TAB, h: FUN}
   - {t: ▽, type: trans}
-  sym:
+  SYM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -113,12 +113,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: SPACE, h: nav, s: BSPC}
+  - {t: SPACE, h: NAV, s: BSPC}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  nav:
+  NAV:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -177,7 +177,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  fun:
+  FUN:
   - '&soft_off'
   - EP ON
   - {t: ▽, type: trans}
@@ -239,37 +239,38 @@ layers:
 combos:
 - p: [14, 15]
   k: ESC
-  l: [base, sym]
+  l: [BASE, SYM]
 - p: [15, 16]
   k: RETURN
-  l: [base, sym]
+  l: [BASE, SYM]
 - p: [16, 17]
   k: TAB
-  l: [base, sym]
+  l: [BASE, SYM]
 - p: [37, 40]
   k: Ctl+ A
-  l: [base]
+  l: [BASE]
+  a: bottom
 - p: [37, 38]
   k: Ctl+ X
-  l: [base]
+  l: [BASE]
 - p: [38, 39]
   k: Ctl+ C
-  l: [base]
+  l: [BASE]
 - p: [39, 40]
   k: Ctl+ V
-  l: [base]
+  l: [BASE]
 - p: [44, 45]
   k: _
-  l: [base, sym]
+  l: [BASE, SYM]
 - p: [45, 46]
   k: '-'
-  l: [base, sym]
+  l: [BASE, SYM]
 - p: [46, 47]
   k: /
-  l: [base, sym]
+  l: [BASE, SYM]
 - p: [47, 48]
   k: ':'
-  l: [base, sym]
+  l: [BASE, SYM]
 - p: [36, 49]
   k: CAPS
-  l: [base]
+  l: [BASE]
