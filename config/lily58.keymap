@@ -105,14 +105,6 @@
         };
 
         /* MOD MORPHS */
-        // tap: ' | shift + tap: "
-        sqt_dqt: sqt_dqt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp SQT>, <&kp DQT>;
-        }; 
-
         // tap: comma | shift + tap: semicolon | ctrl + shift + tap: -
         comma_inner_morph: comma_inner_morph {
             compatible = "zmk,behavior-mod-morph";
