@@ -72,6 +72,12 @@
     /delete-property/ ignore-modifiers;
 };
 
+/* CUSTOM KEYCODES */
+#define WIN_LEFT LG(LC(LEFT))
+#define WIN_RIGHT LG(LC(RIGHT))
+#define WIN_LOCK LG(L)
+#define CALTDEL LC(LA(DEL))
+
 / {
     behaviors {
         /* HOMEROW MODS */
@@ -189,7 +195,7 @@
         td_winlock: td_winlock {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&none>, <&winlock>, <&caltdel>;
+            bindings = <&none>, <&kp WIN_LOCK>, <&kp CALTDEL>;
         };
     };
 
@@ -273,52 +279,6 @@
         };
     };
 
-    macros {
-        win_left: win_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <1>;
-            bindings
-                = <&macro_press &kp LGUI &kp LCTRL>
-                , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LGUI &kp LCTRL>;
-        };
-
-        win_right: win_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <1>;
-            bindings
-                = <&macro_press &kp LGUI &kp LCTRL>
-                , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LGUI &kp LCTRL>;
-        };
-
-        winlock: winlock {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <1>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp L>
-                , <&macro_release &kp LGUI>;
-        };
-
-        caltdel: caltdel {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <1>;
-            bindings
-                = <&macro_press &kp LCTRL &kp LALT>
-                , <&macro_tap &kp DEL>
-                , <&macro_release &kp LCTRL &kp LALT>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -362,7 +322,7 @@
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
     ___           ___           ___           ___           ___           ___                                         ___           ___           ___           ___           ___           ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    ___           &kp STAR      &kp N7        &kp N8        &kp N9        &kp SLASH                                   &kp ESC       &win_left     &kp LS(TAB)   &kp TAB       &win_right    ___  
+    ___           &kp STAR      &kp N7        &kp N8        &kp N9        &kp SLASH                                   &kp ESC      &kp WIN_LEFT   &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___          &hml LGUI PLUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp MINUS                                   &kp TAB    &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT     ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
