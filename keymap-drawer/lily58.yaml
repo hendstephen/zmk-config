@@ -1,0 +1,275 @@
+layout: {qmk_keyboard: lily58_rotated}
+layers:
+  base:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: A, h: LGUI}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - G
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - {t: O, h: RGUI}
+  - {t: ▽, type: trans}
+  - {t: LSHFT, h: sticky, s: '&caps_word'}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - '&td_winlock'
+  - {t: ▽, type: trans}
+  - K
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: ;, s: '?'}
+  - {t: RSHFT, h: sticky, s: '&caps_word'}
+  - {t: ▽, type: trans}
+  - {t: ESC, h: fun}
+  - {t: ESC, h: LSHFT}
+  - {t: BSPC, h: nav, s: DEL}
+  - {t: SPACE, h: sym, s: BSPC}
+  - {t: RET, h: RSHFT}
+  - {t: TAB, h: fun}
+  - {t: ▽, type: trans}
+  sym:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - <
+  - '>'
+  - '@'
+  - _
+  - '|'
+  - '-'
+  - '['
+  - ']'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '!', h: LGUI}
+  - {t: '-', h: LALT}
+  - {t: +, h: LCTRL}
+  - {t: '=', h: LSHFT}
+  - '#'
+  - '&'
+  - {t: ':', h: RSHFT}
+  - {t: (, h: RCTRL}
+  - {t: ), h: RALT}
+  - {t: '`', h: RGUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - \
+  - /
+  - '*'
+  - ^
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '~'
+  - $
+  - '{'
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: SPACE, h: nav, s: BSPC}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - ESC
+  - '&win_left'
+  - Sft+ TAB
+  - TAB
+  - '&win_right'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: +, h: LGUI}
+  - {t: '4', h: LALT}
+  - {t: '5', h: LCTRL}
+  - {t: '6', h: LSHFT}
+  - '-'
+  - TAB
+  - {t: LEFT, h: RSHFT}
+  - {t: DOWN, h: RCTRL}
+  - {t: UP, h: RALT}
+  - {t: RIGHT, h: RGUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RET
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  fun:
+  - '&soft_off'
+  - EP ON
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - EP ON
+  - '&soft_off'
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F5
+  - F8
+  - F10
+  - F11
+  - F12
+  - F5
+  - F8
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - VOL DN
+  - MUTE
+  - VOL UP
+  - {t: ▽, type: trans}
+  - OUT TOG
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - PREV
+  - PP
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [14, 15]
+  k: ESC
+  l: [base, sym]
+- p: [15, 16]
+  k: RETURN
+  l: [base, sym]
+- p: [16, 17]
+  k: TAB
+  l: [base, sym]
+- p: [37, 40]
+  k: Ctl+ A
+  l: [base]
+- p: [37, 38]
+  k: Ctl+ X
+  l: [base]
+- p: [38, 39]
+  k: Ctl+ C
+  l: [base]
+- p: [39, 40]
+  k: Ctl+ V
+  l: [base]
+- p: [44, 45]
+  k: _
+  l: [base, sym]
+- p: [45, 46]
+  k: '-'
+  l: [base, sym]
+- p: [46, 47]
+  k: /
+  l: [base, sym]
+- p: [47, 48]
+  k: ':'
+  l: [base, sym]
+- p: [36, 49]
+  k: CAPS
+  l: [base]
