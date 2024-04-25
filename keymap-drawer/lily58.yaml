@@ -1,19 +1,19 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
   BASE:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
   - Q
   - W
   - F
@@ -24,8 +24,8 @@ layers:
   - U
   - Y
   - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
   - {t: A, h: LGUI}
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
@@ -44,36 +44,36 @@ layers:
   - D
   - V
   - '&td_winlock'
-  - {t: ▽, type: trans}
+  - ' '
   - K
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: ;, s: '?'}
   - {t: RSHFT, h: sticky, s: '&caps_word'}
-  - {t: ▽, type: trans}
+  - ' '
   - {t: ESC, h: FUN}
   - {t: ESC, h: LSHFT}
   - {t: ⌫, h: NAV, s: ⌦}
   - {t: ␣, h: SYM, s: ⌫}
   - {t: ⏎, h: RSHFT}
   - {t: ↹, h: FUN}
-  - {t: ▽, type: trans}
+  - ' '
   SYM:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
   - <
   - '>'
   - '@'
@@ -82,9 +82,9 @@ layers:
   - '-'
   - '['
   - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
   - {t: '!', h: LGUI}
   - {t: '-', h: LALT}
   - {t: +, h: LCTRL}
@@ -95,43 +95,43 @@ layers:
   - {t: (, h: RCTRL}
   - {t: ), h: RALT}
   - {t: '`', h: RGUI}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
   - \
   - /
   - '*'
   - ^
   - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
   - '~'
   - $
   - '{'
   - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
   - {t: ␣, h: NAV, s: ⌫}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - ' '
   NAV:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
   - '*'
   - '7'
   - '8'
@@ -142,8 +142,8 @@ layers:
   - Sft+ ↹
   - ↹
   - Desk Right
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
   - {t: +, h: LGUI}
   - {t: '4', h: LALT}
   - {t: '5', h: LCTRL}
@@ -154,43 +154,43 @@ layers:
   - {t: ↓, h: RCTRL}
   - {t: ↑, h: RALT}
   - {t: →, h: RGUI}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
   - '0'
   - '1'
   - '2'
   - '3'
   - '='
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
   - ⏎
   - HOME
   - PG DN
   - PG UP
   - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
   FUN:
   - '&soft_off'
   - EP ON
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
   - EP ON
   - '&soft_off'
-  - {t: ▽, type: trans}
+  - ' '
   - BT 1
   - BT 2
   - BT 3
@@ -201,8 +201,8 @@ layers:
   - BT 3
   - BT 4
   - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
   - F5
   - F8
   - F10
@@ -213,29 +213,29 @@ layers:
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
   - VOL DN
   - MUTE
   - VOL UP
-  - {t: ▽, type: trans}
+  - ' '
   - OUT TOG
   - OUT TOG
-  - {t: ▽, type: trans}
+  - ' '
   - ⏮
   - ⏯
   - ⏭
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ' '
+  - ' '
+  - ' '
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
 combos:
 - p: [14, 15]
   k: ESC

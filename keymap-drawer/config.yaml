@@ -4,6 +4,8 @@ parse_config:
     cplck: {align: bottom}
 
   raw_binding_map:
+    '&trans': ' '
+
     '&co_all': ALL
     '&co_cp': COPY
     '&co_paste': PASTE
