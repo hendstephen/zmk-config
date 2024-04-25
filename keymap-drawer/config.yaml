@@ -32,7 +32,7 @@ parse_config:
     TAB: ↹
     DEL: ⌦
 
-    C_PP: '$$phosphor:bold/play-pause$$'
+    C_PP: '$$material:play_pause$$'
 
     # defaults
     AMPERSAND: '&'
