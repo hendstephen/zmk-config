@@ -3,5 +3,17 @@ parse_config:
     co_all: {align: bottom}
     cplck: {align: bottom}
 
+  raw_binding_map:
+    '&co_all': ALL
+    '&co_cp': COPY
+    '&co_paste': PASTE
+    '&co_cut': CUT
+
+    '&bt BT_SEL 0': BT 1
+    '&bt BT_SEL 1': BT 2
+    '&bt BT_SEL 2': BT 3
+    '&bt BT_SEL 3': BT 4
+    '&bt BT_SEL 4': BT 5
+
 draw_config:
   dark_mode: auto
