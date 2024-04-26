@@ -38,6 +38,20 @@ parse_config:
     C_PREV: ⏮ 
     C_NEXT: ⏭
 
+    HOME: Home
+    END: End
+    PG_UP: Page Up
+    PG_DOWN: Page Down
+
+    LCTRL: Ctrl
+    RCTRL: Ctrl
+    LALT: Alt
+    RALT: Alt
+    LGUI: Gui
+    RGUI: Gui
+    LSHFT: Shift
+    RSHFT: Shift
+
     # defaults
     AMPERSAND: '&'
     AMPS: '&'

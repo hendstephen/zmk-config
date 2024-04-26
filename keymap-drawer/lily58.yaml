@@ -26,18 +26,18 @@ layers:
   - ''''
   - ' '
   - ' '
-  - {t: A, h: LGUI}
-  - {t: R, h: LALT}
-  - {t: S, h: LCTRL}
-  - {t: T, h: LSHFT}
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
   - G
   - M
-  - {t: N, h: RSHFT}
-  - {t: E, h: RCTRL}
-  - {t: I, h: RALT}
-  - {t: O, h: RGUI}
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
   - A
-  - {t: LSHFT, h: sticky, s: '&caps_word'}
+  - {t: Shift, h: sticky, s: '&caps_word'}
   - Z
   - X
   - C
@@ -50,13 +50,13 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: ;, s: '?'}
-  - {t: RSHFT, h: sticky, s: '&caps_word'}
+  - {t: Shift, h: sticky, s: '&caps_word'}
   - ' '
   - {t: ESC, h: FUN}
-  - {t: ESC, h: LSHFT}
+  - {t: ESC, h: Shift}
   - {t: ⌫, h: NAV, s: ⌦}
   - {t: ␣, h: SYM, s: ⌫}
-  - {t: ⏎, h: RSHFT}
+  - {t: ⏎, h: Shift}
   - {t: ↹, h: FUN}
   - ' '
   SYM:
@@ -85,16 +85,16 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: '!', h: LGUI}
-  - {t: '-', h: LALT}
-  - {t: +, h: LCTRL}
-  - {t: '=', h: LSHFT}
+  - {t: '!', h: Gui}
+  - {t: '-', h: Alt}
+  - {t: +, h: Ctrl}
+  - {t: '=', h: Shift}
   - '#'
   - '&'
-  - {t: ':', h: RSHFT}
-  - {t: (, h: RCTRL}
-  - {t: ), h: RALT}
-  - {t: '`', h: RGUI}
+  - {t: ':', h: Shift}
+  - {t: (, h: Ctrl}
+  - {t: ), h: Alt}
+  - {t: '`', h: Gui}
   - ' '
   - ' '
   - \
@@ -144,16 +144,16 @@ layers:
   - Desk Right
   - ' '
   - ' '
-  - {t: +, h: LGUI}
-  - {t: '4', h: LALT}
-  - {t: '5', h: LCTRL}
-  - {t: '6', h: LSHFT}
+  - {t: +, h: Gui}
+  - {t: '4', h: Alt}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Shift}
   - '-'
   - ↹
-  - {t: ←, h: RSHFT}
-  - {t: ↓, h: RCTRL}
-  - {t: ↑, h: RALT}
-  - {t: →, h: RGUI}
+  - {t: ←, h: Shift}
+  - {t: ↓, h: Ctrl}
+  - {t: ↑, h: Alt}
+  - {t: →, h: Gui}
   - ' '
   - ' '
   - '0'
@@ -164,10 +164,10 @@ layers:
   - ' '
   - ' '
   - ⏎
-  - HOME
+  - Home
   - PG DN
-  - PG UP
-  - END
+  - Page Up
+  - End
   - ' '
   - ' '
   - ' '
