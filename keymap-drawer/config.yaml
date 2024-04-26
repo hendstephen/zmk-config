@@ -1,15 +1,11 @@
 parse_config:
   zmk_combos:
-    co_all: {align: bottom}
-    cplck: {align: bottom}
+    co_all: { align: bottom, draw_seperate: true }
+    cplck: { align: bottom, draw_seperate: true }
 
   raw_binding_map:
     '&trans': ' '
-
-    '&co_all': ALL
-    '&co_cp': COPY
-    '&co_paste': PASTE
-    '&co_cut': CUT
+    '&soft_off': Soft Off
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
@@ -21,6 +17,8 @@ parse_config:
     '&kp LG(LC(RIGHT))': Desk Right
     '&kp LG(L)': Lock
     '&kp LC(LA(DEL))': Ctl Alt Del
+
+    '&kp LC(A)': Select All
 
   zmk_keycode_map:
     UP: ↑
