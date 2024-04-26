@@ -1,7 +1,7 @@
 parse_config:
   zmk_combos:
-    co_all: { align: bottom, draw_seperate: true }
-    cplck: { align: bottom, draw_seperate: true }
+    co_all: { align: bottom, draw_separate: true }
+    cplck: { align: bottom, draw_separate: true }
 
   raw_binding_map:
     '&trans': ' '
