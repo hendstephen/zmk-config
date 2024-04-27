@@ -13,7 +13,7 @@
 #define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
 
 // Layers
-#define BASE 0
+#define DEF 0
 #define SYM 1
 #define NAV 2
 #define FUN 3
@@ -218,160 +218,160 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM3 LM2>;
             bindings = <&kp ESC>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         ret {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM2 LM1>;
             bindings = <&kp RET>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         tab {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM1 LM0>;
             bindings = <&kp TAB>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
 
         co_all {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LF4 LF1>;
             bindings = <&kp LC(A)>;
-            layers = <BASE>;
+            layers = <DEF>;
         };
         co_cut {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LF4 LF3>;
             bindings = <&kp LC(X)>;
-            layers = <BASE>;
+            layers = <DEF>;
         };
         co_cp {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LF3 LF2>;
             bindings = <&kp LC(C)>;
-            layers = <BASE>;
+            layers = <DEF>;
         };
         co_paste {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LF2 LF1>;
             bindings = <&kp LC(V)>;
-            layers = <BASE>;
+            layers = <DEF>;
         };
 
         under {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF0 RF1>;
             bindings = <&kp UNDER>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         min {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF1 RF2>;
             bindings = <&kp MINUS>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         scln {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF2 RF3>;
             bindings = <&kp SEMI>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         cln {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF3 RF4>;
             bindings = <&kp COLON>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         fatarrow {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RM0 RM1>;
             bindings = <&fatarrow>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         eq {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RM1 RM2>;
             bindings = <&kp EQUAL>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         amps {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RM2 RM3>;
             bindings = <&kp AMPS>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         grave {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RM3 RM4>;
             bindings = <&kp GRAVE>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
 
         lbkt {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB1 LB0>;
             bindings = <&kp LBKT>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         rbkt {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RB1 RB0>;
             bindings = <&kp RBKT>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
 
         lpar {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB1 LB2>;
             bindings = <&kp LPAR>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         rpar {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RB1 RB2>;
             bindings = <&kp RPAR>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
 
         lbrc {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB2 LB3>;
             bindings = <&kp LBRC>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         rbrc {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RB2 RB3>;
             bindings = <&kp RBRC>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
 
         lt {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB3 LB4>;
             bindings = <&kp LT>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
         gt {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RB3 RB4>;
             bindings = <&kp GT>;
-            layers = <BASE SYM>;
+            layers = <DEF SYM>;
         };
 
         cplck {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LF5 RF5>;
             bindings = <&kp CAPS>;
-            layers = <BASE>;
+            layers = <DEF>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        base {
-            display-name = "BASE";
+        def {
+            display-name = "DEF";
             bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
     ___           ___           ___           ___           ___           ___                                         ___           ___           ___           ___           ___           ___  
