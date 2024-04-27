@@ -277,6 +277,12 @@ combos:
 - p: [19, 20]
   k: '='
   l: [BASE, SYM]
+- p: [28, 29]
+  k: '['
+  l: [BASE, SYM]
+- p: [31, 30]
+  k: ']'
+  l: [BASE, SYM]
 - p: [28, 27]
   k: (
   l: [BASE, SYM]

@@ -278,6 +278,20 @@
             bindings = <&kp EQUAL>;
             layers = <BASE SYM>;
         };
+
+        lbkt {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <LB1 LB0>;
+            bindings = <&kp LBKT>;
+            layers = <BASE SYM>;
+        };
+        rbkt {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RB1 RB0>;
+            bindings = <&kp RBKT>;
+            layers = <BASE SYM>;
+        };
+
         lpar {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB1 LB2>;
