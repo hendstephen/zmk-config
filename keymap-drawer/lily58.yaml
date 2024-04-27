@@ -274,6 +274,18 @@ combos:
 - p: [47, 48]
   k: ':'
   l: [BASE, SYM]
+- p: [28, 27]
+  k: (
+  l: [BASE, SYM]
+- p: [31, 32]
+  k: )
+  l: [BASE, SYM]
+- p: [27, 26]
+  k: '{'
+  l: [BASE, SYM]
+- p: [32, 33]
+  k: '}'
+  l: [BASE, SYM]
 - p: [36, 49]
   k: CAPS
   l: [BASE]

@@ -273,6 +273,32 @@
             layers = <BASE SYM>;
         };
 
+        lpar {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <LB1 LB2>;
+            bindings = <&kp LPAR>;
+            layers = <BASE SYM>;
+        };
+        rpar {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RB1 RB2>;
+            bindings = <&kp RPAR>;
+            layers = <BASE SYM>;
+        };
+
+        lbrc {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <LB2 LB3>;
+            bindings = <&kp LBRC>;
+            layers = <BASE SYM>;
+        };
+        rbrc {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RB2 RB3>;
+            bindings = <&kp RBRC>;
+            layers = <BASE SYM>;
+        };
+
         cplck {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LF5 RF5>;
