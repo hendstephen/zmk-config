@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: lily58_rotated}
 layers:
-  BASE:
+  DEF:
   - ' '
   - ' '
   - ' '
@@ -239,75 +239,75 @@ layers:
 combos:
 - p: [14, 15]
   k: ESC
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [15, 16]
   k: ⏎
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [16, 17]
   k: ↹
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [37, 40]
   k: Select All
-  l: [BASE]
+  l: [DEF]
   draw_separate: true
 - p: [37, 38]
   k: Cut
-  l: [BASE]
+  l: [DEF]
 - p: [38, 39]
   k: Copy
-  l: [BASE]
+  l: [DEF]
 - p: [39, 40]
   k: Paste
-  l: [BASE]
+  l: [DEF]
 - p: [44, 45]
   k: _
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [45, 46]
   k: '-'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [46, 47]
   k: ;
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [47, 48]
   k: ':'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [18, 19]
   k: =>
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [19, 20]
   k: '='
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [20, 21]
   k: '&'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [21, 22]
   k: '`'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [28, 29]
   k: '['
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [31, 30]
   k: ']'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [28, 27]
   k: (
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [31, 32]
   k: )
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [27, 26]
   k: '{'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [32, 33]
   k: '}'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [26, 25]
   k: <
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [33, 34]
   k: '>'
-  l: [BASE, SYM]
+  l: [DEF]
 - p: [36, 49]
   k: Caps Lock
-  l: [BASE]
+  l: [DEF]
   draw_separate: true
