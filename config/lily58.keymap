@@ -201,6 +201,16 @@
         };
     };
 
+    macros {
+        fatarrow: fatarrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_tap &kp EQUAL &kp GT>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -270,6 +280,12 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF3 RF4>;
             bindings = <&kp COLON>;
+            layers = <BASE SYM>;
+        };
+        fatarrow {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RM0 RM1>;
+            bindings = <&fatarrow>;
             layers = <BASE SYM>;
         };
         eq {

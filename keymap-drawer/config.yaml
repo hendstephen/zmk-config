@@ -9,6 +9,7 @@ parse_config:
   raw_binding_map:
     '&trans': ' '
     '&soft_off': Soft Off
+    '&fatarrow': =>
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
