@@ -25,7 +25,7 @@ layers:
   - Y
   - ''''
   - ' '
-  - ' '
+  - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
   - {t: R, h: Alt}
   - {t: S, h: Ctrl}
@@ -36,8 +36,8 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: O, h: Gui}
-  - ' '
   - {t: Shift, h: sticky, s: Caps Word}
+  - ' '
   - Z
   - X
   - C
@@ -50,7 +50,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, s: '?'}
-  - {t: Shift, h: sticky, s: Caps Word}
+  - ' '
   - ' '
   - {t: ESC, h: FUN}
   - {t: ESC, h: Shift}
@@ -307,7 +307,7 @@ combos:
 - p: [33, 34]
   k: '>'
   l: [DEF]
-- p: [36, 49]
+- p: [24, 35]
   k: Caps Lock
   l: [DEF]
   draw_separate: true
