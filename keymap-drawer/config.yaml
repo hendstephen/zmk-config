@@ -10,6 +10,7 @@ parse_config:
     '&trans': ' '
     '&soft_off': Soft Off
     '&fatarrow': =>
+    '&caps_word': Caps Word
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
@@ -43,6 +44,7 @@ parse_config:
     C_PREV: ⏮ 
     C_NEXT: ⏭
 
+    CAPS: Caps Lock
     HOME: Home
     END: End
     PG_UP: Page Up
