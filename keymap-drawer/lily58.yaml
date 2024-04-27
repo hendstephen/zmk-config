@@ -274,6 +274,9 @@ combos:
 - p: [47, 48]
   k: ':'
   l: [BASE, SYM]
+- p: [19, 20]
+  k: '='
+  l: [BASE, SYM]
 - p: [28, 27]
   k: (
   l: [BASE, SYM]
