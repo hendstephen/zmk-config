@@ -253,15 +253,12 @@ combos:
 - p: [37, 38]
   k: Cut
   l: [BASE]
-  draw_separate: true
 - p: [38, 39]
   k: Copy
   l: [BASE]
-  draw_separate: true
 - p: [39, 40]
   k: Paste
   l: [BASE]
-  draw_separate: true
 - p: [44, 45]
   k: _
   l: [BASE, SYM]

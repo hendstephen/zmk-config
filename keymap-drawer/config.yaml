@@ -2,9 +2,6 @@ parse_config:
   zmk_combos:
     cplck: { draw_separate: true }
     co_all: { draw_separate: true }
-    co_cp: { draw_separate: true }
-    co_paste: { draw_separate: true }
-    co_cut: { draw_separate: true }
 
   raw_binding_map:
     '&trans': ' '
