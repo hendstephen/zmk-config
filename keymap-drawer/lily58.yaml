@@ -249,17 +249,19 @@ combos:
 - p: [37, 40]
   k: Select All
   l: [BASE]
-  a: bottom
   draw_separate: true
 - p: [37, 38]
-  k: Ctl+ X
+  k: Cut
   l: [BASE]
+  draw_separate: true
 - p: [38, 39]
-  k: Ctl+ C
+  k: Copy
   l: [BASE]
+  draw_separate: true
 - p: [39, 40]
-  k: Ctl+ V
+  k: Paste
   l: [BASE]
+  draw_separate: true
 - p: [44, 45]
   k: _
   l: [BASE, SYM]
@@ -275,5 +277,4 @@ combos:
 - p: [36, 49]
   k: CAPS
   l: [BASE]
-  a: bottom
   draw_separate: true

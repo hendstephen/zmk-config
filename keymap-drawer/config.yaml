@@ -1,7 +1,10 @@
 parse_config:
   zmk_combos:
-    co_all: { align: bottom, draw_separate: true }
-    cplck: { align: bottom, draw_separate: true }
+    cplck: { draw_separate: true }
+    co_all: { draw_separate: true }
+    co_cp: { draw_separate: true }
+    co_paste: { draw_separate: true }
+    co_cut: { draw_separate: true }
 
   raw_binding_map:
     '&trans': ' '
@@ -19,6 +22,9 @@ parse_config:
     '&kp LC(LA(DEL))': Ctl Alt Del
 
     '&kp LC(A)': Select All
+    '&kp LC(X)': Cut
+    '&kp LC(C)': Copy
+    '&kp LC(V)': Paste
 
   zmk_keycode_map:
     UP: ↑
