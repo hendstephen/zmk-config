@@ -133,7 +133,7 @@
             bindings = <&kp DOT>, <&dot_inner_morph>;
         };
 
-        // tap: semicolon | shift + tap: qmark | shift + ctrl + tap: excl
+        // tap: slash | shift + tap: qmark | shift + ctrl + tap: excl
         qexcl_inner: qexcl_inner {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -144,7 +144,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            bindings = <&kp SEMI>, <&qexcl_inner>;
+            bindings = <&kp SLASH>, <&qexcl_inner>;
         };
 
         // tap: bspc | shift + tap: del | hold: layer hold
@@ -263,7 +263,7 @@
         scln {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF2 RF3>;
-            bindings = <&kp SLASH>;
+            bindings = <&kp SEMI>;
             layers = <BASE SYM>;
         };
         cln {

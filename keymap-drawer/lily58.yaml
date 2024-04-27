@@ -49,7 +49,7 @@ layers:
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: ;, s: '?'}
+  - {t: /, s: '?'}
   - {t: Shift, h: sticky, s: '&caps_word'}
   - ' '
   - {t: ESC, h: FUN}
@@ -269,7 +269,7 @@ combos:
   k: '-'
   l: [BASE, SYM]
 - p: [46, 47]
-  k: /
+  k: ;
   l: [BASE, SYM]
 - p: [47, 48]
   k: ':'
