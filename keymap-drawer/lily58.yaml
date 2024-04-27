@@ -301,6 +301,12 @@ combos:
 - p: [32, 33]
   k: '}'
   l: [BASE, SYM]
+- p: [26, 25]
+  k: <
+  l: [BASE, SYM]
+- p: [33, 34]
+  k: '>'
+  l: [BASE, SYM]
 - p: [36, 49]
   k: CAPS
   l: [BASE]

@@ -330,6 +330,19 @@
             layers = <BASE SYM>;
         };
 
+        lt {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <LB3 LB4>;
+            bindings = <&kp LT>;
+            layers = <BASE SYM>;
+        };
+        gt {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RB3 RB4>;
+            bindings = <&kp GT>;
+            layers = <BASE SYM>;
+        };
+
         cplck {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LF5 RF5>;
