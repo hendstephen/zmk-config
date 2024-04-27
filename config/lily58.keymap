@@ -278,6 +278,12 @@
             bindings = <&kp EQUAL>;
             layers = <BASE SYM>;
         };
+        amps {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RM2 RM3>;
+            bindings = <&kp AMPS>;
+            layers = <BASE SYM>;
+        };
         grave {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RM3 RM4>;
