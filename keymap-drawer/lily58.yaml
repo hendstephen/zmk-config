@@ -179,7 +179,8 @@ layers:
   - ' '
   FUN:
   - Soft Off
-  - EP ON
+  - OUT USB
+  - OUT BLE
   - ' '
   - ' '
   - ' '
@@ -188,40 +189,39 @@ layers:
   - ' '
   - ' '
   - ' '
-  - EP ON
   - Soft Off
-  - ' '
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
   - BT CLR
   - BT 1
   - BT 2
   - BT 3
   - BT 4
-  - BT CLR
+  - BT 5
   - ' '
   - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - F1
+  - F2
+  - F3
+  - F4
   - F5
+  - F6
+  - F7
   - F8
+  - F9
   - F10
   - F11
   - F12
-  - F5
-  - F8
-  - F10
-  - F11
-  - F12
-  - ' '
   - ' '
   - ' '
   - VOL DN
   - MUTE
   - VOL UP
   - ' '
-  - OUT TOG
-  - OUT TOG
+  - ' '
+  - ' '
   - ' '
   - ⏮
   - ⏯
