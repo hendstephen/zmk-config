@@ -290,13 +290,13 @@
         };
         eq {
             timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <RM1 RM2>;
+            key-positions = <RM3 RM2>;
             bindings = <&kp EQUAL>;
             layers = <DEF>;
         };
         amps {
             timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <RM2 RM3>;
+            key-positions = <RM2 RM1>;
             bindings = <&kp AMPS>;
             layers = <DEF>;
         };
