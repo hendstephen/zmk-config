@@ -46,6 +46,7 @@ parse_config:
     HOME: Home
     END: End
     PG_UP: Page Up
+    PG_DN: Page Down
     PG_DOWN: Page Down
 
     LCTRL: Ctrl
