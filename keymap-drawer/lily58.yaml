@@ -215,7 +215,7 @@ layers:
   - F11
   - F12
   - ' '
-  - ' '
+  - Win Close
   - VOL DN
   - MUTE
   - VOL UP
@@ -226,7 +226,7 @@ layers:
   - ⏮
   - ⏯
   - ⏭
-  - ' '
+  - Win Close
   - ' '
   - ' '
   - {t: ' ', type: held}
