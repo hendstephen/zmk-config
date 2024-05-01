@@ -15,6 +15,7 @@ parse_config:
     '&bt BT_SEL 2': BT 3
     '&bt BT_SEL 3': BT 4
     '&bt BT_SEL 4': BT 5
+    '&ext_power EP_ON': Ext Power On
 
     '&kp LG(LC(LEFT))': Desk Left
     '&kp LG(LC(RIGHT))': Desk Right
