@@ -78,6 +78,15 @@
 
 / {
     behaviors {
+        /* CUSTOM BEHAVIORS */
+        // Window swapper - requires PR #1366
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <RB0>;
+        };
+
         /* HOMEROW MODS */
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
@@ -410,7 +419,7 @@
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           &kp STAR      &kp N7        &kp N8        &kp N9        &kp SLASH                                   &kp ESC      &kp WIN_LEFT   &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___          &hml LGUI PLUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp MINUS                                   &kp TAB    &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT     ___  
+    ___          &hml LGUI PLUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp MINUS                                   &swapper    &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT     ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp N0        &kp N1        &kp N2        &kp N3        &kp EQUAL     ___             ___           &kp RET       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
@@ -437,10 +446,3 @@
         };
     };
 };
-
-/* CUSTOM BEHAVIORS */
-// Alt+Tab swapper, requires PR #1366
-// ZMK_BEHAVIOR(swapper, tri_state,
-//     bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-//     ignored-key-positions = <RM2 RM3>;
-// )
