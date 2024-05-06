@@ -33,7 +33,7 @@
 
 /* COMBO CONFIG */
 #define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 40
+#define COMBO_TERM_SLOW 30
 
 // Soft off
 &soft_off {
