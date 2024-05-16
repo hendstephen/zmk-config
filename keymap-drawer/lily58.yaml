@@ -37,7 +37,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - ' '
+  - '&swapper2'
   - Z
   - X
   - C
