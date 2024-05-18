@@ -9,6 +9,7 @@ parse_config:
     '&fatarrow': =>
     '&caps_word': Caps Word
     '&swapper': Win Next
+    '&cdup': '../'
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
