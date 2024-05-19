@@ -52,7 +52,7 @@ layers:
   - {t: /, s: '?'}
   - ../
   - ' '
-  - {t: Esc, h: FUN}
+  - FUN
   - {t: Esc, h: Shift}
   - {t: ⌫, h: NAV, s: ⌦}
   - {t: ␣, h: SYM, s: ⌫}
@@ -240,11 +240,23 @@ combos:
 - p: [14, 15]
   k: Esc
   l: [DEF]
+- p: [26, 27, 28]
+  k: Esc
+  l: [DEF]
 - p: [15, 16]
+  k: ⏎
+  l: [DEF]
+- p: [33, 32, 31]
   k: ⏎
   l: [DEF]
 - p: [16, 17]
   k: ↹
+  l: [DEF]
+- p: [26, 28]
+  k: ↹
+  l: [DEF]
+- p: [33, 31]
+  k: ⌦
   l: [DEF]
 - p: [37, 40]
   k: Select All

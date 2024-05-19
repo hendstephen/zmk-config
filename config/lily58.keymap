@@ -235,16 +235,43 @@
             bindings = <&kp ESC>;
             layers = <DEF>;
         };
+        esc2 {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <LB3 LB2 LB1>;
+            bindings = <&kp ESC>;
+            layers = <DEF>;
+        };
+
         ret {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM2 LM1>;
             bindings = <&kp RET>;
             layers = <DEF>;
         };
+        ret2 {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RB3 RB2 RB1>;
+            bindings = <&kp RET>;
+            layers = <DEF>;
+        };
+
         tab {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM1 LM0>;
             bindings = <&kp TAB>;
+            layers = <DEF>;
+        };
+        tab2 {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <LB3 LB1>;
+            bindings = <&kp TAB>;
+            layers = <DEF>;
+        };
+
+        del {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RB3 RB1>;
+            bindings = <&kp DEL>;
             layers = <DEF>;
         };
 
@@ -397,7 +424,7 @@
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp Z         &kp X         &kp C         &kp D         &kp V         &td_winlock     ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &cdup
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           &lt FUN ESC  &mt LSHFT ESC &lt_bspc NAV 0  &lt_spc SYM 0 &mt RSHFT RET  &lt FUN TAB   ___           
+                                              ___           &mo FUN      &mt LSHFT ESC &lt_bspc NAV 0  &lt_spc SYM 0 &mt RSHFT RET  &lt FUN TAB   ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
             >;
         };
