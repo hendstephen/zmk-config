@@ -224,6 +224,15 @@
             tap-ms = <30>;
             bindings = <&macro_tap &kp DOT &kp DOT &kp SLASH>;
         };
+
+        // Combo for difficult but common "ion" outward roll on the right hand
+        ion: ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_tap &kp I &kp O &kp N>;
+        };
     };
 
     combos {
@@ -405,6 +414,13 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB5 RB5>;
             bindings = <&kp CAPS>;
+            layers = <DEF>;
+        };
+
+        cb_ion {
+            timeout-ms = <COMBO_TERM_SLOW>;
+            key-positions = <RB1 RB3 RB4>;
+            bindings = <&ion>;
             layers = <DEF>;
         };
     };

@@ -6,6 +6,7 @@ parse_config:
     ret2: { draw_separate: true }
     tab2: { draw_separate: true }
     del: { draw_separate: true }
+    cb_ion: { draw_separate: true }
 
   raw_binding_map:
     '&trans': ' '
@@ -14,6 +15,7 @@ parse_config:
     '&caps_word': Caps Word
     '&swapper': Win Next
     '&cdup': '../'
+    '&ion': 'ion'
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
