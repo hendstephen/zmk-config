@@ -328,6 +328,6 @@ combos:
   l: [DEF]
   draw_separate: true
 - p: [31, 33, 34]
-  k: ion
+  k: '"ion"'
   l: [DEF]
   draw_separate: true
