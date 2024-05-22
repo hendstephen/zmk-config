@@ -418,7 +418,7 @@
         };
 
         cb_ion {
-            timeout-ms = <COMBO_TERM_SLOW>;
+            timeout-ms = <50>;
             key-positions = <RB1 RB3 RB4>;
             bindings = <&ion>;
             layers = <DEF>;
