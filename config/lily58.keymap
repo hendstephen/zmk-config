@@ -242,46 +242,46 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM3 LM2>;
             bindings = <&kp ESC>;
-            layers = <DEF>;
+            layers = <DEF SYM NAV>;
         };
         esc2 {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB3 LB2 LB1>;
             bindings = <&kp ESC>;
-            layers = <DEF>;
+            layers = <DEF SYM NAV>;
         };
 
         ret {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM2 LM1>;
             bindings = <&kp RET>;
-            layers = <DEF>;
+            layers = <DEF SYM NAV>;
         };
         ret2 {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RB3 RB2 RB1>;
             bindings = <&kp RET>;
-            layers = <DEF>;
+            layers = <DEF SYM NAV>;
         };
 
         tab {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LM1 LM0>;
             bindings = <&kp TAB>;
-            layers = <DEF>;
+            layers = <DEF SYM NAV>;
         };
         tab2 {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB3 LB1>;
             bindings = <&kp TAB>;
-            layers = <DEF>;
+            layers = <DEF SYM NAV>;
         };
 
         del {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RB3 RB1>;
             bindings = <&kp DEL>;
-            layers = <DEF>;
+            layers = <DEF SYM NAV>;
         };
 
         co_all {
@@ -319,7 +319,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF1 RF2>;
             bindings = <&kp MINUS>;
-            layers = <DEF>;
+            layers = <DEF NAV>;
         };
         semi {
             timeout-ms = <COMBO_TERM_SLOW>;
@@ -331,7 +331,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF3 RF4>;
             bindings = <&kp COLON>;
-            layers = <DEF>;
+            layers = <DEF NAV>;
         };
         fatarrow {
             timeout-ms = <COMBO_TERM_SLOW>;
@@ -343,7 +343,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RM3 RM2>;
             bindings = <&kp EQUAL>;
-            layers = <DEF>;
+            layers = <DEF NAV>;
         };
         amps {
             timeout-ms = <COMBO_TERM_SLOW>;
