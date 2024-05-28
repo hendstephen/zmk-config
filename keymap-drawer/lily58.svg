@@ -444,12 +444,16 @@ path.combo { stroke: #7f7f7f; }
 <text x="756" y="144" class="combo tap">}</text>
 </g>
 <g class="combo combopos-20">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">&lt;</text>
+<path d="M196,147 l-37,0" class="combo"/>
+<path d="M196,147 l37,0" class="combo"/>
+<rect rx="6" ry="6" x="182" y="134" width="28" height="26" class="combo"/>
+<text x="196" y="147" class="combo tap">&lt;</text>
 </g>
 <g class="combo combopos-21">
-<rect rx="6" ry="6" x="798" y="141" width="28" height="26" class="combo"/>
-<text x="812" y="154" class="combo tap">&gt;</text>
+<path d="M728,147 l37,0" class="combo"/>
+<path d="M728,147 l-37,0" class="combo"/>
+<rect rx="6" ry="6" x="714" y="134" width="28" height="26" class="combo"/>
+<text x="728" y="147" class="combo tap">&gt;</text>
 </g>
 </g>
 </g>
