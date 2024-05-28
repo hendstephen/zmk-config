@@ -444,16 +444,16 @@ path.combo { stroke: #7f7f7f; }
 <text x="756" y="144" class="combo tap">}</text>
 </g>
 <g class="combo combopos-20">
-<path d="M196,147 l-37,0" class="combo"/>
-<path d="M196,147 l37,0" class="combo"/>
-<rect rx="6" ry="6" x="182" y="134" width="28" height="26" class="combo"/>
-<text x="196" y="147" class="combo tap">&lt;</text>
+<path d="M168,118 h-78 a6.0,6.0 0 0 0 -6.0,6.0 v18" class="combo"/>
+<path d="M168,118 h78 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="154" y="105" width="28" height="26" class="combo"/>
+<text x="168" y="118" class="combo tap">&lt;</text>
 </g>
 <g class="combo combopos-21">
-<path d="M728,147 l37,0" class="combo"/>
-<path d="M728,147 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="714" y="134" width="28" height="26" class="combo"/>
-<text x="728" y="147" class="combo tap">&gt;</text>
+<path d="M756,118 h78 a6.0,6.0 0 0 1 6.0,6.0 v18" class="combo"/>
+<path d="M756,118 h-78 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="742" y="105" width="28" height="26" class="combo"/>
+<text x="756" y="118" class="combo tap">&gt;</text>
 </g>
 </g>
 </g>
