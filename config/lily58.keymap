@@ -398,13 +398,13 @@
         };
 
         lt {
-            timeout-ms = <COMBO_TERM_FAST>;
+            timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <LB4 LB1>;
             bindings = <&kp LT>;
             layers = <DEF>;
         };
         gt {
-            timeout-ms = <COMBO_TERM_FAST>;
+            timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RB4 RB1>;
             bindings = <&kp GT>;
             layers = <DEF>;
