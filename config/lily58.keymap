@@ -399,13 +399,13 @@
 
         lt {
             timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <LB4 LB1>;
+            key-positions = <LB4 LB3>;
             bindings = <&kp LT>;
             layers = <DEF>;
         };
         gt {
             timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <RB4 RB1>;
+            key-positions = <RB4 RB3>;
             bindings = <&kp GT>;
             layers = <DEF>;
         };
@@ -418,7 +418,7 @@
         };
 
         cb_ion {
-            timeout-ms = <COMBO_TERM_SLOW>;
+            timeout-ms = <50>;
             key-positions = <RB1 RB3 RB4>;
             bindings = <&ion>;
             layers = <DEF>;

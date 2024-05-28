@@ -317,14 +317,12 @@ combos:
 - p: [32, 33]
   k: '}'
   l: [DEF]
-- p: [25, 28]
+- p: [25, 26]
   k: <
   l: [DEF]
-  a: top
-- p: [34, 31]
+- p: [34, 33]
   k: '>'
   l: [DEF]
-  a: top
 - p: [24, 35]
   k: Caps Lock
   l: [DEF]

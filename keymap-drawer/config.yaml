@@ -7,8 +7,6 @@ parse_config:
     tab2: { draw_separate: true }
     del: { draw_separate: true }
     cb_ion: { draw_separate: true }
-    lt: { align: top }
-    gt: { align: top }
 
   raw_binding_map:
     '&trans': ' '
