@@ -1,5 +1,6 @@
 # Lily58 ZMK Config
 ## Features
+- Colemak-DH base layer
 - Homerow mods using [urob's timeless homerow mod feature](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - Symbol layer based on [gertreuer's symbol layer](https://github.com/getreuer/qmk-keymap?tab=readme-ov-file#my-keymap)
 - Tri-state window swapper (requires [PR #1366](https://github.com/zmkfirmware/zmk/pull/1366))
