@@ -10,8 +10,9 @@
 - Sticky shift > caps word > caps lock mod morph
 - Convenience macros
   - `"ion"` - Chording the `i`, `o`, and `n` keys at the same time outputs the common, but (for me) tricky outward roll of "ion".
-  - Cut, Copy, Paste, Select all - All are left-hand only for easy editing while using the mouse.
   - `=>` or "fat arrow" - Used all the time in React/TypeScript, this macro outputs `=>` in a single keystroke, which I use as a combo on the base layer.
+  - `../` - One keystroke to `cd` up one directory
+  - Cut, Copy, Paste, Select all - All are left-hand only for easy editing while using the mouse.
 - One tap-dance: `&td_winlock`
   - double tap: win lock (`GUI(L)`)
   - triple tap: ctrl+alt+del (triggers login prompt on my PC)
