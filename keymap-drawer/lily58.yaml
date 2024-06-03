@@ -53,10 +53,10 @@ layers:
   - ../
   - ' '
   - {t: ⌦, h: FUN}
-  - {t: Esc, h: Shift}
   - {t: ⌫, h: NAV, s: ⌦}
-  - {t: ␣, h: SYM, s: ⌫}
+  - {t: Esc, h: Shift}
   - {t: ⏎, h: Shift}
+  - {t: ␣, h: SYM, s: ⌫}
   - {t: ↹, h: FUN}
   - ' '
   SYM:
@@ -112,10 +112,10 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
   - {t: ␣, h: NAV, s: ⌫}
-  - {t: ' ', type: held}
   - ' '
+  - ' '
+  - {t: ' ', type: held}
   - ' '
   - ' '
   NAV:
@@ -171,8 +171,8 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
   - {t: ' ', type: held}
+  - ' '
   - ' '
   - ' '
   - ' '
