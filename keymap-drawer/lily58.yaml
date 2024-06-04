@@ -54,7 +54,9 @@ layers:
   - ' '
   - {t: ⌦, h: FUN}
   - {t: Esc, h: Shift}
-  - '&lt_bspc 2 0 THUMB_ROUT THUMB_RIN'
+  - {t: ⌫, h: NAV, s: ⌦}
+  - {t: ␣, h: SYM, s: ⌫}
+  - {t: ⏎, h: Shift}
   - {t: ↹, h: FUN}
   - ' '
   SYM:
@@ -112,7 +114,7 @@ layers:
   - ' '
   - ' '
   - {t: ␣, h: NAV, s: ⌫}
-  - ' '
+  - {t: ' ', type: held}
   - ' '
   - ' '
   - ' '

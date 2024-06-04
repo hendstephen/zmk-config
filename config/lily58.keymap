@@ -31,33 +31,6 @@
     RB0 RB1 RB2 RB3 RB4 RB5 \
     RF0 RF1 RF2 RF3 RF4 RF5 REC
 
-/* THUMB ON INSIDE OR OUTSIDE */
-#define THUMBL_PRIMARY &lt_bspc NAV 0
-#define THUMBL_PRIMARY2 &lt_spc NAV 0
-#define THUMBL_SECONDARY &mt LSHFT ESC
-#define THUMBR_PRIMARY &lt_spc SYM 0
-#define THUMBR_SECONDARY &mt RSHFT RET
-
-// #define THUMBS_IN
-#ifdef THUMBS_IN
-    #define THUMB_LIN THUMBL_PRIMARY
-    #define THUMB_LIN2 THUMBL_PRIMARY2
-    #define THUMB_LOUT THUMBL_SECONDARY
-    #define THUMB_LOUT2 ___
-
-    #define THUMBR_OUT THUMBR_SECONDARY
-    #define THUMBR_IN THUMBR_PRIMARY
-#endif
-#ifndef THUMBS_IN
-    #define THUMB_LIN THUMBL_SECONDARY
-    #define THUMB_LIN2 ___
-    #define THUMB_LOUT THUMBL_PRIMARY
-    #define THUMB_LOUT2 THUMBL_PRIMARY2
-
-    #define THUMBR_OUT THUMBR_PRIMARY
-    #define THUMBR_IN THUMBR_SECONDARY
-#endif
-
 /* COMBO CONFIG */
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
@@ -467,7 +440,7 @@
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &key_repeat   &kp Z         &kp X         &kp C         &kp D         &kp V         &td_winlock     ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &cdup
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           &lt FUN DEL  THUMB_LIN      THUMB_LOUT      THUMB_ROUT    THUMB_RIN     &lt FUN TAB   ___           
+                                              ___           &lt FUN DEL  &mt LSHFT ESC &lt_bspc NAV 0  &lt_spc SYM 0 &mt RSHFT RET  &lt FUN TAB   ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
             >;
         };
@@ -484,7 +457,7 @@
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           &kp BSLH      &kp SLASH     &kp STAR      &kp CARET     &kp PRCNT     ___             ___           &kp TILDE     &kp DLLR      &kp LBRC     &kp RBRC       ___           ___          
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              ___           ___           THUMB_LIN2    THUMB_LOUT2     ___           ___           ___           ___           
+                                              ___           ___           ___           &lt_spc NAV 0   ___           ___           ___           ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
             >;
         };
