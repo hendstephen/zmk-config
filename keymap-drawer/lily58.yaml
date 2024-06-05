@@ -132,11 +132,11 @@ layers:
   - ' '
   - ' '
   - ':'
-  - '*'
+  - /
   - '7'
   - '8'
   - '9'
-  - /
+  - '*'
   - Esc
   - Desk Left
   - Sft+ ↹
@@ -144,11 +144,11 @@ layers:
   - Desk Right
   - ' '
   - .
-  - {t: +, h: Gui}
+  - {t: '-', h: Gui}
   - {t: '4', h: Alt}
   - {t: '5', h: Ctrl}
   - {t: '6', h: Shift}
-  - '-'
+  - +
   - Win Next
   - {t: ←, h: Shift}
   - {t: ↓, h: Ctrl}
