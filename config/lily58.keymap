@@ -313,13 +313,13 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF2 RF3>;
             bindings = <&kp SEMI>;
-            layers = <DEF>;
+            layers = <DEF SYM>;
         };
         cln {
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF3 RF4>;
             bindings = <&kp COLON>;
-            layers = <DEF NAV>;
+            layers = <DEF NAV SYM>;
         };
         fatarrow {
             timeout-ms = <COMBO_TERM_SLOW>;

@@ -275,10 +275,10 @@ combos:
   l: [DEF, NAV]
 - p: [46, 47]
   k: ;
-  l: [DEF]
+  l: [DEF, SYM]
 - p: [47, 48]
   k: ':'
-  l: [DEF, NAV]
+  l: [DEF, NAV, SYM]
 - p: [18, 19]
   k: =>
   l: [DEF]
