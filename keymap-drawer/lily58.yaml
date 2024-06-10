@@ -53,10 +53,10 @@ layers:
   - ../
   - ' '
   - {t: ⌦, h: FUN}
-  - {t: ⌫, h: NAV, s: ⌦}
   - {t: Esc, h: Shift}
-  - {t: ⏎, h: Shift}
+  - {t: ⌫, h: NAV, s: ⌦}
   - {t: ␣, h: SYM, s: ⌫}
+  - {t: ⏎, h: Shift}
   - {t: ↹, h: FUN}
   - ' '
   SYM:
@@ -112,10 +112,10 @@ layers:
   - ' '
   - ' '
   - ' '
+  - ' '
   - {t: ␣, h: NAV, s: ⌫}
-  - ' '
-  - ' '
   - {t: ' ', type: held}
+  - ' '
   - ' '
   - ' '
   NAV:
@@ -171,8 +171,8 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: ' ', type: held}
   - ' '
+  - {t: ' ', type: held}
   - ' '
   - ' '
   - ' '
@@ -240,17 +240,9 @@ combos:
 - p: [14, 15]
   k: Esc
   l: [DEF, SYM, NAV]
-- p: [26, 27, 28]
-  k: Esc
-  l: [DEF, SYM, NAV]
-  draw_separate: true
 - p: [15, 16]
   k: ⏎
   l: [DEF, SYM, NAV]
-- p: [33, 32, 31]
-  k: ⏎
-  l: [DEF, SYM, NAV]
-  draw_separate: true
 - p: [16, 17]
   k: ↹
   l: [DEF, SYM, NAV]

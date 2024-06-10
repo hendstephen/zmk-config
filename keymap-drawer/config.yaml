@@ -2,8 +2,6 @@ parse_config:
   zmk_combos:
     cplck: { draw_separate: true }
     co_all: { draw_separate: true }
-    esc2: { draw_separate: true }
-    ret2: { draw_separate: true }
     tab2: { draw_separate: true }
     del: { draw_separate: true }
     cb_ion: { draw_separate: true }
