@@ -267,7 +267,7 @@
 
         del {
             timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <RB3 RB1>;
+            key-positions = <LM3 LM1>;
             bindings = <&kp DEL>;
             layers = <DEF SYM NAV>;
         };

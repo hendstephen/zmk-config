@@ -250,10 +250,10 @@ combos:
   k: ↹
   l: [DEF, SYM, NAV]
   draw_separate: true
-- p: [33, 31]
+- p: [14, 16]
   k: ⌦
   l: [DEF, SYM, NAV]
-  draw_separate: true
+  a: top
 - p: [37, 40]
   k: Select All
   l: [DEF]
@@ -272,7 +272,7 @@ combos:
   l: [DEF]
 - p: [45, 46]
   k: '-'
-  l: [DEF, NAV]
+  l: [DEF]
 - p: [46, 47]
   k: ;
   l: [DEF, SYM]
