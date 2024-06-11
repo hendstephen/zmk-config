@@ -307,7 +307,7 @@
             timeout-ms = <COMBO_TERM_SLOW>;
             key-positions = <RF1 RF2>;
             bindings = <&kp MINUS>;
-            layers = <DEF NAV>;
+            layers = <DEF>;
         };
         semi {
             timeout-ms = <COMBO_TERM_SLOW>;
