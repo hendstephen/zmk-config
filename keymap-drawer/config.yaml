@@ -3,7 +3,7 @@ parse_config:
     cplck: { draw_separate: true }
     co_all: { draw_separate: true }
     tab2: { draw_separate: true }
-    del: { align: "top" }
+    del: { draw_separate: true }
     cb_ion: { draw_separate: true }
 
   raw_binding_map:

@@ -253,7 +253,7 @@ combos:
 - p: [14, 16]
   k: ⌦
   l: [DEF, SYM, NAV]
-  a: top
+  draw_separate: true
 - p: [37, 40]
   k: Select All
   l: [DEF]
