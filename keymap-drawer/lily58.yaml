@@ -243,14 +243,11 @@ combos:
 - p: [15, 16]
   k: ⏎
   l: [DEF, SYM, NAV]
-- p: [16, 17]
-  k: ↹
-  l: [DEF, SYM, NAV]
-- p: [26, 28]
+- p: [16, 14]
   k: ↹
   l: [DEF, SYM, NAV]
   draw_separate: true
-- p: [14, 16]
+- p: [26, 28]
   k: ⌦
   l: [DEF, SYM, NAV]
   draw_separate: true

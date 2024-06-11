@@ -254,20 +254,14 @@
 
         tab {
             timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <LM1 LM0>;
-            bindings = <&kp TAB>;
-            layers = <DEF SYM NAV>;
-        };
-        tab2 {
-            timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <LB3 LB1>;
+            key-positions = <LM1 LM3>;
             bindings = <&kp TAB>;
             layers = <DEF SYM NAV>;
         };
 
         del {
             timeout-ms = <COMBO_TERM_SLOW>;
-            key-positions = <LM3 LM1>;
+            key-positions = <LB3 LB1>;
             bindings = <&kp DEL>;
             layers = <DEF SYM NAV>;
         };
