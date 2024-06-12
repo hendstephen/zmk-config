@@ -14,7 +14,6 @@ parse_config:
     '&swapper': Win Next
     '&cdup': '../'
     '&ion': '"ion"'
-    '&key_repeat': 'Key Repeat'
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
