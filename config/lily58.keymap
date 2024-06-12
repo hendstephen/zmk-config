@@ -70,7 +70,7 @@
 };
 
 &num_word {  // num-word, requires PR #1451
-    layers = <SYM>;
+    layers = <NAV>;
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
 };
  
@@ -191,6 +191,16 @@
             bindings = <&mo>, <&sp_bspc>;
         };
 
+        // tap: num-word | double-tap: sticky num layer | hold: num layer
+        lt_num: lt_num {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <QUICK_TAP_MS>;
+            bindings = <&mo>, <&td_smartnum>;
+        };
+
         // smart shifts
         smart_shftl: smart_shftl {
             compatible = "zmk,behavior-mod-morph";
@@ -210,6 +220,12 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&none>, <&kp WIN_LOCK>, <&kp CALTDEL>;
+        };
+
+        td_smartnum: td_smartnum {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&num_word>, <&sl NAV>;
         };
     };
 
@@ -425,7 +441,7 @@
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmr RGUI O   &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &num_word     &kp Z         &kp X         &kp C         &kp D         &kp V         &td_winlock     ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &cdup
+   &lt_num NAV 0  &kp Z         &kp X         &kp C         &kp D         &kp V         &td_winlock     ___           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &cdup
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               ___           &lt FUN DEL   &mt LSHFT ESC &lt_bspc NAV 0 &lt_spc SYM 0  &mt RSHFT RET &lt FUN TAB   ___           
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯

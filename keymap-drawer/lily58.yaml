@@ -37,7 +37,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - Key Repeat
+  - {t: '&td_smartnum', h: NAV}
   - Z
   - X
   - C
@@ -155,7 +155,7 @@ layers:
   - {t: ↑, h: Alt}
   - {t: →, h: Gui}
   - ' '
-  - ' '
+  - {t: ' ', type: held}
   - '0'
   - '1'
   - '2'
@@ -172,7 +172,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: ' ', type: held}
+  - ' '
   - ' '
   - ' '
   - ' '
