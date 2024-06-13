@@ -203,10 +203,10 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
-  - ' '
-  - ' '
-  - ' '
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
   - ' '
   - ' '
   - Mouse Left
