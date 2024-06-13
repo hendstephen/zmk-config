@@ -454,7 +454,7 @@
         mse_nav {
             if-layers = <MSE>;
             then-layers = <NAV>;
-        }
+        };
     };
 
     keymap {
