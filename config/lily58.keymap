@@ -438,15 +438,6 @@
         };
     };
 
-    // Activate NAV layer when MSE layer is active
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        mse_nav {
-            if-layers = <MSE>;
-            then-layer = <NAV>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
