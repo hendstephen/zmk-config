@@ -19,7 +19,7 @@ parse_config:
     '&mmv MOVE_DOWN': Mouse Down
     '&mmv MOVE_LEFT': Mouse Left
     '&mmv MOVE_RIGHT': Mouse Right
-    '&mkp LCLK': Left Click
+    '&sftclk': Click
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
