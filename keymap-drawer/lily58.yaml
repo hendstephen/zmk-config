@@ -52,11 +52,7 @@ layers:
   - {t: /, s: '?'}
   - ../
   - ' '
-  - {t: ⌦, h: FUN}
-  - {t: Esc, h: Shift}
-  - {t: ⌫, h: NAV, s: ⌦}
-  - {t: ␣, h: SYM, s: ⌫}
-  - {t: ⏎, h: Shift}
+  - '&lt 3 DEL THUMBS_DEF'
   - {t: ↹, h: FUN}
   - ' '
   SYM:
@@ -111,11 +107,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
-  - ' '
-  - {t: ␣, h: NAV, s: ⌫}
-  - {t: ' ', type: held}
-  - ' '
+  - '&trans THUMBS_SYM'
   - ' '
   - ' '
   NAV:
@@ -229,8 +221,8 @@ layers:
   - Win Close
   - ' '
   - ' '
-  - {t: ' ', type: held}
   - ' '
+  - {t: ' ', type: held}
   - ' '
   - ' '
   - ' '
