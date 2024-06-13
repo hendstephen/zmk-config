@@ -32,6 +32,10 @@
     RB0 RB1 RB2 RB3 RB4 RB5 \
     RF0 RF1 RF2 RF3 RF4 RF5 REC
 
+/* THUMB ALIASES */
+#define THUMS_DEF &mt LSHFT ESC  &lt_bspc NAV 0   &lt_spc SYM 0  &mt RSHFT RET
+#define THUMS_SYM ___            &lt_spc NAV 0    ___            ___
+
 /* COMBO CONFIG */
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
@@ -428,13 +432,7 @@
             layers = <DEF>;
         };
     };
-};
 
-/* THUMB ALIASES */
-#define THUMS_DEF &mt LSHFT ESC  &lt_bspc NAV 0   &lt_spc SYM 0  &mt RSHFT RET
-#define THUMS_SYM ___            &lt_spc NAV 0    ___            ___
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
