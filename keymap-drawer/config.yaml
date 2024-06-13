@@ -14,7 +14,11 @@ parse_config:
     '&swapper': Win Next
     '&cdup': '../'
     '&ion': '"ion"'
-    '&td_smartnum': '"Smart Num"'
+    '&td_smartnum': Smart Num
+    '&mmv MOVE_UP': Mouse Up
+    '&mmv MOVE_DOWN': Mouse Down
+    '&mmv MOVE_LEFT': Mouse Left
+    '&mmv MOVE_RIGHT': Mouse Right
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
