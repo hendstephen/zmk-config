@@ -443,7 +443,7 @@
         compatible = "zmk,conditional-layers";
         mse_nav {
             if-layers = <MSE>;
-            then-layers = <NAV>;
+            then-layer = <NAV>;
         };
     };
 
