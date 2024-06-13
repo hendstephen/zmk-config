@@ -126,9 +126,10 @@ layers:
   - ' '
   - ' '
   - ' '
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_UP US_MS_R'
+  - Mouse Left
+  - Mouse Down
+  - Mouse Up
+  - Mouse Right
   - ' '
   - ':'
   - /
@@ -154,8 +155,8 @@ layers:
   - {t: ↑, h: Alt}
   - {t: →, h: Gui}
   - ' '
-  - ' '
-  - {t: '0', type: held}
+  - {t: ' ', type: held}
+  - '0'
   - '1'
   - '2'
   - '3'
