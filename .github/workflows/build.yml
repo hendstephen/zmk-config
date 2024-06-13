@@ -6,6 +6,7 @@ on:
       - config/west.yml
       - config/*.keymap
       - config/*.conf
+      - config/*.dtsi
       - boards/**
       - build.yaml
 
