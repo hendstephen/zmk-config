@@ -437,7 +437,9 @@
             layers = <DEF>;
         };
     };
+};
 
+/ {
     keymap {
         compatible = "zmk,keymap";
 
