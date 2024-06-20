@@ -18,6 +18,7 @@
 #define FUN 4
 
 /* GLOBAL SETTINGS */
+#define THUMBS_OUT 1
 #define QUICK_TAP_MS 175
 
 /* HOMEROW MODS POSITIONAL KEYS */
@@ -439,8 +440,13 @@
     };
 };
 
-#define THUMBS_DEF &lt MSE ESC  &lt_bspc NAV 0    &lt_spc SYM 0  &mt RSHFT RET
-#define THUMBS_SYM ___          &lt_spc NAV 0     ___            ___
+#if THUMBS_OUT
+    #define THUMBS_DEF &lt MSE ESC  &lt_bspc NAV 0    &lt_spc SYM 0  &mt RSHFT RET
+    #define THUMBS_SYM ___          &lt_spc NAV 0     ___            ___
+#else
+    #define THUMBS_DEF &lt_bspc NAV 0  &lt MSE ESC    &mt RSHFT RET  &lt_spc SYM 0 
+    #define THUMBS_SYM &lt_spc NAV 0   ___            ___            ___
+#endif
 
 / {
     keymap {
