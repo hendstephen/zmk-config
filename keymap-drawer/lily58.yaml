@@ -82,7 +82,7 @@ layers:
   - '-'
   - '['
   - ']'
-  - ' '
+  - '`'
   - ' '
   - ' '
   - {t: '!', h: Gui}
@@ -94,7 +94,7 @@ layers:
   - {t: ':', h: Shift}
   - {t: (, h: Ctrl}
   - {t: ), h: Alt}
-  - {t: '`', h: Gui}
+  - {t: ;, h: Gui}
   - ' '
   - ' '
   - \
@@ -331,10 +331,10 @@ combos:
   l: [DEF]
 - p: [46, 47]
   k: ;
-  l: [DEF, SYM]
+  l: [DEF]
 - p: [47, 48]
   k: ':'
-  l: [DEF, NAV, SYM]
+  l: [DEF, NAV]
 - p: [18, 19]
   k: =>
   l: [DEF]
