@@ -13,7 +13,6 @@ layers:
   - ''
   - ''
   - ''
-  - ' '
   - Q
   - W
   - F
@@ -113,8 +112,8 @@ layers:
   - ''
   - ' '
   - ' '
-  - {t: ␣, h: nav, s: ⌫}
-  - {t: ' ', type: held}
+  - {t: ␣, h: nav, s: ⌫, type: held}
+  - ' '
   - ' '
   - ' '
   - ''
@@ -154,8 +153,8 @@ layers:
   - {t: ↓, h: Ctrl}
   - {t: ↑, h: Alt}
   - {t: →, h: Gui}
-  - ' '
   - {t: ' ', type: held}
+  - ' '
   - '0'
   - '1'
   - '2'
@@ -229,8 +228,8 @@ layers:
   - ' '
   - ' '
   - ''
-  - ' '
   - {t: ' ', type: held}
+  - ' '
   - ' '
   - ' '
   - Click
@@ -287,8 +286,8 @@ layers:
   - ⏭
   - Win Close
   - ' '
-  - ''
-  - {t: ' ', type: held}
+  - {type: held}
+  - ' '
   - ' '
   - ' '
   - ' '
