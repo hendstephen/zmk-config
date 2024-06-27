@@ -129,11 +129,7 @@ ZMK_HOLD_TAP(lt_num,
     flavor = "balanced";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&mo>, <&td_smartnum>;
-)
-ZMK_TAP_DANCE(td_smartnum, 
-    tapping-term-ms = <200>;
-    bindings = <&num_word>, <&sl NAV>;
+    bindings = <&mo>, <&num_word>;
 )
 
 // smart shifts

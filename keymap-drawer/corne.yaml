@@ -25,7 +25,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: '&td_smartnum', h: nav}
+  - {t: '&num_word', h: nav}
   - Z
   - X
   - C
