@@ -1,7 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   def:
-  - '&X_F'
   - ' '
   - Q
   - W
@@ -31,21 +30,20 @@ layers:
   - X
   - C
   - D
-  - V X BM
+  - V
   - K
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, s: '?'}
-  - '&cdup X_HL'
+  - ../
   - {t: ⌦, h: fun}
   - {t: Esc, h: mse}
   - {t: ⌫, h: nav, s: ⌦}
   - {t: ␣, h: sym, s: ⌫}
   - {t: ⏎, h: Shift}
-  - '&lt 4 TAB X_HR'
+  - {t: ↹, h: fun}
   sym:
-  - '&X_F'
   - ' '
   - ' '
   - <
@@ -75,21 +73,20 @@ layers:
   - /
   - '*'
   - ^
-  - PRCNT X BM
+  - '%'
   - '~'
   - $
   - '{'
   - '}'
   - ' '
-  - '&trans X_HL'
+  - ' '
   - ' '
   - {t: ␣, h: nav, s: ⌫}
   - ' '
   - {t: ' ', type: held}
   - ' '
-  - '&trans X_HR'
+  - ' '
   nav:
-  - '&X_F'
   - ':'
   - /
   - '7'
@@ -119,21 +116,20 @@ layers:
   - '1'
   - '2'
   - '3'
-  - EQUAL X BM
+  - '='
   - ⏎
   - Home
   - Page Down
   - Page Up
   - End
-  - '&trans X_HL'
   - ' '
   - ' '
   - ' '
   - ' '
   - ' '
-  - '&trans X_HR'
+  - ' '
+  - ' '
   mse:
-  - '&X_F'
   - ' '
   - ' '
   - ' '
@@ -163,21 +159,20 @@ layers:
   - ' '
   - ' '
   - ' '
-  - '&trans X_BM'
   - ' '
   - ' '
   - ' '
   - ' '
   - ' '
-  - '&trans X_HL'
+  - ' '
+  - ' '
   - ' '
   - {t: ' ', type: held}
   - ' '
   - ' '
   - Click
-  - '&trans X_HR'
+  - ' '
   fun:
-  - '&X_F'
   - BT CLR
   - BT 1
   - BT 2
@@ -207,19 +202,19 @@ layers:
   - VOL DN
   - MUTE
   - VOL UP
-  - '&trans X_BM'
+  - ' '
   - ' '
   - ⏮
   - ⏯
   - ⏭
   - Win Close
-  - '&trans X_HL'
+  - ' '
   - {t: ' ', type: held}
   - ' '
   - ' '
   - ' '
   - ' '
-  - '&trans X_HR'
+  - ' '
 combos:
 - p: [2, 3]
   k: Esc

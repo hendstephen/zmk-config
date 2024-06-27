@@ -1,3 +1,9 @@
-
 #include "includes/zmk-helpers/key-labels/42.h"
+
+// Define Lily58's extra keys
+#define X_F
+#define X_BM
+#define X_HR
+#define X_HL
+
 #include "includes/3x6.dtsi"
