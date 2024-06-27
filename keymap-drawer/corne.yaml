@@ -268,10 +268,10 @@ combos:
   k: '`'
   l: [def]
 - p: [16, 17]
-  k: {t: '[', h: LS}
+  k: {t: '[', h: LSFT}
   l: [def]
 - p: [19, 18]
-  k: {t: ']', h: RS}
+  k: {t: ']', h: RSFT}
   l: [def]
 - p: [16, 15]
   k: {t: (, h: Sft+ Ctrl}

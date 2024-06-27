@@ -420,12 +420,12 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="266" y="138" width="28" height="26" class="combo"/>
 <text x="280" y="150" class="combo tap">[</text>
-<text x="280" y="162" class="combo hold">LS</text>
+<text x="280" y="162" class="combo hold">LSFT</text>
 </g>
 <g class="combo combopos-14">
 <rect rx="6" ry="6" x="630" y="138" width="28" height="26" class="combo"/>
 <text x="644" y="150" class="combo tap">]</text>
-<text x="644" y="162" class="combo hold">RS</text>
+<text x="644" y="162" class="combo hold">RSFT</text>
 </g>
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>

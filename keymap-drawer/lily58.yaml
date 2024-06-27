@@ -348,10 +348,10 @@ combos:
   k: '`'
   l: [def]
 - p: [28, 29]
-  k: {t: '[', h: LS}
+  k: {t: '[', h: LSFT}
   l: [def]
 - p: [31, 30]
-  k: {t: ']', h: RS}
+  k: {t: ']', h: RSFT}
   l: [def]
 - p: [28, 27]
   k: {t: (, h: Sft+ Ctrl}

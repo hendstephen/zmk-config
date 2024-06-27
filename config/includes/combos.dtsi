@@ -10,8 +10,8 @@
 #define HRC_LBRC &hml LC(LALT) LBRC
 #define HRC_RBRC &hmr RC(RALT) RBRC
 
-#define HRC_LBKT &hml LS LBKT
-#define HRC_RBKT &hmr RS RBKT
+#define HRC_LBKT &hml LSFT LBKT
+#define HRC_RBKT &hmr RSFT RBKT
 
 #define HRC_LT &hml LA(LGUI) LT
 #define HRC_GT &hmr RA(RGUI) GT
