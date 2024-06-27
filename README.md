@@ -18,5 +18,5 @@
   - double tap: win lock (`GUI(L)`)
   - triple tap: ctrl+alt+del (triggers login prompt on my PC)
 
-![Keymap Representation](./keymap-drawer/lily58.svg?raw=true "Keymap Representation")
+![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
