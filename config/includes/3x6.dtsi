@@ -102,7 +102,7 @@ SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
 SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp UNDER)
 
 // tap: slash | shift + tap: qmark | shift + ctrl + tap: excl
-SIMPLE_MORPH(qexcl_morph, SFT, &kp SLASH, &qexcl_inner_morph)
+SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner_morph)
 SIMPLE_MORPH(qexcl_inner_morph, CTL, &kp QMARK, &kp EXCL)
 
 // tap: bspc | shift + tap: del | hold: layer hold
