@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - ''''
-  - ' '
+  - '`'
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
   - {t: R, h: Alt}
