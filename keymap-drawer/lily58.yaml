@@ -345,10 +345,10 @@ combos:
   k: '`'
   l: [def]
 - p: [28, 29]
-  k: LMKT
+  k: '['
   l: [def]
 - p: [31, 30]
-  k: RMKT
+  k: ']'
   l: [def]
 - p: [28, 27]
   k: (
@@ -357,10 +357,10 @@ combos:
   k: )
   l: [def]
 - p: [27, 26]
-  k: LMRC
+  k: '{'
   l: [def]
 - p: [32, 33]
-  k: RMRC
+  k: '}'
   l: [def]
 - p: [25, 26]
   k: <
