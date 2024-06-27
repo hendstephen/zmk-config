@@ -3,10 +3,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - config/west.yml
-      - config/*.keymap
-      - config/*.conf
-      - config/*.dtsi
+      - config/**
       - boards/**
       - build.yaml
 
