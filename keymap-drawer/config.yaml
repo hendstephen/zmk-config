@@ -4,7 +4,9 @@ parse_config:
     combo_co_all: { draw_separate: true }
     combo_tab: { draw_separate: true }
     combo_del: { draw_separate: true }
-    combo_cb_ion: { draw_separate: true }
+    combo_cb_ion:
+      draw_separate: true
+      key: { h: '' }
 
   raw_binding_map:
     '&trans': ' '
