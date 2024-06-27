@@ -295,3 +295,82 @@ layers:
   - ' '
   - ' '
   - ''
+combos:
+- p: [14, 15]
+  k: Esc
+  l: [def, sym, nav]
+- p: [15, 16]
+  k: ⏎
+  l: [def, sym, nav]
+- p: [16, 14]
+  k: ↹
+  l: [def, sym, nav]
+- p: [26, 28]
+  k: ⌦
+  l: [def, sym, nav]
+- p: [37, 40]
+  k: Select All
+  l: [def]
+- p: [37, 38]
+  k: Cut
+  l: [def]
+- p: [38, 39]
+  k: Copy
+  l: [def]
+- p: [39, 40]
+  k: Paste
+  l: [def]
+- p: [44, 45]
+  k: _
+  l: [def]
+- p: [45, 46]
+  k: '-'
+  l: [def]
+- p: [46, 47]
+  k: ;
+  l: [def]
+- p: [47, 48]
+  k: ':'
+  l: [def, nav]
+- p: [18, 19]
+  k: =>
+  l: [def]
+- p: [21, 20]
+  k: '='
+  l: [def, nav]
+- p: [20, 19]
+  k: '&'
+  l: [def]
+- p: [21, 22]
+  k: '`'
+  l: [def]
+- p: [28, 29]
+  k: LMKT
+  l: [def]
+- p: [31, 30]
+  k: RMKT
+  l: [def]
+- p: [28, 27]
+  k: (
+  l: [def]
+- p: [31, 32]
+  k: )
+  l: [def]
+- p: [27, 26]
+  k: LMRC
+  l: [def]
+- p: [32, 33]
+  k: RMRC
+  l: [def]
+- p: [25, 26]
+  k: <
+  l: [def]
+- p: [34, 33]
+  k: '>'
+  l: [def]
+- p: [24, 35]
+  k: Caps Lock
+  l: [def]
+- p: [31, 33, 34]
+  k: '"ion"'
+  l: [def]

@@ -14,7 +14,7 @@
 #include "zmk-helpers/helper.h"
 #include "macros.dtsi"
 #include "mouse.dtsi"
-#inclued "combos.dtsi" // requires layer aliases and helpers
+#include "combos.dtsi" // requires layer aliases and helpers
 
 #define XXX &none
 #define ___ &trans
