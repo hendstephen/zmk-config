@@ -3,6 +3,7 @@
 
 // Make homerow combos tap-only (so HRTs can be chorded instantaneously)
 #define HRC_DEL &hml LS(LALT) DEL
+#define HRC_ION &hmr_ion RS(RA(RGUI)) 0
 
 #define HRC_LPAR &hml LS(LCTRL) LPAR
 #define HRC_RPAR &hmr RS(RCTRL) RPAR
@@ -46,4 +47,4 @@ ZMK_COMBO(lt, HRC_LT, LM4 LM3, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(gt, HRC_GT, RM4 RM3, DEF, COMBO_TERM_SLOW)
 
 ZMK_COMBO(cplck, &kp CAPS, LM5 RM5, DEF, COMBO_TERM_SLOW)
-ZMK_COMBO(cb_ion, &ion, RM1 RM3 RM4, DEF, COMBO_TERM_SLOW)
+ZMK_COMBO(cb_ion, HRC_ION, RM1 RM3 RM4, DEF, COMBO_TERM_SLOW)
