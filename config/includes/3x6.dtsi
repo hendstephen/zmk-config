@@ -13,8 +13,8 @@
 
 #include "zmk-helpers/helper.h"
 #include "macros.dtsi"
-#include "mouse.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
+#include "mouse.dtsi"
 
 #define XXX &none
 #define ___ &trans
@@ -84,7 +84,6 @@
     )
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
-MAKE_HRM(hmr_ion, &kp, &ion, KEYS_R THUMBS)
 
 /* Mod morphs */
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \

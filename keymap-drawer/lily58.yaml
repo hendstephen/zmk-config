@@ -376,6 +376,6 @@ combos:
   l: [def]
   draw_separate: true
 - p: [31, 33, 34]
-  k: {t: '&ion', h: Sft+ RALT(RGUI)}
+  k: '"ion"'
   l: [def]
   draw_separate: true
