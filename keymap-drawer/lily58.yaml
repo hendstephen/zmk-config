@@ -149,7 +149,7 @@ layers:
   - {t: '5', h: Ctrl}
   - {t: '6', h: Shift}
   - +
-  - Win Next
+  - ' '
   - {t: ←, h: Shift}
   - {t: ↓, h: Ctrl}
   - {t: ↑, h: Alt}
