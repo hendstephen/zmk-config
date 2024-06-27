@@ -15,10 +15,10 @@ parse_config:
     '&cdup': '../'
     '&ion': '"ion"'
     '&num_word': Num Word
-    '&mmv MOVE_UP': Mouse Up
-    '&mmv MOVE_DOWN': Mouse Down
-    '&mmv MOVE_LEFT': Mouse Left
-    '&mmv MOVE_RIGHT': Mouse Right
+    '&mmv MOVE_UP': Mouse ↑
+    '&mmv MOVE_DOWN': Mouse ↓
+    '&mmv MOVE_LEFT': Mouse ←
+    '&mmv MOVE_RIGHT': Mouse →
     '&msc MOVE_UP': Scroll Up
     '&msc MOVE_DOWN': Scroll Down
     '&sftclk': Click

@@ -138,7 +138,7 @@ layers:
   - ' '
   - ' '
   - Scroll Up
-  - Mouse Up
+  - Mouse ↑
   - Scroll Down
   - ' '
   - ' '
@@ -149,9 +149,9 @@ layers:
   - Shift
   - ' '
   - ' '
-  - Mouse Left
-  - Mouse Down
-  - Mouse Right
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
   - ' '
   - ' '
   - ' '
