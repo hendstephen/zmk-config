@@ -305,12 +305,15 @@ combos:
 - p: [16, 14]
   k: ↹
   l: [def, sym, nav]
+  draw_separate: true
 - p: [26, 28]
   k: ⌦
   l: [def, sym, nav]
+  draw_separate: true
 - p: [37, 40]
   k: Select All
   l: [def]
+  draw_separate: true
 - p: [37, 38]
   k: Cut
   l: [def]
@@ -371,6 +374,8 @@ combos:
 - p: [24, 35]
   k: Caps Lock
   l: [def]
+  draw_separate: true
 - p: [31, 33, 34]
   k: '"ion"'
   l: [def]
+  draw_separate: true
