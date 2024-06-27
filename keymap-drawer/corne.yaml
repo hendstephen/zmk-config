@@ -227,7 +227,7 @@ combos:
   l: [def, sym, nav]
   draw_separate: true
 - p: [14, 16]
-  k: {t: ⌦, h: Sft+ Alt}
+  k: ⌦
   l: [def, sym, nav]
   draw_separate: true
 - p: [25, 28]
@@ -268,34 +268,34 @@ combos:
   k: '`'
   l: [def]
 - p: [16, 17]
-  k: {t: '[', h: LSFT}
+  k: '['
   l: [def]
 - p: [19, 18]
-  k: {t: ']', h: RSFT}
+  k: ']'
   l: [def]
 - p: [16, 15]
-  k: {t: (, h: Sft+ Ctrl}
+  k: (
   l: [def]
 - p: [19, 20]
-  k: {t: ), h: Sft+ Ctrl}
+  k: )
   l: [def]
 - p: [15, 14]
-  k: {t: '{', h: Ctl+ Alt}
+  k: '{'
   l: [def]
 - p: [20, 21]
-  k: {t: '}', h: Ctl+ Alt}
+  k: '}'
   l: [def]
 - p: [13, 14]
-  k: {t: <, h: Alt+ Gui}
+  k: <
   l: [def]
 - p: [22, 21]
-  k: {t: '>', h: AGr+ Gui}
+  k: '>'
   l: [def]
 - p: [12, 23]
   k: Caps Lock
   l: [def]
   draw_separate: true
 - p: [19, 21, 22]
-  k: ''
+  k: ion
   l: [def]
   draw_separate: true

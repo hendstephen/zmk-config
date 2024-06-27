@@ -3,10 +3,22 @@ parse_config:
     combo_cplck: { draw_separate: true }
     combo_co_all: { draw_separate: true }
     combo_tab: { draw_separate: true }
-    combo_del: { draw_separate: true }
+
+    # Combos with HRM hold-taps, don't draw the hold on bottom
+    combo_lpar: { key: '(' }
+    combo_rpar: { key: ')' }
+    combo_lbrc: { key: '{' }
+    combo_rbrc: { key: '}' }
+    combo_lbkt: { key: '[' }
+    combo_rbkt: { key: ']' }
+    combo_lt: { key: '<' }
+    combo_gt: { key: '>' }
+    combo_del:
+      draw_separate: true
+      key: ⌦
     combo_cb_ion:
       draw_separate: true
-      key: { h: '' }
+      key: ion
 
   raw_binding_map:
     '&trans': ' '
