@@ -1,4 +1,6 @@
-# Lily58 ZMK Config
+# Corne ZMK Config
+This ZMK config is for split ergo 3x6 boards like the Corne. The repo also builds for the Lily58, ignoring the extra keys.
+
 ## Features
 - Colemak-DH base layer
 - Homerow mods using [urob's timeless homerow mod feature](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
