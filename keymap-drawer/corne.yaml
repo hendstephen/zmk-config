@@ -93,7 +93,7 @@ layers:
   - '8'
   - '9'
   - '*'
-  - Esc
+  - ' '
   - Desk Left
   - Sft+ ↹
   - ↹
@@ -105,7 +105,7 @@ layers:
   - {t: '5', h: Ctrl}
   - {t: '6', h: Shift}
   - +
-  - ' '
+  - Win Close
   - {t: ←, h: Shift}
   - {t: ↓, h: Ctrl}
   - {t: ↑, h: Alt}
@@ -117,7 +117,7 @@ layers:
   - '2'
   - '3'
   - '='
-  - ⏎
+  - ' '
   - Home
   - Page Down
   - Page Up
@@ -179,9 +179,9 @@ layers:
   - BT 3
   - BT 4
   - BT 5
-  - ' '
   - OUT USB
   - OUT BLE
+  - ' '
   - ' '
   - ' '
   - Soft Off
@@ -197,8 +197,8 @@ layers:
   - F10
   - F11
   - F12
-  - ' '
-  - Win Close
+  - Reset
+  - Bootloader
   - VOL DN
   - MUTE
   - VOL UP
@@ -207,8 +207,8 @@ layers:
   - ⏮
   - ⏯
   - ⏭
-  - Win Close
-  - ' '
+  - Bootloader
+  - Reset
   - {t: ' ', type: held}
   - ' '
   - ' '

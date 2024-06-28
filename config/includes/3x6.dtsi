@@ -64,6 +64,7 @@
 #define WIN_LEFT LG(LC(LEFT))
 #define WIN_RIGHT LG(LC(RIGHT))
 #define WIN_LOCK LG(L)
+#define WIN_CLOSE LA(F4)
 
 /* Homerow mods */
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
@@ -170,9 +171,9 @@ ZMK_LAYER(nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp COLON     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp STAR                                    ___          &kp WIN_LEFT   &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
+    &kp COLON     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp STAR                                    ___           &kp WIN_LEFT  &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp DOT     &hml LGUI MINUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp PLUS                                    ___      &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT ___  
+    &kp DOT     &hml LGUI MINUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp PLUS                                   &kp WIN_CLOSE &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp N0        &kp N1        &kp N2        &kp N3        &kp EQUAL                 X_BM              ___           &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
