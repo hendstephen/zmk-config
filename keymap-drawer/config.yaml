@@ -23,6 +23,8 @@ parse_config:
   raw_binding_map:
     '&trans': ' '
     '&soft_off': Soft Off
+    '&sys_reset': Reset
+    '&bootloader': Bootloader
     '&fatarrow': =>
     '&caps_word': Caps Word
     '&swapper': Win Next
