@@ -198,7 +198,7 @@ layers:
   - F11
   - F12
   - Reset
-  - Bootloader
+  - Boot
   - VOL DN
   - MUTE
   - VOL UP
@@ -207,7 +207,7 @@ layers:
   - ⏮
   - ⏯
   - ⏭
-  - Bootloader
+  - Boot
   - Reset
   - {t: ' ', type: held}
   - ' '

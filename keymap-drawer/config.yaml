@@ -24,7 +24,7 @@ parse_config:
     '&trans': ' '
     '&soft_off': Soft Off
     '&sys_reset': Reset
-    '&bootloader': Bootloader
+    '&bootloader': Boot
     '&fatarrow': =>
     '&caps_word': Caps Word
     '&swapper': Win Next
