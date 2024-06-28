@@ -233,7 +233,7 @@ combos:
 - p: [25, 28]
   k: Select All
   l: [def]
-  draw_separate: true
+  a: bottom
 - p: [25, 26]
   k: Cut
   l: [def]
