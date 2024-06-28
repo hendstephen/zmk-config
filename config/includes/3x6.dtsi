@@ -44,12 +44,12 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-// // Mod-tap config
-// &mt {  
-//     flavor = "balanced";
-//     tapping-term-ms = <200>;
-//     quick-tap-ms = <QUICK_TAP_MS>;
-// };
+// Mod-tap config
+&mt {  
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+};
 
 &caps_word {  // mods deactivate caps-word, requires PR #1451
     /delete-property/ ignore-modifiers;
@@ -170,11 +170,11 @@ ZMK_LAYER(nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp COLON     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp STAR                                     &kp ESC      &kp WIN_LEFT   &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
+    &kp COLON     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp STAR                                    ___          &kp WIN_LEFT   &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp DOT     &hml LGUI MINUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp PLUS                                    ___      &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT  ___  
+    &kp DOT     &hml LGUI MINUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp PLUS                                    ___      &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp N0        &kp N1        &kp N2        &kp N3        &kp EQUAL                 X_BM              &kp RET       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
+    ___           &kp N0        &kp N1        &kp N2        &kp N3        &kp EQUAL                 X_BM              ___           &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               X_HL          ___           ___           ___             ___           ___           ___           X_HR
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
