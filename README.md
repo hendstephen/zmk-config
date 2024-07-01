@@ -1,13 +1,15 @@
 # Corne ZMK Config
 This ZMK config is for split ergo 3x6 boards like the Corne. The repo also builds for the Lily58, ignoring the extra keys.
 
+Keymap layout created with [@caksoylar's keymap-drawer](https://github.com/caksoylar/keymap-drawer)
+
 ## Features
 - Colemak-DH base layer
-- Homerow mods using [urob's timeless homerow mod feature](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
+- Homerow mods using [urob's timeless homerow mod config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - Symbol layer based on [gertreuer's symbol layer](https://github.com/getreuer/qmk-keymap?tab=readme-ov-file#my-keymap)
 - Commonly used symbols in combos on the base layer
   - _These symbols are specific to my development workflow (C#/.NET, React, Typescript). While the symbol layer design is good, I found that switching back and forth to this layer while coding was awkward for me. Having my most used symbols on the base layer is much smoother, and I've tuned the combo timing so that misfires are not an issue._
-  - _I'm also currently trying to work through some fatigue/soreness in my thumbs. Using lighter switches on these keys seems to be helping, but I want to reduce the use of thumbs as layer holds as much as possible, thus the base layer combos._
+  - _I've also struggled with some thumb pain/fatigue, so reducing thumb use as much as possible in favor of combos helps to minimize this._
 - Numpad on the nav layer for vim line motions (e.g. `15↑` to jump up 15 lines)
 - More intuitive [mod morphs](#mod-morphs)
 - Convenience macros
