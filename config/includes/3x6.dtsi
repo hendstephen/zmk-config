@@ -21,11 +21,6 @@
 
 #define QUICK_TAP_MS 175
 
-// Soft off
-&soft_off {
-    hold-time-ms = <1000>;
-};
-
 // Sticky-key config
 &sk {  
     release-after-ms = <900>;  // release after 0.6s
