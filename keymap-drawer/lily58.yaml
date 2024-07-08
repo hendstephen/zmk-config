@@ -314,9 +314,9 @@ combos:
   k: ↹
   l: [def, sym, nav]
   draw_separate: true
-- p: [26, 28]
+- p: [33, 31]
   k: ⌦
-  l: [def, sym, nav]
+  l: [def, sym]
   draw_separate: true
 - p: [37, 40]
   k: Select All

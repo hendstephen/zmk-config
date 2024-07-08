@@ -234,9 +234,9 @@ combos:
   k: ↹
   l: [def, sym, nav]
   draw_separate: true
-- p: [14, 16]
+- p: [21, 19]
   k: ⌦
-  l: [def, sym, nav]
+  l: [def, sym]
   draw_separate: true
 - p: [25, 28]
   k: Select All

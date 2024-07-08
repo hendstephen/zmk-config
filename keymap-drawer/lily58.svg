@@ -2011,14 +2011,14 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(42, 138)" class="key keypos-26">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 </g>
-<g transform="translate(70, 132)" class="key held keypos-27">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
+<g transform="translate(70, 132)" class="key keypos-27">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 </g>
 <g transform="translate(98, 128)" class="key keypos-28">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 </g>
-<g transform="translate(126, 132)" class="key held keypos-29">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
+<g transform="translate(126, 132)" class="key keypos-29">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 </g>
 <g transform="translate(154, 135)" class="key keypos-30">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
@@ -2026,14 +2026,14 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(308, 135)" class="key keypos-31">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 </g>
-<g transform="translate(336, 132)" class="key keypos-32">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
+<g transform="translate(336, 132)" class="key held keypos-32">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
 </g>
 <g transform="translate(364, 128)" class="key keypos-33">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 </g>
-<g transform="translate(392, 132)" class="key keypos-34">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
+<g transform="translate(392, 132)" class="key held keypos-34">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
 </g>
 <g transform="translate(420, 138)" class="key keypos-35">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
