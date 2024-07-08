@@ -19,6 +19,12 @@ parse_config:
     combo_cb_ion:
       draw_separate: true
       key: ion
+    combo_esc2:
+      draw_separate: true
+      key: Esc
+    combo_ret2:
+      draw_separate: true
+      key: ⏎
 
   raw_binding_map:
     '&trans': ' '
