@@ -38,8 +38,8 @@ layers:
   - {t: /, s: '?'}
   - ../
   - {t: ⌦, h: fun}
-  - {t: Esc, h: mse}
   - {t: ⌫, h: nav, s: ⌦}
+  - {t: Esc, h: mse}
   - {t: ␣, h: sym, s: ⌫}
   - {t: ⏎, h: Shift}
   - {t: ↹, h: fun}
@@ -81,8 +81,8 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
   - {t: ␣, h: nav, s: ⌫}
+  - ' '
   - {t: ' ', type: held}
   - ' '
   - ' '
@@ -167,8 +167,8 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: ' ', type: held}
   - ' '
+  - {t: ' ', type: held}
   - ' '
   - Click
   - ' '

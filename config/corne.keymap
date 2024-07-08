@@ -1,9 +1,12 @@
 #include "includes/zmk-helpers/key-labels/42.h"
 
-// Define Lily58's extra keys
+// Define extra keys
 #define X_F
 #define X_BM
 #define X_HR
 #define X_HL
+
+// Thumbs on inner thumb key
+#define THUMBS_OUT 0
 
 #include "includes/3x6.dtsi"

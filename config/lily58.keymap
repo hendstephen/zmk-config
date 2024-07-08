@@ -6,4 +6,7 @@
 #define X_HR &none
 #define X_HL &none
 
+// Thumbs on outer thumb key
+#define THUMBS_OUT 1
+
 #include "includes/3x6.dtsi"
