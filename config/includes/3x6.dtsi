@@ -137,7 +137,7 @@ SIMPLE_MORPH(sftclk, SFT, &mkp LCLK, &mkp RCLK)
     #define THUMBS_DEF X_HL  &lt FUN DEL  &lt MSE ESC  &lt_bspc NAV 0    &lt_spc SYM 0  &mt RSHFT RET  &lt FUN TAB  X_HR
     #define THUMBS_SYM X_HL  ___          ___          &lt_spc NAV 0     ___            ___            ___          X_HR
 #else
-    #define THUMBS_DEF X_HL  &lt FUN DEL  &lt_bspc NAV 0  &lt MSE ESC    &lt_spc SYM 0  &mt RSHFT RET  &lt FUN TAB  X_HR
+    #define THUMBS_DEF X_HL  &lt FUN DEL  &lt_bspc NAV 0  &lt MSE ESC    &mt RSHFT RET  &lt_spc SYM 0  &lt FUN TAB  X_HR
     #define THUMBS_SYM X_HL  ___          &lt_spc NAV 0   ___            ___            ___            ___          X_HR
 #endif
 
