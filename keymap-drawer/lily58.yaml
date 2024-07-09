@@ -374,6 +374,10 @@ combos:
 - p: [34, 33]
   k: '>'
   l: [def]
+- p: [24, 35]
+  k: Caps Lock
+  l: [def]
+  draw_separate: true
 - p: [31, 33, 34]
   k: ion
   l: [def]
@@ -384,7 +388,3 @@ combos:
 - p: [15, 16]
   k: '|'
   l: [def]
-- p: [24, 35]
-  k: {t: '&caps_word', h: Caps Lock}
-  l: [def]
-  draw_separate: true
