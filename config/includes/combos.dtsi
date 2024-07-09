@@ -1,8 +1,7 @@
 #define COMBO_TERM_FAST 18
 #define COMBO_TERM_SLOW 30
 
-// Make homerow combos tap-only (so HRTs can be chorded instantaneously)
-#define HRC_DEL &hmr RS(RALT) DEL
+// Make homerow combos tap-only (so HRMs can be chorded instantaneously)
 #define HRC_ION &hmr_ion RS(RA(RGUI)) 0
 
 #define HRC_LPAR &hml LS(LCTRL) LPAR
@@ -18,13 +17,16 @@
 #define HRC_GT &hmr RA(RGUI) GT
 
 #define HRC_ESC &hml LS(LC(LALT)) ESC
-#define HRC_RET &hml LS(LALT) RET
+#define HRC_TAB &hml LS(LALT) TAB
+#define HRC_RET &hmr RS(RC(RALT)) RET
+#define HRC_DEL &hmr RS(RALT) DEL
 
 ZMK_COMBO(esc, &kp ESC, LT3 LT2, DEF SYM NAV, COMBO_TERM_SLOW)
-ZMK_COMBO(esc2, HRC_ESC, LM1 LM2 LM3, DEF SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(esc2, HRC_ESC, LM1 LM2 LM3, DEF SYM NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(ret, &kp RET, LT2 LT1, DEF SYM NAV, COMBO_TERM_SLOW)
-ZMK_COMBO(ret2, HRC_RET, LM1 LM3, DEF SYM, COMBO_TERM_SLOW)
+ZMK_COMBO(ret2, HRC_RET, RM1 RM2 RM3, DEF SYM NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(tab, &kp TAB, LT1 LT3, DEF SYM NAV, COMBO_TERM_SLOW)
+ZMK_COMBO(tab2, HRC_TAB, LM1 LM3, DEF SYM NAV, COMBO_TERM_SLOW)
 ZMK_COMBO(del, HRC_DEL, RM3 RM1, DEF SYM, COMBO_TERM_SLOW)
 
 ZMK_COMBO(co_all, &kp LC(A), LB4 LB1, DEF, COMBO_TERM_SLOW)

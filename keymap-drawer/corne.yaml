@@ -221,16 +221,20 @@ combos:
   l: [def, sym, nav]
 - p: [16, 15, 14]
   k: Esc
-  l: [def, sym]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [3, 4]
   k: ⏎
   l: [def, sym, nav]
-- p: [16, 14]
+- p: [19, 20, 21]
   k: ⏎
-  l: [def, sym]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [4, 2]
+  k: ↹
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [16, 14]
   k: ↹
   l: [def, sym, nav]
   draw_separate: true

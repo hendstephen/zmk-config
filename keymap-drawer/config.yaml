@@ -25,6 +25,9 @@ parse_config:
     combo_ret2:
       draw_separate: true
       key: ⏎
+    combo_tab2:
+      draw_separate: true
+      key: ↹
 
   raw_binding_map:
     '&trans': ' '
