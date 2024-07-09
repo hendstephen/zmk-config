@@ -310,7 +310,7 @@ combos:
   draw_separate: true
 - p: [33, 31]
   k: ⌦
-  l: [def, sym]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [37, 40]
   k: Select All
@@ -336,13 +336,13 @@ combos:
   l: [def]
 - p: [47, 48]
   k: ':'
-  l: [def, nav]
+  l: [def]
 - p: [18, 19]
   k: =>
   l: [def]
 - p: [21, 20]
   k: '='
-  l: [def, nav]
+  l: [def]
 - p: [20, 19]
   k: '&'
   l: [def]

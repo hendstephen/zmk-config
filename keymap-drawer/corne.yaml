@@ -230,7 +230,7 @@ combos:
   draw_separate: true
 - p: [21, 19]
   k: ⌦
-  l: [def, sym]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [25, 28]
   k: Select All
@@ -256,13 +256,13 @@ combos:
   l: [def]
 - p: [33, 34]
   k: ':'
-  l: [def, nav]
+  l: [def]
 - p: [6, 7]
   k: =>
   l: [def]
 - p: [9, 8]
   k: '='
-  l: [def, nav]
+  l: [def]
 - p: [8, 7]
   k: '&'
   l: [def]
