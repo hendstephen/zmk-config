@@ -18,10 +18,10 @@ parse_config:
     combo_cb_ion:
       draw_separate: true
       key: ion
-    combo_esc2:
+    combo_esc:
       draw_separate: true
       key: Esc
-    combo_ret2:
+    combo_ret:
       draw_separate: true
       key: ⏎
     combo_tab:
