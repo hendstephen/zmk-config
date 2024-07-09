@@ -1,0 +1,310 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  def:
+  - Lock
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - '`'
+  - {t: Shift, h: sticky, s: Caps Word}
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - {t: Shift, h: sticky, s: Caps Word}
+  - {t: Alt, h: sticky}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: /, s: '?'}
+  - {t: '&num_word', h: nav}
+  - {t: ⌦, h: fun}
+  - {t: Esc, h: mse}
+  - {t: ⌫, h: nav, s: ⌦}
+  - {t: ␣, h: sym, s: ⌫}
+  - {t: ⏎, h: Shift}
+  - {t: ↹, h: fun}
+  sym:
+  - ' '
+  - ' '
+  - <
+  - '>'
+  - '@'
+  - _
+  - '|'
+  - '-'
+  - '['
+  - ']'
+  - '`'
+  - ' '
+  - ' '
+  - {t: '!', h: Gui}
+  - {t: '-', h: Alt}
+  - {t: +, h: Ctrl}
+  - {t: '=', h: Shift}
+  - '#'
+  - '&'
+  - {t: ':', h: Shift}
+  - {t: (, h: Ctrl}
+  - {t: ), h: Alt}
+  - {t: ;, h: Gui}
+  - ' '
+  - ' '
+  - \
+  - /
+  - '*'
+  - ^
+  - '%'
+  - '~'
+  - $
+  - '{'
+  - '}'
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - {t: ␣, h: nav, s: ⌫}
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  nav:
+  - ':'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '*'
+  - ' '
+  - Desk Left
+  - Sft+ ↹
+  - ↹
+  - Desk Right
+  - ' '
+  - .
+  - {t: '-', h: Gui}
+  - {t: '4', h: Alt}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Shift}
+  - +
+  - Win Close
+  - {t: ←, h: Shift}
+  - {t: ↓, h: Ctrl}
+  - {t: ↑, h: Alt}
+  - {t: →, h: Gui}
+  - ' '
+  - ' '
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - ' '
+  - Home
+  - Page Down
+  - Page Up
+  - End
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - {t: ' ', type: held alternate}
+  - {t: ' ', type: held alternate}
+  - ' '
+  - ' '
+  mse:
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - Scroll Up
+  - Mouse ↑
+  - Scroll Down
+  - ' '
+  - ' '
+  - ' '
+  - Gui
+  - Alt
+  - Ctrl
+  - Shift
+  - ' '
+  - ' '
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - Click
+  - ' '
+  fun:
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - OUT USB
+  - OUT BLE
+  - ' '
+  - ' '
+  - ' '
+  - Soft Off
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - Reset
+  - Boot
+  - VOL DN
+  - MUTE
+  - VOL UP
+  - ' '
+  - ' '
+  - ⏮
+  - ⏯
+  - ⏭
+  - Boot
+  - Reset
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - {t: ' ', type: held alternate}
+combos:
+- p: [16, 15, 14]
+  k: Esc
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [19, 20, 21]
+  k: ⏎
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [14, 16]
+  k: ⌦
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [19, 21]
+  k: ↹
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [25, 28]
+  k: Select All
+  l: [def]
+  a: bottom
+- p: [25, 26]
+  k: Cut
+  l: [def]
+- p: [26, 27]
+  k: Copy
+  l: [def]
+- p: [27, 28]
+  k: Paste
+  l: [def]
+- p: [30, 31]
+  k: _
+  l: [def]
+- p: [31, 32]
+  k: '-'
+  l: [def]
+- p: [32, 33]
+  k: ;
+  l: [def]
+- p: [33, 34]
+  k: ':'
+  l: [def]
+- p: [6, 7]
+  k: =>
+  l: [def]
+- p: [9, 8]
+  k: '='
+  l: [def]
+- p: [8, 7]
+  k: '&'
+  l: [def]
+- p: [7, 9]
+  k: '`'
+  l: [def]
+  a: top
+- p: [16, 17]
+  k: '['
+  l: [def]
+- p: [19, 18]
+  k: ']'
+  l: [def]
+- p: [16, 15]
+  k: (
+  l: [def]
+- p: [19, 20]
+  k: )
+  l: [def]
+- p: [15, 14]
+  k: '{'
+  l: [def]
+- p: [20, 21]
+  k: '}'
+  l: [def]
+- p: [13, 14]
+  k: <
+  l: [def]
+- p: [22, 21]
+  k: '>'
+  l: [def]
+- p: [12, 23]
+  k: Caps Lock
+  l: [def]
+  draw_separate: true
+- p: [19, 21, 22]
+  k: ion
+  l: [def]
+  draw_separate: true
+- p: [2, 3]
+  k: '@'
+  l: [def]
+- p: [3, 4]
+  k: '|'
+  l: [def]

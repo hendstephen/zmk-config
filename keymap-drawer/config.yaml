@@ -1,4 +1,5 @@
 parse_config:
+  mark_alternate_layer_activators: true
   zmk_combos:
     combo_cplck: { draw_separate: true }
     combo_co_all: { align: 'bottom' }
@@ -165,7 +166,6 @@ parse_config:
     UNDER: _
     UNDERSCORE: _
 
-mark_alternate_layer_activators: true
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
   dark_mode: auto
