@@ -2,7 +2,6 @@ parse_config:
   zmk_combos:
     combo_cplck: { draw_separate: true }
     combo_co_all: { align: 'bottom' }
-    combo_tab: { draw_separate: true }
 
     # Combos with HRM hold-taps, don't draw the hold on bottom
     combo_lpar: { key: '(' }
@@ -25,7 +24,7 @@ parse_config:
     combo_ret2:
       draw_separate: true
       key: ⏎
-    combo_tab2:
+    combo_tab:
       draw_separate: true
       key: ↹
 
