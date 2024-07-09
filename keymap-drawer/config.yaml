@@ -12,6 +12,7 @@ parse_config:
     combo_rbkt: { key: ']' }
     combo_lt: { key: '<' }
     combo_gt: { key: '>' }
+    combo_grave: { align: 'top' }
     combo_del:
       draw_separate: true
       key: ⌦

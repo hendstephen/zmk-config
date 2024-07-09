@@ -296,16 +296,10 @@ layers:
   - ' '
   - ''
 combos:
-- p: [14, 15]
-  k: Esc
-  l: [def, sym, nav]
 - p: [28, 27, 26]
   k: Esc
   l: [def, sym, nav]
   draw_separate: true
-- p: [15, 16]
-  k: ⏎
-  l: [def, sym, nav]
 - p: [31, 32, 33]
   k: ⏎
   l: [def, sym, nav]
@@ -352,9 +346,10 @@ combos:
 - p: [20, 19]
   k: '&'
   l: [def]
-- p: [21, 22]
+- p: [19, 21]
   k: '`'
   l: [def]
+  a: top
 - p: [28, 29]
   k: '['
   l: [def]
@@ -387,3 +382,9 @@ combos:
   k: ion
   l: [def]
   draw_separate: true
+- p: [14, 15]
+  k: '@'
+  l: [def]
+- p: [15, 16]
+  k: '|'
+  l: [def]
