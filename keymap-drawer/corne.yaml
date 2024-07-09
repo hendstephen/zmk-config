@@ -220,12 +220,12 @@ combos:
   k: Esc
   l: [def, sym, nav]
   draw_separate: true
-- p: [14, 16]
-  k: ⌦
-  l: [def, sym, nav]
-  draw_separate: true
 - p: [19, 20, 21]
   k: ⏎
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [14, 16]
+  k: ⌦
   l: [def, sym, nav]
   draw_separate: true
 - p: [19, 21]

@@ -300,12 +300,12 @@ combos:
   k: Esc
   l: [def, sym, nav]
   draw_separate: true
-- p: [26, 28]
-  k: ⌦
-  l: [def, sym, nav]
-  draw_separate: true
 - p: [31, 32, 33]
   k: ⏎
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [26, 28]
+  k: ⌦
   l: [def, sym, nav]
   draw_separate: true
 - p: [31, 33]
