@@ -1,7 +1,9 @@
 # Corne ZMK Config
 This ZMK config is for split ergo 3x6 boards like the Corne. The repo also builds for the Lily58, ignoring the extra keys.
 
-Keymap layout created with [@caksoylar's keymap-drawer](https://github.com/caksoylar/keymap-drawer)
+Keymap layout created with [@caksoylar's keymap-drawer](https://github.com/caksoylar/keymap-drawer).
+
+This config uses [@urob's ZMK fork](https://github.com/urob/zmk) which contains a handful of tweaks and PRs that aren't yet merged into mainline ZMK.
 
 ## Features
 - Colemak-DH base layer
@@ -16,6 +18,13 @@ Keymap layout created with [@caksoylar's keymap-drawer](https://github.com/cakso
   - `ion` - Chording the `i`, `o`, and `n` keys at the same time outputs the common, but (for me) tricky outward roll of "ion".
   - `=>` or "fat arrow" - Used all the time in React/TypeScript (and some what regularly in C#), this macro outputs `=>` in a single keystroke, which I use as a combo on the base layer.
   - Cut, Copy, Paste, Select all - All are left-hand only for easy editing while using the mouse.
+  - Windows shortcuts
+    - Lock: `Win + L`
+    - Desktop left/right: `Win + Ctrl + Left/Right`
+    - Close: `Alt + F4`
+- Sticky `Alt` on base layer re: [Issue #759](https://github.com/zmkfirmware/zmk/issues/759)
+  - _I do most of my work on a remote desktop, and it seems the client doesn't respect the `alt` modifier on a non-base layer until after the full tap-hold delay. I got tired of waiting, so I put sticky `alt` on the base layer as well as a tab combo for a quick window switch without waiting for the full timeout._
+- Mouse emulation
 
 ![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
