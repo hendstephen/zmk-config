@@ -49,9 +49,16 @@ ZMK_COMBO(lbrc, HRC_LBRC, LM2 LM3, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(rbrc, HRC_RBRC, RM2 RM3, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(lt, HRC_LT, LM4 LM3, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(gt, HRC_GT, RM4 RM3, DEF, COMBO_TERM_SLOW)
-
-ZMK_COMBO(cplck, &kp CAPS, LM5 RM5, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(cb_ion, HRC_ION, RM1 RM3 RM4, DEF, COMBO_TERM_SLOW)
 
 ZMK_COMBO(at, &kp AT, LT3 LT2, DEF, COMBO_TERM_SLOW)
 ZMK_COMBO(pipe, &kp PIPE, LT2 LT1, DEF, COMBO_TERM_SLOW)
+
+ZMK_HOLD_TAP(smart_caps, 
+    flavor = "tap-preferred";
+    tapping-term-ms = <220>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&kp>, <&caps_word>;
+)
+#define SMART_CAPS &smart_caps CAPS 0
+ZMK_COMBO(cplck, SMART_CAPS, LM5 RM5, DEF, COMBO_TERM_SLOW)
