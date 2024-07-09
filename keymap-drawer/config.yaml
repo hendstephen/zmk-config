@@ -1,5 +1,4 @@
 parse_config:
-  mark_alternate_layer_activators: true
   zmk_combos:
     combo_cplck: { draw_separate: true }
     combo_co_all: { align: 'bottom' }

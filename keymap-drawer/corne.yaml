@@ -125,8 +125,8 @@ layers:
   - {t: ' ', type: held}
   - ' '
   - ' '
-  - {t: ' ', type: held alternate}
-  - {t: ' ', type: held alternate}
+  - ' '
+  - ' '
   - ' '
   - ' '
   mse:
@@ -214,7 +214,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: ' ', type: held alternate}
+  - ' '
 combos:
 - p: [16, 15, 14]
   k: Esc

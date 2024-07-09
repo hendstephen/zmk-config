@@ -172,8 +172,8 @@ layers:
   - ''
   - ' '
   - ' '
-  - {t: ' ', type: held alternate}
-  - {t: ' ', type: held alternate}
+  - ' '
+  - ' '
   - ' '
   - ' '
   - ''
@@ -293,7 +293,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: ' ', type: held alternate}
+  - ' '
   - ''
 combos:
 - p: [28, 27, 26]
