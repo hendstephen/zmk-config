@@ -15,7 +15,6 @@ Keymap layout created with [@caksoylar's keymap-drawer](https://github.com/cakso
 - Convenience macros
   - `ion` - Chording the `i`, `o`, and `n` keys at the same time outputs the common, but (for me) tricky outward roll of "ion".
   - `=>` or "fat arrow" - Used all the time in React/TypeScript (and some what regularly in C#), this macro outputs `=>` in a single keystroke, which I use as a combo on the base layer.
-  - `../` - One keystroke to `cd` up one directory
   - Cut, Copy, Paste, Select all - All are left-hand only for easy editing while using the mouse.
 
 ![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
