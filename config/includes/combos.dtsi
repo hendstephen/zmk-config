@@ -60,4 +60,5 @@ ZMK_HOLD_TAP(smart_caps,
     quick-tap-ms = <QUICK_TAP_MS>;
     bindings = <&kp>, <&caps_word>;
 )
-ZMK_COMBO(cplck, &smart_caps CAPS 0, LM5 RM5, DEF, COMBO_TERM_SLOW)
+#define SMART_CAPS &smart_caps CAPS 0
+ZMK_COMBO(cplck, SMART_CAPS, LM5 RM5, DEF, COMBO_TERM_SLOW)
