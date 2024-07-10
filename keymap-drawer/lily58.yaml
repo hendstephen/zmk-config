@@ -24,7 +24,7 @@ layers:
   - U
   - Y
   - ''''
-  - '`'
+  - C+A+⌦
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
   - {t: R, h: Alt}

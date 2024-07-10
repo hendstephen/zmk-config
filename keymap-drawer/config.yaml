@@ -59,7 +59,7 @@ parse_config:
     '&kp LG(LC(RIGHT))': Desk Right
     '&kp LG(L)': Lock
     '&kp LA(F4)': Win Close
-    '&kp LC(LA(DEL))': Ctl Alt Del
+    '&kp LC(LA(DEL))': C+A+⌦
 
     '&kp LC(A)': Select All
     '&kp LC(X)': Cut
