@@ -3,6 +3,7 @@ parse_config:
     combo_cplck: { draw_separate: true }
     combo_co_all: { align: 'bottom' }
     combo_grave: { align: 'top' }
+    combo_percent: { align: 'top' }
 
     # Combos with HRM hold-taps, don't draw the hold on bottom
     combo_lpar: { key: '(' }
