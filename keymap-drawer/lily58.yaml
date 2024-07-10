@@ -389,6 +389,6 @@ combos:
   k: '|'
   l: [def]
 - p: [14, 16]
-  k: PRCENT
+  k: '%'
   l: [def]
   a: top

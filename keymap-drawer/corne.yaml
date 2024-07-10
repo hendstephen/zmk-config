@@ -309,6 +309,6 @@ combos:
   k: '|'
   l: [def]
 - p: [2, 4]
-  k: PRCENT
+  k: '%'
   l: [def]
   a: top

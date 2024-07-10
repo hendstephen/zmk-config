@@ -480,7 +480,7 @@ text.label, text.footer { stroke: black; }
 <path d="M196,62 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M196,62 h50 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
 <rect rx="6" ry="6" x="182" y="49" width="28" height="26" class="combo"/>
-<text x="196" y="62" class="combo tap">PRCENT</text>
+<text x="196" y="62" class="combo tap">%</text>
 </g>
 </g>
 </g>
