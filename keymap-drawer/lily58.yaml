@@ -37,7 +37,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: Alt, h: sticky}
+  - {t: '&num_word', h: nav}
   - Z
   - X
   - C
@@ -50,7 +50,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, s: '?'}
-  - {t: '&num_word', h: nav}
+  - {t: Alt, h: sticky}
   - ''
   - {t: ⌦, h: fun}
   - {t: Esc, h: mse}
@@ -155,7 +155,7 @@ layers:
   - {t: ↑, h: Alt}
   - {t: →, h: Gui}
   - ' '
-  - ' '
+  - {t: ' ', type: held}
   - '0'
   - '1'
   - '2'
@@ -168,7 +168,7 @@ layers:
   - Page Down
   - Page Up
   - End
-  - {t: ' ', type: held}
+  - ' '
   - ''
   - ' '
   - ' '
