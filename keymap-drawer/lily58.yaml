@@ -304,12 +304,12 @@ combos:
   k: ion
   l: [def]
   draw_separate: true
-- p: [28, 26]
-  k: ↹
-  l: [def, sym, nav]
-  draw_separate: true
 - p: [28, 27, 26]
   k: ⏎
+  l: [def, sym, nav]
+  draw_separate: true
+- p: [28, 26]
+  k: ↹
   l: [def, sym, nav]
   draw_separate: true
 - p: [31, 32, 33]
