@@ -38,7 +38,6 @@ parse_config:
     '&fatarrow': =>
     '&caps_word': Caps Word
     '&swapper': Win Next
-    '&cdup': '../'
     '&ion': '"ion"'
     '&num_word': Num Word
     '&mmv MOVE_UP': Mouse ↑
