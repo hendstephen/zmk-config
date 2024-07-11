@@ -301,8 +301,9 @@ combos:
   l: [def]
   draw_separate: true
 - p: [31, 33, 34]
-  k: {t: '&ion', h: Sft+AGr+ Gui}
+  k: ion
   l: [def]
+  draw_separate: true
 - p: [28, 26]
   k: ↹
   l: [def, sym, nav]

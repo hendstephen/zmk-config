@@ -17,7 +17,7 @@ parse_config:
     combo_del:
       draw_separate: true
       key: ⌦
-    combo_cb_ion:
+    combo_ion:
       draw_separate: true
       key: ion
     combo_esc:
