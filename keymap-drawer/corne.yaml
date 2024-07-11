@@ -216,20 +216,20 @@ layers:
   - ' '
   - ' '
 combos:
-- p: [16, 15, 14]
-  k: Esc
+- p: [16, 14]
+  k: ↹
   l: [def, sym, nav]
   draw_separate: true
-- p: [19, 20, 21]
+- p: [16, 15, 14]
   k: ⏎
   l: [def, sym, nav]
   draw_separate: true
-- p: [14, 16]
-  k: ⌦
+- p: [19, 20, 21]
+  k: Esc
   l: [def, sym, nav]
   draw_separate: true
-- p: [19, 21]
-  k: ↹
+- p: [21, 19]
+  k: ⌦
   l: [def, sym, nav]
   draw_separate: true
 - p: [25, 28]
