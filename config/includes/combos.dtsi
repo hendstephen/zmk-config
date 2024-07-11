@@ -70,4 +70,5 @@ ZMK_COMBO(grave   , &kp GRAVE, RT1 RT3    , DEF        , COMBO_SLOW, IDLE_FAST)
 /* Left top row */
 ZMK_COMBO(at      , &kp AT   , LT3 LT2    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(pipe    , &kp PIPE , LT2 LT1    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(star    , &kp STAR , LT1 LT0    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(percent , &kp PRCNT, LT3 LT1    , DEF        , COMBO_SLOW, IDLE_FAST)

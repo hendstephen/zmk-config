@@ -429,6 +429,10 @@ text.label, text.footer { stroke: black; }
 <text x="224" y="32" class="combo tap">|</text>
 </g>
 <g class="combo combopos-22">
+<rect rx="6" ry="6" x="266" y="26" width="28" height="26" class="combo"/>
+<text x="280" y="38" class="combo tap">*</text>
+</g>
+<g class="combo combopos-23">
 <path d="M196,6 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
 <path d="M196,6 h50 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
 <rect rx="6" ry="6" x="182" y="-7" width="28" height="26" class="combo"/>
