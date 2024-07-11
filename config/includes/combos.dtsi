@@ -4,7 +4,7 @@
 
 // Combo prior idle timeouts
 #define IDLE_FAST 50
-#define IDLE_SLOW 150
+#define IDLE_SLOW 100
 
 // Make homerow combos tap-only (so HRMs can be chorded instantaneously)
 #define HRC_ION &hmr_ion RS(RA(RGUI)) 0
@@ -32,20 +32,20 @@ ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF        , COMBO_SLOW)
 ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
 
 // Left
-ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF SYM NAV, COMBO_SLOW)
-ZMK_COMBO(tab     , HRC_TAB  , LM1 LM3    , DEF SYM NAV, COMBO_SLOW)
+ZMK_COMBO(tab     , HRC_TAB  , LM1 LM3    , DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 
 // Right
-ZMK_COMBO(esc     , HRC_ESC  , RM1 RM2 RM3, DEF SYM NAV, COMBO_SLOW)
-ZMK_COMBO(del     , HRC_DEL  , RM3 RM1    , DEF SYM NAV, COMBO_SLOW)
+ZMK_COMBO(esc     , HRC_ESC  , RM1 RM2 RM3, DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(del     , HRC_DEL  , RM3 RM1    , DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 
 // Matching braces/brackets
-ZMK_COMBO(lbkt    , HRC_LBKT , LM1 LM0    , DEF        , COMBO_SLOW)
-ZMK_COMBO(rbkt    , HRC_RBKT , RM1 RM0    , DEF        , COMBO_SLOW)
-ZMK_COMBO(lpar    , HRC_LPAR , LM1 LM2    , DEF        , COMBO_SLOW)
-ZMK_COMBO(rpar    , HRC_RPAR , RM1 RM2    , DEF        , COMBO_SLOW)
-ZMK_COMBO(lbrc    , HRC_LBRC , LM2 LM3    , DEF        , COMBO_SLOW)
-ZMK_COMBO(rbrc    , HRC_RBRC , RM2 RM3    , DEF        , COMBO_SLOW)
+ZMK_COMBO(lbkt    , HRC_LBKT , LM1 LM0    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(rbkt    , HRC_RBKT , RM1 RM0    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(lpar    , HRC_LPAR , LM1 LM2    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(rpar    , HRC_RPAR , RM1 RM2    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(lbrc    , HRC_LBRC , LM2 LM3    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(rbrc    , HRC_RBRC , RM2 RM3    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(lt      , HRC_LT   , LM4 LM3    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(gt      , HRC_GT   , RM4 RM3    , DEF        , COMBO_SLOW, IDLE_FAST)
 

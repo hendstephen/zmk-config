@@ -1736,7 +1736,7 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(0, 28)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
-<text x="0" y="0" class="key  combo-separate tap">⏎</text>
+<text x="0" y="0" class="key  combo-separate tap">↹</text>
 </g>
 <g transform="translate(14, 86)" class="key keypos-1">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
@@ -1819,8 +1819,8 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(70, 132)" class="key held keypos-27">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
 </g>
-<g transform="translate(98, 128)" class="key held keypos-28">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
+<g transform="translate(98, 128)" class="key keypos-28">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
 </g>
 <g transform="translate(126, 132)" class="key held keypos-29">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
@@ -1918,7 +1918,7 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(0, 28)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
-<text x="0" y="0" class="key  combo-separate tap">↹</text>
+<text x="0" y="0" class="key  combo-separate tap">⏎</text>
 </g>
 <g transform="translate(14, 86)" class="key keypos-1">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
@@ -2001,8 +2001,8 @@ text.label, text.footer { stroke: black; }
 <g transform="translate(70, 132)" class="key held keypos-27">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
 </g>
-<g transform="translate(98, 128)" class="key keypos-28">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
+<g transform="translate(98, 128)" class="key held keypos-28">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
 </g>
 <g transform="translate(126, 132)" class="key held keypos-29">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
