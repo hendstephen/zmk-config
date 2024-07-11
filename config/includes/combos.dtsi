@@ -1,5 +1,10 @@
+// Combo timeouts
 #define COMBO_FAST 18
 #define COMBO_SLOW 30
+
+// Combo prior idle timeouts
+#define IDLE_FAST 50
+#define IDLE_SLOW 150
 
 // Make homerow combos tap-only (so HRMs can be chorded instantaneously)
 #define HRC_ION &hmr_ion RS(RA(RGUI)) 0
@@ -41,8 +46,8 @@ ZMK_COMBO(lpar    , HRC_LPAR , LM1 LM2    , DEF        , COMBO_SLOW)
 ZMK_COMBO(rpar    , HRC_RPAR , RM1 RM2    , DEF        , COMBO_SLOW)
 ZMK_COMBO(lbrc    , HRC_LBRC , LM2 LM3    , DEF        , COMBO_SLOW)
 ZMK_COMBO(rbrc    , HRC_RBRC , RM2 RM3    , DEF        , COMBO_SLOW)
-ZMK_COMBO(lt      , HRC_LT   , LM4 LM3    , DEF        , COMBO_SLOW)
-ZMK_COMBO(gt      , HRC_GT   , RM4 RM3    , DEF        , COMBO_SLOW)
+ZMK_COMBO(lt      , HRC_LT   , LM4 LM3    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(gt      , HRC_GT   , RM4 RM3    , DEF        , COMBO_SLOW, IDLE_FAST)
 
 /* Left bottom row */
 ZMK_COMBO(all     , &kp LC(A), LB4 LB1    , DEF        , COMBO_SLOW)

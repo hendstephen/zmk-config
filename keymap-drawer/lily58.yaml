@@ -296,6 +296,13 @@ layers:
   - ' '
   - ''
 combos:
+- p: [24, 35]
+  k: Caps Lock
+  l: [def]
+  draw_separate: true
+- p: [31, 33, 34]
+  k: {t: '&ion', h: Sft+AGr+ Gui}
+  l: [def]
 - p: [28, 26]
   k: ↹
   l: [def, sym, nav]
@@ -312,6 +319,30 @@ combos:
   k: ⌦
   l: [def, sym, nav]
   draw_separate: true
+- p: [28, 29]
+  k: '['
+  l: [def]
+- p: [31, 30]
+  k: ']'
+  l: [def]
+- p: [28, 27]
+  k: (
+  l: [def]
+- p: [31, 32]
+  k: )
+  l: [def]
+- p: [27, 26]
+  k: '{'
+  l: [def]
+- p: [32, 33]
+  k: '}'
+  l: [def]
+- p: [25, 26]
+  k: <
+  l: [def]
+- p: [34, 33]
+  k: '>'
+  l: [def]
 - p: [37, 40]
   k: Select All
   l: [def]
@@ -350,38 +381,6 @@ combos:
   k: '`'
   l: [def]
   a: top
-- p: [28, 29]
-  k: '['
-  l: [def]
-- p: [31, 30]
-  k: ']'
-  l: [def]
-- p: [28, 27]
-  k: (
-  l: [def]
-- p: [31, 32]
-  k: )
-  l: [def]
-- p: [27, 26]
-  k: '{'
-  l: [def]
-- p: [32, 33]
-  k: '}'
-  l: [def]
-- p: [25, 26]
-  k: <
-  l: [def]
-- p: [34, 33]
-  k: '>'
-  l: [def]
-- p: [24, 35]
-  k: Caps Lock
-  l: [def]
-  draw_separate: true
-- p: [31, 33, 34]
-  k: ion
-  l: [def]
-  draw_separate: true
 - p: [14, 15]
   k: '@'
   l: [def]
