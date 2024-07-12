@@ -28,6 +28,8 @@
 #define HRC_TAB &hml LS(LALT) TAB
 #define HRC_RET &hml LS(LC(LALT)) RET
 
+#define CPSWRD &caps_word
+
 /* Home row combos */
 ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF        , COMBO_SLOW)
 ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
@@ -42,7 +44,7 @@ ZMK_COMBO(del     , HRC_DEL  , RM3 RM1    , DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(bspc_wd , HRC_BWD  , RM1 RM4    , DEF        , COMBO_SLOW, IDLE_FAST)
 
 // Both
-ZMK_COMBO(cpsword ,&caps_word, LM1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(cpsword , CPSWRD   , LM1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
 
 // Matching braces/brackets
 ZMK_COMBO(lbkt    , HRC_LBKT , LM1 LM0    , DEF        , COMBO_SLOW, IDLE_FAST)
