@@ -438,6 +438,14 @@ text.label, text.footer { stroke: black; }
 <rect rx="6" ry="6" x="182" y="-7" width="28" height="26" class="combo"/>
 <text x="196" y="6" class="combo tap">%</text>
 </g>
+<g class="combo combopos-24">
+<path d="M420,6 h-162 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M420,6 h162 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="406" y="-7" width="28" height="26" class="combo"/>
+<text x="420" y="6" class="combo tap">
+<tspan x="420" dy="-0.6em">Caps</tspan><tspan x="420" dy="1.2em">Word</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 338)" class="layer-sym">

@@ -315,3 +315,7 @@ combos:
   k: '%'
   l: [def]
   a: top
+- p: [4, 7]
+  k: Caps Word
+  l: [def]
+  a: top

@@ -395,3 +395,7 @@ combos:
   k: '%'
   l: [def]
   a: top
+- p: [16, 19]
+  k: Caps Word
+  l: [def]
+  a: top
