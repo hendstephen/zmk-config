@@ -324,10 +324,6 @@ combos:
   k: ⌫ Word
   l: [def]
   draw_separate: true
-- p: [28, 31]
-  k: Caps Word
-  l: [def]
-  a: top
 - p: [28, 29]
   k: '['
   l: [def]

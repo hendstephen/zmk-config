@@ -244,10 +244,6 @@ combos:
   k: ⌫ Word
   l: [def]
   draw_separate: true
-- p: [16, 19]
-  k: Caps Word
-  l: [def]
-  a: top
 - p: [16, 17]
   k: '['
   l: [def]
