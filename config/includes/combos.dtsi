@@ -23,7 +23,6 @@
 
 #define HRC_ESC &hmr RS(RC(RALT)) ESC
 #define HRC_DEL &hmr RS(RALT) DEL
-#define HRC_BWD &hmr RS(RGUI) LC(BSPC)
 
 #define HRC_TAB &hml LS(LALT) TAB
 #define HRC_RET &hml LS(LC(LALT)) RET
@@ -39,7 +38,6 @@ ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 // Right
 ZMK_COMBO(esc     , HRC_ESC  , RM1 RM2 RM3, DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(del     , HRC_DEL  , RM3 RM1    , DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
-ZMK_COMBO(bspc_wd , HRC_BWD  , RM1 RM4    , DEF        , COMBO_SLOW, IDLE_FAST)
 
 // Both
 ZMK_COMBO(capword ,&caps_word, LM1 RM1    , DEF        , COMBO_SLOW, IDLE_FAST)
