@@ -29,6 +29,9 @@ parse_config:
     combo_tab:
       draw_separate: true
       key: ↹
+    combo_bspc_wd:
+      draw_separate: true
+      key: ⌫ Word
 
   raw_binding_map:
     '&trans': ' '
@@ -60,6 +63,7 @@ parse_config:
     '&kp LG(L)': Lock
     '&kp LA(F4)': Win Close
     '&kp LC(LA(DEL))': C+A+⌦
+    '&kp LC(BSPC)': ⌫ Word
 
     '&kp LC(A)': Select All
     '&kp LC(X)': Cut
