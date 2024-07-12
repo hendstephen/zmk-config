@@ -23,7 +23,7 @@
 
 #define HRC_ESC &hmr RS(RC(RALT)) ESC
 #define HRC_DEL &hmr RS(RALT) DEL
-#define HRC_BWD &hmr RS(RGUI) BSPC_WD
+#define HRC_BWD &hmr RS(RGUI) LC(BSPC)
 
 #define HRC_TAB &hml LS(LALT) TAB
 #define HRC_RET &hml LS(LC(LALT)) RET
