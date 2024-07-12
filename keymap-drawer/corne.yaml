@@ -240,10 +240,6 @@ combos:
   k: ⌦
   l: [def, sym, nav]
   draw_separate: true
-- p: [16, 19]
-  k: Caps Word
-  l: [def]
-  a: top
 - p: [16, 17]
   k: '['
   l: [def]

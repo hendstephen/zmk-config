@@ -39,9 +39,6 @@ ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(esc     , HRC_ESC  , RM1 RM2 RM3, DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(del     , HRC_DEL  , RM3 RM1    , DEF SYM NAV, COMBO_SLOW, IDLE_FAST)
 
-// Both
-ZMK_COMBO(capword ,&caps_word, LM1 RM1    , DEF        , COMBO_SLOW, IDLE_FAST)
-
 // Matching braces/brackets
 ZMK_COMBO(lbkt    , HRC_LBKT , LM1 LM0    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(rbkt    , HRC_RBKT , RM1 RM0    , DEF        , COMBO_SLOW, IDLE_FAST)

@@ -4,7 +4,6 @@ parse_config:
     combo_all: { align: 'bottom' }
     combo_grave: { align: 'top' }
     combo_percent: { align: 'top' }
-    combo_capword: { align: 'top' }
 
     # Combos with HRM hold-taps, don't draw the hold on bottom
     combo_lpar: { key: '(' }
@@ -30,9 +29,6 @@ parse_config:
     combo_tab:
       draw_separate: true
       key: ↹
-    combo_bspc_wd:
-      draw_separate: true
-      key: ⌫ Word
 
   raw_binding_map:
     '&trans': ' '
