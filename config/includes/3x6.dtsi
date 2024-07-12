@@ -13,6 +13,7 @@
 
 #include "zmk-helpers/helper.h"
 #include "macros.dtsi"
+#include "combos.dtsi" // requires layer aliases and helpers
 #include "mouse.dtsi"
 
 #define XXX &none
@@ -53,8 +54,6 @@
     layers = <NAV>;
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
 };
-
-#include "combos.dtsi" // requires layer aliases and helpers
 
 /* CUSTOM KEYCODES */
 #define WIN_LEFT LG(LC(LEFT))
