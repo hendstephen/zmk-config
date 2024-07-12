@@ -240,6 +240,10 @@ combos:
   k: ⌦
   l: [def, sym, nav]
   draw_separate: true
+- p: [19, 22]
+  k: ⌫ Word
+  l: [def]
+  draw_separate: true
 - p: [16, 17]
   k: '['
   l: [def]

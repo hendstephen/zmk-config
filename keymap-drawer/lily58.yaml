@@ -320,6 +320,10 @@ combos:
   k: ⌦
   l: [def, sym, nav]
   draw_separate: true
+- p: [31, 34]
+  k: ⌫ Word
+  l: [def]
+  draw_separate: true
 - p: [28, 29]
   k: '['
   l: [def]
