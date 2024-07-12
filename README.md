@@ -1,8 +1,8 @@
 # Corne ZMK Config
-This ZMK config is for split ergo 3x6 boards like the Corne. The repo also builds for the Lily58, ignoring the extra keys.
+[![Build ZMK firmware](https://github.com/hendstephen/zmk-config/actions/workflows/build.yml/badge.svg)](https://github.com/hendstephen/zmk-config/actions/workflows/build.yml) [![Draw ZMK keymaps](https://github.com/hendstephen/zmk-config/actions/workflows/draw-keymaps.yml/badge.svg)](https://github.com/hendstephen/zmk-config/actions/workflows/draw-keymaps.yml)
 
-Keymap layout created with [@caksoylar's keymap-drawer](https://github.com/caksoylar/keymap-drawer).
-
+This ZMK config is for split ergo 3x6 boards like the Corne. The repo also builds for the Lily58, ignoring the extra keys.  
+Keymap layout created with [@caksoylar's keymap-drawer](https://github.com/caksoylar/keymap-drawer).  
 This config uses [@urob's ZMK fork](https://github.com/urob/zmk) which contains a handful of tweaks and PRs that aren't yet merged into mainline ZMK.
 
 ## Features
