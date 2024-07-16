@@ -28,7 +28,7 @@
 #define HRC_RET &hml LS(LC(LALT)) RET
 
 ZMK_MOD_MORPH(prchash, 
-    mods = <MOD_LSFT|MOD_RSFT>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp PRCNT>, <&kp HASH>;
 )
 
