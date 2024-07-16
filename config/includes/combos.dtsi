@@ -27,6 +27,11 @@
 #define HRC_TAB &hml LS(LALT) TAB
 #define HRC_RET &hml LS(LC(LALT)) RET
 
+ZMK_MOD_MORPH(prchash, 
+    mods = <MOD_LSFT|MOD_RSFT>;
+    bindings = <&kp PRCNT>, <&kp HASH>;
+)
+
 /* Home row combos */
 ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF        , COMBO_SLOW)
 ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
@@ -68,7 +73,7 @@ ZMK_COMBO(grave   , &kp GRAVE, RT1 RT3    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(at      , &kp AT   , LT3 LT2    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(pipe    , &kp PIPE , LT2 LT1    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(star    , &kp STAR , LT1 LT0    , DEF        , COMBO_SLOW, IDLE_FAST)
-ZMK_COMBO(percent , &kp PRCNT, LT3 LT1    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(percent , &prchash , LT3 LT1    , DEF        , COMBO_SLOW, IDLE_FAST)
 
 /* Both top */
 ZMK_COMBO(capword ,&caps_word, LT1 RT1    , DEF        , COMBO_SLOW, IDLE_FAST)
