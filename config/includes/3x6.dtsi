@@ -137,9 +137,11 @@ SIMPLE_MORPH(sftclk, SFT, &mkp LCLK, &mkp RCLK)
 #if THUMBS_OUT
     #define THUMBS_DEF X_HL  &lt FUN DEL  &lt MSE ESC  &lt_bspc NAV 0    &lt_spc SYM 0  &mt RSHFT RET  &lt FUN TAB  X_HR
     #define THUMBS_SYM X_HL  ___          ___          &lt_spc NAV 0     ___            ___            ___          X_HR
+    #define THUMBS_MSE X_HL  ___          ___          ___               ___            &sftclk        ___          X_HR
 #else
     #define THUMBS_DEF X_HL  &lt FUN DEL  &lt_bspc NAV 0  &lt MSE ESC    &mt RSHFT RET  &lt_spc SYM 0  &lt FUN TAB  X_HR
     #define THUMBS_SYM X_HL  ___          &lt_spc NAV 0   ___            ___            ___            ___          X_HR
+    #define THUMBS_MSE X_HL  ___          ___             ___            &sftclk        ___            ___          X_HR
 #endif
 
 /* Layers */
@@ -195,7 +197,7 @@ ZMK_LAYER(mse,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           ___           ___           ___           ___           ___                       X_BM              ___           ___           ___           ___           ___           ___
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                              X_HL          ___           ___          ___               ___          &sftclk       ___           X_HR           
+                                                                                                THUMBS_MSE
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
