@@ -4,6 +4,7 @@ parse_config:
     combo_all: { align: 'bottom' }
     combo_grave: { align: 'top' }
     combo_capword: { align: 'top' }
+    combo_dqt: { align: 'bottom' }
     combo_percent:
       align: top
       key: '%'

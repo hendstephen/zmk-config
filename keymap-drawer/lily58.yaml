@@ -369,6 +369,10 @@ combos:
 - p: [47, 48]
   k: ':'
   l: [def]
+- p: [45, 47]
+  k: '"'
+  l: [def]
+  a: bottom
 - p: [18, 19]
   k: =>
   l: [def]

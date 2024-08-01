@@ -62,6 +62,7 @@ ZMK_COMBO(under   , &kp UNDER, RB0 RB1    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(min     , &kp MINUS, RB1 RB2    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(semi    , &kp SEMI , RB2 RB3    , DEF        , COMBO_SLOW, IDLE_FAST)
 ZMK_COMBO(cln     , &kp COLON, RB3 RB4    , DEF        , COMBO_SLOW, IDLE_FAST)
+ZMK_COMBO(dqt     , &kp DQT  , RB1 RB3    , DEF        , COMBO_SLOW, IDLE_FAST)
 
 /* Right top row */
 ZMK_COMBO(fatarrow, &fatarrow, RT0 RT1    , DEF        , COMBO_SLOW, IDLE_FAST)
