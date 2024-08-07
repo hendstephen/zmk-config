@@ -15,7 +15,6 @@ This config uses [@urob's ZMK fork](https://github.com/urob/zmk) which contains 
 - Numpad on the nav layer for vim line motions (e.g. `15↑` to jump up 15 lines)
 - More intuitive [mod morphs](#mod-morphs)
 - Convenience macros
-  - `ion` - Chording the `i`, `o`, and `n` keys at the same time outputs the common, but (for me) tricky outward roll of "ion".
   - `=>` or "fat arrow" - Used all the time in React/TypeScript (and some what regularly in C#), this macro outputs `=>` in a single keystroke, which I use as a combo on the base layer.
   - Cut, Copy, Paste, Select all - All are left-hand only for easy editing while using the mouse.
   - Windows shortcuts

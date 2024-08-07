@@ -301,11 +301,11 @@ combos:
   l: [def]
   draw_separate: true
 - p: [28, 25]
-  k: {t: '&key_repeat', h: Sft+ Gui}
+  k: Key Repeat
   l: [def]
   draw_separate: true
 - p: [31, 34]
-  k: {t: '&key_repeat', h: Sft+ Gui}
+  k: Key Repeat
   l: [def]
   draw_separate: true
 - p: [28, 27, 26]
