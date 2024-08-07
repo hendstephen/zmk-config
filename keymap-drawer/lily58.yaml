@@ -300,10 +300,6 @@ combos:
   k: Caps Lock
   l: [def]
   draw_separate: true
-- p: [31, 33, 34]
-  k: ion
-  l: [def]
-  draw_separate: true
 - p: [28, 25]
   k: {t: '&key_repeat', h: Sft+ Gui}
   l: [def]
