@@ -1,6 +1,8 @@
 parse_config:
   zmk_combos:
     combo_cplck: { draw_separate: true }
+    combo_rptl: { draw_separate: true }
+    combo_rptr: { draw_separate: true }
     combo_all: { align: 'bottom' }
     combo_grave: { align: 'top' }
     combo_capword: { align: 'top' }

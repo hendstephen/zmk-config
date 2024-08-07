@@ -304,6 +304,14 @@ combos:
   k: ion
   l: [def]
   draw_separate: true
+- p: [28, 25]
+  k: {t: '&key_repeat', h: Sft+ Gui}
+  l: [def]
+  draw_separate: true
+- p: [31, 34]
+  k: {t: '&key_repeat', h: Sft+ Gui}
+  l: [def]
+  draw_separate: true
 - p: [28, 27, 26]
   k: ⏎
   l: [def, sym, nav]
