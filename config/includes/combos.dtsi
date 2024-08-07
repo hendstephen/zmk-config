@@ -3,8 +3,8 @@
 #define COMBO_SLOW 30
 
 // Combo prior idle timeouts
-#define IDLE_FAST 50
-#define IDLE_SLOW 100
+#define IDLE_FAST 150
+#define IDLE_SLOW 50
 
 // Make homerow combos tap-only (so HRMs can be chorded instantaneously)
 #define HRC_ION &hmr_ion RS(RA(RGUI)) 0
