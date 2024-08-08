@@ -216,10 +216,6 @@ layers:
   - ' '
   - ' '
 combos:
-- p: [12, 23]
-  k: Caps Lock
-  l: [def]
-  draw_separate: true
 - p: [16, 13]
   k: Key Repeat
   l: [def]
@@ -327,3 +323,7 @@ combos:
   k: Caps Word
   l: [def]
   a: top
+- p: [12, 23]
+  k: Caps Lock
+  l: [def]
+  draw_separate: true

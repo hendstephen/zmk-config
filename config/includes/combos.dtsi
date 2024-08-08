@@ -36,7 +36,6 @@ ZMK_MOD_MORPH(prchash,
 )
 
 /* Home row combos */
-ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF        , COMBO_SLOW)
 // ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
 
 ZMK_COMBO(rptl    , HRC_RPTL , LM1 LM4    , DEF        , COMBO_SLOW, IDLE_SLOW)
@@ -84,3 +83,6 @@ ZMK_COMBO(percent , &prchash , LT3 LT1    , DEF        , COMBO_SLOW, IDLE_SLOW)
 
 /* Both top */
 ZMK_COMBO(capword ,&caps_word, LT1 RT1    , DEF        , COMBO_SLOW, IDLE_SLOW)
+
+/* Others */
+ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF        , COMBO_SLOW)
