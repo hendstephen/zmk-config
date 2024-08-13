@@ -297,7 +297,7 @@ layers:
   - ''
 combos:
 - p: [31, 33, 34]
-  k: {t: '&ion', h: Sft+AGr+ Gui}
+  k: ion
   l: [def]
   draw_separate: true
 - p: [28, 25]

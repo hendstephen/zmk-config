@@ -1,14 +1,16 @@
 parse_config:
   zmk_combos:
     combo_cplck: { draw_separate: true }
-    combo_ion: { draw_separate: true }
     combo_all: { align: 'bottom' }
     combo_grave: { align: 'top' }
     combo_capword: { align: 'top' }
     combo_dqt: { align: 'bottom' }
+    combo_ion: 
+      draw_separate: true 
+      key: ion
     combo_rptl: 
       draw_separate: true 
-      key: 'Key Repeat'
+      key: Key Repeat
     combo_percent:
       align: top
       key: '%'
