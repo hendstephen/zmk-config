@@ -8,9 +8,6 @@ parse_config:
     combo_rptl: 
       draw_separate: true 
       key: 'Key Repeat'
-    combo_rptr: 
-      draw_separate: true 
-      key: 'Key Repeat'
     combo_percent:
       align: top
       key: '%'
