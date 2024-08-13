@@ -296,11 +296,11 @@ layers:
   - ' '
   - ''
 combos:
-- p: [28, 25]
-  k: Key Repeat
+- p: [31, 33, 34]
+  k: {t: '&ion', h: Sft+AGr+ Gui}
   l: [def]
   draw_separate: true
-- p: [31, 34]
+- p: [28, 25]
   k: Key Repeat
   l: [def]
   draw_separate: true

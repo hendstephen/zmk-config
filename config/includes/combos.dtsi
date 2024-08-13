@@ -7,7 +7,7 @@
 #define IDLE_SLOW 50
 
 // Make homerow combos tap-only (so HRMs can be chorded instantaneously)
-// #define HRC_ION &hmr_ion RS(RA(RGUI)) 0
+#define HRC_ION &hmr_ion RS(RA(RGUI)) 0
 
 #define HRC_LPAR &hml LS(LCTRL) LPAR
 #define HRC_RPAR &hmr RS(RCTRL) RPAR
@@ -35,7 +35,7 @@ ZMK_MOD_MORPH(prchash,
 )
 
 /* Home row combos */
-// ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
+ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
 
 ZMK_COMBO(rptl    , HRC_RPTL , LM1 LM4    , DEF        , COMBO_SLOW, IDLE_SLOW)
 
