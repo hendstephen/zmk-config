@@ -327,3 +327,9 @@ combos:
   k: Caps Lock
   l: [def]
   draw_separate: true
+- p: [7, 19]
+  k: +
+  l: [def]
+- p: [31, 19]
+  k: '-'
+  l: [def]
