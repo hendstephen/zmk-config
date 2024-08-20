@@ -296,6 +296,12 @@ layers:
   - ' '
   - ''
 combos:
+- p: [19, 31]
+  k: +
+  l: [def]
+- p: [45, 31]
+  k: '-'
+  l: [def]
 - p: [31, 33, 34]
   k: ion
   l: [def]
@@ -407,9 +413,3 @@ combos:
   k: Caps Lock
   l: [def]
   draw_separate: true
-- p: [19, 31]
-  k: +
-  l: [def]
-- p: [45, 31]
-  k: '-'
-  l: [def]
