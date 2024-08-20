@@ -34,12 +34,8 @@ ZMK_MOD_MORPH(prchash,
     bindings = <&kp PRCNT>, <&kp HASH>;
 )
 
-/* Vertical */
-ZMK_COMBO(plus    , &kp PLUS , RT1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
-ZMK_COMBO(minus   , &kp MINUS, RB1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
-
 /* Home row combos */
-// ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
+ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
 ZMK_COMBO(rptl    , HRC_RPTL , LM1 LM4    , DEF        , COMBO_SLOW, IDLE_SLOW)
 
 ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF SYM NAV, COMBO_SLOW, IDLE_SLOW)
@@ -87,3 +83,7 @@ ZMK_COMBO(capword ,&caps_word, LT1 RT1    , DEF        , COMBO_SLOW, IDLE_SLOW)
 
 /* Others */
 ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF        , COMBO_SLOW)
+
+/* Vertical */
+ZMK_COMBO(plus    , &kp PLUS , RT1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(minus   , &kp MINUS, RB1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
