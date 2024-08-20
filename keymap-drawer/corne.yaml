@@ -222,10 +222,6 @@ combos:
 - p: [31, 19]
   k: '-'
   l: [def]
-- p: [19, 21, 22]
-  k: ion
-  l: [def]
-  draw_separate: true
 - p: [16, 13]
   k: Key Repeat
   l: [def]
