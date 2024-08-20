@@ -85,5 +85,11 @@ ZMK_COMBO(capword ,&caps_word, LT1 RT1    , DEF        , COMBO_SLOW, IDLE_SLOW)
 ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF        , COMBO_SLOW)
 
 /* Vertical */
-ZMK_COMBO(plus    , &kp PLUS , RT1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
-ZMK_COMBO(minus   , &kp MINUS, RB1 RM1    , DEF        , COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(ltv     , &kp LT   , LT1 LM1    , DEF     NAV, COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(gtv     , &kp GT   , RT1 RM1    , DEF     NAV, COMBO_SLOW, IDLE_SLOW)
+
+ZMK_COMBO(minus   , &kp MINUS, LT2 LM2    , DEF        , COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(plus    , &kp PLUS , RT2 RM2    , DEF        , COMBO_SLOW, IDLE_SLOW)
+
+ZMK_COMBO(dllr    , &kp DLLR , LT3 LM3    , DEF        , COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(hash    , &kp HASH , RT3 RM3    , DEF        , COMBO_SLOW, IDLE_SLOW)

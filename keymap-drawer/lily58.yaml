@@ -407,9 +407,21 @@ combos:
   k: Caps Lock
   l: [def]
   draw_separate: true
+- p: [16, 28]
+  k: <
+  l: [def, nav]
 - p: [19, 31]
+  k: '>'
+  l: [def, nav]
+- p: [15, 27]
+  k: '-'
+  l: [def]
+- p: [20, 32]
   k: +
   l: [def]
-- p: [45, 31]
-  k: '-'
+- p: [14, 26]
+  k: $
+  l: [def]
+- p: [21, 33]
+  k: '#'
   l: [def]
