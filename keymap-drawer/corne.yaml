@@ -40,7 +40,7 @@ layers:
   - {t: ⌦, h: fun}
   - {t: Esc, h: mse}
   - {t: ⌫, h: nav, s: ⌦}
-  - {t: ␣, h: sym, s: ⌫}
+  - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
   - {t: ↹, h: fun}
   sym:
@@ -82,7 +82,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: ␣, h: nav, s: ⌫}
+  - {t: ␣, h: nav}
   - {t: ' ', type: held}
   - ' '
   - ' '

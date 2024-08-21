@@ -361,8 +361,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">␣</text>
 <a href="#sym">
 <text x="0" y="38" class="key hold layer-activator">sym</text>
-</a><text x="0" y="-38" class="key shifted">⌫</text>
-</g>
+</a></g>
 <g transform="translate(644, 266)" class="key keypos-55">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⏎</text>
@@ -724,8 +723,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">␣</text>
 <a href="#nav">
 <text x="0" y="38" class="key hold layer-activator">nav</text>
-</a><text x="0" y="-38" class="key shifted">⌫</text>
-</g>
+</a></g>
 <g transform="translate(574, 266) rotate(-30.0)" class="key held keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
 </g>

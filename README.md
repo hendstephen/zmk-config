@@ -33,6 +33,5 @@ This config uses [@urob's ZMK fork](https://github.com/urob/zmk) which contains 
 | `.`            | `:`         | `_`                |
 | `,`            | `;`         | `-`                |
 | `/`            | `?`         | `!`                |
-| `␣`            | `⌫`         |                    |
 | `⌫`            | `⌦`         |                    |
 | `Sticky Shift` | `Caps Word` |                    |
