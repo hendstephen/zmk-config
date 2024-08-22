@@ -11,7 +11,7 @@ layers:
   - L
   - U
   - Y
-  - ''''
+  - {t: '?', s: '!'}
   - C+A+⌦
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
@@ -35,7 +35,7 @@ layers:
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: /, s: '?'}
+  - ''''
   - {t: Alt, h: sticky}
   - {t: ⌦, h: fun}
   - {t: Esc, h: mse}
@@ -291,6 +291,10 @@ combos:
   l: [def]
 - p: [31, 33]
   k: '"'
+  l: [def]
+  a: bottom
+- p: [31, 34]
+  k: /
   l: [def]
   a: bottom
 - p: [6, 7]
