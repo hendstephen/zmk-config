@@ -18,9 +18,6 @@
 #define HRC_LBKT &hml LSFT LBKT
 #define HRC_RBKT &hmr RSFT RBKT
 
-#define HRC_LT &hml LA(LGUI) LT
-#define HRC_GT &hmr RA(RGUI) GT
-
 #define HRC_ESC &hmr RS(RC(RALT)) ESC
 #define HRC_DEL &hmr RS(RALT) DEL
 
@@ -50,8 +47,6 @@ ZMK_COMBO(lpar    , HRC_LPAR , LM1 LM2    , DEF        , COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(rpar    , HRC_RPAR , RM1 RM2    , DEF        , COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(lbrc    , HRC_LBRC , LM2 LM3    , DEF        , COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(rbrc    , HRC_RBRC , RM2 RM3    , DEF        , COMBO_FAST, IDLE_SLOW)
-ZMK_COMBO(lt      , HRC_LT   , LM4 LM3    , DEF        , COMBO_FAST, IDLE_SLOW)
-ZMK_COMBO(gt      , HRC_GT   , RM4 RM3    , DEF        , COMBO_FAST, IDLE_SLOW)
 
 /* Left bottom row */
 ZMK_COMBO(all     , &kp LC(A), LB4 LB1    , DEF        , COMBO_SLOW, IDLE_SLOW)

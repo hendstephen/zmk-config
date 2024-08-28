@@ -23,8 +23,6 @@ parse_config:
     combo_rbrc: { key: '}' }
     combo_lbkt: { key: '[' }
     combo_rbkt: { key: ']' }
-    combo_lt: { key: '<' }
-    combo_gt: { key: '>' }
     combo_del:
       draw_separate: true
       key: ⌦

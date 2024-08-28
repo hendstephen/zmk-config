@@ -338,12 +338,6 @@ combos:
 - p: [32, 33]
   k: '}'
   l: [def]
-- p: [25, 26]
-  k: <
-  l: [def]
-- p: [34, 33]
-  k: '>'
-  l: [def]
 - p: [37, 40]
   k: Select All
   l: [def]
