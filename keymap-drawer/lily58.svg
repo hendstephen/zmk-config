@@ -2646,11 +2646,11 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(336, 160)" class="key held keypos-46">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
 </g>
-<g transform="translate(364, 156)" class="key held keypos-47">
-<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
-</g>
-<g transform="translate(392, 160)" class="key keypos-48">
+<g transform="translate(364, 156)" class="key keypos-47">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key"/>
+</g>
+<g transform="translate(392, 160)" class="key held keypos-48">
+<rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>
 </g>
 <g transform="translate(420, 166)" class="key held keypos-49">
 <rect rx="6" ry="6" x="-12" y="-12" width="24" height="24" class="key held"/>

@@ -371,7 +371,7 @@ combos:
   k: /
   l: [def]
   a: bottom
-- p: [45, 46, 48]
+- p: [45, 47, 48]
   k: '&cdup'
   l: [def, nav]
   draw_separate: true
