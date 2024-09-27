@@ -292,7 +292,7 @@ combos:
   l: [def]
   a: bottom
 - p: [31, 33, 34]
-  k: '&cdup'
+  k: ../
   l: [def, nav]
   draw_separate: true
 - p: [6, 7]
