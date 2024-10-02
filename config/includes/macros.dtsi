@@ -1,11 +1,17 @@
 ZMK_MACRO(fatarrow,
     bindings = <&macro_tap &kp EQUAL &kp GT>;
+    wait-ms = <0>;
+    tap-ms = <0>;
 )
 
 ZMK_MACRO(ion,
     bindings = <&macro_tap &kp I &kp O &kp N>;
+    wait-ms = <0>;
+    tap-ms = <0>;
 )
 
 ZMK_MACRO(cdup, 
     bindings = <&macro_tap &kp DOT &kp DOT &kp SLASH>;
+    wait-ms = <0>;
+    tap-ms = <0>;
 )
