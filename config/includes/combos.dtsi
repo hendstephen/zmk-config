@@ -34,8 +34,8 @@ ZMK_MOD_MORPH(prchash,
 // tap: /  hold: //
 ZMK_HOLD_TAP(ht_dblslsh, 
     flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
+    tapping-term-ms = <120>;
+    quick-tap-ms = <0>;
     bindings = <&dblslsh>, <&kp>;
 )
 
