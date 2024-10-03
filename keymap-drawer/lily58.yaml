@@ -368,7 +368,7 @@ combos:
   l: [def]
   a: bottom
 - p: [45, 48]
-  k: {t: /, h: '&dblslsh'}
+  k: /
   l: [def]
   a: bottom
 - p: [45, 47, 48]

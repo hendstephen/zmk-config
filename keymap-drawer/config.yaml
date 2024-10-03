@@ -5,7 +5,9 @@ parse_config:
     combo_grave: { align: 'top' }
     combo_capword: { align: 'top' }
     combo_dqt: { align: 'bottom' }
-    combo_slash: { align: 'bottom' }
+    combo_slash:
+      align: bottom
+      key: /
     combo_cdup:
       draw_separate: true
       key: '../'

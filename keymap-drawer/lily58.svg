@@ -447,7 +447,6 @@ path.combo { stroke: #7f7f7f; }
 <path d="M756,246 h78 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <rect rx="6" ry="6" x="742" y="233" width="28" height="26" class="combo"/>
 <text x="756" y="246" class="combo tap">/</text>
-<text x="756" y="257" class="combo hold"><tspan style="font-size: 88%">&amp;dblslsh</tspan></text>
 </g>
 <g class="combo combopos-16">
 <rect rx="6" ry="6" x="630" y="82" width="28" height="26" class="combo"/>
