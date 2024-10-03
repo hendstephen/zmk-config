@@ -288,7 +288,7 @@ combos:
   l: [def]
   a: bottom
 - p: [31, 34]
-  k: '&ht_dblslsh'
+  k: {t: /, h: '&dblslsh'}
   l: [def]
   a: bottom
 - p: [31, 33, 34]

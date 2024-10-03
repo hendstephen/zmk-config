@@ -36,7 +36,7 @@ ZMK_HOLD_TAP(ht_dblslsh,
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <200>;
-    bindings = <&dblslsh>, <&kp SLASH>;
+    bindings = <&dblslsh>, <&kp>;
 )
 
 /* Home row combos */
@@ -68,7 +68,7 @@ ZMK_COMBO(min     , &kp MINUS, RB1 RB2    , DEF        , COMBO_FAST)
 ZMK_COMBO(semi    , &kp SEMI , RB2 RB3    , DEF        , COMBO_FAST)
 ZMK_COMBO(cln     , &kp COLON, RB3 RB4    , DEF        , COMBO_FAST)
 ZMK_COMBO(dqt     , &kp DQT  , RB1 RB3    , DEF        , COMBO_FAST)
-ZMK_COMBO(slash  ,&ht_dblslsh, RB1 RB4    , DEF        , COMBO_FAST)
+ZMK_COMBO(slash ,&ht_dblslsh 0 SLASH, RB1 RB4    , DEF        , COMBO_FAST)
 ZMK_COMBO(cdup    , &cdup    , RB1 RB3 RB4, DEF     NAV, COMBO_FAST)
 
 /* Right top row */
