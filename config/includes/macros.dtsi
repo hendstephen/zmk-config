@@ -15,3 +15,9 @@ ZMK_MACRO(cdup,
     wait-ms = <0>;
     tap-ms = <0>;
 )
+
+ZMK_MACRO(dblslsh, 
+    bindings = <&macro_tap &kp SLASH &kp SLASH>;
+    wait-ms = <0>;
+    tap-ms = <0>;
+)
