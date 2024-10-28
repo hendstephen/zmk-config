@@ -55,6 +55,7 @@ parse_config:
     '&msc MOVE_UP': Scroll Up
     '&msc MOVE_DOWN': Scroll Down
     '&sftclk': Click
+    '&dblslsh': '//'
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2

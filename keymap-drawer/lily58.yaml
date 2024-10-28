@@ -49,7 +49,7 @@ layers:
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: /, h: '&dblslsh', s: '?'}
+  - {t: /, h: //, s: '?'}
   - {t: Alt, h: sticky}
   - ''
   - {t: ⌦, h: fun}
