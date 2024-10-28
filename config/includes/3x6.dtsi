@@ -102,11 +102,11 @@ ZMK_HOLD_TAP(ht_dblslsh,
     flavor = "tap-preferred";
     tapping-term-ms = <120>;
     quick-tap-ms = <0>;
-    bindings = <&qexcl>, <&kp>;
+    bindings = <&dblslsh>, <&qexcl>;
 )
 SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner)
 SIMPLE_MORPH(qexcl_inner, CTL, &kp QMARK, &kp EXCL)
-#define QEXCL &ht_dblslsh 0 SLASH
+#define QEXCL &ht_dblslsh 0 0
 
 // tap: bspc | shift + tap: del | hold: layer hold
 SIMPLE_MORPH(bs_del, SFT, &kp BSPC, &kp DEL)
