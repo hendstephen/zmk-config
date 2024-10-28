@@ -97,8 +97,9 @@ SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp MINUS)
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
 SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp UNDER)
 
-// tap: qmark | shift + tap: excl
-SIMPLE_MORPH(qexcl, SFT, &kp QMARK, &kp EXCL)
+// tap: slash | shift + tap: qmark | shift + ctrl + tap: excl
+SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner)
+SIMPLE_MORPH(qexcl_inner, CTL, &kp QMARK, &kp EXCL)
 
 // tap: bspc | shift + tap: del | hold: layer hold
 SIMPLE_MORPH(bs_del, SFT, &kp BSPC, &kp DEL)
@@ -148,11 +149,11 @@ ZMK_LAYER(def,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp WIN_LOCK  &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &qexcl        &kp CALTDEL 
+    &kp WIN_LOCK  &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &kp SQT       &kp CALTDEL 
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmr RGUI O   &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    SMART_NUM     &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    &kp SQT       &sk RALT
+    SMART_NUM     &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &sk RALT
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                                                                 THUMBS_DEF
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯

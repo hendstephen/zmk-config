@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   def:
   - Lock
@@ -11,7 +11,7 @@ layers:
   - L
   - U
   - Y
-  - {t: '?', s: '!'}
+  - ''''
   - C+A+⌦
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
@@ -25,7 +25,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: '&num_word', h: nav}
+  - {t: Num Word, h: nav}
   - Z
   - X
   - C
@@ -35,7 +35,7 @@ layers:
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - ''''
+  - {t: /, s: '?'}
   - {t: Alt, h: sticky}
   - {t: ⌦, h: fun}
   - {t: Esc, h: mse}
