@@ -97,9 +97,16 @@ SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp MINUS)
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
 SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp UNDER)
 
-// tap: slash | shift + tap: qmark | shift + ctrl + tap: excl
+// tap: / | hold: // | shift + tap: ? | shift + ctrl + tap: !
+ZMK_HOLD_TAP(ht_dblslsh, 
+    flavor = "tap-preferred";
+    tapping-term-ms = <120>;
+    quick-tap-ms = <0>;
+    bindings = <&qexcl>, <&kp>;
+)
 SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner)
 SIMPLE_MORPH(qexcl_inner, CTL, &kp QMARK, &kp EXCL)
+#define QEXCL &ht_dblslsh SLASH 0
 
 // tap: bspc | shift + tap: del | hold: layer hold
 SIMPLE_MORPH(bs_del, SFT, &kp BSPC, &kp DEL)
@@ -153,7 +160,7 @@ ZMK_LAYER(def,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmr RGUI O   &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    SMART_NUM     &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    &qexcl        &sk RALT
+    SMART_NUM     &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    QEXCL         &sk RALT
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                                                                 THUMBS_DEF
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯

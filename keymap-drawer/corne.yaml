@@ -35,7 +35,7 @@ layers:
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: /, s: '?'}
+  - {t: '0', h: /}
   - {t: Alt, h: sticky}
   - {t: ⌦, h: fun}
   - {t: Esc, h: mse}
@@ -285,10 +285,6 @@ combos:
   l: [def]
 - p: [31, 33]
   k: '"'
-  l: [def]
-  a: bottom
-- p: [31, 34]
-  k: /
   l: [def]
   a: bottom
 - p: [31, 33, 34]

@@ -31,14 +31,6 @@ ZMK_MOD_MORPH(prchash,
     bindings = <&kp PRCNT>, <&kp HASH>;
 )
 
-// tap: /  hold: //
-ZMK_HOLD_TAP(ht_dblslsh, 
-    flavor = "tap-preferred";
-    tapping-term-ms = <120>;
-    quick-tap-ms = <0>;
-    bindings = <&dblslsh>, <&kp>;
-)
-
 /* Home row combos */
 ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
 ZMK_COMBO(rptl    , HRC_RPTL , LM1 LM4    , DEF        , COMBO_SLOW, IDLE_SLOW)
@@ -68,7 +60,6 @@ ZMK_COMBO(min     , &kp MINUS, RB1 RB2    , DEF        , COMBO_FAST)
 ZMK_COMBO(semi    , &kp SEMI , RB2 RB3    , DEF        , COMBO_FAST)
 ZMK_COMBO(cln     , &kp COLON, RB3 RB4    , DEF        , COMBO_FAST)
 ZMK_COMBO(dqt     , &kp DQT  , RB1 RB3    , DEF        , COMBO_FAST)
-ZMK_COMBO(slash ,&ht_dblslsh 0 SLASH, RB1 RB4    , DEF        , COMBO_FAST)
 ZMK_COMBO(cdup    , &cdup    , RB1 RB3 RB4, DEF     NAV, COMBO_FAST)
 
 /* Right top row */
