@@ -35,7 +35,7 @@ layers:
   - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - {t: '0', h: /}
+  - {t: /, h: /}
   - {t: Alt, h: sticky}
   - {t: ⌦, h: fun}
   - {t: Esc, h: mse}

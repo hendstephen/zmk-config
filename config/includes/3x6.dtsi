@@ -106,7 +106,7 @@ ZMK_HOLD_TAP(ht_dblslsh,
 )
 SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner)
 SIMPLE_MORPH(qexcl_inner, CTL, &kp QMARK, &kp EXCL)
-#define QEXCL &ht_dblslsh SLASH 0
+#define QEXCL &ht_dblslsh 0 SLASH
 
 // tap: bspc | shift + tap: del | hold: layer hold
 SIMPLE_MORPH(bs_del, SFT, &kp BSPC, &kp DEL)
