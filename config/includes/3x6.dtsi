@@ -100,7 +100,7 @@ SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp UNDER)
 // tap: / | hold: // | shift + tap: ? | shift + ctrl + tap: !
 ZMK_HOLD_TAP(ht_dblslsh, 
     flavor = "tap-preferred";
-    tapping-term-ms = <120>;
+    tapping-term-ms = <200>;
     quick-tap-ms = <0>;
     bindings = <&dblslsh>, <&qexcl>;
 )
