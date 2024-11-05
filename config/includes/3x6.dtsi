@@ -67,9 +67,9 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right hand
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                                  // thumbs
 
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS) \
+#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, FLAVOR) \
     ZMK_HOLD_TAP(NAME, \
-        flavor = "balanced"; \
+        flavor = FLAVOR; \
         tapping-term-ms = <280>; \
         quick-tap-ms = <QUICK_TAP_MS>; \
         require-prior-idle-ms = <150>; \
@@ -77,10 +77,16 @@
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
     )
-MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS)  // left-hand HRMs
-MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS)  // right-hand HRMs
-MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS)
-MAKE_HRM(hml_rpt, &kp, &key_repeat, KEYS_R THUMBS)
+// Default HRM config
+MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS, "balanced")  // left-hand HRMs
+MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS, "balanced")  // right-hand HRMs
+
+// Tap-preferred HRMs for pinkies since false positives are more common
+MAKE_HRM(hmlp, &kp, &kp, KEYS_R THUMBS, "tap-preferred")  // left-hand HRMs
+MAKE_HRM(hmrp, &kp, &kp, KEYS_L THUMBS, "tap-preferred")  // right-hand HRMs
+
+// Special HRMs for combos
+MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS, "tap-preffered")
 
 /* Mod morphs */
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
@@ -158,7 +164,7 @@ ZMK_LAYER(def,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     &kp WIN_LOCK  &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &kp SQT       &kp CALTDEL 
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmr RGUI O   &smart_shftr
+    &smart_shftl  &hmlp LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI O  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     SMART_NUM     &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    QEXCL         &sk RALT
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
@@ -172,7 +178,7 @@ ZMK_LAYER(sym,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           ___           &kp LT        &kp GT        &kp AT        &kp UNDER                                   &kp PIPE      &kp MINUS     &kp LBKT      &kp RBKT      &kp GRAVE     ___    
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    ___      &hml LGUI EXCL &hml LALT MINUS &hml LCTRL PLUS &hml LSHFT EQUAL &kp HASH                                 &kp AMPS  &hmr RSHFT COLON &hmr RCTRL LPAR &hmr RALT RPAR &hmr RGUI SEMI   ___    
+    ___      &hmlp LGUI EXCL &hml LALT MINUS &hml LCTRL PLUS &hml LSHFT EQUAL &kp HASH                                &kp AMPS  &hmr RSHFT COLON &hmr RCTRL LPAR &hmr RALT RPAR &hmrp RGUI SEMI   ___    
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           &kp BSLH      &kp SLASH     &kp STAR      &kp CARET     &kp PRCNT                 X_BM              &kp TILDE     &kp DLLR      &kp LBRC     &kp RBRC       ___           ___          
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
@@ -186,7 +192,7 @@ ZMK_LAYER(nav,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     &kp COLON     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp STAR                                    ___           &kp WIN_LEFT  &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp DOT     &hml LGUI MINUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp PLUS                                   &kp WIN_CLOSE &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmr RGUI RIGHT ___  
+    &kp DOT     &hmlp LGUI MINUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp PLUS                                   &kp WIN_CLOSE &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmrp RGUI RIGHT ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &kp N0        &kp N1        &kp N2        &kp N3        &kp EQUAL                 X_BM              ___           &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 

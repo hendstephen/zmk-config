@@ -24,8 +24,6 @@
 #define HRC_TAB &hml LS(LALT) TAB
 #define HRC_RET &hml LS(LC(LALT)) RET
 
-#define HRC_RPTL &hml_rpt LS(LGUI) 0
-
 ZMK_MOD_MORPH(prchash, 
     mods = <(MOD_LSFT|MOD_RSFT)>;
     bindings = <&kp PRCNT>, <&kp HASH>;
@@ -33,7 +31,6 @@ ZMK_MOD_MORPH(prchash,
 
 /* Home row combos */
 ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
-ZMK_COMBO(rptl    , HRC_RPTL , LM1 LM4    , DEF        , COMBO_SLOW, IDLE_SLOW)
 
 ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF SYM NAV, COMBO_SLOW, IDLE_SLOW)
 ZMK_COMBO(esc     , HRC_ESC  , RM1 RM2 RM3, DEF SYM NAV, COMBO_SLOW, IDLE_SLOW)

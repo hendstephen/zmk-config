@@ -220,10 +220,6 @@ combos:
   k: ion
   l: [def]
   draw_separate: true
-- p: [16, 13]
-  k: Key Repeat
-  l: [def]
-  draw_separate: true
 - p: [16, 15, 14]
   k: ⏎
   l: [def, sym, nav]

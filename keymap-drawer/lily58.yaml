@@ -300,10 +300,6 @@ combos:
   k: ion
   l: [def]
   draw_separate: true
-- p: [28, 25]
-  k: Key Repeat
-  l: [def]
-  draw_separate: true
 - p: [28, 27, 26]
   k: ⏎
   l: [def, sym, nav]

@@ -11,9 +11,6 @@ parse_config:
     combo_ion: 
       draw_separate: true 
       key: ion
-    combo_rptl: 
-      draw_separate: true 
-      key: Key Repeat
     combo_percent:
       align: top
       key: '%'
