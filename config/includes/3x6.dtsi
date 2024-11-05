@@ -86,7 +86,7 @@ MAKE_HRM(hmlp, &kp, &kp, KEYS_R THUMBS, "tap-preferred")  // left-hand HRMs
 MAKE_HRM(hmrp, &kp, &kp, KEYS_L THUMBS, "tap-preferred")  // right-hand HRMs
 
 // Special HRMs for combos
-MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS, "tap-preffered")
+MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS, "tap-preferred")
 
 /* Mod morphs */
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
