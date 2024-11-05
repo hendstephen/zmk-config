@@ -59,65 +59,6 @@ layers:
   - {t: ⏎, h: Shift}
   - {t: ↹, h: fun}
   - ''
-  qwt:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Lock
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - C+A+⌦
-  - {t: Shift, h: sticky, s: Caps Word}
-  - {t: A, h: Gui}
-  - {t: S, h: Alt}
-  - {t: D, h: Ctrl}
-  - {t: F, h: Shift}
-  - G
-  - H
-  - {t: J, h: Shift}
-  - {t: K, h: Ctrl}
-  - {t: L, h: Alt}
-  - {t: '''', h: Gui}
-  - {t: Shift, h: sticky, s: Caps Word}
-  - {t: Num Word, h: nav}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - ''
-  - ''
-  - N
-  - M
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - {t: /, h: //, s: '?'}
-  - {t: Alt, h: sticky}
-  - ''
-  - {t: ⌦, h: fun}
-  - {t: Esc, h: mse}
-  - {t: ⌫, h: nav, s: ⌦}
-  - {t: ␣, h: sym}
-  - {t: ⏎, h: Shift}
-  - {t: ↹, h: fun}
-  - ''
   sym:
   - ''
   - ''
@@ -318,7 +259,7 @@ layers:
   - OUT BLE
   - ' '
   - ' '
-  - {t: qwt, h: toggle}
+  - ' '
   - Soft Off
   - F1
   - F2
@@ -357,128 +298,128 @@ layers:
 combos:
 - p: [31, 33, 34]
   k: ion
-  l: [def, qwt]
+  l: [def]
   draw_separate: true
 - p: [28, 25]
   k: Key Repeat
-  l: [def, qwt]
+  l: [def]
   draw_separate: true
 - p: [28, 27, 26]
   k: ⏎
-  l: [def, qwt, sym, nav]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [31, 32, 33]
   k: Esc
-  l: [def, qwt, sym, nav]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [28, 26]
   k: ↹
-  l: [def, qwt, sym, nav]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [33, 31]
   k: ⌦
-  l: [def, qwt, sym, nav]
+  l: [def, sym, nav]
   draw_separate: true
 - p: [28, 29]
   k: '['
-  l: [def, qwt]
+  l: [def]
 - p: [31, 30]
   k: ']'
-  l: [def, qwt]
+  l: [def]
 - p: [28, 27]
   k: (
-  l: [def, qwt]
+  l: [def]
 - p: [31, 32]
   k: )
-  l: [def, qwt]
+  l: [def]
 - p: [27, 26]
   k: '{'
-  l: [def, qwt]
+  l: [def]
 - p: [32, 33]
   k: '}'
-  l: [def, qwt]
+  l: [def]
 - p: [37, 40]
   k: Select All
-  l: [def, qwt]
+  l: [def]
   a: bottom
 - p: [37, 38]
   k: Cut
-  l: [def, qwt]
+  l: [def]
 - p: [38, 39]
   k: Copy
-  l: [def, qwt]
+  l: [def]
 - p: [39, 40]
   k: Paste
-  l: [def, qwt]
+  l: [def]
 - p: [44, 45]
   k: _
-  l: [def, qwt]
+  l: [def]
 - p: [45, 46]
   k: '-'
-  l: [def, qwt]
+  l: [def]
 - p: [46, 47]
   k: ;
-  l: [def, qwt]
+  l: [def]
 - p: [47, 48]
   k: ':'
-  l: [def, qwt]
+  l: [def]
 - p: [45, 47]
   k: '"'
-  l: [def, qwt]
+  l: [def]
   a: bottom
 - p: [45, 47, 48]
   k: ../
-  l: [def, qwt, nav]
+  l: [def, nav]
   draw_separate: true
 - p: [18, 19]
   k: =>
-  l: [def, qwt]
+  l: [def]
 - p: [21, 20]
   k: '='
-  l: [def, qwt]
+  l: [def]
 - p: [20, 19]
   k: '&'
-  l: [def, qwt]
+  l: [def]
 - p: [19, 21]
   k: '`'
-  l: [def, qwt]
+  l: [def]
   a: top
 - p: [14, 15]
   k: '@'
-  l: [def, qwt]
+  l: [def]
 - p: [15, 16]
   k: '|'
-  l: [def, qwt]
+  l: [def]
 - p: [16, 17]
   k: '*'
-  l: [def, qwt]
+  l: [def]
 - p: [14, 16]
   k: '%'
-  l: [def, qwt]
+  l: [def]
   a: top
 - p: [16, 19]
   k: Caps Word
-  l: [def, qwt]
+  l: [def]
   a: top
 - p: [24, 35]
   k: Caps Lock
-  l: [def, qwt]
+  l: [def]
   draw_separate: true
 - p: [16, 28]
   k: <
-  l: [def, qwt, nav]
+  l: [def, nav]
 - p: [19, 31]
   k: '>'
-  l: [def, qwt, nav]
+  l: [def, nav]
 - p: [15, 27]
   k: '-'
-  l: [def, qwt]
+  l: [def]
 - p: [20, 32]
   k: +
-  l: [def, qwt]
+  l: [def]
 - p: [14, 26]
   k: $
-  l: [def, qwt]
+  l: [def]
 - p: [21, 33]
   k: '#'
-  l: [def, qwt]
+  l: [def]
