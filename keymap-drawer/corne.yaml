@@ -311,6 +311,12 @@ combos:
   k: '`'
   l: [def]
   a: top
+- p: [9, 10]
+  k: $
+  l: [def]
+- p: [1, 2]
+  k: '#'
+  l: [def]
 - p: [2, 3]
   k: '@'
   l: [def]
