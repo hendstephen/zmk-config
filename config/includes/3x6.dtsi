@@ -95,11 +95,11 @@ MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS, "tap-preferred")
         bindings = <BINDING1>, <BINDING2>; \
     )
 
-// tap: comma | shift + tap: semicolon
-SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &kp SEMICOLON)
+// tap: comma | shift + tap: exclamation
+SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &kp EXCL)
 
 // tap: dot | shift + tap: exclamation
-SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp EXCL)
+SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
 
 // tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 
