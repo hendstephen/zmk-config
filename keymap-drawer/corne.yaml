@@ -275,6 +275,9 @@ combos:
 - p: [27, 28]
   k: Paste
   l: [def]
+- p: [28, 29]
+  k: '!'
+  l: [def]
 - p: [30, 31]
   k: _
   l: [def]

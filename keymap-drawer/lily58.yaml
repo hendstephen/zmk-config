@@ -355,6 +355,9 @@ combos:
 - p: [39, 40]
   k: Paste
   l: [def]
+- p: [40, 41]
+  k: '!'
+  l: [def]
 - p: [44, 45]
   k: _
   l: [def]
