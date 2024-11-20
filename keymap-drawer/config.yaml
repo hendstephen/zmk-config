@@ -2,7 +2,7 @@ parse_config:
   zmk_combos:
     combo_cplck: { draw_separate: true }
     combo_all: { align: 'bottom' }
-    combo_grave: { align: 'top' }
+    combo_grave: { align: 'bottom' }
     combo_capword: { align: 'top' }
     combo_dqt: { align: 'bottom' }
     combo_lt: { align: 'top'}
@@ -14,7 +14,7 @@ parse_config:
       draw_separate: true 
       key: ion
     combo_percent:
-      align: top
+      align: bottom
       key: '%'
 
     # Combos with HRM hold-taps, don't draw the hold on bottom

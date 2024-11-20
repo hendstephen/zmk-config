@@ -307,7 +307,7 @@ combos:
 - p: [7, 9]
   k: '`'
   l: [def]
-  a: top
+  a: bottom
 - p: [2, 3]
   k: '@'
   l: [def]
@@ -320,7 +320,7 @@ combos:
 - p: [2, 4]
   k: '%'
   l: [def]
-  a: top
+  a: bottom
 - p: [4, 7]
   k: Caps Word
   l: [def]
