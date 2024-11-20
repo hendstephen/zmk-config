@@ -11,7 +11,7 @@ layers:
   - L
   - U
   - Y
-  - ''''
+  - {t: '''', s: '"'}
   - C+A+⌦
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}

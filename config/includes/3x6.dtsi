@@ -101,6 +101,10 @@ SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &kp EXCL)
 // tap: dot | shift + tap: exclamation
 SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
 
+// tap: ' | shift + tap: "
+// Technically not needed, but we add it here so it shows up in keymap svg
+SIMPLE_MORPH(sqt_morph, SFT, &kp SQT, &kp DQT)
+
 // tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 
     flavor = "tap-preferred";
@@ -159,7 +163,7 @@ ZMK_LAYER(def,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp WIN_LOCK  &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &kp SQT       &kp CALTDEL 
+    &kp WIN_LOCK  &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &sqt_morph    &kp CALTDEL 
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &hmlp LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI O  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
