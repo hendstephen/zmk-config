@@ -95,23 +95,20 @@ MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS, "tap-preferred")
         bindings = <BINDING1>, <BINDING2>; \
     )
 
-// tap: comma | shift + tap: semicolon | ctrl + shift + tap: -
-SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
-SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp MINUS)
+// tap: comma | shift + tap: semicolon
+SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &kp SEMICOLON)
 
-// tap: dot | shift + tap: colon | ctrl + shift + tap: _
-SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
-SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp UNDER)
+// tap: dot | shift + tap: exclamation
+SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp EXCL)
 
-// tap: / | hold: // | shift + tap: ? | shift + ctrl + tap: !
+// tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <0>;
     bindings = <&dblslsh>, <&qexcl>;
 )
-SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &qexcl_inner)
-SIMPLE_MORPH(qexcl_inner, CTL, &kp QMARK, &kp EXCL)
+SIMPLE_MORPH(qexcl, SFT, &kp SLASH, &kp QMARK)
 #define QEXCL &ht_dblslsh 0 0
 
 // tap: bspc | shift + tap: del | hold: layer hold

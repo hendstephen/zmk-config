@@ -30,8 +30,8 @@ This config uses [@urob's ZMK fork](https://github.com/urob/zmk) which contains 
 ## Mod Morphs
 | Tap            | Shift + Tap | Ctrl + Shift + Tap |
 | -------------- | ----------- | ------------------ |
-| `.`            | `:`         | `_`                |
-| `,`            | `;`         | `-`                |
-| `/`            | `?`         | `!`                |
+| `.`            | `!`         |                    |
+| `,`            | `;`         |                    |
+| `/`            | `?`         |                    |
 | `⌫`            | `⌦`         |                    |
 | `Sticky Shift` | `Caps Word` |                    |
