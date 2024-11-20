@@ -300,6 +300,10 @@ combos:
   k: ion
   l: [def]
   draw_separate: true
+- p: [45, 47, 48]
+  k: ../
+  l: [def, nav]
+  draw_separate: true
 - p: [28, 27, 26]
   k: ⏎
   l: [def, sym, nav]
@@ -374,10 +378,6 @@ combos:
   k: '"'
   l: [def]
   a: bottom
-- p: [45, 47, 48]
-  k: ../
-  l: [def, nav]
-  draw_separate: true
 - p: [18, 19]
   k: =>
   l: [def]
