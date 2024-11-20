@@ -31,7 +31,7 @@ This config uses [@urob's ZMK fork](https://github.com/urob/zmk) which contains 
 | Tap            | Shift + Tap | Ctrl + Shift + Tap |
 | -------------- | ----------- | ------------------ |
 | `.`            | `:`         |                    |
-| `,`            | `!`         |                    |
+| `,`            | `;`         |                    |
 | `/`            | `?`         |                    |
 | `⌫`            | `⌦`         |                    |
 | `Sticky Shift` | `Caps Word` |                    |
