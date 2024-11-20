@@ -25,7 +25,7 @@
 #define HRC_RET &hml LS(LC(LALT)) RET
 
 #define HRC_LT &hml LS(LGUI) LT
-#define HRC_RT &hmr RS(RGUI) GT
+#define HRC_GT &hmr RS(RGUI) GT
 
 ZMK_MOD_MORPH(prchash, 
     mods = <(MOD_LSFT|MOD_RSFT)>;
