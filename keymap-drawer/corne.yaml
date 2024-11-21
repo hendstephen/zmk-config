@@ -240,14 +240,6 @@ combos:
   k: ⌦
   l: [def, sym, nav]
   draw_separate: true
-- p: [13, 16]
-  k: <
-  l: [def]
-  draw_separate: true
-- p: [19, 22]
-  k: '>'
-  l: [def]
-  draw_separate: true
 - p: [16, 17]
   k: '['
   l: [def]
@@ -266,6 +258,10 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [def]
+- p: [26, 28]
+  k: '~'
+  l: [def]
+  a: bottom
 - p: [25, 28]
   k: Select All
   l: [def]
@@ -282,6 +278,10 @@ combos:
 - p: [28, 29]
   k: '!'
   l: [def]
+- p: [31, 32, 33]
+  k: '`'
+  l: [def]
+  a: bottom
 - p: [30, 31]
   k: _
   l: [def]
@@ -298,6 +298,10 @@ combos:
   k: '"'
   l: [def]
   a: bottom
+- p: [7, 8, 9]
+  k: '>'
+  l: [def]
+  a: top
 - p: [6, 7]
   k: =>
   l: [def]
@@ -314,6 +318,10 @@ combos:
 - p: [9, 10]
   k: $
   l: [def]
+- p: [4, 3, 2]
+  k: <
+  l: [def]
+  a: top
 - p: [1, 2]
   k: '#'
   l: [def]
