@@ -261,7 +261,7 @@ combos:
 - p: [26, 28]
   k: '~'
   l: [def]
-  draw_separate: true
+  a: bottom
 - p: [25, 28]
   k: Select All
   l: [def]
@@ -281,7 +281,6 @@ combos:
 - p: [31, 32, 33]
   k: '`'
   l: [def]
-  a: bottom
 - p: [30, 31]
   k: _
   l: [def]
@@ -314,7 +313,7 @@ combos:
 - p: [7, 9]
   k: '`'
   l: [def]
-  a: top
+  draw_separate: true
 - p: [9, 10]
   k: $
   l: [def]

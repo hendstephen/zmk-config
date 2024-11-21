@@ -2,15 +2,14 @@ parse_config:
   zmk_combos:
     combo_all: { align: 'bottom' }
     combo_dqt: { align: 'bottom' }
-    combo_grave2: { align: 'bottom' }
-    combo_grave: { align: 'top' }
     combo_capword: { align: 'top' }
     combo_lt: { align: 'top' }
     combo_gt: { align: 'top' }
+    combo_tilde: { align: 'bottom' }
 
     combo_cplck: { draw_separate: true }
+    combo_grave: { draw_separate: true }
     combo_percent: { draw_separate: true }
-    combo_tilde: { draw_separate: true }
     combo_cdup:
       draw_separate: true
       key: '../'
