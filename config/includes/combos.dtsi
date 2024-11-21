@@ -51,7 +51,6 @@ ZMK_COMBO(paste   , &kp LC(V), LB2 LB1    , DEF        , COMBO_SLOW, IDLE_SLOW)
 ZMK_COMBO(excl    , &kp EXCL , LB1 LB0    , DEF        , COMBO_FAST)
 
 /* Right bottom row */
-ZMK_COMBO(grave2  , &kp GRAVE, RB1 RB2 RB3, DEF        , COMBO_FAST)
 ZMK_COMBO(under   , &kp UNDER, RB0 RB1    , DEF        , COMBO_FAST)
 ZMK_COMBO(min     , &kp MINUS, RB1 RB2    , DEF        , COMBO_FAST)
 ZMK_COMBO(semi    , &kp SEMI , RB2 RB3    , DEF        , COMBO_FAST)
