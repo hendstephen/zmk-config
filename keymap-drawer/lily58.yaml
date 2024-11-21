@@ -320,6 +320,18 @@ combos:
   k: ⌦
   l: [def, sym, nav]
   draw_separate: true
+- p: [14, 16]
+  k: '%'
+  l: [def]
+  draw_separate: true
+- p: [19, 21]
+  k: '`'
+  l: [def]
+  draw_separate: true
+- p: [38, 40]
+  k: '~'
+  l: [def]
+  a: bottom
 - p: [28, 29]
   k: '['
   l: [def]
@@ -338,10 +350,6 @@ combos:
 - p: [32, 33]
   k: '}'
   l: [def]
-- p: [38, 40]
-  k: '~'
-  l: [def]
-  a: bottom
 - p: [37, 40]
   k: Select All
   l: [def]
@@ -387,10 +395,6 @@ combos:
 - p: [20, 19]
   k: '&'
   l: [def]
-- p: [19, 21]
-  k: '`'
-  l: [def]
-  draw_separate: true
 - p: [21, 22]
   k: $
   l: [def]
@@ -410,10 +414,6 @@ combos:
 - p: [16, 17]
   k: '*'
   l: [def]
-- p: [14, 16]
-  k: '%'
-  l: [def]
-  draw_separate: true
 - p: [16, 19]
   k: Caps Word
   l: [def]
