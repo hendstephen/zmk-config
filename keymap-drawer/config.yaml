@@ -1,23 +1,22 @@
 parse_config:
   zmk_combos:
-    combo_cplck: { draw_separate: true }
     combo_all: { align: 'bottom' }
     combo_dqt: { align: 'bottom' }
     combo_grave2: { align: 'bottom' }
-    combo_tilde: { align: 'bottom' }
     combo_grave: { align: 'top' }
     combo_capword: { align: 'top' }
-    combo_lt: { align: 'bottom' }
-    combo_gt: { align: 'bottom' }
+    combo_lt: { align: 'top' }
+    combo_gt: { align: 'top' }
+
+    combo_cplck: { draw_separate: true }
+    combo_percent: { draw_separate: true }
+    combo_tilde: { draw_separate: true }
     combo_cdup:
       draw_separate: true
       key: '../'
     combo_ion: 
       draw_separate: true 
       key: ion
-    combo_percent:
-      align: top
-      key: '%'
 
     # Combos with HRM hold-taps, don't draw the hold on bottom
     combo_lpar: { key: '(' }
