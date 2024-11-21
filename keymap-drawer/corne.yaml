@@ -301,7 +301,7 @@ combos:
 - p: [7, 8, 9]
   k: '>'
   l: [def]
-  a: top
+  a: bottom
 - p: [6, 7]
   k: =>
   l: [def]
@@ -321,7 +321,7 @@ combos:
 - p: [4, 3, 2]
   k: <
   l: [def]
-  a: top
+  a: bottom
 - p: [1, 2]
   k: '#'
   l: [def]

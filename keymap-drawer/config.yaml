@@ -7,8 +7,8 @@ parse_config:
     combo_tilde: { align: 'bottom' }
     combo_grave: { align: 'top' }
     combo_capword: { align: 'top' }
-    combo_lt: { align: 'top' }
-    combo_gt: { align: 'top' }
+    combo_lt: { align: 'bottom' }
+    combo_gt: { align: 'bottom' }
     combo_cdup:
       draw_separate: true
       key: '../'

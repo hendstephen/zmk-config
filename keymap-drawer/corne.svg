@@ -1,4 +1,4 @@
-<svg width="915" height="2645" viewBox="0 0 915 2645" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="915" height="2638" viewBox="0 0 915 2638" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>/* inherit to force styles through use tags */
 svg path {
     fill: inherit;
@@ -129,7 +129,7 @@ path.combo { stroke: #7f7f7f; }
 }</style>
 <g transform="translate(30, 0)" class="layer-def">
 <text x="0" y="28" class="label" id="def">def:</text>
-<g transform="translate(0, 70)">
+<g transform="translate(0, 63)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Lock</text>
@@ -416,11 +416,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="644" y="176" class="combo tap">&quot;</text>
 </g>
 <g class="combo combopos-18">
-<path d="M644,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v11" class="combo"/>
-<path d="M644,-1 l0,18" class="combo"/>
-<path d="M644,-1 h50 a6.0,6.0 0 0 1 6.0,6.0 v11" class="combo"/>
-<rect rx="6" ry="6" x="630" y="-14" width="28" height="26" class="combo"/>
-<text x="644" y="-1" class="combo tap">&gt;</text>
+<path d="M644,64 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<path d="M644,64 l0,-17" class="combo"/>
+<path d="M644,64 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="630" y="51" width="28" height="26" class="combo"/>
+<text x="644" y="64" class="combo tap">&gt;</text>
 </g>
 <g class="combo combopos-19">
 <rect rx="6" ry="6" x="546" y="26" width="28" height="26" class="combo"/>
@@ -445,11 +445,11 @@ path.combo { stroke: #7f7f7f; }
 <text x="728" y="42" class="combo tap">$</text>
 </g>
 <g class="combo combopos-24">
-<path d="M196,-1 h50 a6.0,6.0 0 0 1 6.0,6.0 v11" class="combo"/>
-<path d="M196,-1 l0,18" class="combo"/>
-<path d="M196,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v11" class="combo"/>
-<rect rx="6" ry="6" x="182" y="-14" width="28" height="26" class="combo"/>
-<text x="196" y="-1" class="combo tap">&lt;</text>
+<path d="M196,64 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<path d="M196,64 l0,-17" class="combo"/>
+<path d="M196,64 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="182" y="51" width="28" height="26" class="combo"/>
+<text x="196" y="64" class="combo tap">&lt;</text>
 </g>
 <g class="combo combopos-25">
 <rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
@@ -483,7 +483,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 345)" class="layer-sym">
+<g transform="translate(30, 338)" class="layer-sym">
 <text x="0" y="28" class="label" id="sym">sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -653,7 +653,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 675)" class="layer-nav">
+<g transform="translate(30, 668)" class="layer-nav">
 <text x="0" y="28" class="label" id="nav">nav:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -834,7 +834,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1006)" class="layer-mse">
+<g transform="translate(30, 999)" class="layer-mse">
 <text x="0" y="28" class="label" id="mse">mse:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -988,7 +988,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1337)" class="layer-fun">
+<g transform="translate(30, 1330)" class="layer-fun">
 <text x="0" y="28" class="label" id="fun">fun:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
@@ -1172,8 +1172,8 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<text x="30" y="1695" class="label" id="Combos">Combos:</text>
-<g transform="translate(30, 1667)" class="layer-combopos-0">
+<text x="30" y="1688" class="label" id="Combos">Combos:</text>
+<g transform="translate(30, 1660)" class="layer-combopos-0">
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
@@ -1307,7 +1307,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(480, 1667)" class="layer-combopos-1">
+<g transform="translate(480, 1660)" class="layer-combopos-1">
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
@@ -1441,7 +1441,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 1919)" class="layer-combopos-2">
+<g transform="translate(30, 1912)" class="layer-combopos-2">
 <g transform="translate(0, 28)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
@@ -1575,7 +1575,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(480, 1919)" class="layer-combopos-3">
+<g transform="translate(480, 1912)" class="layer-combopos-3">
 <g transform="translate(0, 28)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
@@ -1709,7 +1709,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 2142)" class="layer-combopos-4">
+<g transform="translate(30, 2135)" class="layer-combopos-4">
 <g transform="translate(0, 28)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
@@ -1843,7 +1843,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(480, 2142)" class="layer-combopos-5">
+<g transform="translate(480, 2135)" class="layer-combopos-5">
 <g transform="translate(0, 28)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
@@ -1977,7 +1977,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<g transform="translate(30, 2365)" class="layer-combopos-6">
+<g transform="translate(30, 2358)" class="layer-combopos-6">
 <g transform="translate(0, 28)">
 <g transform="translate(28, 28)" class="key  combo-separate keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key  combo-separate"/>
@@ -2113,4 +2113,4 @@ path.combo { stroke: #7f7f7f; }
 </g>
 </g>
 </g>
-<text x="885.0" y="2617.0" class="footer">Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>
+<text x="885.0" y="2610.0" class="footer">Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>
