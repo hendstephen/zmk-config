@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  def:
+  '0':
   - Lock
   - Q
   - W
@@ -25,7 +25,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: Num Word, h: nav}
+  - {t: Num Word, h: '2'}
   - Z
   - X
   - C
@@ -37,13 +37,13 @@ layers:
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
   - {t: Alt, h: sticky}
-  - {t: ⌦, h: fun}
-  - {t: Esc, h: mse}
-  - {t: ⌫, h: nav, s: ⌦}
-  - {t: ␣, h: sym}
+  - {t: ⌦, h: '4'}
+  - {t: Esc, h: '3'}
+  - {t: ⌫, h: '2', s: ⌦}
+  - {t: ␣, h: '1'}
   - {t: ⏎, h: Shift}
-  - {t: ↹, h: fun}
-  sym:
+  - {t: ↹, h: '4'}
+  '1':
   - ' '
   - ' '
   - <
@@ -82,11 +82,11 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: ␣, h: nav}
+  - {t: ␣, h: '2'}
   - {t: ' ', type: held}
   - ' '
   - ' '
-  nav:
+  '2':
   - ':'
   - /
   - '7'
@@ -129,7 +129,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  mse:
+  '3':
   - ' '
   - ' '
   - ' '
@@ -172,7 +172,7 @@ layers:
   - ' '
   - Click
   - ' '
-  fun:
+  '4':
   - BT CLR
   - BT 1
   - BT 2
@@ -218,127 +218,127 @@ layers:
 combos:
 - p: [19, 21, 22]
   k: ion
-  l: [def]
+  l: ['0']
   draw_separate: true
 - p: [31, 33, 34]
   k: ../
-  l: [def, nav]
+  l: ['0', '2']
   draw_separate: true
 - p: [16, 15, 14]
   k: ⏎
-  l: [def, sym, nav]
+  l: ['0', '1', '2']
   draw_separate: true
 - p: [19, 20, 21]
   k: Esc
-  l: [def, sym, nav]
+  l: ['0', '1', '2']
   draw_separate: true
 - p: [16, 14]
   k: ↹
-  l: [def, sym, nav]
+  l: ['0', '1', '2']
   draw_separate: true
 - p: [21, 19]
   k: ⌦
-  l: [def, sym, nav]
+  l: ['0', '1', '2']
   draw_separate: true
 - p: [2, 4]
   k: '%'
-  l: [def]
+  l: ['0']
   draw_separate: true
 - p: [7, 9]
   k: '`'
-  l: [def]
+  l: ['0']
   draw_separate: true
 - p: [26, 28]
   k: '~'
-  l: [def]
+  l: ['0']
   a: bottom
 - p: [16, 17]
   k: '['
-  l: [def]
+  l: ['0']
 - p: [19, 18]
   k: ']'
-  l: [def]
+  l: ['0']
 - p: [16, 15]
   k: (
-  l: [def]
+  l: ['0']
 - p: [19, 20]
   k: )
-  l: [def]
+  l: ['0']
 - p: [15, 14]
   k: '{'
-  l: [def]
+  l: ['0']
 - p: [20, 21]
   k: '}'
-  l: [def]
+  l: ['0']
 - p: [25, 28]
   k: Select All
-  l: [def]
+  l: ['0']
   a: bottom
 - p: [25, 26]
   k: Cut
-  l: [def]
+  l: ['0']
 - p: [26, 27]
   k: Copy
-  l: [def]
+  l: ['0']
 - p: [27, 28]
   k: Paste
-  l: [def]
+  l: ['0']
 - p: [28, 29]
   k: '!'
-  l: [def]
+  l: ['0']
 - p: [30, 31]
   k: _
-  l: [def]
+  l: ['0']
 - p: [31, 32]
   k: '-'
-  l: [def]
+  l: ['0']
 - p: [32, 33]
   k: ;
-  l: [def]
+  l: ['0']
 - p: [33, 34]
   k: ':'
-  l: [def]
+  l: ['0']
 - p: [31, 33]
   k: '"'
-  l: [def]
+  l: ['0']
   a: bottom
 - p: [7, 8, 9]
   k: '>'
-  l: [def]
+  l: ['0']
   a: top
 - p: [6, 7]
   k: =>
-  l: [def]
+  l: ['0']
 - p: [9, 8]
   k: '='
-  l: [def]
+  l: ['0']
 - p: [8, 7]
   k: '&'
-  l: [def]
+  l: ['0']
 - p: [9, 10]
   k: $
-  l: [def]
+  l: ['0']
 - p: [4, 3, 2]
   k: <
-  l: [def]
+  l: ['0']
   a: top
 - p: [1, 2]
   k: '#'
-  l: [def]
+  l: ['0']
 - p: [2, 3]
   k: '@'
-  l: [def]
+  l: ['0']
 - p: [3, 4]
   k: '|'
-  l: [def]
+  l: ['0']
 - p: [4, 5]
   k: '*'
-  l: [def]
+  l: ['0']
 - p: [4, 7]
   k: Caps Word
-  l: [def]
+  l: ['0']
   a: top
 - p: [12, 23]
   k: Caps Lock
-  l: [def]
+  l: ['0']
   draw_separate: true
