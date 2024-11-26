@@ -38,10 +38,10 @@ layers:
   - {t: /, h: //, s: '?'}
   - {t: Alt, h: sticky}
   - {t: ⌦, h: fun}
-  - {t: ⌫, h: nav, s: ⌦}
   - {t: Esc, h: mse}
+  - {t: ⌫, h: nav, s: ⌦}
+  - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
-  - {t: '0', h: sym}
   - {t: ↹, h: fun}
   sym:
   - ' '
@@ -81,10 +81,10 @@ layers:
   - ' '
   - ' '
   - ' '
+  - ' '
   - {t: ␣, h: nav}
-  - ' '
-  - ' '
   - {t: ' ', type: held}
+  - ' '
   - ' '
   nav:
   - ':'
@@ -167,10 +167,10 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
   - {t: ' ', type: held}
-  - Click
   - ' '
+  - ' '
+  - Click
   - ' '
   fun:
   - BT CLR
