@@ -19,4 +19,5 @@ jobs:
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
+      west_config_path: 'config' # This pulls external zephyr modules so keymap drawer can see them
       # commit_message: "[Draw] ${{ github.event.head_commit.message }}"
