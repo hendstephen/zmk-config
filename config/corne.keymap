@@ -1,4 +1,4 @@
-#include "includes/zmk-helpers/key-labels/42.h"
+#include "zmk-helpers/key-labels/42.h"
 
 // Define extra keys
 #define X_F
