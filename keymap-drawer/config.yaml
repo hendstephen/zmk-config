@@ -1,4 +1,8 @@
 parse_config:
+  zmk_preamble: "#include <zmk-helpers/key-labels/42.h>"
+  zmk_additional_includes:
+    - "zmk-helpers/include"
+
   zmk_combos:
     combo_all: { align: 'bottom' }
     combo_dqt: { align: 'bottom' }
