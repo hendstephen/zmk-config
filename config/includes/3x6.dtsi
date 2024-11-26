@@ -145,10 +145,10 @@ SIMPLE_MORPH(smart_shftr, SFT, &sk RSHFT, &caps_word)
 
 #if THUMBS_OUT
     #define THUMBS_DEF X_HL  &lt FUN DEL  &kp ESC  &lt_bspc NAV 0    &lt_spc SYM SPACE  &mt RSHFT RET  &lt FUN TAB  X_HR
-    #define THUMBS_SYM X_HL  ___          ___          &lt NAV SPACE     ___                ___            ___          X_HR
+    #define THUMBS_SYM X_HL  ___          ___      &lt NAV SPACE     ___                ___            ___          X_HR
 #else
-    #define THUMBS_DEF X_HL  &lt FUN DEL  &lt_bspc NAV 0      &kp ESC    &mt RSHFT RET  &lt_spc SYM 0  &lt FUN TAB  X_HR
-    #define THUMBS_SYM X_HL  ___          &lt_spc NAV SPACE   ___            ___            ___            ___          X_HR
+    #define THUMBS_DEF X_HL  &lt FUN DEL  &lt_bspc NAV 0      &kp ESC    &mt RSHFT RET  &lt_spc SYM SPACE  &lt FUN TAB  X_HR
+    #define THUMBS_SYM X_HL  ___          &lt_spc NAV SPACE   ___        ___            ___                ___          X_HR
 #endif
 
 /* Layers */

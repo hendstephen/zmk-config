@@ -7,6 +7,6 @@
 #define X_HL
 
 // Thumbs on inner/outer thumb key
-#define THUMBS_OUT 1
+#define THUMBS_OUT 0
 
 #include "includes/3x6.dtsi"
