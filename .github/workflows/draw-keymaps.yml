@@ -14,7 +14,8 @@ jobs:
     permissions:
       contents: write
     with:
-      keymap_patterns: config/*.keymap
+      # keymap_patterns: config/*.keymap
+      keymap_pattenrs: config/corne.keymap
       config_path: keymap-drawer/config.yaml
       output_folder: keymap-drawer
       install_branch: main
