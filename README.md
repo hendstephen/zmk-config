@@ -29,7 +29,6 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
   - `//` - long press on `/` key to output double slash for starting a comment
 - Sticky `Alt` on base layer re: [Issue #759](https://github.com/zmkfirmware/zmk/issues/759)
   - _I do most of my work on a remote desktop, and it seems the client doesn't respect the `alt` modifier on a non-base layer (or mod-tap) until after the full tap-hold delay. I got tired of waiting, so I put sticky `alt` on the base layer as well as a tab combo for a quick window switch without waiting for the full timeout._
-- Mouse emulation
 
 ![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
