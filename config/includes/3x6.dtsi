@@ -50,7 +50,6 @@
 };
 
 &num_word {
-    layers = <NAV>;
     continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
 };
 
@@ -124,7 +123,7 @@ ZMK_HOLD_TAP(lt_bspc,
 )
 
 // tap: num-word | double-tap: sticky num layer | hold: num layer
-#define SMART_NUM &lt_num NAV 0
+#define SMART_NUM &lt_num NAV NAV
 ZMK_HOLD_TAP(lt_num, 
     flavor = "balanced";
     tapping-term-ms = <200>;
