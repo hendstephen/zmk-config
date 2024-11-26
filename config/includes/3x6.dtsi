@@ -144,9 +144,6 @@ ZMK_HOLD_TAP(lt_spc,
 SIMPLE_MORPH(smart_shftl, SFT, &sk LSHFT, &caps_word)
 SIMPLE_MORPH(smart_shftr, SFT, &sk RSHFT, &caps_word)
 
-// tap: left click | shift + tap: right click
-SIMPLE_MORPH(sftclk, SFT, &mkp LCLK, &mkp RCLK)
-
 #if THUMBS_OUT
     #define THUMBS_DEF X_HL  &lt FUN DEL  &kp ESC  &lt_bspc NAV 0    &lt_spc SYM SPACE  &mt RSHFT RET  &lt FUN TAB  X_HR
     #define THUMBS_SYM X_HL  ___          ___          &lt NAV SPACE     ___                ___            ___          X_HR
