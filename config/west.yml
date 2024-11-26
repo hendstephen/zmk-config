@@ -1,12 +1,19 @@
 manifest:
+
   remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+      
   projects:
     - name: zmk
-      remote: urob
-      # revision: main # TODO: this branch was deprecated, need to update to use main or create my own fork
-      revision: main-3.5
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    - name: zmk-auto-layer
+      remote: urob
+      revision: main
+
   self:
     path: config
