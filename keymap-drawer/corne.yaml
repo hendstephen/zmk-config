@@ -15,9 +15,9 @@ layers:
   - C+A+⌦
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
-  - {t: R, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Shift}
+  - '&hml LALT R'
+  - '&hml LCTRL S'
+  - '&hml LSHFT T'
   - G
   - M
   - {t: N, h: Shift}
@@ -42,7 +42,7 @@ layers:
   - {t: ⌫, h: nav, s: ⌦}
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
-  - {t: ↹, h: fun}
+  - {t: '&leader', h: fun}
   sym:
   - ' '
   - ' '
@@ -58,9 +58,9 @@ layers:
   - ' '
   - ' '
   - {t: '!', h: Gui}
-  - {t: '-', h: Alt}
-  - {t: +, h: Ctrl}
-  - {t: '=', h: Shift}
+  - '&hml LALT MINUS'
+  - '&hml LCTRL PLUS'
+  - '&hml LSHFT EQUAL'
   - '#'
   - '&'
   - {t: ':', h: Shift}
@@ -101,9 +101,9 @@ layers:
   - ' '
   - .
   - {t: '-', h: Gui}
-  - {t: '4', h: Alt}
-  - {t: '5', h: Ctrl}
-  - {t: '6', h: Shift}
+  - '&hml LALT N4'
+  - '&hml LCTRL N5'
+  - '&hml LSHFT N6'
   - +
   - Win Close
   - {t: ←, h: Shift}

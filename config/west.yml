@@ -17,6 +17,9 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+    - name: zmk-leader-key
+      remote: urob
+      revision: main
 
   self:
     path: config
