@@ -5,7 +5,8 @@ manifest:
   projects:
     - name: zmk
       remote: urob
-      revision: main
+      # revision: main # TODO: this branch was deprecated, need to update to use main or create my own fork
+      revision: main-3.5
       import: app/west.yml
   self:
     path: config
