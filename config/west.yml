@@ -3,8 +3,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    # For ZMK modules
     - name: urob
       url-base: https://github.com/urob
+    # For nice-view-gem
+    - name: m165437
+      url-base: https://github.com/M165437
       
   projects:
     - name: zmk
@@ -19,6 +23,9 @@ manifest:
       revision: main
     - name: zmk-leader-key
       remote: urob
+      revision: main
+    - name: nice-view-gem
+      remote: m165437
       revision: main
 
   self:
