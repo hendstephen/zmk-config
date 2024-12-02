@@ -36,7 +36,7 @@ ZMK_COMBO(del     , HRC_DEL  , RM3 RM1    , DEF SYM NAV, COMBO_SLOW, IDLE_SLOW)
 
 ZMK_COMBO(percent , &kp PRCNT, LT3 LT1    , DEF        , COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(grave   , &kp GRAVE, RT1 RT3    , DEF        , COMBO_FAST, IDLE_SLOW)
-ZMK_COMBO(tilde   , &kp TILDE, LB3 LB1    , DEF        , COMBO_FAST)
+ZMK_COMBO(tilde   , &kp TILDE, LB3 LB2 LB1, DEF        , COMBO_FAST)
 
 // Matching braces/brackets
 ZMK_COMBO(lbkt    , HRC_LBKT , LM1 LM0    , DEF        , COMBO_FAST, IDLE_SLOW)
@@ -58,7 +58,7 @@ ZMK_COMBO(under   , &kp UNDER, RB0 RB1    , DEF        , COMBO_FAST)
 ZMK_COMBO(min     , &kp MINUS, RB1 RB2    , DEF        , COMBO_FAST)
 ZMK_COMBO(semi    , &kp SEMI , RB2 RB3    , DEF        , COMBO_FAST)
 ZMK_COMBO(cln     , &kp COLON, RB3 RB4    , DEF        , COMBO_FAST)
-ZMK_COMBO(dqt     , &kp DQT  , RB1 RB3    , DEF        , COMBO_FAST)
+ZMK_COMBO(dqt     , &kp DQT  , RB1 RB2 RB3, DEF        , COMBO_FAST)
 
 /* Right top row */
 ZMK_COMBO(gt      , &kp GT   , RT1 RT2 RT3, DEF        , COMBO_FAST)

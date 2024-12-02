@@ -340,6 +340,7 @@ path.combo { stroke: #7f7f7f; }
 </a></g>
 <g class="combo combopos-0">
 <path d="M196,176 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<path d="M196,176 l0,-17" class="combo"/>
 <path d="M196,176 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <rect rx="6" ry="6" x="182" y="163" width="28" height="26" class="combo"/>
 <text x="196" y="176" class="combo tap">~</text>
@@ -410,6 +411,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g class="combo combopos-16">
 <path d="M644,176 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<path d="M644,176 l0,-17" class="combo"/>
 <path d="M644,176 h50 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <rect rx="6" ry="6" x="630" y="163" width="28" height="26" class="combo"/>
 <text x="644" y="176" class="combo tap">&quot;</text>
