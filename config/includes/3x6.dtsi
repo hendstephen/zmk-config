@@ -1,6 +1,5 @@
 #include <behaviors.dtsi>
 #include <behaviors/num_word.dtsi>
-#include <behaviors/leader_key.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -15,7 +14,10 @@
 #include "zmk-helpers/helper.h"
 #include "macros.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
-#include "leader.dtsi"
+#ifdef CONFIG_LEADER
+    #include <behaviors/leader_key.dtsi>
+    #include "leader.dtsi"
+#endif
 
 #define XXX &none
 #define ___ &trans
