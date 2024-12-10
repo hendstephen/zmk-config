@@ -1,4 +1,0 @@
-#include "zmk-helpers/unicode-chars/spanish.dtsi"
-
-/* Spanish */
-ZMK_LEADER_SEQUENCE(es_n, &es_n_tilde, RM1)
