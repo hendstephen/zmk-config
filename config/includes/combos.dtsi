@@ -65,14 +65,14 @@ ZMK_COMBO(gt      , &kp GT   , RT1 RT2 RT3, DEF     NAV, COMBO_FAST)
 ZMK_COMBO(fatarrow, &fatarrow, RT0 RT1    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(eq      , &kp EQUAL, RT3 RT2    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(amps    , &kp AMPS , RT2 RT1    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
-ZMK_COMBO(dllr    , &kp DLLR , RT3 RT4    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(hash    , &kp HASH , RT4 RT3    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 
 /* Left top row */
 ZMK_COMBO(lt      , &kp LT   , LT1 LT2 LT3, DEF     NAV, COMBO_FAST)
-ZMK_COMBO(hash    , &kp HASH , LT4 LT3    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(at      , &kp AT   , LT3 LT2    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(pipe    , &kp PIPE , LT2 LT1    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(star    , &kp STAR , LT1 LT0    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(dllr    , &kp DLLR , LT3 LT4    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 
 /* Both top */
 ZMK_COMBO(capword ,&caps_word, LT1 RT1    , DEF        , COMBO_SLOW, IDLE_SLOW)
