@@ -42,7 +42,7 @@ layers:
   - {t: ⌫, h: nav, s: ⌦}
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
-  - fun
+  - {t: Num Word, h: fun}
   sym:
   - ' '
   - ' '
