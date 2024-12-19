@@ -23,7 +23,6 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
   - Windows shortcuts
     - Lock: `Win + L`
     - Desktop left/right: `Win + Ctrl + Left/Right`
-    - Close: `Alt + F4`
   - `ion` - outputs the common pattern "ion" in many english words, which for me is difficult to get right as it's an outward roll on the pinky
   - `../` - to `cd` up one level
   - `//` - long press on `/` key to output double slash for starting a comment
