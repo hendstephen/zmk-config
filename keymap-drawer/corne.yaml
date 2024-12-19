@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - {t: '''', s: '"'}
-  - ' '
+  - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
   - {t: R, h: Alt}
@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
-  - {t: Alt, h: sticky}
+  - ' '
   - {t: alt, h: fun}
   - Esc
   - {t: ⌫, h: nav, s: ⌦}
