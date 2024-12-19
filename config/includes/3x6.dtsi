@@ -14,6 +14,7 @@
 
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/spanish.dtsi"
+#include "zmk-helpers/unicode-chars/german.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
 
@@ -101,6 +102,14 @@ SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
 // tap: ' | shift + tap: "
 // Technically not needed, but we add it here so it shows up in keymap svg
 SIMPLE_MORPH(sqt_morph, SFT, &kp SQT, &kp DQT)
+
+// tap: ú | hold:  
+ZMK_HOLD_TAP(ht_es_u, 
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&de_ue>, <&es_u_acute>;
+)
 
 // tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 
@@ -196,7 +205,7 @@ ZMK_LAYER(alt,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    ___           ___           ___           ___           ___           ___                                         ___           ___           &es_u_acute   ___           ___           ___           
+    ___           ___           ___           ___           ___           ___                                         ___           ___           &ht_es_u      ___           ___           ___           
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &es_a_acute   ___           ___           ___           ___                                         ___           &es_n_tilde   &es_e_acute   &es_i_acute   &es_o_acute   ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
