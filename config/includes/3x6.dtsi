@@ -14,7 +14,6 @@
 
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/spanish.dtsi"
-#include "zmk-helpers/unicode-chars/german.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
 
@@ -108,7 +107,7 @@ ZMK_HOLD_TAP(ht_es_u,
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&de_ue>, <&es_u_acute>;
+    bindings = <&es_u_dieresis>, <&es_u_acute>;
 )
 #define ES_U &ht_es_u 0 0
 
