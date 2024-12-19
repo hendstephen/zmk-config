@@ -138,6 +138,14 @@ ZMK_HOLD_TAP(lt_num,
     bindings = <&mo>, <&num_word>;
 )
 
+// tap: sticky layer | hold: mo layer
+ZMK_HOLD_TAP(lt_sl, 
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&sl>;
+)
+
 // tap-preferred hold-tap for space on thumb
 ZMK_HOLD_TAP(lt_spc, 
     flavor = "tap-preferred";
@@ -150,12 +158,14 @@ ZMK_HOLD_TAP(lt_spc,
 SIMPLE_MORPH(smart_shftl, SFT, &sk LSHFT, &caps_word)
 SIMPLE_MORPH(smart_shftr, SFT, &sk RSHFT, &caps_word)
 
+#define FUN_LEFT &lt_sl FUN ALT
+
 #if THUMBS_OUT
-    #define THUMBS_DEF X_HL  &lt FUN DEL  &kp ESC  &lt_bspc NAV 0    &lt_spc SYM SPACE  &mt RSHFT RET  &lt_num FUN NAV X_HR
-    #define THUMBS_SYM X_HL  ___          ___      &lt NAV SPACE     ___                ___            ___             X_HR
+    #define THUMBS_DEF X_HL  FUN_LEFT  &kp ESC  &lt_bspc NAV 0    &lt_spc SYM SPACE  &mt RSHFT RET  &lt_num FUN NAV X_HR
+    #define THUMBS_SYM X_HL  ___       ___      &lt NAV SPACE     ___                ___            ___             X_HR
 #else
-    #define THUMBS_DEF X_HL  &lt FUN DEL  &lt_bspc NAV 0      &kp ESC    &mt RSHFT RET  &lt_spc SYM SPACE  &lt_num FUN NAV X_HR
-    #define THUMBS_SYM X_HL  ___          &lt_spc NAV SPACE   ___        ___            ___                ___             X_HR
+    #define THUMBS_DEF X_HL  FUN_LEFT  &lt_bspc NAV 0      &kp ESC    &mt RSHFT RET  &lt_spc SYM SPACE  &lt_num FUN NAV X_HR
+    #define THUMBS_SYM X_HL  ___       &lt_spc NAV SPACE   ___        ___            ___                ___             X_HR
 #endif
 
 /* Layers */
@@ -163,7 +173,7 @@ ZMK_LAYER(def,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &sl ALT       &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &sqt_morph    ___
+    ___           &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &sqt_morph    ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &hmlp LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI O  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 

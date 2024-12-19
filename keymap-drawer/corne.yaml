@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   def:
-  - {t: alt, h: sticky}
+  - ' '
   - Q
   - W
   - F
@@ -37,7 +37,7 @@ layers:
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
   - {t: Alt, h: sticky}
-  - {t: ⌦, h: fun}
+  - {t: alt, h: fun}
   - Esc
   - {t: ⌫, h: nav, s: ⌦}
   - {t: ␣, h: sym}
@@ -130,7 +130,7 @@ layers:
   - ' '
   - ' '
   alt:
-  - {t: ' ', type: held}
+  - ' '
   - ' '
   - ' '
   - ' '
@@ -166,7 +166,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
+  - {t: ' ', type: held}
   - ' '
   - ' '
   - ' '
