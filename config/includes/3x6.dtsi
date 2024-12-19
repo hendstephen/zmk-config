@@ -19,7 +19,7 @@
 // We define our own ü key here rather than importing all of german.dtsi,
 // which breaks the other spanish unicode chars
 #include "zmk-helpers/unicode-chars/spanish.dtsi"
-ZMK_UNICODE_PAIR(de_ue, N0, N0, F, C, N0, N0, D, C) // ü/Ü
+// ZMK_UNICODE_PAIR(de_ue, N0, N0, F, C, N0, N0, D, C) // ü/Ü
 
 #define XXX &none
 #define ___ &trans
@@ -106,13 +106,13 @@ SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
 // Technically not needed, but we add it here so it shows up in keymap svg
 SIMPLE_MORPH(sqt_morph, SFT, &kp SQT, &kp DQT)
 
-// tap: ú | hold: ü
-ZMK_HOLD_TAP(ht_es_u, 
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <QUICK_TAP_MS>;
-    bindings = <&de_ue>, <&es_u_acute>;
-)
+// // tap: ú | hold: ü
+// ZMK_HOLD_TAP(ht_es_u, 
+//     flavor = "tap-preferred";
+//     tapping-term-ms = <200>;
+//     quick-tap-ms = <QUICK_TAP_MS>;
+//     bindings = <&de_ue>, <&es_u_acute>;
+// )
 
 // tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 
@@ -208,7 +208,7 @@ ZMK_LAYER(alt,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    ___           ___           ___           ___           ___           ___                                         ___           ___           &ht_es_u      ___           ___           ___           
+    ___           ___           ___           ___           ___           ___                                         ___           ___           &es_u_acute   ___           ___           ___           
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     ___           &es_a_acute   ___           ___           ___           ___                                         ___           &es_n_tilde   &es_e_acute   &es_i_acute   &es_o_acute   ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
