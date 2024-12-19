@@ -13,10 +13,13 @@
 #define FUN 4
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/unicode-chars/german.dtsi"
-#include "zmk-helpers/unicode-chars/spanish.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
+
+// We define our own ü key here rather than importing all of german.dtsi,
+// which breaks the other spanish unicode chars
+#include "zmk-helpers/unicode-chars/spanish.dtsi"
+ZMK_UNICODE_PAIR(de_ue, N0, N0, F, C, N0, N0, D, C) // ü/Ü
 
 #define XXX &none
 #define ___ &trans
