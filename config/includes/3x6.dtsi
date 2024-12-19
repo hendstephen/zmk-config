@@ -103,7 +103,7 @@ SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &kp COLON)
 // Technically not needed, but we add it here so it shows up in keymap svg
 SIMPLE_MORPH(sqt_morph, SFT, &kp SQT, &kp DQT)
 
-// tap: ú | hold:  
+// tap: ú | hold: ü
 ZMK_HOLD_TAP(ht_es_u, 
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
