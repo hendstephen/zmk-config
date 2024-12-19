@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - {t: '''', s: '"'}
-  - ' '
+  - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
   - {t: R, h: Alt}
@@ -25,7 +25,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: Num Word, h: nav}
+  - ' '
   - Z
   - X
   - C
@@ -36,13 +36,13 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
-  - {t: Alt, h: sticky}
+  - ' '
   - {t: ⌦, h: fun}
   - Esc
   - {t: ⌫, h: nav, s: ⌦}
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
-  - {t: Num Word, h: fun}
+  - '&lt_num 3 2'
   sym:
   - ' '
   - ' '
@@ -95,7 +95,7 @@ layers:
   - '*'
   - ' '
   - Desk Left
-  - Sft+ ↹
+  - Sft+↹
   - ↹
   - Desk Right
   - ' '
@@ -111,7 +111,7 @@ layers:
   - {t: ↑, h: Alt}
   - {t: →, h: Gui}
   - ' '
-  - {t: ' ', type: held}
+  - ' '
   - '0'
   - '1'
   - '2'
@@ -125,7 +125,7 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
+  - {t: ' ', type: held}
   - ' '
   - ' '
   - ' '
