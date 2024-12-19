@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   def:
-  - ' '
+  - {t: alt, h: sticky}
   - Q
   - W
   - F
@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - {t: '''', s: '"'}
-  - {t: Alt, h: sticky}
+  - ' '
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Gui}
   - {t: R, h: Alt}
@@ -36,7 +36,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
-  - ' '
+  - {t: Alt, h: sticky}
   - {t: ⌦, h: fun}
   - Esc
   - {t: ⌫, h: nav, s: ⌦}
@@ -126,6 +126,49 @@ layers:
   - ' '
   - ' '
   - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - ' '
+  alt:
+  - {t: ' ', type: held}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - {t: '&es_u_acute_lower', s: '&es_u_acute_upper'}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - {t: '&es_a_acute_lower', s: '&es_a_acute_upper'}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - {t: '&es_n_tilde_lower', s: '&es_n_tilde_upper'}
+  - {t: '&es_e_acute_lower', s: '&es_e_acute_upper'}
+  - {t: '&es_i_acute_lower', s: '&es_i_acute_upper'}
+  - {t: '&es_o_acute_lower', s: '&es_o_acute_upper'}
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
+  - ' '
   - ' '
   - ' '
   - ' '
