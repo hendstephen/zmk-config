@@ -13,8 +13,8 @@
 #define FUN 4
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/unicode-chars/spanish.dtsi"
 #include "zmk-helpers/unicode-chars/german.dtsi"
+#include "zmk-helpers/unicode-chars/spanish.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
 
