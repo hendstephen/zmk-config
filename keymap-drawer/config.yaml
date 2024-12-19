@@ -60,6 +60,13 @@ parse_config:
     '&dblslsh': '//'
     '&leader': Leader
 
+    '&es_a_acute': á
+    '&es_e_acute': é
+    '&es_i_acute': í
+    '&es_o_acute': ó
+    '&es_u_acute': ú
+    '&es_n_tilde': ñ
+
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
     '&bt BT_SEL 2': BT 3

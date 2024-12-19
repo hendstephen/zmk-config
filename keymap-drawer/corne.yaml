@@ -138,21 +138,21 @@ layers:
   - ' '
   - ' '
   - ' '
-  - {t: '&es_u_acute_lower', s: '&es_u_acute_upper'}
+  - ú
   - ' '
   - ' '
   - ' '
   - ' '
-  - {t: '&es_a_acute_lower', s: '&es_a_acute_upper'}
+  - á
   - ' '
   - ' '
   - ' '
   - ' '
   - ' '
-  - {t: '&es_n_tilde_lower', s: '&es_n_tilde_upper'}
-  - {t: '&es_e_acute_lower', s: '&es_e_acute_upper'}
-  - {t: '&es_i_acute_lower', s: '&es_i_acute_upper'}
-  - {t: '&es_o_acute_lower', s: '&es_o_acute_upper'}
+  - ñ
+  - é
+  - í
+  - ó
   - ' '
   - ' '
   - ' '
