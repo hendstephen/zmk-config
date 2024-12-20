@@ -67,6 +67,8 @@ parse_config:
     '&es_u_acute': ú
     '&es_n_tilde': ñ
     '&es_u_dieresis': ü
+    '&es_inv_qmark': ¿
+    '&es_inv_excl': ¡
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
