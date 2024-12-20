@@ -1,0 +1,3 @@
+#include "zmk-helpers/unicode-chars/spanish.dtsi"
+ZMK_UNICODE_SINGLE(es_inv_qmark, N0, N0, B, F)
+ZMK_UNICODE_SINGLE(es_inv_excl,  N0, N0, A, N1)

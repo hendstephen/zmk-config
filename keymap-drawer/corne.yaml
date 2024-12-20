@@ -163,8 +163,8 @@ layers:
   - ' '
   - ' '
   - ' '
-  - '&es_inv_excl'
-  - '&es_inv_qmark'
+  - '&es_inv_excl_lower'
+  - '&es_inv_qmark_lower'
   - ' '
   - {t: ' ', type: held}
   - ' '
