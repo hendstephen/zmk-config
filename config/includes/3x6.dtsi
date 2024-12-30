@@ -52,7 +52,7 @@
 };
 
 &num_word {
-    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL COLON>;
 };
 
 /* CUSTOM KEYCODES */
