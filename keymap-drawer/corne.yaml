@@ -53,15 +53,15 @@ layers:
   - ;
   - .
   - ''''
-  - EQ
-  - SLSH
+  - '='
+  - /
   - Z
   - Ctrl
   - S
   - N
   - T
   - H
-  - k
+  - K
   - ','
   - A
   - E
