@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
   def:
   - ' '
@@ -43,6 +43,49 @@ layers:
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
   - {t: Num Word, h: fun}
+  hnd:
+  - ↹
+  - V
+  - W
+  - G
+  - M
+  - J
+  - ;
+  - .
+  - ''''
+  - EQ
+  - SLSH
+  - Z
+  - Ctrl
+  - S
+  - N
+  - T
+  - H
+  - k
+  - ','
+  - A
+  - E
+  - I
+  - C
+  - Q
+  - (
+  - F
+  - P
+  - D
+  - L
+  - X
+  - DASH
+  - U
+  - O
+  - Y
+  - B
+  - ⏎
+  - fun
+  - ⌫
+  - R
+  - SPC
+  - {t: Shift, h: sticky, s: Caps Word}
+  - ' '
   sym:
   - ' '
   - ' '
@@ -183,7 +226,7 @@ layers:
   - OUT BLE
   - ' '
   - ' '
-  - ' '
+  - {t: hnd, h: toggle}
   - Soft Off
   - F1
   - F2
