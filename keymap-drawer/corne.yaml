@@ -83,7 +83,7 @@ layers:
   - fun
   - ⌫
   - R
-  - SPC
+  - ␣
   - {t: Shift, h: sticky, s: Caps Word}
   - ' '
   sym:
