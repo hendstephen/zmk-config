@@ -56,7 +56,7 @@ layers:
   - '='
   - /
   - Z
-  - ' '
+  - {t: Shift, h: sticky, s: Caps Word}
   - S
   - N
   - T
@@ -67,8 +67,8 @@ layers:
   - E
   - I
   - C
+  - {t: Shift, h: sticky, s: Caps Word}
   - Q
-  - ' '
   - F
   - P
   - D
@@ -79,12 +79,12 @@ layers:
   - O
   - Y
   - B
-  - ⏎
+  - Z
   - fun
-  - ⌫
+  - ⏎
   - R
   - ␣
-  - {t: Shift, h: sticky, s: Caps Word}
+  - ⌫
   - ' '
   sym:
   - ' '
