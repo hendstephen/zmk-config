@@ -43,7 +43,49 @@ layers:
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
   - {t: Num Word, h: fun}
-  hnd: [↹, V, W, G, M, J, ;, ., '''', '=', /, Z, ' ', S, N, T, H, K, ',', A, E, I, C, Q, ' ', F, P, D, L, X, '-', U, O, Y, B, ⏎, fun, ⏎, R, ␣, ⌫, ' ']
+  hnd:
+  - ↹
+  - V
+  - W
+  - G
+  - M
+  - J
+  - ;
+  - .
+  - ''''
+  - '='
+  - /
+  - Z
+  - {t: Shift, h: sticky, s: Caps Word}
+  - {t: S, h: Gui}
+  - {t: N, h: Alt}
+  - {t: T, h: Ctrl}
+  - {t: H, h: Shift}
+  - K
+  - ','
+  - {t: A, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: C, h: Gui}
+  - {t: Shift, h: sticky, s: Caps Word}
+  - Q
+  - F
+  - P
+  - D
+  - L
+  - X
+  - '-'
+  - U
+  - O
+  - Y
+  - B
+  - Z
+  - fun
+  - ⏎
+  - R
+  - ␣
+  - ⌫
+  - ' '
   sym:
   - ' '
   - ' '
