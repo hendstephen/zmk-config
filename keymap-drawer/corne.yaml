@@ -313,6 +313,18 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [def, nav]
+- p: [19, 20]
+  k: {t: (, h: Sft+Ctrl}
+  l: [hnd]
+- p: [16, 15]
+  k: {t: ), h: Sft+Ctrl}
+  l: [hnd]
+- p: [20, 21]
+  k: {t: '{', h: Ctl+Alt}
+  l: [hnd]
+- p: [15, 14]
+  k: {t: '}', h: Ctl+Alt}
+  l: [hnd]
 - p: [25, 28]
   k: Select All
   l: [def, nav]
