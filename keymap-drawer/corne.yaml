@@ -82,7 +82,7 @@ layers:
   - Z
   - fun
   - ⏎
-  - R
+  - {t: R, h: nav}
   - ␣
   - ⌫
   - ' '
@@ -259,10 +259,6 @@ layers:
   - ' '
   - ' '
 combos:
-- p: [19, 21, 22]
-  k: ion
-  l: [def]
-  draw_separate: true
 - p: [31, 33, 34]
   k: ../
   l: [def, nav]

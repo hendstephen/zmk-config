@@ -24,6 +24,15 @@
 #define HRC_TAB &hml LS(LALT) TAB
 #define HRC_RET &hml LS(LC(LALT)) RET
 
+SIMPLE_MORPH(rpar_hd, SFT, &kp RPAR, &kp LPAR)
+SIMPLE_MORPH(rbrc_hd, SFT, &kp LBRC, &kp RBRC)
+
+#define HRC_LPAR_HD &hml LS(LCTRL) LPAR
+#define HRC_RPAR_HD &hmr RS(RCTRL) rpar_hd
+
+#define HRC_LBRC_HD &hml LC(LALT) LBRC
+#define HRC_RBRC_HD &hmr RC(RALT) rbrc_hd
+
 /* Draw separate */
 ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
 ZMK_COMBO(cdup    , &cdup    , RB1 RB3 RB4, DEF     NAV, COMBO_FAST)
