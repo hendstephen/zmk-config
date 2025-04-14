@@ -327,17 +327,17 @@ combos:
   l: [hnd]
 - p: [25, 28]
   k: Select All
-  l: [def, nav]
+  l: [def, hnd, nav]
   a: bottom
 - p: [25, 26]
   k: Cut
-  l: [def, nav]
+  l: [def, hnd, nav]
 - p: [26, 27]
   k: Copy
-  l: [def, nav]
+  l: [def, hnd, nav]
 - p: [27, 28]
   k: Paste
-  l: [def, nav]
+  l: [def, hnd, nav]
 - p: [28, 29]
   k: '!'
   l: [def, nav]
