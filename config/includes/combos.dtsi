@@ -9,11 +9,12 @@
 // Make homerow combos tap-only (so HRMs can be chorded instantaneously)
 #define HRC_ION &hmr_ion RS(RA(RGUI)) 0
 
+#define HRC_LPAR &hml LS(LCTRL) LPAR
 #define HRC_RPAR &hmr RS(RCTRL) RPAR
 
 SIMPLE_MORPH(pars, SFT, &kp LPAR, &kp RPAR)
 MAKE_HRM(hm_par, &kp, &pars, KEYS_L THUMBS, "tap-preferred")
-#define HRC_LPAR &hm_par LS(LCTRL) 0
+#define HRC_LPAR_HD &hm_par LS(LCTRL) 0
 
 #define HRC_LBRC &hml LC(LALT) LBRC
 #define HRC_RBRC &hmr RC(RALT) RBRC
