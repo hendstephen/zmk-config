@@ -12,9 +12,9 @@
 #define HRC_LPAR &hml LS(LCTRL) LPAR
 #define HRC_RPAR &hmr RS(RCTRL) RPAR
 
-SIMPLE_MORPH(pars, SFT, &kp LPAR, &kp RPAR)
-MAKE_HRM(hm_par, &kp, &pars, KEYS_L THUMBS, "tap-preferred")
-#define HRC_LPAR_HD &hm_par LS(LCTRL) 0
+// SIMPLE_MORPH(pars, SFT, &kp LPAR, &kp RPAR)
+// MAKE_HRM(hm_par, &kp, &pars, KEYS_L THUMBS, "tap-preferred")
+// #define HRC_LPAR_HD &hm_par RS(RCTRL) 0
 
 #define HRC_LBRC &hml LC(LALT) LBRC
 #define HRC_RBRC &hmr RC(RALT) RBRC
@@ -50,7 +50,7 @@ ZMK_COMBO(rpar    , HRC_RPAR , RM1 RM2    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(lbrc    , HRC_LBRC , LM2 LM3    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(rbrc    , HRC_RBRC , RM2 RM3    , DEF     NAV, COMBO_FAST, IDLE_SLOW)
 
-ZMK_COMBO(lpar_hd , HRC_LPAR_HD , RM1 RM2    , HND, COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(lpar_hd , HRC_LPAR , RM1 RM2    , HND, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(rpar_hd , HRC_RPAR , LM1 LM2    , HND, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(lbrc_hd , HRC_LBRC , RM2 RM3    , HND, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(rbrc_hd , HRC_RBRC , LM2 LM3    , HND, COMBO_FAST, IDLE_SLOW)
