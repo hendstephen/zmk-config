@@ -14,6 +14,21 @@
 #define FUN 5
 
 #include "zmk-helpers/helper.h"
+#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, FLAVOR) \
+    ZMK_HOLD_TAP(NAME, \
+        flavor = FLAVOR; \
+        tapping-term-ms = <280>; \
+        quick-tap-ms = <QUICK_TAP_MS>; \
+        require-prior-idle-ms = <150>; \
+        bindings = <HOLD>, <TAP>; \
+        hold-trigger-key-positions = <TRIGGER_POS>; \
+        hold-trigger-on-release; \
+    )
+
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right hand
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                                  // thumbs
+
 #include "unicode.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
@@ -61,20 +76,6 @@
 #define WIN_RIGHT LG(LC(RIGHT))
 
 /* Homerow mods */
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right hand
-#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                                  // thumbs
-
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, FLAVOR) \
-    ZMK_HOLD_TAP(NAME, \
-        flavor = FLAVOR; \
-        tapping-term-ms = <280>; \
-        quick-tap-ms = <QUICK_TAP_MS>; \
-        require-prior-idle-ms = <150>; \
-        bindings = <HOLD>, <TAP>; \
-        hold-trigger-key-positions = <TRIGGER_POS>; \
-        hold-trigger-on-release; \
-    )
 // Default HRM config
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS, "balanced")  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS, "balanced")  // right-hand HRMs
