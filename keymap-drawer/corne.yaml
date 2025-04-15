@@ -314,7 +314,7 @@ combos:
   k: '}'
   l: [def, nav]
 - p: [19, 20]
-  k: '&HRC_LPAR_HD'
+  k: '&hm_par LS(LCTRL) 0'
   l: [hnd]
 - p: [16, 15]
   k: {t: ), h: Sft+Ctrl}
