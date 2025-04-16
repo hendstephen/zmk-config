@@ -45,7 +45,7 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - ↹
-  - Z
+  - Q
   - W
   - D
   - L
@@ -54,7 +54,7 @@ layers:
   - U
   - O
   - Y
-  - Q
+  - Z
   - ' '
   - V
   - {t: S, h: Gui}
