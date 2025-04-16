@@ -45,18 +45,18 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - ↹
-  - V
+  - Z
   - W
-  - G
-  - M
+  - D
+  - L
   - X
   - ;
-  - .
-  - ''''
-  - '='
-  - /
-  - Z
-  - {t: Shift, h: sticky, s: Caps Word}
+  - U
+  - O
+  - Y
+  - Q
+  - ' '
+  - V
   - {t: S, h: Gui}
   - {t: N, h: Alt}
   - {t: T, h: Ctrl}
@@ -67,19 +67,19 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: C, h: Gui}
+  - B
   - {t: Shift, h: sticky, s: Caps Word}
-  - Q
   - F
   - P
-  - D
-  - L
+  - G
+  - M
   - J
+  - /
+  - .
+  - '='
   - '-'
-  - U
-  - O
-  - Y
-  - B
-  - Z
+  - ''''
+  - {t: Shift, h: sticky, s: Caps Word}
   - fun
   - ⏎
   - {t: R, h: nav}
@@ -314,7 +314,7 @@ combos:
   k: '}'
   l: [def, nav]
 - p: [19, 20]
-  k: '&hm_par LS(LCTRL) 0'
+  k: {t: (, h: Sft+Ctrl}
   l: [hnd]
 - p: [16, 15]
   k: {t: ), h: Sft+Ctrl}
