@@ -121,7 +121,7 @@ layers:
   - .
   - '='
   - '-'
-  - B
+  - '&ak_b'
   - {t: Shift, h: sticky, s: Caps Word}
   - fun
   - ⏎
