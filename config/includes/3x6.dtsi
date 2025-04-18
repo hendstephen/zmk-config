@@ -173,6 +173,17 @@ ZMK_ADAPTIVE_KEY(
     akm_gl, { trigger-keys = <G>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
+ 
+ZMK_MACRO(arc_eah, 
+    bindings = <&macro_tap &kp E &kp A &kp H>;
+    wait-ms = <0>;
+    tap-ms = <0>;
+)
+ZMK_ADAPTIVE_KEY(
+    arc_l, bindings = <&kp RET>;
+    arcl_y, { trigger_keys = <Y>; bindings = <&arc_eah>; max-prior-idle-ms = <AK_TIMEOUT>; };
+)
+
 #define FUN_LEFT &lt_sl FUN ALT
 
 #if THUMBS_OUT
@@ -222,7 +233,7 @@ ZMK_LAYER(hnd,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp SLASH     &kp DOT       &kp EQUAL     &ak_minus     &kp B         &smart_shftr
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                            &mo FUN       &kp RET       &lt NAV R       &kp SPACE     &kp BSPC      ___                   
+                                                            &mo FUN       &arc_l        &lt NAV R       &kp SPACE     &kp BSPC      ___                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
