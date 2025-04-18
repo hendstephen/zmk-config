@@ -1,28 +1,26 @@
 manifest:
+  defaults:
+    remote: urob
+    revision: v0.2
 
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      revision: v0.2
     # For ZMK modules
     - name: urob
       url-base: https://github.com/urob
-      revision: v0.2
     # For nice-view-gem
     - name: m165437
       url-base: https://github.com/M165437
-      revision: main
       
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-      revision: v0.2
 
     # Temporarily overload Zephyr until
     # https://github.com/zmkfirmware/zephyr/pull/40 is merged.
     - name: zephyr
-      remote: urob
       revision: v3.5.0+zmk-fixes
       clone-depth: 1
       import:
@@ -43,16 +41,10 @@ manifest:
 
     - name: zmk-adaptive-key
       path: modules/zmk/adaptive-key
-      remote: urob
-      revision: v0.2
     - name: zmk-auto-layer
       path: modules/zmk/auto-layer
-      remote: urob
-      revision: v0.2
     - name: zmk-helpers
       path: modules/zmk/helpers
-      remote: urob
-      revision: v0.2
 
     - name: nice-view-gem
       remote: m165437
