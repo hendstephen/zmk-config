@@ -181,7 +181,7 @@ ZMK_MACRO(arc_eah,
 )
 ZMK_ADAPTIVE_KEY(
     arc_l, bindings = <&kp RET>;
-    arcl_y, { trigger_keys = <Y>; bindings = <&arc_eah>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    arcl_y, { trigger-keys = <Y>; bindings = <&arc_eah>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
