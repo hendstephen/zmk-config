@@ -1,4 +1,7 @@
 manifest:
+  defaults:
+    remote: urob
+    revision: v0.2
 
   remotes:
     - name: zmkfirmware
@@ -6,29 +9,42 @@ manifest:
     # For ZMK modules
     - name: urob
       url-base: https://github.com/urob
+      revision: v0.2
     # For nice-view-gem
     - name: m165437
       url-base: https://github.com/M165437
       
   projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+
+    # Temporarily overload Zephyr until
+    # https://github.com/zmkfirmware/zephyr/pull/40 is merged.
+    - name: zephyr
+      revision: v3.5.0+zmk-fixes
+      clone-depth: 1
+      import:
+        # Only enable most commonly used boards. For less common hardware one
+        # may need to enable additional modules.
+        name-allowlist:
+          - cmsis
+          - hal_nordic
+          - hal_rpi_pico
+          - hal_stm32
+          - lvgl
+          - tinycrypt
+
     # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
+    #   remote: urob # or zmkfirmware, see comment below
+    #   revision: v0.2+fix-child-nodes
     #   import: app/west.yml
 
-    - name: zmk
-      remote: urob # or zmkfirmware, see comment below
-      revision: v0.2+fix-child-nodes
-      import: app/west.yml
     - name: zmk-adaptive-key
-      remote: urob
-      revision: v0.2 # set to same as ZMK version above
-
     - name: zmk-auto-layer
-      remote: urob
-      revision: main
     - name: zmk-helpers
-      remote: urob
+
     - name: nice-view-gem
       remote: m165437
       revision: main
