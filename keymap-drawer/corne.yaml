@@ -88,18 +88,18 @@ layers:
   - ' '
   hnd:
   - ' '
-  - V
+  - Z
   - W
-  - G
-  - M
-  - J
-  - '-'
-  - .
-  - ''''
-  - '='
-  - /
+  - D
+  - L
+  - X
+  - REMI
+  - U
+  - O
+  - Y
+  - Q
   - ' '
-  - {t: Shift, h: sticky, s: Caps Word}
+  - V
   - {t: S, h: Gui}
   - {t: N, h: Alt}
   - {t: T, h: Ctrl}
@@ -110,19 +110,19 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: C, h: Gui}
+  - B
   - {t: Shift, h: sticky, s: Caps Word}
-  - ' '
   - F
   - P
-  - D
-  - L
-  - X
-  - ;
-  - U
-  - O
-  - Y
+  - G
+  - M
+  - J
+  - /
+  - .
+  - '='
+  - '-'
   - B
-  - {t: Alt, h: sticky}
+  - {t: Shift, h: sticky, s: Caps Word}
   - fun
   - ⏎
   - {t: R, h: nav}
