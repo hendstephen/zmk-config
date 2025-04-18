@@ -161,10 +161,16 @@ ZMK_HOLD_TAP(lt_spc,
 SIMPLE_MORPH(smart_shftl, SFT, &sk LSHFT, &caps_word)
 SIMPLE_MORPH(smart_shftr, SFT, &sk RSHFT, &caps_word)
 
-// Adaptive
+// Adaptives
+#define AK_TIMEOUT 150
 ZMK_ADAPTIVE_KEY(
     ak_minus, bindings = <&kp MINUS>;
-    akt_by, { trigger-keys = <B>; bindings = <&kp Y>; };
+    akt_by, { trigger-keys = <B>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
+)
+
+ZMK_ADAPTIVE_KEY(
+    ak_m, bindings = <&kp M>;
+    akm_gl, { trigger-keys = <G>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
@@ -214,7 +220,7 @@ ZMK_LAYER(hnd,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &kp V         &hmlp LGUI S  &hml LALT N   &hml LCTRL T  &hml LSHFT H  &kp K                                       &kp COMMA     &hmr RSHFT A  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI C  &kp B
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &kp F         &kp P         &kp G         &kp M         &kp J                                       &kp SLASH     &kp DOT       &kp EQUAL     &ak_minus     &kp B         &smart_shftr
+    &smart_shftl  &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp SLASH     &kp DOT       &kp EQUAL     &ak_minus     &kp B         &smart_shftr
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                             &mo FUN       &kp RET       &lt NAV R       &kp SPACE     &kp BSPC      ___                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
