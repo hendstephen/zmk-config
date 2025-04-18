@@ -120,8 +120,8 @@ layers:
   - /
   - .
   - '='
-  - '-'
-  - '&ak_b'
+  - '&ak_minus'
+  - B
   - {t: Shift, h: sticky, s: Caps Word}
   - fun
   - ⏎
