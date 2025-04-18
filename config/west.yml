@@ -40,11 +40,8 @@ manifest:
     #   import: app/west.yml
 
     - name: zmk-adaptive-key
-      path: modules/zmk/adaptive-key
     - name: zmk-auto-layer
-      path: modules/zmk/auto-layer
     - name: zmk-helpers
-      path: modules/zmk/helpers
 
     - name: nice-view-gem
       remote: m165437
