@@ -9,10 +9,10 @@ manifest:
     # For ZMK modules
     - name: urob
       url-base: https://github.com/urob
-      revision: v0.2
     # For nice-view-gem
     - name: m165437
       url-base: https://github.com/M165437
+      revision: main
       
   projects:
     - name: zmk
