@@ -20,7 +20,8 @@ manifest:
       revision: main
     - name: zmk-helpers
       remote: urob
-      revision: main
+    - name: zmk-adaptive-key
+      remote: urob 
     - name: nice-view-gem
       remote: m165437
       revision: main
