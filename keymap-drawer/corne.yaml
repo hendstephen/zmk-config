@@ -115,7 +115,7 @@ layers:
   - F
   - P
   - G
-  - M
+  - '&ak_m'
   - J
   - /
   - .
@@ -124,7 +124,7 @@ layers:
   - B
   - {t: Shift, h: sticky, s: Caps Word}
   - fun
-  - ⏎
+  - '&arc_l'
   - {t: R, h: nav}
   - ␣
   - ⌫
