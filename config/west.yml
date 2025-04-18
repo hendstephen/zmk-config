@@ -11,10 +11,19 @@ manifest:
       url-base: https://github.com/M165437
       
   projects:
+    # - name: zmk
+    #   remote: zmkfirmware
+    #   revision: main
+    #   import: app/west.yml
+
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: urob # or zmkfirmware, see comment below
+      revision: v0.2+fix-child-nodes
       import: app/west.yml
+    - name: zmk-adaptive-key
+      remote: urob
+      revision: v0.2 # set to same as ZMK version above
+
     - name: zmk-auto-layer
       remote: urob
       revision: main
@@ -23,34 +32,6 @@ manifest:
     - name: nice-view-gem
       remote: m165437
       revision: main
-
-    - name: zmk-adaptive-key
-      remote: urob 
-    # Apply patch to fix child nodes issue
-    - name: zephyr
-      remote: urob
-      revision: v3.5.0+zmk-fixes
-      clone-depth: 1
-      import:
-        name-blocklist:
-          - ci-tools
-          - hal_altera
-          - hal_cypress
-          - hal_infineon
-          - hal_microchip
-          - hal_nxp
-          - hal_openisa
-          - hal_silabs
-          - hal_xtensa
-          - hal_st
-          - hal_ti
-          - loramac-node
-          - mcuboot
-          - mcumgr
-          - net-tools
-          - openthread
-          - edtt
-          - trusted-firmware-m
 
   self:
     path: config
