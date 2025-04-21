@@ -175,6 +175,11 @@ ZMK_ADAPTIVE_KEY(
     akm_gl, { trigger-keys = <G>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
+ZMK_ADAPTIVE_KEY(
+    ak_dot, bindings = <&kp DOT>;
+    amdot_eq, { trigger-keys = <EQUAL>; bindings = <&kp GT>; max-prior-idle-ms = <AK_TIMEOUT>; };
+)
+
 #define FUN_LEFT &lt_sl FUN ALT
 
 #if THUMBS_OUT
@@ -208,7 +213,7 @@ ZMK_LAYER(hnd,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &hmlp LALT S  &hml LCTRL N  &hml LSHFT T  &hml_mo NAV H &kp K                                       &kp COMMA     &hmr RSHFT A  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI C  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp Z         &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp MINUS     &kp DOT       &kp SQT       &ak_eq        &kp B         &kp SLASH
+    &kp Z         &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp MINUS     &ak_dot       &kp SQT       &ak_eq        &kp B         &kp SLASH
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                             &mo FUN       &kp BSPC      &lt NAV R       &kp SPACE     &kp BSPC      &mo FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
