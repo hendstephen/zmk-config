@@ -259,6 +259,24 @@ layers:
   - ' '
   - ' '
 combos:
+- p: [16, 15]
+  k: {t: LSFT, h: sticky}
+  l: [hnd]
+- p: [19, 20]
+  k: {t: RSFT, h: sticky}
+  l: [hnd]
+- p: [7, 8]
+  k: (
+  l: [hnd]
+- p: [4, 3]
+  k: )
+  l: [hnd]
+- p: [8, 9]
+  k: '{'
+  l: [hnd]
+- p: [3, 2]
+  k: '}'
+  l: [hnd]
 - p: [19, 21, 22]
   k: ion
   l: [def]
@@ -313,18 +331,6 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [def, nav]
-- p: [19, 20]
-  k: {t: (, h: Sft+Ctrl}
-  l: [hnd]
-- p: [16, 15]
-  k: {t: ), h: Sft+Ctrl}
-  l: [hnd]
-- p: [20, 21]
-  k: {t: '{', h: Ctl+Alt}
-  l: [hnd]
-- p: [15, 14]
-  k: {t: '}', h: Ctl+Alt}
-  l: [hnd]
 - p: [25, 28]
   k: Select All
   l: [def, hnd, nav]
