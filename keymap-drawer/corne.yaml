@@ -43,54 +43,11 @@ layers:
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
   - {t: Num Word, h: fun}
-  nrd:
-  - ' '
-  - K
-  - W
-  - N
-  - G
-  - J
-  - '-'
-  - U
-  - O
-  - Y
-  - Q
-  - ' '
-  - {t: Shift, h: sticky, s: Caps Word}
-  - {t: L, h: Gui}
-  - {t: S, h: Alt}
-  - {t: R, h: Ctrl}
-  - {t: D, h: Shift}
-  - P
-  - .
-  - {t: A, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: H, h: Gui}
-  - {t: Shift, h: sticky, s: Caps Word}
-  - ' '
-  - V
-  - F
-  - M
-  - C
-  - B
-  - ;
-  - ','
-  - /
-  - ''''
-  - K
-  - {t: Alt, h: sticky}
-  - fun
-  - ⏎
-  - {t: T, h: nav}
-  - ␣
-  - ⌫
-  - ' '
   hnd:
   - ' '
-  - Z
+  - V
   - W
-  - D
+  - {t: D, h: Gui}
   - L
   - X
   - ;
@@ -100,10 +57,10 @@ layers:
   - Q
   - ' '
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: S, h: Gui}
-  - {t: N, h: Alt}
-  - {t: T, h: Ctrl}
-  - {t: H, h: Shift}
+  - {t: S, h: Alt}
+  - {t: N, h: Ctrl}
+  - {t: T, h: Shift}
+  - {t: H, h: nav}
   - K
   - ','
   - {t: A, h: Shift}
@@ -111,24 +68,24 @@ layers:
   - {t: I, h: Alt}
   - {t: C, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - V
+  - Z
   - F
   - P
   - G
   - '&ak_m'
   - J
   - '-'
-  - .
+  - '&ak_dot'
   - ''''
   - '&ak_eq'
   - B
   - /
   - fun
-  - '&arc_l'
+  - ⌫
   - {t: R, h: nav}
   - ␣
   - ⌫
-  - ' '
+  - fun
   sym:
   - ' '
   - ' '
@@ -268,8 +225,8 @@ layers:
   - OUT USB
   - OUT BLE
   - ' '
+  - ' '
   - {t: hnd, h: toggle}
-  - {t: nrd, h: toggle}
   - Soft Off
   - F1
   - F2
@@ -302,6 +259,24 @@ layers:
   - ' '
   - ' '
 combos:
+- p: [16, 15]
+  k: {t: LSFT, h: sticky}
+  l: [hnd]
+- p: [19, 20]
+  k: {t: RSFT, h: sticky}
+  l: [hnd]
+- p: [7, 8]
+  k: (
+  l: [hnd]
+- p: [4, 3]
+  k: )
+  l: [hnd]
+- p: [8, 9]
+  k: '{'
+  l: [hnd]
+- p: [3, 2]
+  k: '}'
+  l: [hnd]
 - p: [19, 21, 22]
   k: ion
   l: [def]
@@ -312,19 +287,19 @@ combos:
   draw_separate: true
 - p: [16, 15, 14]
   k: ⏎
-  l: [def, nrd, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [19, 20, 21]
   k: Esc
-  l: [def, nrd, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [16, 14]
   k: ↹
-  l: [def, nrd, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [21, 19]
   k: ⌦
-  l: [def, nrd, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [2, 4]
   k: '%'
@@ -356,31 +331,19 @@ combos:
 - p: [20, 21]
   k: '}'
   l: [def, nav]
-- p: [19, 20]
-  k: {t: (, h: Sft+Ctrl}
-  l: [nrd]
-- p: [16, 15]
-  k: {t: ), h: Sft+Ctrl}
-  l: [nrd]
-- p: [20, 21]
-  k: {t: '{', h: Ctl+Alt}
-  l: [nrd]
-- p: [15, 14]
-  k: {t: '}', h: Ctl+Alt}
-  l: [nrd]
 - p: [25, 28]
   k: Select All
-  l: [def, nrd, nav]
+  l: [def, hnd, nav]
   a: bottom
 - p: [25, 26]
   k: Cut
-  l: [def, nrd, nav]
+  l: [def, hnd, nav]
 - p: [26, 27]
   k: Copy
-  l: [def, nrd, nav]
+  l: [def, hnd, nav]
 - p: [27, 28]
   k: Paste
-  l: [def, nrd, nav]
+  l: [def, hnd, nav]
 - p: [28, 29]
   k: '!'
   l: [def, nav]
