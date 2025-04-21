@@ -81,6 +81,9 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS, "balanced")  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS, "balanced")  // right-hand HRMs
 
+MAKE_HRM(hml_mo, &mo, &kp, KEYS_R THUMBS, "balanced")
+MAKE_HRM(hmr_mo, &mo, &kp, KEYS_L THUMBS, "balanced")
+
 // Tap-preferred HRMs for pinkies since false positives are more common
 MAKE_HRM(hmlp, &kp, &kp, KEYS_R THUMBS, "tap-preferred")  // left-hand HRMs
 MAKE_HRM(hmrp, &kp, &kp, KEYS_L THUMBS, "tap-preferred")  // right-hand HRMs
@@ -173,17 +176,6 @@ ZMK_ADAPTIVE_KEY(
     akm_gl, { trigger-keys = <G>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
- 
-ZMK_MACRO(arc_eah, 
-    bindings = <&macro_tap &kp E &kp A &kp H>;
-    wait-ms = <0>;
-    tap-ms = <0>;
-)
-ZMK_ADAPTIVE_KEY(
-    arc_l, bindings = <&kp RET>;
-    arcl_y, { trigger-keys = <Y>; bindings = <&arc_eah>; max-prior-idle-ms = <AK_TIMEOUT>; };
-)
-
 #define FUN_LEFT &lt_sl FUN ALT
 
 #if THUMBS_OUT
@@ -227,13 +219,13 @@ ZMK_LAYER(hnd,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    ___           &kp V         &kp W         &kp D         &kp L         &kp X                                       &kp SEMI      &kp U         &kp O         &kp Y         &kp Q         ___
+    ___           &kp V         &kp W         &hml LGUI D   &kp L         &kp X                                       &kp SEMI      &kp U         &kp O         &kp Y         &kp Q         ___
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &hmlp LGUI S  &hml LALT N   &hml LCTRL T  &hml LSHFT H  &kp K                                       &kp COMMA     &hmr RSHFT A  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI C  &smart_shftr
+    &smart_shftl  &hmlp LALT S  &hml LCTRL N  &hml LSHFT T  &hml_mo NAV H &kp K                                       &kp COMMA     &hmr RSHFT A  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI C  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &kp Z         &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp MINUS     &kp DOT       &kp SQT       &ak_eq        &kp B         &kp SLASH
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                            &mo FUN       &arc_l        &lt NAV R       &kp SPACE     &kp BSPC      ___                   
+                                                            &mo FUN       &kp BSPC      &lt NAV R       &kp SPACE     &kp BSPC      &mo FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
