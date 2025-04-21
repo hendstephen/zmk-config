@@ -99,7 +99,7 @@ layers:
   - Y
   - Q
   - ' '
-  - V
+  - {t: Shift, h: sticky, s: Caps Word}
   - {t: S, h: Gui}
   - {t: N, h: Alt}
   - {t: T, h: Ctrl}
@@ -110,19 +110,19 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: C, h: Gui}
-  - B
   - {t: Shift, h: sticky, s: Caps Word}
+  - V
   - F
   - P
   - G
   - '&ak_m'
   - J
-  - /
+  - '-'
   - .
-  - '='
-  - '&ak_minus'
+  - ''''
+  - '&ak_eq'
   - B
-  - {t: Shift, h: sticky, s: Caps Word}
+  - /
   - fun
   - '&arc_l'
   - {t: R, h: nav}
