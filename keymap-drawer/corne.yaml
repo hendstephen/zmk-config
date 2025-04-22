@@ -45,7 +45,7 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - ' '
-  - V
+  - Z
   - W
   - {t: D, h: Gui}
   - L
@@ -68,7 +68,7 @@ layers:
   - {t: I, h: Alt}
   - {t: C, h: Gui}
   - B
-  - Z
+  - '*'
   - F
   - P
   - G
@@ -78,8 +78,8 @@ layers:
   - '&ak_dot'
   - ''''
   - '&ak_eq'
-  - B
   - /
+  - '&'
   - fun
   - ⌫
   - {t: R, h: nav}
