@@ -162,6 +162,7 @@ ZMK_HOLD_TAP(lt_spc,
 // smart shifts
 SIMPLE_MORPH(smart_shftl, SFT, &sk LSHFT, &caps_word)
 SIMPLE_MORPH(smart_shftr, SFT, &sk RSHFT, &caps_word)
+SIMPLE_MORPH(spc_bspc, SFT, &kp SPACE, &kp BSPC)
 
 // Adaptives
 #define AK_TIMEOUT 150
@@ -215,7 +216,7 @@ ZMK_LAYER(hnd,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &kp STAR      &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp MINUS     &ak_dot       &kp SQT       &ak_eq        &kp SLASH     &kp AMPS
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                            &mo FUN       &kp BSPC      &lt NAV R       &kp SPACE     &kp BSPC      &mo FUN                   
+                                                            &mo FUN       &kp BSPC      &lt NAV R       &spc_bspc     &kp BSPC      &mo FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
