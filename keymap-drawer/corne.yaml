@@ -47,14 +47,14 @@ layers:
   - ' '
   - Z
   - W
-  - {t: G, h: Gui}
-  - '&ak_m'
-  - J
+  - {t: D, h: Gui}
+  - L
+  - X
   - ;
-  - '&ak_dot'
-  - ''''
-  - '&ak_eq'
-  - /
+  - U
+  - O
+  - Y
+  - Q
   - ' '
   - V
   - {t: S, h: Alt}
@@ -67,19 +67,19 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: C, h: Gui}
-  - Q
+  - B
   - '*'
   - F
   - P
-  - D
-  - L
-  - X
+  - G
+  - '&ak_m'
+  - J
   - '-'
-  - U
-  - O
-  - Y
-  - B
+  - '&ak_dot'
+  - ''''
+  - '&ak_eq'
   - /
+  - '&'
   - fun
   - ⌫
   - {t: R, h: nav}
