@@ -45,16 +45,16 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - ' '
-  - V
+  - Z
   - W
-  - {t: D, h: Gui}
-  - L
-  - X
+  - {t: G, h: Gui}
+  - '&ak_m'
+  - J
   - ;
-  - U
-  - O
-  - Y
-  - Q
+  - '&ak_dot'
+  - ''''
+  - '&ak_eq'
+  - /
   - ' '
   - V
   - {t: S, h: Alt}
@@ -67,17 +67,17 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: C, h: Gui}
-  - B
-  - Z
+  - Q
+  - '*'
   - F
   - P
-  - G
-  - '&ak_m'
-  - J
+  - D
+  - L
+  - X
   - '-'
-  - '&ak_dot'
-  - ''''
-  - '&ak_eq'
+  - U
+  - O
+  - Y
   - B
   - /
   - fun
