@@ -173,7 +173,7 @@ ZMK_ADAPTIVE_KEY(
 
 ZMK_ADAPTIVE_KEY(
     ak_m, bindings = <&kp M>;
-    akm_gl, { trigger-keys = <G>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akm_l, { trigger-keys = <G F P>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 ZMK_ADAPTIVE_KEY(
@@ -216,7 +216,7 @@ ZMK_LAYER(hnd,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &kp STAR      &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp MINUS     &ak_dot       &kp SQT       &ak_eq        &kp SLASH     &kp AMPS
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                            &mo FUN       &kp BSPC      &lt NAV R       &spc_bspc     &kp BSPC      &mo FUN                   
+                                                            &mo FUN       &kp BSPC      &lt NAV R       &spc_bspc     &kp RET       &mo FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
