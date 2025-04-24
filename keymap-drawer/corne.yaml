@@ -84,7 +84,7 @@ layers:
   - ⌫
   - {t: R, h: nav}
   - {t: ␣, s: ⌫}
-  - ⌫
+  - ⏎
   - fun
   sym:
   - ' '
