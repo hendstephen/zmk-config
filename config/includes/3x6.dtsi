@@ -184,7 +184,7 @@ ZMK_ADAPTIVE_KEY(
 ZMK_ADAPTIVE_KEY(
     ak_ret, bindings = <&kp RET>;
     akret_nst, { trigger-keys = <N>; bindings = <&kp S &kp T>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    akret_b, { trigger-keys = <B>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akret_b, { trigger-keys = <B>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
