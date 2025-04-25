@@ -9,7 +9,7 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 ## Features
 - Colemak-DH base layer
 - Homerow mods using [urob's timeless homerow mod config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
-- Symbol layer based on [gertreuer's symbol layer](https://github.com/getreuer/qmk-keymap?tab=readme-ov-file#my-keymap)
+- Symbol layer based on [getreuer's symbol layer](https://github.com/getreuer/qmk-keymap?tab=readme-ov-file#my-keymap)
 - Commonly used symbols in combos on the base layer
   - _These symbols are specific to my development workflow (C#/.NET, React, Typescript). While the symbol layer design is good, I found that switching back and forth to this layer while coding was awkward for me. Having my most used symbols on the base layer is much smoother, and I've tuned the combo timing so that misfires are not an issue. (For reference, I get few misfires at a typing speed of around ~100 wpm)._
   - _I've also struggled with some thumb pain/fatigue, so reducing thumb use as much as possible in favor of combos helps to minimize this._
