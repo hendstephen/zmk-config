@@ -59,6 +59,8 @@ parse_config:
     '&sftclk': Click
     '&dblslsh': '//'
     '&leader': Leader
+    '&ak_dot': '.'
+    '&ak_m': M
 
     '&es_a_acute': á
     '&es_e_acute': é

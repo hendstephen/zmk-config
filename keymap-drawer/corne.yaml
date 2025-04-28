@@ -72,10 +72,10 @@ layers:
   - F
   - P
   - G
-  - '&ak_m'
+  - M
   - J
   - '-'
-  - '&ak_dot'
+  - .
   - ''''
   - '&ak_eq'
   - /
@@ -91,10 +91,10 @@ layers:
   - V
   - W
   - {t: G, h: Gui}
-  - '&ak_m'
+  - M
   - J
   - '-'
-  - '&ak_dot'
+  - .
   - ''''
   - '&ak_eq'
   - /
