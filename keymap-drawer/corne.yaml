@@ -124,10 +124,10 @@ layers:
   - B
   - Z
   - fun
-  - {t: R, h: nav}
   - ⌫
-  - '&ak_ret'
+  - {t: R, h: nav}
   - {t: ␣, s: ⌫}
+  - '&ak_ret'
   - fun
   sym:
   - ' '
