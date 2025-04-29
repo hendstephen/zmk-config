@@ -92,7 +92,7 @@ layers:
   - W
   - {t: G, h: Gui}
   - M
-  - J
+  - X
   - '-'
   - .
   - ''''
@@ -116,7 +116,7 @@ layers:
   - P
   - D
   - L
-  - X
+  - J
   - ;
   - U
   - O
