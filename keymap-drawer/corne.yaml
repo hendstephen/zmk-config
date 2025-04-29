@@ -45,49 +45,6 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - ' '
-  - Z
-  - W
-  - {t: D, h: Gui}
-  - L
-  - X
-  - ;
-  - U
-  - O
-  - Y
-  - Q
-  - ' '
-  - V
-  - {t: S, h: Alt}
-  - {t: N, h: Ctrl}
-  - {t: T, h: Shift}
-  - {t: H, h: nav}
-  - K
-  - ','
-  - {t: A, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: C, h: Gui}
-  - B
-  - '*'
-  - F
-  - P
-  - G
-  - M
-  - J
-  - '-'
-  - .
-  - ''''
-  - '='
-  - /
-  - '&'
-  - fun
-  - ⌫
-  - {t: R, h: nav}
-  - {t: ␣, s: ⌫}
-  - '&ak_ret'
-  - fun
-  hnd_inv:
-  - ' '
   - V
   - W
   - {t: G, h: Gui}
@@ -268,7 +225,7 @@ layers:
   - OUT USB
   - OUT BLE
   - ' '
-  - {t: hnd_inv, h: toggle}
+  - ' '
   - {t: hnd, h: toggle}
   - Soft Off
   - F1
@@ -312,19 +269,19 @@ combos:
   draw_separate: true
 - p: [16, 15, 14]
   k: ⏎
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [19, 20, 21]
   k: Esc
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [16, 14]
   k: ↹
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [21, 19]
   k: ⌦
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, hnd, sym, nav]
   draw_separate: true
 - p: [2, 4]
   k: '%'
@@ -340,35 +297,35 @@ combos:
   a: bottom
 - p: [16, 17]
   k: '['
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [19, 18]
   k: ']'
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [16, 15]
   k: (
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [19, 20]
   k: )
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [15, 14]
   k: '{'
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [20, 21]
   k: '}'
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [25, 28]
   k: Select All
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
   a: bottom
 - p: [25, 26]
   k: Cut
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [26, 27]
   k: Copy
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [27, 28]
   k: Paste
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, hnd, nav]
 - p: [28, 29]
   k: '!'
   l: [def, nav]
@@ -390,7 +347,7 @@ combos:
   a: bottom
 - p: [31, 34]
   k: Num Word
-  l: [def, hnd, hnd_inv]
+  l: [def, hnd]
 - p: [7, 8, 9]
   k: '>'
   l: [def, nav]
