@@ -77,7 +77,7 @@ layers:
   - '-'
   - .
   - ''''
-  - '&ak_eq'
+  - '='
   - /
   - '&'
   - fun
@@ -96,7 +96,7 @@ layers:
   - '-'
   - .
   - ''''
-  - '&ak_eq'
+  - '='
   - /
   - '&'
   - {t: Shift, h: sticky, s: Caps Word}
