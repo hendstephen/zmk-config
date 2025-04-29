@@ -388,6 +388,9 @@ combos:
   k: '"'
   l: [def, nav]
   a: bottom
+- p: [31, 34]
+  k: Num Word
+  l: [def, hnd, hnd_inv]
 - p: [7, 8, 9]
   k: '>'
   l: [def, nav]
