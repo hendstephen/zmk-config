@@ -44,7 +44,7 @@ layers:
   - {t: ⏎, h: Shift}
   - {t: Num Word, h: fun}
   hnd:
-  - ' '
+  - '`'
   - V
   - W
   - {t: G, h: Gui}
@@ -55,7 +55,7 @@ layers:
   - ''''
   - '='
   - /
-  - '&'
+  - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: S, h: Alt}
   - {t: N, h: Ctrl}
@@ -82,7 +82,7 @@ layers:
   - Z
   - fun
   - ⌫
-  - {t: R, h: nav}
+  - {t: R, h: sym}
   - {t: ␣, s: ⌫}
   - '&ak_ret'
   - fun
