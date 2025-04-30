@@ -644,7 +644,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a></g>
+</a><text x="0" y="24" class="key hold">sticky</text>
+</g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
@@ -668,7 +669,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a></g>
+</a><text x="0" y="24" class="key hold">sticky</text>
+</g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
 <text x="280" y="94" class="combo tap">[</text>

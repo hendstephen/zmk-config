@@ -80,12 +80,12 @@ layers:
   - Y
   - B
   - Z
-  - fun
+  - {t: fun, h: sticky}
   - ⌫
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
   - '&ak_ret'
-  - fun
+  - {t: fun, h: sticky}
   sym:
   - ' '
   - ' '
