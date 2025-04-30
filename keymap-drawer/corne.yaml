@@ -348,6 +348,7 @@ combos:
 - p: [31, 34]
   k: Num Word
   l: [def, hnd]
+  a: bottom
 - p: [7, 8, 9]
   k: '>'
   l: [def, nav]
