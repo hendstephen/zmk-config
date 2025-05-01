@@ -268,7 +268,7 @@ layers:
   - OUT USB
   - OUT BLE
   - ' '
-  - ' '
+  - {t: hnd_inv, h: toggle}
   - {t: hnd, h: toggle}
   - Soft Off
   - F1
