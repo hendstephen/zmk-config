@@ -415,10 +415,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="644" y="176" class="combo tap">&quot;</text>
 </g>
 <g class="combo combopos-17">
-<path d="M672,154 l-65,-5" class="combo"/>
-<path d="M672,154 l65,5" class="combo"/>
-<rect rx="6" ry="6" x="658" y="141" width="28" height="26" class="combo"/>
-<text x="672" y="154" class="combo tap">
+<path d="M672,190 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-18" class="combo"/>
+<path d="M672,190 h78 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="658" y="177" width="28" height="26" class="combo"/>
+<text x="672" y="190" class="combo tap">
 <tspan x="672" dy="-0.6em">Num</tspan><tspan x="672" dy="1.2em">Word</tspan>
 </text>
 </g>
@@ -644,7 +644,8 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a></g>
+</a><text x="0" y="24" class="key hold">sticky</text>
+</g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
@@ -662,13 +663,14 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;ak_ret</text>
+<text x="0" y="0" class="key tap">⏎</text>
 </g>
 <g transform="translate(616, 205)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a></g>
+</a><text x="0" y="24" class="key hold">sticky</text>
+</g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="266" y="82" width="28" height="26" class="combo"/>
 <text x="280" y="94" class="combo tap">[</text>
@@ -714,10 +716,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="224" y="144" class="combo tap">Paste</text>
 </g>
 <g class="combo combopos-10">
-<path d="M672,154 l-65,-5" class="combo"/>
-<path d="M672,154 l65,5" class="combo"/>
-<rect rx="6" ry="6" x="658" y="141" width="28" height="26" class="combo"/>
-<text x="672" y="154" class="combo tap">
+<path d="M672,190 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-18" class="combo"/>
+<path d="M672,190 h78 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="658" y="177" width="28" height="26" class="combo"/>
+<text x="672" y="190" class="combo tap">
 <tspan x="672" dy="-0.6em">Num</tspan><tspan x="672" dy="1.2em">Word</tspan>
 </text>
 </g>

@@ -9,6 +9,7 @@ parse_config:
     combo_lt: { align: 'top' }
     combo_gt: { align: 'top' }
     combo_tilde: { align: 'bottom' }
+    combo_numwrd: { align: 'bottom' }
 
     combo_cplck: { draw_separate: true }
     combo_grave: { draw_separate: true }
@@ -61,6 +62,7 @@ parse_config:
     '&leader': Leader
     '&ak_dot': '.'
     '&ak_m': M
+    '&ak_ret': ⏎
 
     '&es_a_acute': á
     '&es_e_acute': é

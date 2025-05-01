@@ -80,12 +80,12 @@ layers:
   - Y
   - B
   - Z
-  - fun
+  - {t: fun, h: sticky}
   - ⌫
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
-  - '&ak_ret'
-  - fun
+  - ⏎
+  - {t: fun, h: sticky}
   sym:
   - ' '
   - ' '
@@ -348,6 +348,7 @@ combos:
 - p: [31, 34]
   k: Num Word
   l: [def, hnd]
+  a: bottom
 - p: [7, 8, 9]
   k: '>'
   l: [def, nav]
