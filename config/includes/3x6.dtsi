@@ -170,7 +170,7 @@ SIMPLE_MORPH(spc_bspc, SFT, &kp SPACE, &kp BSPC)
 
 ZMK_ADAPTIVE_KEY(
     ak_m, bindings = <&kp M>;
-    akm_l, { trigger-keys = <G>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akm_l, { trigger-keys = <F G P>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 ZMK_ADAPTIVE_KEY(
