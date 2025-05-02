@@ -188,6 +188,11 @@ ZMK_ADAPTIVE_KEY(
     akeq_by, { trigger-keys = <B>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
+ZMK_ADAPTIVE_KEY(
+    ak_eq, bindings = <&kp EQUAL>;
+    akeq_by, { trigger-keys = <B>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
+)
+
 #define FUN_LEFT &lt_sl FUN ALT
 
 #if THUMBS_OUT
