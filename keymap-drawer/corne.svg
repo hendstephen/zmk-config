@@ -863,7 +863,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(532, 154)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">-</text>
+<text x="0" y="0" class="key tap">⌫</text>
 </g>
 <g transform="translate(588, 147)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -895,7 +895,9 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">⌫</text>
+<text x="0" y="0" class="key tap">Shift</text>
+<text x="0" y="24" class="key hold">sticky</text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 78%">Caps Word</tspan></text>
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>

@@ -117,14 +117,14 @@ layers:
   - G
   - M
   - J
-  - '-'
+  - ⌫
   - .
   - ''''
   - '='
   - /
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: fun, h: sticky}
-  - ⌫
+  - {t: Shift, h: sticky, s: Caps Word}
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
   - ⏎
