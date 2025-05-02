@@ -88,8 +88,8 @@ layers:
   - {t: fun, h: sticky}
   hnd_inv:
   - '`'
-  - Z
-  - W
+  - V
+  - P
   - {t: D, h: Gui}
   - L
   - X
@@ -99,7 +99,7 @@ layers:
   - Y
   - Q
   - {t: Alt, h: sticky}
-  - V
+  - {t: Shift, h: sticky, s: Caps Word}
   - {t: S, h: Alt}
   - {t: N, h: Ctrl}
   - {t: T, h: Shift}
@@ -110,10 +110,10 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: C, h: Gui}
-  - B
   - {t: Shift, h: sticky, s: Caps Word}
+  - Z
   - F
-  - P
+  - W
   - G
   - M
   - J
@@ -121,8 +121,8 @@ layers:
   - .
   - ''''
   - '='
+  - B
   - /
-  - {t: Shift, h: sticky, s: Caps Word}
   - {t: fun, h: sticky}
   - ⌫
   - {t: R, h: sym}

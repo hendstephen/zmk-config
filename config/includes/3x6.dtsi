@@ -183,6 +183,11 @@ ZMK_ADAPTIVE_KEY(
     akret_b, { trigger-keys = <B>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
+ZMK_ADAPTIVE_KEY(
+    ak_eq, bindings = <&kp EQUAL>;
+    akeq_by, { trigger-keys = <B>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
+)
+
 #define FUN_LEFT &lt_sl FUN ALT
 
 #if THUMBS_OUT
@@ -226,11 +231,11 @@ ZMK_LAYER(hnd_inv,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp GRAVE     &kp Z         &kp W         &hml LGUI D   &kp L         &kp X                                       &kp SEMI      &kp U         &kp O         &kp Y         &kp Q         &sk LALT
+    &kp GRAVE     &kp V         &kp P         &hml LGUI D   &kp L         &kp X                                       &kp SEMI      &kp U         &kp O         &kp Y         &kp Q         &sk LALT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp V         &hmlp LALT S  &hml LCTRL N  &hml LSHFT T  &hml_mo NAV H &kp K                                       &kp COMMA     &hmr RSHFT A  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI C  &kp B
+    &smart_shftl  &hmlp LALT S  &hml LCTRL N  &hml LSHFT T  &hml_mo NAV H &kp K                                       &kp COMMA     &hmr RSHFT A  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI C  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &kp F         &kp P         &kp G         &ak_m         &kp J                                       &kp MINUS     &ak_dot       &kp SQT       &kp EQUAL     &kp SLASH     &smart_shftr
+    &kp Z         &kp F         &kp W         &kp G         &ak_m         &kp J                                       &kp MINUS     &ak_dot       &kp SQT       &ak_eq        &kp B         &kp SLASH
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                             &sl FUN       &kp BSPC      &lt SYM R       &spc_bspc     &ak_ret       &sl FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯

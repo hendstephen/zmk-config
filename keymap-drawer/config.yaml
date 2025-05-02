@@ -63,6 +63,7 @@ parse_config:
     '&ak_dot': '.'
     '&ak_m': M
     '&ak_ret': ⏎
+    '&ak_eq': '='
 
     '&es_a_acute': á
     '&es_e_acute': é
