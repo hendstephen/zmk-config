@@ -89,7 +89,7 @@ layers:
   hnd_inv:
   - '`'
   - V
-  - P
+  - W
   - {t: D, h: Gui}
   - L
   - X
@@ -113,7 +113,7 @@ layers:
   - {t: Shift, h: sticky, s: Caps Word}
   - Z
   - F
-  - W
+  - P
   - G
   - M
   - J
