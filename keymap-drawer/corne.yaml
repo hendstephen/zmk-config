@@ -117,7 +117,7 @@ layers:
   - G
   - M
   - J
-  - ⌫
+  - '-'
   - .
   - ''''
   - '='
@@ -127,7 +127,7 @@ layers:
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
-  - ⏎
+  - '&ak_bspc'
   - {t: fun, h: sticky}
   sym:
   - ' '
