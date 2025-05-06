@@ -62,6 +62,7 @@ parse_config:
     '&leader': Leader
     '&ak_dot': '.'
     '&ak_m': M
+    '&ak_mpy': M
     '&ak_ret': ⏎
     '&ak_eq': '='
 
