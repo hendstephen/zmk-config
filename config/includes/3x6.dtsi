@@ -181,6 +181,11 @@ ZMK_ADAPTIVE_KEY(
 ZMK_ADAPTIVE_KEY(
     ak_bspc, bindings = <&kp BSPC>;
     akbspc_b, { trigger-keys = <B>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akbspc_au, { trigger-keys = <A>; bindings = <&kp U>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akbspc_ua, { trigger-keys = <U>; bindings = <&kp A>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akbspc_eo, { trigger-keys = <E>; bindings = <&kp O>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akbspc_oe, { trigger-keys = <O>; bindings = <&kp E>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    akbspc_wn, { trigger-keys = <W>; bindings = <&kp N>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
