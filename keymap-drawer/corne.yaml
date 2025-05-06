@@ -74,7 +74,7 @@ layers:
   - J
   - D
   - Z
-  - SQP
+  - ''''
   - W
   - ;
   - /
@@ -89,7 +89,7 @@ layers:
   hnd_inv:
   - '`'
   - Z
-  - W
+  - P
   - {t: D, h: Gui}
   - L
   - X
@@ -113,7 +113,7 @@ layers:
   - B
   - {t: Shift, h: sticky, s: Caps Word}
   - F
-  - P
+  - W
   - G
   - M
   - J
