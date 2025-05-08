@@ -50,7 +50,7 @@ layers:
   - {t: L, h: Gui}
   - W
   - J
-  - '&ak_racket'
+  - Z
   - B
   - O
   - U
@@ -74,7 +74,7 @@ layers:
   - M
   - G
   - V
-  - Z
+  - '&ak_racket'
   - P
   - ''''
   - /
