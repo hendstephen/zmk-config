@@ -84,7 +84,7 @@ layers:
   - ⌫
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
-  - '&ak_bspc'
+  - ⌫
   - {t: fun, h: sticky}
   hnd_inv:
   - '`'
