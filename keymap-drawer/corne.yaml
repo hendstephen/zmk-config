@@ -45,40 +45,40 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - '`'
-  - Q
   - F
-  - {t: D, h: Gui}
-  - L
-  - X
-  - P
-  - G
+  - D
+  - {t: L, h: Gui}
+  - W
+  - J
+  - '&ak_racket'
+  - B
   - O
   - U
   - ','
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: N, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Shift}
-  - {t: H, h: nav}
-  - K
+  - {t: S, h: Alt}
+  - {t: T, h: Ctrl}
+  - {t: H, h: Shift}
+  - {t: C, h: nav}
   - Y
-  - {t: C, h: Shift}
+  - Q
+  - {t: N, h: Shift}
   - {t: A, h: Ctrl}
   - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - Q
-  - P
-  - V
-  - B
+  - X
+  - K
   - M
-  - J
+  - G
+  - V
+  - Z
+  - P
   - ''''
-  - W
-  - ;
   - /
-  - ','
+  - .
   - Z
   - {t: fun, h: sticky}
   - ⌫
@@ -127,7 +127,7 @@ layers:
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
-  - '&ak_bspc'
+  - ⌫
   - {t: fun, h: sticky}
   sym:
   - ' '
