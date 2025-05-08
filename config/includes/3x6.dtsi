@@ -184,13 +184,8 @@ ZMK_ADAPTIVE_KEY(
 )
 
 ZMK_ADAPTIVE_KEY(
-    ak_bspc, bindings = <&kp BSPC>;
-    akbspc_b, { trigger-keys = <B>; bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    akbspc_au, { trigger-keys = <A>; bindings = <&kp U>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    akbspc_ua, { trigger-keys = <U>; bindings = <&kp A>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    akbspc_eo, { trigger-keys = <E>; bindings = <&kp O>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    akbspc_oe, { trigger-keys = <O>; bindings = <&kp E>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    akbspc_wn, { trigger-keys = <W>; bindings = <&kp N>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    ak_racket, bindings = <&kp SEMI>;
+    amracket_y, { trigger-keys = <L M H>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
@@ -222,11 +217,11 @@ ZMK_LAYER(hnd,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp GRAVE     &kp Q         &kp F         &hml LGUI D   &kp L         &kp X                                       &kp P         &kp G         &kp O         &kp U         &kp COMMA     &sk LALT
+    &kp GRAVE     &kp F         &kp D         &hml LGUI L   &kp W         &kp J                                       &ak_racket    &kp B         &kp O         &kp U         &kp COMMA     &sk LALT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &hmlp LALT N  &hml LCTRL S  &hml LSHFT T  &hml_mo NAV H &kp K                                       &kp Y         &hmr RSHFT C  &hmr RCTRL A  &hmr RALT E   &hmrp RGUI I  &smart_shftr
+    &smart_shftl  &hmlp LALT S  &hml LCTRL T  &hml LSHFT H  &hml_mo NAV C &kp Y                                       &kp Q         &hmr RSHFT N  &hmr RCTRL A  &hmr RALT E   &hmrp RGUI I  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp Q         &kp P         &kp V         &kp B         &ak_mpy       &kp J                                       &kp SQT       &kp W         &kp SEMI      &kp SLASH     &kp COMMA     &kp Z
+    &kp Q         &kp X         &kp K         &kp M         &kp G         &kp V                                       &kp Z         &kp P         &kp SQT       &kp SLASH     &kp DOT       &kp Z
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                             &sl FUN       &kp BSPC      &lt SYM R       &spc_bspc     &ak_bspc      &sl FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
@@ -242,7 +237,7 @@ ZMK_LAYER(hnd_inv,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &kp F         &kp W         &kp G         &ak_m         &kp J                                       &kp MINUS     &ak_dot       &kp SQT       &kp EQUAL     &kp SLASH     &smart_shftr
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                            &sl FUN       &smart_shftl  &lt SYM R       &spc_bspc     &ak_bspc      &sl FUN                   
+                                                            &sl FUN       &smart_shftl  &lt SYM R       &spc_bspc     &kp BSPC      &sl FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
