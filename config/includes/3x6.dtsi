@@ -184,8 +184,8 @@ ZMK_ADAPTIVE_KEY(
 )
 
 ZMK_ADAPTIVE_KEY(
-    ak_racket, bindings = <&kp SEMI>;
-    amracket_y, { trigger-keys = <L M H T>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    magic, bindings = <&key_repeat>;
+    mag_y, { trigger-keys = <B M H D P T>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
@@ -217,11 +217,11 @@ ZMK_LAYER(hnd,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp GRAVE     &kp F         &kp D         &hml LGUI L   &kp W         &kp J                                       &kp Q         &kp B         &kp O         &kp U         &kp COMMA     &sk LALT
+    &kp GRAVE     &kp V         &kp G         &hml LGUI D   &kp F         &kp K                                       &kp Q         &kp L         &kp U         &kp O         &kp COMMA     &sk LALT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &hmlp LALT S  &hml LCTRL T  &hml LSHFT H  &hml_mo NAV C &kp Y                                       &ak_racket    &hmr RSHFT N  &hmr RCTRL A  &hmr RALT E   &hmrp RGUI I  &smart_shftr
+    &smart_shftl  &hmlp LALT S  &hml LCTRL C  &hml LSHFT T  &hml_mo NAV H &kp Y                                       &kp Z         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT A   &hmrp RGUI I  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp Q         &kp X         &kp K         &kp M         &kp G         &kp V                                       &kp Z         &kp P         &kp SQT       &kp SLASH     &kp DOT       &kp Z
+    &kp Q         &kp J         &kp W         &kp M         &kp P         &kp B                                       &kp X         &kp P         &kp SLASH     &kp SQT       &kp DOT       &kp Z
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                             &sl FUN       &kp BSPC      &lt SYM R       &spc_bspc     &kp BSPC      &sl FUN
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
