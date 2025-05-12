@@ -186,6 +186,7 @@ ZMK_ADAPTIVE_KEY(
 ZMK_ADAPTIVE_KEY(
     magic, bindings = <&key_repeat>;
     mag_y, { trigger-keys = <B M H D P T>; bindings = <&kp Y>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    mag_h, { trigger-keys = <W>; bindings = <&kp H>; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
