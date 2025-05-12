@@ -64,8 +64,8 @@ layers:
   - Y
   - M
   - {t: H, h: Shift}
-  - {t: A, h: Ctrl}
-  - {t: E, h: Alt}
+  - {t: E, h: Ctrl}
+  - {t: A, h: Alt}
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - Q
