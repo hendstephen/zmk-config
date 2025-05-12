@@ -45,40 +45,40 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - '`'
-  - V
-  - G
-  - {t: D, h: Gui}
+  - X
   - F
-  - K
-  - Q
+  - {t: D, h: Gui}
+  - W
+  - P
+  - J
   - L
   - U
   - O
-  - ','
+  - .
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: S, h: Alt}
-  - {t: C, h: Ctrl}
+  - {t: N, h: Alt}
+  - {t: S, h: Ctrl}
   - {t: T, h: Shift}
-  - {t: H, h: nav}
+  - {t: C, h: nav}
   - Y
-  - Z
-  - {t: N, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: A, h: Alt}
+  - M
+  - {t: H, h: Shift}
+  - {t: A, h: Ctrl}
+  - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - Q
-  - J
-  - W
-  - M
-  - P
   - B
-  - X
-  - P
+  - V
+  - K
+  - G
+  - Q
+  - Z
+  - '&magic'
   - /
   - ''''
-  - .
+  - ','
   - Z
   - {t: fun, h: sticky}
   - ⌫
