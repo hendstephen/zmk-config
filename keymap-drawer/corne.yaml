@@ -50,7 +50,7 @@ layers:
   - {t: L, h: Gui}
   - W
   - J
-  - Z
+  - Q
   - B
   - O
   - U
@@ -62,7 +62,7 @@ layers:
   - {t: H, h: Shift}
   - {t: C, h: nav}
   - Y
-  - Q
+  - '&ak_racket'
   - {t: N, h: Shift}
   - {t: A, h: Ctrl}
   - {t: E, h: Alt}
@@ -74,7 +74,7 @@ layers:
   - M
   - G
   - V
-  - '&ak_racket'
+  - Z
   - P
   - ''''
   - /
