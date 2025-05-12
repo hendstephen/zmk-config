@@ -45,39 +45,39 @@ layers:
   - {t: Num Word, h: fun}
   hnd:
   - '`'
+  - V
+  - G
+  - {t: D, h: Gui}
   - F
-  - D
-  - {t: L, h: Gui}
-  - W
-  - J
+  - K
   - Q
-  - B
-  - O
+  - L
   - U
+  - O
   - ','
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: S, h: Alt}
-  - {t: T, h: Ctrl}
-  - {t: H, h: Shift}
-  - {t: C, h: nav}
+  - {t: C, h: Ctrl}
+  - {t: T, h: Shift}
+  - {t: H, h: nav}
   - Y
-  - '&ak_racket'
+  - Z
   - {t: N, h: Shift}
-  - {t: A, h: Ctrl}
-  - {t: E, h: Alt}
+  - {t: E, h: Ctrl}
+  - {t: A, h: Alt}
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - Q
-  - X
-  - K
+  - J
+  - W
   - M
-  - G
-  - V
-  - Z
   - P
-  - ''''
+  - B
+  - X
+  - P
   - /
+  - ''''
   - .
   - Z
   - {t: fun, h: sticky}
