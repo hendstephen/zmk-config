@@ -51,7 +51,7 @@ layers:
   - W
   - P
   - J
-  - L
+  - '&magic'
   - U
   - O
   - .
@@ -75,7 +75,7 @@ layers:
   - G
   - Q
   - Z
-  - '&magic'
+  - L
   - /
   - ''''
   - ','
