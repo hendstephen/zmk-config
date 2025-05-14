@@ -43,42 +43,42 @@ layers:
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
   - {t: Num Word, h: fun}
-  hnd:
+  racket:
   - '`'
-  - X
   - F
-  - {t: D, h: Gui}
+  - D
+  - {t: L, h: Gui}
   - W
-  - P
   - J
-  - '&magic'
-  - U
+  - Q
+  - P
   - O
-  - .
+  - U
+  - ','
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: N, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Shift}
+  - {t: S, h: Alt}
+  - {t: T, h: Ctrl}
+  - {t: H, h: Shift}
   - {t: C, h: nav}
   - Y
-  - M
-  - {t: H, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: A, h: Alt}
+  - '&magic'
+  - {t: N, h: Shift}
+  - {t: A, h: Ctrl}
+  - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - Q
-  - B
-  - V
+  - ⌫
+  - X
   - K
+  - M
   - G
-  - Q
+  - V
   - Z
-  - L
+  - B
+  - SQP
   - /
-  - ''''
-  - ','
+  - .
   - Z
   - {t: fun, h: sticky}
   - ⌫
@@ -269,7 +269,7 @@ layers:
   - OUT BLE
   - ' '
   - {t: hnd_inv, h: toggle}
-  - {t: hnd, h: toggle}
+  - {t: racket, h: toggle}
   - Soft Off
   - F1
   - F2
@@ -312,19 +312,19 @@ combos:
   draw_separate: true
 - p: [16, 15, 14]
   k: ⏎
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, racket, hnd_inv, sym, nav]
   draw_separate: true
 - p: [19, 20, 21]
   k: Esc
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, racket, hnd_inv, sym, nav]
   draw_separate: true
 - p: [16, 14]
   k: ↹
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, racket, hnd_inv, sym, nav]
   draw_separate: true
 - p: [21, 19]
   k: ⌦
-  l: [def, hnd, hnd_inv, sym, nav]
+  l: [def, racket, hnd_inv, sym, nav]
   draw_separate: true
 - p: [2, 4]
   k: '%'
@@ -340,35 +340,35 @@ combos:
   a: bottom
 - p: [16, 17]
   k: '['
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [19, 18]
   k: ']'
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [16, 15]
   k: (
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [19, 20]
   k: )
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [15, 14]
   k: '{'
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [20, 21]
   k: '}'
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [25, 28]
   k: Select All
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
   a: bottom
 - p: [25, 26]
   k: Cut
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [26, 27]
   k: Copy
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [27, 28]
   k: Paste
-  l: [def, hnd, hnd_inv, nav]
+  l: [def, racket, hnd_inv, nav]
 - p: [28, 29]
   k: '!'
   l: [def, nav]
@@ -390,7 +390,7 @@ combos:
   a: bottom
 - p: [31, 34]
   k: Num Word
-  l: [def, hnd, hnd_inv]
+  l: [def, racket, hnd_inv]
   a: bottom
 - p: [7, 8, 9]
   k: '>'
