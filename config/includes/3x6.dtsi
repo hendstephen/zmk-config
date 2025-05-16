@@ -117,6 +117,9 @@ ZMK_HOLD_TAP(ht_es_u,
 )
 #define ES_U &ht_es_u 0 0
 
+// tap: LC(BSPC) | ctrl + tap: BSPC
+SIMPLE_MORPH(bspc_wrd, CTRL, &kp LC(BSPC), &kp BSPC)
+
 // tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 
     flavor = "tap-preferred";
@@ -192,14 +195,6 @@ ZMK_ADAPTIVE_KEY(
 
 #define FUN_LEFT &lt_sl FUN ALT
 
-#if THUMBS_OUT
-    #define THUMBS_DEF X_HL  FUN_LEFT  &kp ESC  &lt_bspc NAV 0    &lt_spc SYM SPACE  &mt RSHFT RET  &lt_num FUN NAV X_HR
-    #define THUMBS_SYM X_HL  ___       ___      &lt NAV SPACE     ___                ___            ___             X_HR
-#else
-    #define THUMBS_DEF X_HL  FUN_LEFT  &lt_bspc NAV 0      &kp ESC    &mt RSHFT RET  &lt_spc SYM SPACE  &lt_num FUN NAV X_HR
-    #define THUMBS_SYM X_HL  ___       &lt_spc NAV SPACE   ___        ___            ___                ___             X_HR
-#endif
-
 /* Layers */
 ZMK_LAYER(def,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
@@ -209,9 +204,9 @@ ZMK_LAYER(def,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
     &smart_shftl  &hmlp LALT A  &hml LCTRL R  &hml LSHFT S  &hml_mo NAV T &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI O  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    QEXCL         &kp SEMI
+    &bspc_wrd     &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    QEXCL         &bspc_wrd
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                                                                THUMBS_DEF
+                                                            FUN_LEFT      &bspc_wrd    &lt_bspc NAV 0 &lt_spc SYM SPACE &mt RSHFT RET &lt_num FUN NAV 
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
@@ -253,7 +248,7 @@ ZMK_LAYER(sym,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           &kp BSLH      &kp SLASH     &kp STAR      &kp CARET     &kp PRCNT                 X_BM              &kp TILDE     &kp DLLR      &kp LBRC     &kp RBRC       ___           ___          
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                                                                THUMBS_SYM
+                                                            ___           ___         &lt NAV SPACE     ___           ___           ___
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 

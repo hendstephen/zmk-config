@@ -25,7 +25,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
-  - ' '
+  - {t: ⌫ Word, s: ⌫}
   - Z
   - X
   - C
@@ -36,9 +36,9 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
-  - ;
+  - {t: ⌫ Word, s: ⌫}
   - {t: alt, h: fun}
-  - Esc
+  - {t: ⌫ Word, s: ⌫}
   - {t: ⌫, h: nav, s: ⌦}
   - {t: ␣, h: sym}
   - {t: ⏎, h: Shift}
