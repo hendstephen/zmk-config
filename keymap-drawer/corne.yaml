@@ -69,11 +69,11 @@ layers:
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - ⌫
-  - X
-  - K
-  - M
-  - G
+  - B
   - V
+  - K
+  - G
+  - Q
   - Z
   - L
   - ''''
