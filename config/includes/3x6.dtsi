@@ -8,11 +8,10 @@
 // Layers
 #define DEF 0
 #define HND 1
-#define HNDINV 2
-#define SYM 3
-#define NAV 4
-#define ALT 5
-#define FUN 6
+#define SYM 2
+#define NAV 3
+#define ALT 4
+#define FUN 5
 
 #include "zmk-helpers/helper.h"
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, FLAVOR) \
@@ -172,21 +171,6 @@ SIMPLE_MORPH(spc_bspc, SFT, &kp SPACE, &kp BSPC)
 #define AK_TIMEOUT 150
 
 ZMK_ADAPTIVE_KEY(
-    ak_m, bindings = <&kp M>;
-    akm_l, { trigger-keys = <F G P>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
-)
-
-ZMK_ADAPTIVE_KEY(
-    ak_mpy, bindings = <&kp M>;
-    akm_l, { trigger-keys = <P>; bindings = <&kp L>; max-prior-idle-ms = <AK_TIMEOUT>; };
-)
-
-ZMK_ADAPTIVE_KEY(
-    ak_dot, bindings = <&kp DOT>;
-    amdot_eq, { trigger-keys = <EQUAL>; bindings = <&kp GT>; max-prior-idle-ms = <AK_TIMEOUT>; };
-)
-
-ZMK_ADAPTIVE_KEY(
     magic, bindings = <&key_repeat>;
     mag_ue { trigger-keys = <U>; bindings = <&kp E>; max-prior-idle-ms = <AK_TIMEOUT>; };
     mag_oa { trigger-keys = <O>; bindings = <&kp A>; max-prior-idle-ms = <AK_TIMEOUT>; };
@@ -221,20 +205,6 @@ ZMK_LAYER(racket,
     &kp BSPC      &kp X         &kp K         &kp M         &kp G         &kp V                                       &kp Z         &kp B         &kp SQT       &kp SLASH     &kp DOT       &kp Z
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                                             &sl FUN       &kp BSPC      &lt SYM R       &spc_bspc     &kp BSPC      &sl FUN
-//                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
-)
-
-ZMK_LAYER(hnd_inv,
-//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
-                                                                                                    X_F
-//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp GRAVE     &kp Z         &kp P         &hml LGUI D   &kp L         &kp X                                       &kp SEMI      &kp U         &kp O         &kp Y         &kp Q         &sk LALT
-//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp V         &hmlp LALT S  &hml LCTRL N  &hml LSHFT T  &hml_mo NAV H &kp K                                       &kp COMMA     &hmr RSHFT A  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI C  &kp B
-//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &kp F         &kp W         &kp G         &ak_m         &kp J                                       &kp MINUS     &ak_dot       &kp SQT       &kp EQUAL     &kp SLASH     &smart_shftr
-//╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                            &sl FUN       &smart_shftl  &lt SYM R       &spc_bspc     &kp BSPC      &sl FUN                   
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
