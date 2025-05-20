@@ -41,48 +41,48 @@ layers:
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫, h: nav, s: ⌦}
   - {t: ␣, h: sym}
-  - '&key_repeat'
+  - ⏎
   - {t: Num Word, h: fun}
-  dusk:
+  bunya:
   - '`'
-  - X
-  - F
-  - {t: D, h: Gui}
+  - B
+  - L
+  - {t: M, h: Gui}
+  - C
   - W
-  - P
   - J
-  - '&magic'
+  - F
   - O
   - U
   - ','
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: N, h: Alt}
-  - {t: S, h: Ctrl}
+  - {t: R, h: Ctrl}
   - {t: T, h: Shift}
-  - {t: C, h: nav}
+  - {t: D, h: nav}
+  - P
   - Y
-  - M
   - {t: H, h: Shift}
   - {t: A, h: Ctrl}
   - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - ⌫
-  - B
-  - V
-  - K
-  - G
+  - X
   - Q
+  - V
+  - G
   - Z
-  - L
+  - ;
+  - K
   - ''''
   - /
   - .
   - Z
   - {t: fun, h: sticky}
   - ⌫
-  - {t: R, h: sym}
+  - {t: S, h: sym}
   - {t: ␣, s: ⌫}
   - ⌫
   - {t: fun, h: sticky}
@@ -226,7 +226,7 @@ layers:
   - OUT BLE
   - ' '
   - ' '
-  - {t: dusk, h: toggle}
+  - {t: bunya, h: toggle}
   - Soft Off
   - F1
   - F2
@@ -269,19 +269,19 @@ combos:
   draw_separate: true
 - p: [16, 15, 14]
   k: ⏎
-  l: [def, dusk, sym, nav]
+  l: [def, bunya, sym, nav]
   draw_separate: true
 - p: [19, 20, 21]
   k: Esc
-  l: [def, dusk, sym, nav]
+  l: [def, bunya, sym, nav]
   draw_separate: true
 - p: [16, 14]
   k: ↹
-  l: [def, dusk, sym, nav]
+  l: [def, bunya, sym, nav]
   draw_separate: true
 - p: [21, 19]
   k: ⌦
-  l: [def, dusk, sym, nav]
+  l: [def, bunya, sym, nav]
   draw_separate: true
 - p: [2, 4]
   k: '%'
@@ -297,35 +297,35 @@ combos:
   a: bottom
 - p: [16, 17]
   k: '['
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [19, 18]
   k: ']'
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [16, 15]
   k: (
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [19, 20]
   k: )
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [15, 14]
   k: '{'
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [20, 21]
   k: '}'
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [25, 28]
   k: Select All
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
   a: bottom
 - p: [25, 26]
   k: Cut
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [26, 27]
   k: Copy
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [27, 28]
   k: Paste
-  l: [def, dusk, nav]
+  l: [def, bunya, nav]
 - p: [28, 29]
   k: '!'
   l: [def, nav]
@@ -347,7 +347,7 @@ combos:
   a: bottom
 - p: [31, 34]
   k: Num Word
-  l: [def, dusk]
+  l: [def, bunya]
   a: bottom
 - p: [7, 8, 9]
   k: '>'
