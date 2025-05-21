@@ -86,6 +86,49 @@ layers:
   - {t: ␣, s: ⌫}
   - ⌫
   - {t: fun, h: sticky}
+  night:
+  - '`'
+  - B
+  - F
+  - {t: L, h: Gui}
+  - D
+  - V
+  - P
+  - W
+  - O
+  - U
+  - .
+  - {t: Alt, h: sticky}
+  - {t: Shift, h: sticky, s: Caps Word}
+  - {t: N, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: H, h: Shift}
+  - {t: T, h: nav}
+  - M
+  - C
+  - {t: Y, h: Shift}
+  - {t: A, h: Ctrl}
+  - {t: E, h: Alt}
+  - {t: I, h: Gui}
+  - {t: Shift, h: sticky, s: Caps Word}
+  - {t: ⌫ Word, s: ⌫}
+  - X
+  - Z
+  - J
+  - K
+  - Q
+  - ''''
+  - G
+  - ;
+  - /
+  - ','
+  - {t: ⌫ Word, s: ⌫}
+  - {t: fun, h: sticky}
+  - ⌫
+  - {t: R, h: sym}
+  - {t: ␣, s: ⌫}
+  - ⌫
+  - {t: fun, h: sticky}
   sym:
   - ' '
   - ' '
