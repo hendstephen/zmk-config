@@ -86,42 +86,42 @@ layers:
   - {t: ␣, s: ⌫}
   - ⌫
   - {t: fun, h: sticky}
-  night:
+  duskvim:
   - '`'
-  - B
+  - X
   - F
-  - {t: L, h: Gui}
-  - D
-  - V
-  - P
+  - {t: D, h: Gui}
   - W
+  - P
+  - Q
+  - '&magic'
   - O
   - U
-  - .
+  - ','
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: N, h: Alt}
   - {t: S, h: Ctrl}
-  - {t: H, h: Shift}
-  - {t: T, h: nav}
+  - {t: T, h: Shift}
+  - {t: C, h: nav}
+  - Y
   - M
-  - C
-  - {t: Y, h: Shift}
+  - {t: H, h: Shift}
   - {t: A, h: Ctrl}
   - {t: E, h: Alt}
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫ Word, s: ⌫}
-  - X
-  - Z
+  - B
   - J
   - K
-  - Q
-  - ''''
   - G
-  - ;
+  - V
+  - Z
+  - L
+  - ''''
   - /
-  - ','
+  - .
   - {t: ⌫ Word, s: ⌫}
   - {t: fun, h: sticky}
   - ⌫
@@ -268,7 +268,7 @@ layers:
   - OUT USB
   - OUT BLE
   - ' '
-  - {t: night, h: toggle}
+  - {t: duskvim, h: toggle}
   - {t: dusk, h: toggle}
   - Soft Off
   - F1
