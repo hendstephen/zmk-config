@@ -84,7 +84,7 @@ layers:
   - ⌫
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
-  - ⌫
+  - ⏎
   - {t: fun, h: sticky}
   duskvim:
   - '`'
@@ -127,7 +127,7 @@ layers:
   - ⌫
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
-  - ⌫
+  - ⏎
   - {t: fun, h: sticky}
   sym:
   - ' '
