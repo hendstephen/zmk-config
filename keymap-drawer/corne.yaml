@@ -88,7 +88,7 @@ layers:
   - {t: fun, h: sticky}
   night:
   - '`'
-  - B
+  - X
   - F
   - {t: L, h: Gui}
   - D
@@ -112,7 +112,7 @@ layers:
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫ Word, s: ⌫}
-  - X
+  - B
   - Z
   - J
   - K
