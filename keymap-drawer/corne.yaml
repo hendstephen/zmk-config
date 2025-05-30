@@ -50,7 +50,7 @@ layers:
   - {t: D, h: Gui}
   - W
   - P
-  - J
+  - Q
   - '&magic'
   - O
   - U
@@ -70,10 +70,10 @@ layers:
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫ Word, s: ⌫}
   - B
-  - V
+  - J
   - K
   - G
-  - Q
+  - V
   - Z
   - L
   - ''''
@@ -94,7 +94,7 @@ layers:
   - D
   - V
   - P
-  - G
+  - W
   - O
   - U
   - .
@@ -118,7 +118,7 @@ layers:
   - K
   - Q
   - ''''
-  - W
+  - G
   - ;
   - /
   - ','
