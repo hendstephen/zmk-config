@@ -97,7 +97,7 @@ layers:
   - W
   - O
   - U
-  - .
+  - ','
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: N, h: Alt}
@@ -121,7 +121,7 @@ layers:
   - G
   - ;
   - /
-  - ','
+  - .
   - {t: ⌫ Word, s: ⌫}
   - {t: fun, h: sticky}
   - ⌫
