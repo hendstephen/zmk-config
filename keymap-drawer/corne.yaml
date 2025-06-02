@@ -88,13 +88,13 @@ layers:
   - {t: fun, h: sticky}
   night:
   - '`'
-  - X
+  - B
   - F
   - {t: L, h: Gui}
   - D
   - V
   - P
-  - W
+  - G
   - O
   - U
   - .
@@ -112,13 +112,13 @@ layers:
   - {t: I, h: Gui}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫ Word, s: ⌫}
-  - B
+  - X
   - Z
   - J
   - K
   - Q
   - ''''
-  - G
+  - W
   - ;
   - /
   - ','
