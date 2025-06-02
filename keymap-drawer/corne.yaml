@@ -94,10 +94,10 @@ layers:
   - D
   - V
   - P
-  - G
+  - W
   - O
   - U
-  - .
+  - ','
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: N, h: Alt}
@@ -118,10 +118,10 @@ layers:
   - K
   - Q
   - ''''
-  - W
+  - G
   - ;
   - /
-  - ','
+  - .
   - {t: ⌫ Word, s: ⌫}
   - {t: fun, h: sticky}
   - ⌫
