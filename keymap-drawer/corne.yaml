@@ -205,8 +205,8 @@ layers:
   - '='
   - Page Down
   - Home
-  - ' '
-  - ' '
+  - Page Down
+  - Page Up
   - End
   - ' '
   - ' '
