@@ -658,8 +658,7 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a><text x="0" y="24" class="key hold">sticky</text>
-</g>
+</a></g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
@@ -683,8 +682,7 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a><text x="0" y="24" class="key hold">sticky</text>
-</g>
+</a></g>
 <g class="combo combopos-0">
 <path d="M196,176 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M196,176 l0,-17" class="combo"/>
@@ -836,7 +834,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">B</text>
+<text x="0" y="0" class="key tap">X</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -950,7 +948,7 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(84, 161)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">X</text>
+<text x="0" y="0" class="key tap">B</text>
 </g>
 <g transform="translate(140, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -999,8 +997,7 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a><text x="0" y="24" class="key hold">sticky</text>
-</g>
+</a></g>
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
@@ -1024,8 +1021,7 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <a href="#fun">
 <text x="0" y="0" class="key tap layer-activator">fun</text>
-</a><text x="0" y="24" class="key hold">sticky</text>
-</g>
+</a></g>
 <g class="combo combopos-0">
 <path d="M196,176 h-50 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M196,176 l0,-17" class="combo"/>
