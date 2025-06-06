@@ -65,6 +65,7 @@ parse_config:
     '&ak_mpy': M
     '&ak_ret': ⏎
     '&ak_eq': '='
+    '&magic': ★
 
     '&es_a_acute': á
     '&es_e_acute': é
