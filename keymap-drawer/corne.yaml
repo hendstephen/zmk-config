@@ -51,7 +51,7 @@ layers:
   - W
   - P
   - J
-  - ★
+  - M
   - O
   - U
   - ','
@@ -62,7 +62,7 @@ layers:
   - {t: T, h: Shift}
   - {t: C, h: nav}
   - Y
-  - M
+  - ★
   - {t: H, h: Shift}
   - {t: A, h: Ctrl}
   - {t: E, h: Alt}
