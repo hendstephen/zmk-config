@@ -7,12 +7,29 @@
 
 // Layers
 #define DEF 0
-#define SYM 1
-#define NAV 2
-#define ALT 3
-#define FUN 4
+#define HND 1
+#define NHT 2
+#define SYM 3
+#define NAV 4
+#define ALT 5
+#define FUN 6
 
 #include "zmk-helpers/helper.h"
+#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, FLAVOR) \
+    ZMK_HOLD_TAP(NAME, \
+        flavor = FLAVOR; \
+        tapping-term-ms = <280>; \
+        quick-tap-ms = <QUICK_TAP_MS>; \
+        require-prior-idle-ms = <150>; \
+        bindings = <HOLD>, <TAP>; \
+        hold-trigger-key-positions = <TRIGGER_POS>; \
+        hold-trigger-on-release; \
+    )
+
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right hand
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                                  // thumbs
+
 #include "unicode.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi" // requires layer aliases and helpers
@@ -60,23 +77,12 @@
 #define WIN_RIGHT LG(LC(RIGHT))
 
 /* Homerow mods */
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left hand
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right hand
-#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                                  // thumbs
-
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, FLAVOR) \
-    ZMK_HOLD_TAP(NAME, \
-        flavor = FLAVOR; \
-        tapping-term-ms = <280>; \
-        quick-tap-ms = <QUICK_TAP_MS>; \
-        require-prior-idle-ms = <150>; \
-        bindings = <HOLD>, <TAP>; \
-        hold-trigger-key-positions = <TRIGGER_POS>; \
-        hold-trigger-on-release; \
-    )
 // Default HRM config
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS, "balanced")  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS, "balanced")  // right-hand HRMs
+
+MAKE_HRM(hml_mo, &mo, &kp, KEYS_R THUMBS, "tap-preferred")
+MAKE_HRM(hmr_mo, &mo, &kp, KEYS_L THUMBS, "tap-preferred")
 
 // Tap-preferred HRMs for pinkies since false positives are more common
 MAKE_HRM(hmlp, &kp, &kp, KEYS_R THUMBS, "tap-preferred")  // left-hand HRMs
@@ -110,6 +116,9 @@ ZMK_HOLD_TAP(ht_es_u,
     bindings = <&es_u_dieresis>, <&es_u_acute>;
 )
 #define ES_U &ht_es_u 0 0
+
+// tap: LC(BSPC) | ctrl + tap: BSPC
+SIMPLE_MORPH(bspc_wrd, CTL, &kp LC(BSPC), &kp BSPC)
 
 // tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 
@@ -157,16 +166,18 @@ ZMK_HOLD_TAP(lt_spc,
 // smart shifts
 SIMPLE_MORPH(smart_shftl, SFT, &sk LSHFT, &caps_word)
 SIMPLE_MORPH(smart_shftr, SFT, &sk RSHFT, &caps_word)
+SIMPLE_MORPH(spc_bspc, SFT, &kp SPACE, &kp BSPC)
+
+// Adaptives
+#define AK_TIMEOUT 150
+
+ZMK_ADAPTIVE_KEY(
+    magic, bindings = <&key_repeat>;
+    mag_e { trigger-keys = <U M>; bindings = <&kp E>; max-prior-idle-ms = <AK_TIMEOUT>; };
+    mag_oa { trigger-keys = <O>; bindings = <&kp A>; max-prior-idle-ms = <AK_TIMEOUT>; };
+)
 
 #define FUN_LEFT &lt_sl FUN ALT
-
-#if THUMBS_OUT
-    #define THUMBS_DEF X_HL  FUN_LEFT  &kp ESC  &lt_bspc NAV 0    &lt_spc SYM SPACE  &mt RSHFT RET  &lt_num FUN NAV X_HR
-    #define THUMBS_SYM X_HL  ___       ___      &lt NAV SPACE     ___                ___            ___             X_HR
-#else
-    #define THUMBS_DEF X_HL  FUN_LEFT  &lt_bspc NAV 0      &kp ESC    &mt RSHFT RET  &lt_spc SYM SPACE  &lt_num FUN NAV X_HR
-    #define THUMBS_SYM X_HL  ___       &lt_spc NAV SPACE   ___        ___            ___                ___             X_HR
-#endif
 
 /* Layers */
 ZMK_LAYER(def,
@@ -175,11 +186,39 @@ ZMK_LAYER(def,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           &kp Q         &kp W         &kp F         &kp P         &kp B                                       &kp J         &kp L         &kp U         &kp Y         &sqt_morph    &sk LALT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &smart_shftl  &hmlp LGUI A  &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI O  &smart_shftr
+    &smart_shftl  &hmlp LALT A  &hml LCTRL R  &hml LSHFT S  &hml_mo NAV T &kp G                                       &kp M         &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I   &hmrp RGUI O  &smart_shftr
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    QEXCL         &kp SEMI
+    &bspc_wrd     &kp Z         &kp X         &kp C         &kp D         &kp V                     X_BM              &kp K         &kp H         &comma_morph  &dot_morph    QEXCL         &bspc_wrd
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                                                                THUMBS_DEF
+                                                            FUN_LEFT      &smart_shftl &lt_bspc NAV 0 &lt_spc SYM SPACE &kp RET     &lt_num FUN NAV 
+//                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
+)
+
+ZMK_LAYER(dusk,
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
+                                                                                                    X_F
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
+    &kp GRAVE     &kp X         &kp F         &hml LGUI D   &kp W         &kp P                                       &kp J         &magic        &kp O         &kp U         &kp COMMA     &sk LALT
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
+    &smart_shftl  &hmlp LALT N  &hml LCTRL S  &hml LSHFT T  &hml_mo NAV C &kp Y                                       &kp M         &hmr RSHFT H  &hmr RCTRL A  &hmr RALT E   &hmrp RGUI I  &smart_shftr
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
+    &bspc_wrd     &kp B         &kp V         &kp K         &kp G         &kp Q                                       &kp Z         &kp L         &kp SQT       &kp SLASH     &kp DOT       &bspc_wrd
+//╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
+                                                            &mo FUN       &kp BSPC      &lt SYM R       &spc_bspc     &kp RET       &mo FUN
+//                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
+)
+
+ZMK_LAYER(gallium,
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
+                                                                                                    X_F
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
+    &kp GRAVE     &kp B         &kp L         &hml LGUI D   &kp W         &kp V                                       &kp J         &kp F         &kp O         &kp U         &kp COMMA     &sk LALT
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
+    &smart_shftl  &hmlp LALT N  &hml LCTRL R  &hml LSHFT T  &hml_mo NAV S &kp G                                       &kp Y         &hmr RSHFT H  &hmr RCTRL A  &hmr RALT E   &hmrp RGUI I  &smart_shftr
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
+    &bspc_wrd     &kp X         &kp Q         &kp M         &kp C         &kp Z                                       &kp K         &kp P         &kp SQT       &kp SLASH     &kp DOT       &bspc_wrd
+//╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
+                                                            ___           ___           ___             ___           ___           ___
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
@@ -193,7 +232,7 @@ ZMK_LAYER(sym,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     ___           &kp BSLH      &kp SLASH     &kp STAR      &kp CARET     &kp PRCNT                 X_BM              &kp TILDE     &kp DLLR      &kp LBRC     &kp RBRC       ___           ___          
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
-                                                                                                THUMBS_SYM
+                                                            ___           ___         &lt NAV SPACE     ___           ___           ___
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
 )
 
@@ -201,11 +240,11 @@ ZMK_LAYER(nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &kp COLON     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp STAR                                    ___           &kp WIN_LEFT  &kp LS(TAB)   &kp TAB      &kp WIN_RIGHT  ___  
+    &kp COLON     &kp SLASH     &kp N7        &kp N8        &kp N9        &kp STAR                                    ___           &kp WIN_LEFT  &kp LS(TAB)   &kp TAB       &kp WIN_RIGHT  ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    &kp DOT     &hmlp LGUI MINUS &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp PLUS                                   &kp PG_UP  &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP &hmrp RGUI RIGHT ___  
+    &kp DOT     &hmlp LALT MINUS &hml LCTRL N4 &hml LSHFT N5 &kp N6       &kp PLUS                                   &kp PG_UP  &hmr RSHFT LEFT &hmr RCTRL DOWN &hmr RALT UP  &hmrp RGUI RIGHT ___  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤ 
-    ___           &kp N0        &kp N1        &kp N2        &kp N3        &kp EQUAL                 X_BM              &kp PG_DN     &kp HOME      ___           ___           &kp END       ___  
+    ___           &kp N0        &kp N1        &kp N2        &kp N3        &kp EQUAL                 X_BM              &kp PG_DN     &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       ___  
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────╯ 
                                               X_HL          ___           ___           ___             ___           ___           ___           X_HR
 //                                          ╰─────────────┼─────────────┼─────────────┼─────────────╯ ╰─────────────┼─────────────┼─────────────┼─────────────╯
@@ -229,7 +268,7 @@ ZMK_LAYER(fun,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
                                                                                                     X_F
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
-    &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &out OUT_USB  &out OUT_BLE  ___           ___           ___           &soft_off
+    &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                &out OUT_USB  &out OUT_BLE  ___           &tog NHT      &tog HND      &soft_off
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                      &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12  
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 
