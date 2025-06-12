@@ -81,10 +81,10 @@ layers:
   - .
   - {t: ⌫ Word, s: ⌫}
   - fun
-  - ⌫
+  - ⏎
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
-  - ⏎
+  - ⌫
   - fun
   gallium:
   - '`'
