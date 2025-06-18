@@ -81,8 +81,8 @@
 MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS, "balanced")  // left-hand HRMs
 MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS, "balanced")  // right-hand HRMs
 
-MAKE_HRM(hml_mo, &mo, &kp, KEYS_R THUMBS, "tap-preferred")
-MAKE_HRM(hmr_mo, &mo, &kp, KEYS_L THUMBS, "tap-preferred")
+MAKE_HRM(hml_mo, &mo, &kp, KEYS_R THUMBS, "balanced")
+MAKE_HRM(hmr_mo, &mo, &kp, KEYS_L THUMBS, "balanced")
 
 // Tap-preferred HRMs for pinkies since false positives are more common
 MAKE_HRM(hmlp, &kp, &kp, KEYS_R THUMBS, "tap-preferred")  // left-hand HRMs
