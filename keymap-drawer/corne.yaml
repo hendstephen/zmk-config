@@ -39,7 +39,7 @@ layers:
   - {t: ⌫ Word, s: ⌫}
   - {t: alt, h: fun}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: ⌫, h: nav, s: ⌦}
+  - {t: ⌫, s: ⌦}
   - {t: ␣, h: sym}
   - ⏎
   - {t: Num Word, h: fun}
