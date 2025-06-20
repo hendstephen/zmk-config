@@ -15,12 +15,12 @@
 #define FUN 6
 
 #include "zmk-helpers/helper.h"
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, FLAVOR) \
+#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS, PRIOR_IDLE, FLAVOR) \
     ZMK_HOLD_TAP(NAME, \
         flavor = FLAVOR; \
         tapping-term-ms = <280>; \
         quick-tap-ms = <QUICK_TAP_MS>; \
-        require-prior-idle-ms = <150>; \
+        require-prior-idle-ms = <PRIOR_IDLE>; \
         bindings = <HOLD>, <TAP>; \
         hold-trigger-key-positions = <TRIGGER_POS>; \
         hold-trigger-on-release; \
@@ -78,18 +78,18 @@
 
 /* Homerow mods */
 // Default HRM config
-MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS, "balanced")  // left-hand HRMs
-MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS, "balanced")  // right-hand HRMs
+MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS, 150, "balanced")  // left-hand HRMs
+MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS, 150, "balanced")  // right-hand HRMs
 
-MAKE_HRM(hml_mo, &mo, &kp, KEYS_R THUMBS, "balanced")
-MAKE_HRM(hmr_mo, &mo, &kp, KEYS_L THUMBS, "balanced")
+MAKE_HRM(hml_mo, &mo, &kp, KEYS_R THUMBS, 0, "balanced")
+MAKE_HRM(hmr_mo, &mo, &kp, KEYS_L THUMBS, 0, "balanced")
 
 // Tap-preferred HRMs for pinkies since false positives are more common
-MAKE_HRM(hmlp, &kp, &kp, KEYS_R THUMBS, "tap-preferred")  // left-hand HRMs
-MAKE_HRM(hmrp, &kp, &kp, KEYS_L THUMBS, "tap-preferred")  // right-hand HRMs
+MAKE_HRM(hmlp, &kp, &kp, KEYS_R THUMBS, 150, "tap-preferred")  // left-hand HRMs
+MAKE_HRM(hmrp, &kp, &kp, KEYS_L THUMBS, 150, "tap-preferred")  // right-hand HRMs
 
 // Special HRMs for combos
-MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS, "tap-preferred")
+MAKE_HRM(hmr_ion, &kp, &ion, KEYS_L THUMBS, 150, "tap-preferred")
 
 /* Mod morphs */
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
