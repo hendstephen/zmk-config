@@ -427,7 +427,9 @@ path.combo { stroke: #7f7f7f; }
 <text x="672" y="190" class="combo tap">
 <tspan x="672" dy="-0.6em">Num</tspan><tspan x="672" dy="1.2em">Word</tspan>
 </text>
-</g>
+<a href="#nav">
+<text x="672" y="201" class="combo hold layer-activator">nav</text>
+</a></g>
 <g class="combo combopos-18">
 <path d="M644,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v11" class="combo"/>
 <path d="M644,-1 l0,18" class="combo"/>
@@ -766,7 +768,9 @@ path.combo { stroke: #7f7f7f; }
 <text x="672" y="190" class="combo tap">
 <tspan x="672" dy="-0.6em">Num</tspan><tspan x="672" dy="1.2em">Word</tspan>
 </text>
-</g>
+<a href="#nav">
+<text x="672" y="201" class="combo hold layer-activator">nav</text>
+</a></g>
 <g class="combo combopos-18">
 <path d="M644,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v11" class="combo"/>
 <path d="M644,-1 l0,18" class="combo"/>
@@ -1094,7 +1098,9 @@ path.combo { stroke: #7f7f7f; }
 <text x="672" y="190" class="combo tap">
 <tspan x="672" dy="-0.6em">Num</tspan><tspan x="672" dy="1.2em">Word</tspan>
 </text>
-</g>
+<a href="#nav">
+<text x="672" y="201" class="combo hold layer-activator">nav</text>
+</a></g>
 <g class="combo combopos-18">
 <path d="M644,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v11" class="combo"/>
 <path d="M644,-1 l0,18" class="combo"/>
@@ -1585,7 +1591,9 @@ path.combo { stroke: #7f7f7f; }
 <text x="672" y="190" class="combo tap">
 <tspan x="672" dy="-0.6em">Num</tspan><tspan x="672" dy="1.2em">Word</tspan>
 </text>
-</g>
+<a href="#nav">
+<text x="672" y="201" class="combo hold layer-activator">nav</text>
+</a></g>
 <g class="combo combopos-18">
 <path d="M644,-1 h-50 a6.0,6.0 0 0 0 -6.0,6.0 v11" class="combo"/>
 <path d="M644,-1 l0,18" class="combo"/>
