@@ -438,3 +438,15 @@ combos:
 - p: [20, 31]
   k: $
   l: [def, dusk, gallium]
+- p: [19, 8]
+  k: '='
+  l: [def, dusk, gallium]
+- p: [16, 3]
+  k: '='
+  l: [def, dusk, gallium]
+- p: [8, 21]
+  k: ;
+  l: [def, dusk, gallium]
+- p: [3, 14]
+  k: ;
+  l: [def, dusk, gallium]
