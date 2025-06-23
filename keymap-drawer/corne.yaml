@@ -389,7 +389,7 @@ combos:
   l: [def, dusk, gallium, nav]
   a: bottom
 - p: [31, 34]
-  k: Num Word
+  k: {t: Num Word, h: nav}
   l: [def, dusk, gallium, nav]
   a: bottom
 - p: [7, 8, 9]
