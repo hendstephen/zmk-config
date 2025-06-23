@@ -88,5 +88,13 @@ ZMK_COMBO(capword ,&caps_word, LT1 RT1    , DEF HND NHT    , COMBO_SLOW, IDLE_SL
 
 /* Others */
 ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF HND NHT    , COMBO_SLOW)
+
+/* Diagonals */
 ZMK_COMBO(caret   , &kp CARET, LM2 LB1    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(dllr    , &kp DLLR , RM2 RB1    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
+
+// Common ones on both sides to encourage alternation. Diagonal to home row to minimize finger travel.
+ZMK_COMBO(eq_r    , &kp EQUAL, RM1 RT2    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(eq_l    , &kp EQUAL, LM1 LT2    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(semi_r  , &kp SEMI , RT2 RM3    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(semi_l  , &kp SEMI , LT2 LM3    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
