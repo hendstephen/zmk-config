@@ -40,3 +40,29 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 | `/`            | `?`         |
 | `⌫`            | `⌦`         | 
 | `Sticky Shift` | `Caps Word` | 
+
+## Common bigrams
+```
+Arrows:
+=>
+->
+<-
+
+With equal:
+>=
+<=
+!=
++=
+-=
+:=
+
+String stuff:
+${
+$"
+
+Repeats:
+==
+&&
+--
+||
+```

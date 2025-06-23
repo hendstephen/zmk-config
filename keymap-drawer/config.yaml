@@ -11,6 +11,13 @@ parse_config:
     combo_tilde: { align: 'bottom' }
     combo_numwrd: { align: 'bottom' }
 
+    combo_eq_r: { draw_separate: true }
+    combo_eq_l: { draw_separate: true }
+    combo_semi_r: { draw_separate: true }
+    combo_semi_l: { draw_separate: true }
+    combo_dllr: { draw_separate: true }
+    combo_caret: { draw_separate: true }
+
     combo_cplck: { draw_separate: true }
     combo_grave: { draw_separate: true }
     combo_percent: { draw_separate: true }
