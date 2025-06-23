@@ -88,3 +88,5 @@ ZMK_COMBO(capword ,&caps_word, LT1 RT1    , DEF HND NHT    , COMBO_SLOW, IDLE_SL
 
 /* Others */
 ZMK_COMBO(cplck   , &kp CAPS , LM5 RM5    , DEF HND NHT    , COMBO_SLOW)
+ZMK_COMBO(caret   , &kp CARET, LM2 LB1    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(dllr    , &kp DLLR , RM2 RB1    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
