@@ -17,6 +17,10 @@ parse_config:
     combo_semi_l: { draw_separate: true }
     combo_dllr: { draw_separate: true }
     combo_caret: { draw_separate: true }
+    combo_perc_dg: { draw_separate: true }
+    combo_hash_dg: { draw_separate: true }
+    combo_tilde_dg: { draw_separate: true }
+    combo_grave_dg: { draw_separate: true }
 
     combo_cplck: { draw_separate: true }
     combo_grave: { draw_separate: true }
