@@ -441,19 +441,19 @@ combos:
   k: $
   l: [def, dusk, gallium]
   draw_separate: true
-- p: [19, 8]
-  k: '='
-  l: [def, dusk, gallium]
-  draw_separate: true
 - p: [16, 3]
   k: '='
   l: [def, dusk, gallium]
   draw_separate: true
-- p: [20, 9]
-  k: ;
+- p: [19, 8]
+  k: '='
   l: [def, dusk, gallium]
   draw_separate: true
 - p: [15, 2]
+  k: ;
+  l: [def, dusk, gallium]
+  draw_separate: true
+- p: [20, 9]
   k: ;
   l: [def, dusk, gallium]
   draw_separate: true
