@@ -175,7 +175,7 @@ ZMK_ADAPTIVE_KEY(
     magic, bindings = <&key_repeat>;
     mag_e { trigger-keys = <U M>; bindings = <&kp E>; max-prior-idle-ms = <AK_TIMEOUT>; };
     mag_oa { trigger-keys = <O>; bindings = <&kp A>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    mag_sft { trigger-keys = <LS>; bindings = <&caps_word>; strict-modifiers; max-prior-idle-ms = <AK_TIMEOUT>; };
+    mag_sft { trigger-keys = <LSHFT>; bindings = <&caps_word>; strict-modifiers; max-prior-idle-ms = <AK_TIMEOUT>; };
 )
 
 #define FUN_LEFT &lt_sl FUN ALT
