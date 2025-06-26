@@ -302,14 +302,6 @@ layers:
   - ' '
   - ' '
 combos:
-- p: [19, 21, 22]
-  k: ion
-  l: [def]
-  draw_separate: true
-- p: [31, 33, 34]
-  k: ../
-  l: [def, nav]
-  draw_separate: true
 - p: [16, 15, 14]
   k: ⏎
   l: [def, dusk, gallium, sym, nav]
@@ -326,18 +318,6 @@ combos:
   k: ⌦
   l: [def, dusk, gallium, sym, nav]
   draw_separate: true
-- p: [2, 4]
-  k: '%'
-  l: [def, dusk, gallium, nav]
-  draw_separate: true
-- p: [7, 9]
-  k: '`'
-  l: [def, dusk, gallium, nav]
-  draw_separate: true
-- p: [26, 27, 28]
-  k: '~'
-  l: [def, dusk, gallium, nav]
-  a: bottom
 - p: [16, 17]
   k: '['
   l: [def, dusk, gallium, nav]
