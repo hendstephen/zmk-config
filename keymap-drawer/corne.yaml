@@ -433,11 +433,11 @@ combos:
   k: Caps Lock
   l: [def, dusk, gallium]
   draw_separate: true
-- p: [15, 28]
+- p: [16, 27]
   k: ^
   l: [def, dusk, gallium]
   draw_separate: true
-- p: [20, 31]
+- p: [19, 32]
   k: $
   l: [def, dusk, gallium]
   draw_separate: true
@@ -449,11 +449,11 @@ combos:
   k: '='
   l: [def, dusk, gallium]
   draw_separate: true
-- p: [15, 2]
+- p: [15, 28]
   k: ;
   l: [def, dusk, gallium]
   draw_separate: true
-- p: [20, 9]
+- p: [20, 31]
   k: ;
   l: [def, dusk, gallium]
   draw_separate: true
