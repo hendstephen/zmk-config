@@ -8,7 +8,6 @@ parse_config:
     combo_capword: { align: 'top' }
     combo_lt: { align: 'top' }
     combo_gt: { align: 'top' }
-    combo_tilde: { align: 'bottom' }
     combo_numwrd: { align: 'bottom' }
 
     combo_eq_r: { draw_separate: true }
@@ -23,8 +22,6 @@ parse_config:
     combo_grave_dg: { draw_separate: true }
 
     combo_cplck: { draw_separate: true }
-    combo_grave: { draw_separate: true }
-    combo_percent: { draw_separate: true }
 
     # Combos with HRM hold-taps, don't draw the hold on bottom
     combo_lpar: { key: '(' }
