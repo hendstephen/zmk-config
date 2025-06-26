@@ -25,12 +25,6 @@ parse_config:
     combo_cplck: { draw_separate: true }
     combo_grave: { draw_separate: true }
     combo_percent: { draw_separate: true }
-    combo_cdup:
-      draw_separate: true
-      key: '../'
-    combo_ion: 
-      draw_separate: true 
-      key: ion
 
     # Combos with HRM hold-taps, don't draw the hold on bottom
     combo_lpar: { key: '(' }

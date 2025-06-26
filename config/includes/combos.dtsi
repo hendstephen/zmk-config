@@ -32,10 +32,6 @@ ZMK_HOLD_TAP(lt_numwrd,
 )
 #define NUMWRD &lt_numwrd NAV NAV
 
-/* Draw separate */
-ZMK_COMBO(ion     , HRC_ION  , RM1 RM3 RM4, DEF        , COMBO_SLOW)
-ZMK_COMBO(cdup    , &cdup    , RB1 RB3 RB4, DEF     NAV, COMBO_FAST)
-
 /* Home row combos */
 ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF HND NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
 ZMK_COMBO(esc     , HRC_ESC  , RM1 RM2 RM3, DEF HND NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
