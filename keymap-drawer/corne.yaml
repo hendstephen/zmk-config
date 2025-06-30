@@ -437,6 +437,12 @@ combos:
   k: ;
   l: [def, dusk, gallium]
   draw_separate: true
+- p: [20, 9]
+  k: '-'
+  l: [def, dusk, gallium]
+- p: [15, 2]
+  k: '-'
+  l: [def, dusk, gallium]
 - p: [14, 3]
   k: '~'
   l: [def, dusk, gallium]
