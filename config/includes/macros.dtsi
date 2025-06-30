@@ -9,3 +9,15 @@ ZMK_MACRO(dblslsh,
     wait-ms = <0>;
     tap-ms = <0>;
 )
+
+ZMK_MACRO(ue, 
+    bindings = <&macro_tap &kp U &kp E>;
+    wait-ms = <0>;
+    tap-ms = <0>;
+)
+
+ZMK_MACRO(oa, 
+    bindings = <&macro_tap &kp O &kp A>;
+    wait-ms = <0>;
+    tap-ms = <0>;
+)

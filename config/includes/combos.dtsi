@@ -96,3 +96,7 @@ ZMK_COMBO(grave_dg, &kp GRAVE, RM3 RT2    , DEF HND NHT    , COMBO_FAST, IDLE_SL
 
 ZMK_COMBO(perc_dg , &kp PRCNT, LB3 LM2    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(hash_dg , &kp HASH , RB3 RM2    , DEF HND NHT    , COMBO_FAST, IDLE_SLOW)
+
+// Vertical
+ZMK_COMBO(ue      , &ue      , RM2 RT2    ,     HND NHT    , COMBO_FAST)
+ZMK_COMBO(oa      , &oa      , RM1 RT1    ,     HND NHT    , COMBO_FAST)
