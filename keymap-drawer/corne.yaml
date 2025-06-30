@@ -101,7 +101,7 @@ layers:
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: N, h: Alt}
-  - {t: R, h: Ctrl}
+  - {t: S, h: Ctrl}
   - {t: H, h: Shift}
   - {t: T, h: nav}
   - M
