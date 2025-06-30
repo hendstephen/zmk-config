@@ -17,6 +17,8 @@ parse_config:
     combo_eq_l: { draw_separate: true }
     combo_semi_r: { draw_separate: true }
     combo_semi_l: { draw_separate: true }
+    combo_dash_r: { draw_separate: true }
+    combo_dash_l: { draw_separate: true }
     combo_dllr: { draw_separate: true }
     combo_caret: { draw_separate: true }
     combo_perc_dg: { draw_separate: true }
