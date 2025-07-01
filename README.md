@@ -30,6 +30,13 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 - Layer for unicode/international characters
   - `u` key has hold/tap for spanish alts: tap `ú`, hold `ü`
 
+
+## Night Layout
+I'm in the process of switching to Valorance's [night layout](https://luminespire.github.io/night/home.html), with some changes:
+
+### BX swap
+I'm not a fan of top row pinkies (QWERTY Q position) on my corne, because it forces me to move my whole hand up. I swap B with X to put it in the bottom row. With some other similar layouts (gallium, graphite), this would cause a bad scissor because of the L position, but with night's L being on the top middle instead of top ring, it is not too bad.
+
 ![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
 ## Mod Morphs
