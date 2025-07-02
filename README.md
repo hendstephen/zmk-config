@@ -7,16 +7,14 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 * nice!view customization via [@M165437's nice-view-gem](https://github.com/M165437/nice-view-gem)
 
 ## Features
-- Colemak-DH base layer
+- Colemak-DH base layer (_see section on [night](#night-layout)_)
 - Homerow mods using [urob's timeless homerow mod config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - Symbol layer based on [getreuer's symbol layer](https://github.com/getreuer/qmk-keymap?tab=readme-ov-file#my-keymap)
 - Commonly used symbols in combos on the base layer
-  - _These symbols are specific to my development workflow (C#/.NET, React, Typescript). While the symbol layer design is good, I found that switching back and forth to this layer while coding was awkward for me. Having my most used symbols on the base layer is much smoother, and I've tuned the combo timing so that misfires are not an issue. (For reference, I get few misfires at a typing speed of around ~100 wpm)._
-  - _I've also struggled with some thumb pain/fatigue, so reducing thumb use as much as possible in favor of combos helps to minimize this._
 - Sticky shift on pinkies
-  - _Similar to above, this helps reduce the thumb fatigue that comes from having sticky shift on thumbs. I also could never quite get used to shift on my thumbs. My pinkies just want to reach out for shift._
 - Numpad on the nav layer for vim line motions (e.g. `15↑` to jump up 15 lines)
   - _This is needed mainly because I use an alt layout and thus lose the typical `hjkl` home row navigation._
+  - _Additionally, having a nav block on the home row is very convenient even in non-vim scenarios._
 - Num-word
 - More intuitive [mod morphs](#mod-morphs)
 - Convenience macros
@@ -25,9 +23,9 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
   - `//` - long press on `/` key to output double slash for starting a comment
 - Sticky `Alt` on base layer re: [Issue #759](https://github.com/zmkfirmware/zmk/issues/759)
   - _I do most of my work on a remote desktop, and it seems the client doesn't respect the `alt` modifier on a non-base layer (or mod-tap) until after the full tap-hold delay. I got tired of waiting, so I put sticky `alt` on the base layer as well as a tab combo for a quick window switch without waiting for the full timeout._
-- Layer for unicode/international characters
-  - `u` key has hold/tap for spanish alts: tap `ú`, hold `ü`
 
+## Keymap
+![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
 ## Night Layout
 I'm in the process of switching to Valorance's [night layout](https://luminespire.github.io/night/home.html), with some changes:
@@ -40,7 +38,18 @@ I use the nightingale left hand, which notably:
 - Puts `d` on top instead of `k`
 - Swaps `qvz` in order to put `v` on the top corner to minimize movement from `d_v` skipgrams
 
-![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
+## Symbol Combos
+I much prefer combos over layers. There is less interruption to my typing flow that comes from swapping to a layer. This is particularly true when inputting a single symbol (e.g. `=` vs `=>`), in which case holding a layer is very awkward. This can be worked around by using a one-shot layer key for the symbol layer, but then you have to account for both a one-shot symbol (`=`) and a two-shot (or even n-shot) symbol (`=>`). This is less than ideal, so for this reason I have all symbols on combos on the base layer.
+
+Additionally, my most common symbols are duplicated on both hands to further improve typing flow when inputting symbols. For example, take this text:
+```csharp
+x >= 0;
+```
+Without `=` on both hands, this could result in the `>` and `=` combos being on the same hand. Putting `=` on both sides allows us to preserve alternation. Similarly, `;` is used all the time (at least in C-type languages), but often comes after either `)` or a letter. So, for the following lines, without `;` on both sides, at least one of these would result in an awkward same-hand combo sequence.
+```csharp
+CallFunc();         // Could be avoided by just having ) and ; combos on opposite hands
+var x = myOtherVar; // No guarantee that the last letter will be on opposite hand from ;
+```
 
 ## Mod Morphs
 | Tap            | Shift + Tap | 
