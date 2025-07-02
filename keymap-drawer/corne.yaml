@@ -94,7 +94,7 @@ layers:
   - D
   - V
   - P
-  - G
+  - W
   - O
   - U
   - ','
@@ -118,7 +118,7 @@ layers:
   - K
   - Q
   - ''''
-  - W
+  - G
   - ;
   - /
   - .
@@ -461,9 +461,3 @@ combos:
   k: '#'
   l: [def, dusk, night]
   draw_separate: true
-- p: [20, 8]
-  k: ue
-  l: [dusk, night]
-- p: [19, 7]
-  k: oa
-  l: [dusk, night]
