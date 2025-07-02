@@ -33,21 +33,12 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 I'm in the process of switching to Valorance's [night layout](https://luminespire.github.io/night/home.html), with some changes:
 
 ### BX swap
-I'm not a fan of top row pinkies (QWERTY `q` position) on my corne, because it forces me to move my whole hand up. I swap `b` with `x` to put it in the bottom row. With some other similar layouts (gallium, graphite), this would cause a bad scissor because of the `l` position, but with night's `l` being on the top middle instead of top ring it is feels fine.
+I'm not a fan of top row pinkies (QWERTY `q` position) on my corne, because it forces me to move my whole hand up. I swap `b` with `x` to put it in the bottom row. With some other similar layouts that use a `bnx` column and have `l` on the left hand (gallium, graphite), this would cause a bad scissor because of the `l` position, but with night's `l` being on the top middle instead of top ring it is feels fine.
 
 ### Left Hand
 I use the nightingale left hand, which notably:
 - Puts `d` on top instead of `k`
 - Swaps `qvz` in order to put `v` on the top corner to minimize movement from `d_v` skipgrams
-
-### Right Index
-I use the regular night variant for the right index, arranged like so:
-```
-p g
-y c
-' w
-```
-For larger corpora (English 1k, 5k, etc) `c` is more frequent than `y`, thus keeping this on the home index key reduces travel. Additionally, `g` sits on the top instead of `w` to minimize movement from `p_g` and `p__g` skipgrams.
 
 ![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
