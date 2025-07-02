@@ -41,7 +41,7 @@ I use the nightingale left hand, which notably:
 - Swaps `qvz` in order to put `v` on the top corner to minimize movement from `d_v` skipgrams
 
 ### Right Index
-I use the nightingale variant for the right index, arranged like so:
+I use the regular night variant for the right index, arranged like so:
 ```
 p g
 y c
