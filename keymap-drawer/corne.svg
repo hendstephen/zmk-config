@@ -803,14 +803,6 @@ path.combo { stroke: #7f7f7f; }
 <tspan x="420" dy="-0.6em">Caps</tspan><tspan x="420" dy="1.2em">Word</tspan>
 </text>
 </g>
-<g class="combo combopos-27">
-<rect rx="6" ry="6" x="630" y="43" width="28" height="26" class="combo"/>
-<text x="644" y="56" class="combo tap">ue</text>
-</g>
-<g class="combo combopos-28">
-<rect rx="6" ry="6" x="574" y="50" width="28" height="26" class="combo"/>
-<text x="588" y="63" class="combo tap">oa</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 689)" class="layer-night">
@@ -1140,14 +1132,6 @@ path.combo { stroke: #7f7f7f; }
 <text x="420" y="6" class="combo tap">
 <tspan x="420" dy="-0.6em">Caps</tspan><tspan x="420" dy="1.2em">Word</tspan>
 </text>
-</g>
-<g class="combo combopos-27">
-<rect rx="6" ry="6" x="630" y="43" width="28" height="26" class="combo"/>
-<text x="644" y="56" class="combo tap">ue</text>
-</g>
-<g class="combo combopos-28">
-<rect rx="6" ry="6" x="574" y="50" width="28" height="26" class="combo"/>
-<text x="588" y="63" class="combo tap">oa</text>
 </g>
 </g>
 </g>
