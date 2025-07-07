@@ -4,12 +4,12 @@ layers:
   - ' '
   - Q
   - W
-  - F
+  - {t: F, h: Gui}
   - P
   - B
   - J
   - L
-  - U
+  - {t: U, h: Gui}
   - Y
   - {t: '''', s: '"'}
   - {t: Alt, h: sticky}
@@ -20,10 +20,10 @@ layers:
   - {t: T, h: nav}
   - G
   - M
-  - {t: N, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: O, h: Gui}
+  - {t: N, h: nav}
+  - {t: E, h: Shift}
+  - {t: I, h: Ctrl}
+  - {t: O, h: Alt}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫ Word, s: ⌫}
   - Z
@@ -52,7 +52,7 @@ layers:
   - P
   - J
   - ★
-  - O
+  - {t: O, h: Gui}
   - U
   - ','
   - {t: Alt, h: sticky}
@@ -63,10 +63,10 @@ layers:
   - {t: C, h: nav}
   - Y
   - M
-  - {t: H, h: Shift}
-  - {t: A, h: Ctrl}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
+  - {t: H, h: nav}
+  - {t: A, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫ Word, s: ⌫}
   - B
@@ -95,7 +95,7 @@ layers:
   - V
   - P
   - W
-  - O
+  - {t: O, h: Gui}
   - U
   - ','
   - {t: Alt, h: sticky}
@@ -106,10 +106,10 @@ layers:
   - {t: T, h: nav}
   - M
   - Y
-  - {t: C, h: Shift}
-  - {t: A, h: Ctrl}
-  - {t: E, h: Alt}
-  - {t: I, h: Gui}
+  - {t: C, h: nav}
+  - {t: A, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫ Word, s: ⌫}
   - B
