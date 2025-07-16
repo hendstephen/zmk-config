@@ -31,12 +31,12 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 I'm in the process of switching to Valorance's [night layout](https://luminespire.github.io/night/home.html), with some changes:
 
 ### BX swap
-I'm not a fan of top row pinkies (QWERTY `q` position) on my corne, because it forces me to move my whole hand up. I swap `b` with `x` to put it in the bottom row. With some other similar layouts that use a `bnx` column and have `l` on the left hand (gallium, graphite), this would cause a bad scissor because of the `l` position, but with night's `l` being on the top middle instead of top ring it is feels fine.
+I'm not a fan of top row pinkies (QWERTY `q` position) on my corne, because it forces me to move my whole hand up. I swap `b` with `x` to put it in the bottom row. With some other similar layouts that use a `bnx` column and have `l` on the left hand (gallium, graphite), this would cause a bad scissor because of the `l` position, but with night's `l` being on the top middle instead of top ring it feels fine.
 
 ### Left Hand
 I use the nightingale left hand, which notably:
 - Puts `d` on top instead of `k`
-- Swaps `qvz` in order to put `v` on the top corner to minimize movement from `d_v` skipgrams
+- Swaps `vqz` in order to put `v` on the top corner to minimize movement from `d_v` and `l_v` skipgrams
 
 ## Symbol Combos
 I much prefer combos over layers. There is less interruption to my typing flow that comes from swapping to a layer. This is particularly true when inputting a single symbol (e.g. `=` vs `=>`), in which case holding a layer is very awkward. This can be worked around by using a one-shot layer key for the symbol layer, but then you have to account for both a one-shot symbol (`=`) and a two-shot (or even n-shot) symbol (`=>`). This is less than ideal, so for this reason I have all symbols on combos on the base layer.
