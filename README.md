@@ -10,7 +10,7 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 - Colemak-DH base layer (_see section on [night](#night-layout)_)
 - Homerow mods using [urob's timeless homerow mod config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - Symbol layer based on [getreuer's symbol layer](https://github.com/getreuer/qmk-keymap?tab=readme-ov-file#my-keymap)
-- Commonly used symbols in combos on the base layer
+- Commonly used symbols in combos on the base layer (_see section on [combos](#symbol-combos)_)
 - Sticky shift on pinkies
 - Numpad on the nav layer for vim line motions (e.g. `15↑` to jump up 15 lines)
   - _This is needed mainly because I use an alt layout and thus lose the typical `hjkl` home row navigation._
