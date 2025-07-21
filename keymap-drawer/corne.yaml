@@ -431,11 +431,11 @@ combos:
   draw_separate: true
 - p: [15, 28]
   k: ;
-  l: [def, dusk, night]
+  l: [def, dusk, night, nav]
   draw_separate: true
 - p: [20, 31]
   k: ;
-  l: [def, dusk, night]
+  l: [def, dusk, night, nav]
   draw_separate: true
 - p: [20, 9]
   k: '-'
