@@ -38,7 +38,7 @@ layers:
   - .
   - {t: ⌫ Word, s: ⌫}
   - fun
-  - ⏎
+  - {t: sym, h: sticky}
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
   - ⌫
@@ -124,8 +124,8 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
-  - {t: ␣, h: nav, type: held}
+  - {t: ' ', type: held}
+  - {t: ␣, h: nav}
   - ' '
   - ' '
   - ' '
