@@ -38,7 +38,7 @@ layers:
   - .
   - {t: ⌫ Word, s: ⌫}
   - fun
-  - ⏎
+  - {t: sym, h: sticky}
   - {t: R, h: sym}
   - {t: ␣, s: ⌫}
   - ⌫
@@ -124,8 +124,8 @@ layers:
   - ' '
   - ' '
   - ' '
-  - ' '
-  - {t: ␣, h: nav, type: held}
+  - {t: ' ', type: held}
+  - {t: ␣, h: nav}
   - ' '
   - ' '
   - ' '
@@ -394,11 +394,11 @@ combos:
   k: ;
   l: [dh, night, nav]
   draw_separate: true
-- p: [20, 9]
+- p: [15, 2]
   k: '-'
   l: [dh, night]
   draw_separate: true
-- p: [15, 2]
+- p: [20, 9]
   k: '-'
   l: [dh, night]
   draw_separate: true
