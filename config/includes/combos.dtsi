@@ -7,20 +7,8 @@
 #define IDLE_SLOW 50
 
 // Make homerow combos tap-only (so HRMs can be chorded instantaneously)
-#define HRC_LPAR &hml LS(LCTRL) LPAR
-#define HRC_RPAR &hmr RS(RCTRL) RPAR
-
-#define HRC_LBRC &hml LC(LALT) LBRC
-#define HRC_RBRC &hmr RC(RALT) RBRC
-
-#define HRC_LBKT &hml LSFT LBKT
-#define HRC_RBKT &hmr RSFT RBKT
-
-#define HRC_ESC &hmr RS(RC(RALT)) ESC
-#define HRC_DEL &hmr RS(RALT) DEL
-
-#define HRC_TAB &hml LS(LALT) TAB
-#define HRC_RET &hml LS(LC(LALT)) RET
+#define HRC_LBRC &hml LC(LSFT) LBRC
+#define HRC_RBRC &hmr RC(RSFT) RBRC
 
 ZMK_HOLD_TAP(lt_numwrd,
     flavor = "tap-preferred";
@@ -31,16 +19,16 @@ ZMK_HOLD_TAP(lt_numwrd,
 #define NUMWRD &lt_numwrd NAV NAV
 
 /* Home row combos */
-ZMK_COMBO(ret     , HRC_RET  , LM1 LM2 LM3, DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
-ZMK_COMBO(esc     , HRC_ESC  , RM1 RM2 RM3, DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
-ZMK_COMBO(tab     , HRC_TAB  , LM1 LM3    , DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
-ZMK_COMBO(del     , HRC_DEL  , RM3 RM1    , DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(ret     , &kp RET  , LM1 LM2 LM3, DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(esc     , &kp ESC  , RM1 RM2 RM3, DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(tab     , &kp TAB  , LM1 LM3    , DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
+ZMK_COMBO(del     , &kp DEL  , RM3 RM1    , DEF NHT SYM NAV, COMBO_SLOW, IDLE_SLOW)
 
 // Matching braces/brackets
-ZMK_COMBO(lbkt    , HRC_LBKT , LM1 LM0    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
-ZMK_COMBO(rbkt    , HRC_RBKT , RM1 RM0    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
-ZMK_COMBO(lpar    , HRC_LPAR , LM1 LM2    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
-ZMK_COMBO(rpar    , HRC_RPAR , RM1 RM2    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(lbkt    , &kp LBKT , LM1 LM0    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(rbkt    , &kp RBKT , RM1 RM0    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(lpar    , &kp LPAR , LM1 LM2    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
+ZMK_COMBO(rpar    , &kp RPAR , RM1 RM2    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(lbrc    , HRC_LBRC , LM2 LM3    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
 ZMK_COMBO(rbrc    , HRC_RBRC , RM2 RM3    , DEF NHT NAV, COMBO_FAST, IDLE_SLOW)
 
