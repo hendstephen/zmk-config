@@ -163,16 +163,6 @@ ZMK_HOLD_TAP(lt_spc,
 SIMPLE_MORPH(smart_shftl, SFT, &sk LSHFT, &caps_word)
 SIMPLE_MORPH(smart_shftr, SFT, &sk RSHFT, &caps_word)
 
-// Adaptives
-#define AK_TIMEOUT 150
-
-ZMK_ADAPTIVE_KEY(
-    magic, bindings = <&key_repeat>;
-    mag_e { trigger-keys = <U M>; bindings = <&kp E>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    mag_oa { trigger-keys = <O>; bindings = <&kp A>; max-prior-idle-ms = <AK_TIMEOUT>; };
-    mag_sft { trigger-keys = <LSHFT>; bindings = <&caps_word>; strict-modifiers; max-prior-idle-ms = <AK_TIMEOUT>; };
-)
-
 #define FUN_LEFT &lt_sl FUN ALT
 
 /* Layers */
