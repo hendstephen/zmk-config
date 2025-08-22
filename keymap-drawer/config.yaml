@@ -74,6 +74,7 @@ parse_config:
     "&ak_ret": ⏎
     "&ak_eq": "="
     "&magic": ★
+    "&key_repeat": "Repeat"
 
     "&es_a_acute": á
     "&es_e_acute": é
