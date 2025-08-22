@@ -18,6 +18,8 @@ parse_config:
     combo_dash_l: { draw_separate: true }
     combo_col_l: { draw_separate: true }
     combo_col_r: { draw_separate: true }
+    combo_under_l: { draw_separate: true }
+    combo_under_r: { draw_separate: true }
     combo_dllr: { draw_separate: true }
     combo_caret: { draw_separate: true }
     combo_perc_dg: { draw_separate: true }
