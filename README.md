@@ -7,7 +7,7 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 * nice!view customization via [@M165437's nice-view-gem](https://github.com/M165437/nice-view-gem)
 
 ## Features
-- Colemak-DH base layer (_see section on [night](#night-layout)_)
+- [Night](#night-layout) base layer
 - Homerow mods using [urob's timeless homerow mod config](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
 - Symbol layer based on [getreuer's symbol layer](https://github.com/getreuer/qmk-keymap?tab=readme-ov-file#my-keymap)
 - Commonly used symbols in combos on the base layer (_see section on [combos](#symbol-combos)_)
