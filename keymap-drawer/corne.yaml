@@ -11,7 +11,7 @@ layers:
   - W
   - {t: O, h: Gui}
   - U
-  - '&key_repeat'
+  - Repeat
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: N, h: Alt}
