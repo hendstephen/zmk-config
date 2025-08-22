@@ -3,12 +3,12 @@ parse_config:
     - "zmk-helpers/include"
 
   zmk_combos:
-    combo_all: { align: 'bottom' }
-    combo_dqt: { align: 'bottom' }
-    combo_capword: { align: 'top' }
-    combo_lt: { align: 'top' }
-    combo_gt: { align: 'top' }
-    combo_numwrd: { align: 'bottom' }
+    combo_all: { align: "bottom" }
+    combo_dqt: { align: "bottom" }
+    combo_capword: { align: "top" }
+    combo_lt: { align: "top" }
+    combo_gt: { align: "top" }
+    combo_numwrd: { align: "bottom" }
 
     combo_eq_r: { draw_separate: true }
     combo_eq_l: { draw_separate: true }
@@ -16,6 +16,8 @@ parse_config:
     combo_semi_l: { draw_separate: true }
     combo_dash_r: { draw_separate: true }
     combo_dash_l: { draw_separate: true }
+    combo_col_l: { draw_separate: true }
+    combo_col_r: { draw_separate: true }
     combo_dllr: { draw_separate: true }
     combo_caret: { draw_separate: true }
     combo_perc_dg: { draw_separate: true }
@@ -26,12 +28,12 @@ parse_config:
     combo_cplck: { draw_separate: true }
 
     # Combos with HRM hold-taps, don't draw the hold on bottom
-    combo_lpar: { key: '(' }
-    combo_rpar: { key: ')' }
-    combo_lbrc: { key: '{' }
-    combo_rbrc: { key: '}' }
-    combo_lbkt: { key: '[' }
-    combo_rbkt: { key: ']' }
+    combo_lpar: { key: "(" }
+    combo_rpar: { key: ")" }
+    combo_lbrc: { key: "{" }
+    combo_rbrc: { key: "}" }
+    combo_lbkt: { key: "[" }
+    combo_rbkt: { key: "]" }
     combo_del:
       draw_separate: true
       key: ⌦
@@ -46,59 +48,59 @@ parse_config:
       key: ↹
 
   raw_binding_map:
-    '&trans': ' '
-    '&soft_off': Soft Off
-    '&sys_reset': Reset
-    '&bootloader': Boot
-    '&fatarrow': =>
-    '&caps_word': Caps Word
-    '&swapper': Win Next
-    '&ion': '"ion"'
-    '&num_word': Num Word
-    '&mmv MOVE_UP': Mouse ↑
-    '&mmv MOVE_DOWN': Mouse ↓
-    '&mmv MOVE_LEFT': Mouse ←
-    '&mmv MOVE_RIGHT': Mouse →
-    '&msc MOVE_UP': Scroll Up
-    '&msc MOVE_DOWN': Scroll Down
-    '&sftclk': Click
-    '&dblslsh': '//'
-    '&leader': Leader
-    '&ak_dot': '.'
-    '&ak_m': M
-    '&ak_mpy': M
-    '&ak_ret': ⏎
-    '&ak_eq': '='
-    '&magic': ★
+    "&trans": " "
+    "&soft_off": Soft Off
+    "&sys_reset": Reset
+    "&bootloader": Boot
+    "&fatarrow": =>
+    "&caps_word": Caps Word
+    "&swapper": Win Next
+    "&ion": '"ion"'
+    "&num_word": Num Word
+    "&mmv MOVE_UP": Mouse ↑
+    "&mmv MOVE_DOWN": Mouse ↓
+    "&mmv MOVE_LEFT": Mouse ←
+    "&mmv MOVE_RIGHT": Mouse →
+    "&msc MOVE_UP": Scroll Up
+    "&msc MOVE_DOWN": Scroll Down
+    "&sftclk": Click
+    "&dblslsh": "//"
+    "&leader": Leader
+    "&ak_dot": "."
+    "&ak_m": M
+    "&ak_mpy": M
+    "&ak_ret": ⏎
+    "&ak_eq": "="
+    "&magic": ★
 
-    '&es_a_acute': á
-    '&es_e_acute': é
-    '&es_i_acute': í
-    '&es_o_acute': ó
-    '&es_u_acute': ú
-    '&es_n_tilde': ñ
-    '&es_u_dieresis': ü
-    '&es_inv_qmark': ¿
-    '&es_inv_excl': ¡
+    "&es_a_acute": á
+    "&es_e_acute": é
+    "&es_i_acute": í
+    "&es_o_acute": ó
+    "&es_u_acute": ú
+    "&es_n_tilde": ñ
+    "&es_u_dieresis": ü
+    "&es_inv_qmark": ¿
+    "&es_inv_excl": ¡
 
-    '&bt BT_SEL 0': BT 1
-    '&bt BT_SEL 1': BT 2
-    '&bt BT_SEL 2': BT 3
-    '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
-    '&ext_power EP_ON': Ext Power On
+    "&bt BT_SEL 0": BT 1
+    "&bt BT_SEL 1": BT 2
+    "&bt BT_SEL 2": BT 3
+    "&bt BT_SEL 3": BT 4
+    "&bt BT_SEL 4": BT 5
+    "&ext_power EP_ON": Ext Power On
 
-    '&kp LG(LC(LEFT))': Desk Left
-    '&kp LG(LC(RIGHT))': Desk Right
-    '&kp LG(L)': Lock
-    '&kp LA(F4)': Win Close
-    '&kp LC(LA(DEL))': C+A+⌦
-    '&kp LC(BSPC)': ⌫ Word
+    "&kp LG(LC(LEFT))": Desk Left
+    "&kp LG(LC(RIGHT))": Desk Right
+    "&kp LG(L)": Lock
+    "&kp LA(F4)": Win Close
+    "&kp LC(LA(DEL))": C+A+⌦
+    "&kp LC(BSPC)": ⌫ Word
 
-    '&kp LC(A)': Select All
-    '&kp LC(X)': Cut
-    '&kp LC(C)': Copy
-    '&kp LC(V)': Paste
+    "&kp LC(A)": Select All
+    "&kp LC(X)": Cut
+    "&kp LC(C)": Copy
+    "&kp LC(V)": Paste
 
   zmk_keycode_map:
     UP: ↑
@@ -114,7 +116,7 @@ parse_config:
     ESC: Esc
 
     C_PP: ⏯
-    C_PREV: ⏮ 
+    C_PREV: ⏮
     C_NEXT: ⏭
 
     CAPS: Caps Lock
@@ -134,68 +136,68 @@ parse_config:
     RSHFT: Shift
 
     # defaults
-    AMPERSAND: '&'
-    AMPS: '&'
+    AMPERSAND: "&"
+    AMPS: "&"
     APOS: "'"
     APOSTROPHE: "'"
-    ASTERISK: '*'
-    ASTRK: '*'
-    AT: '@'
-    AT_SIGN: '@'
+    ASTERISK: "*"
+    ASTRK: "*"
+    AT: "@"
+    AT_SIGN: "@"
     BACKSLASH: \
     BSLH: \
     CARET: ^
-    COLON: ':'
-    COMMA: ','
+    COLON: ":"
+    COMMA: ","
     DLLR: $
     DOLLAR: $
     DOT: .
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    EQUAL: '='
-    EXCL: '!'
-    EXCLAMATION: '!'
+    EQUAL: "="
+    EXCL: "!"
+    EXCLAMATION: "!"
     FSLH: /
-    GRAVE: '`'
-    GREATER_THAN: '>'
-    GT: '>'
-    HASH: '#'
-    LBKT: '['
-    LBRC: '{'
-    LEFT_BRACE: '{'
-    LEFT_BRACKET: '['
+    GRAVE: "`"
+    GREATER_THAN: ">"
+    GT: ">"
+    HASH: "#"
+    LBKT: "["
+    LBRC: "{"
+    LEFT_BRACE: "{"
+    LEFT_BRACKET: "["
     LEFT_PARENTHESIS: (
     LESS_THAN: <
     LPAR: (
     LT: <
-    MINUS: '-'
+    MINUS: "-"
     NON_US_BACKSLASH: \
-    NON_US_BSLH: '|'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    PERCENT: '%'
+    NON_US_BSLH: "|"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    PERCENT: "%"
     PERIOD: .
-    PIPE: '|'
-    PIPE2: '|'
+    PIPE: "|"
+    PIPE2: "|"
     PLUS: +
-    POUND: '#'
-    PRCNT: '%'
-    QMARK: '?'
-    QUESTION: '?'
-    RBKT: ']'
-    RBRC: '}'
-    RIGHT_BRACE: '}'
-    RIGHT_BRACKET: ']'
+    POUND: "#"
+    PRCNT: "%"
+    QMARK: "?"
+    QUESTION: "?"
+    RBKT: "]"
+    RBRC: "}"
+    RIGHT_BRACE: "}"
+    RIGHT_BRACKET: "]"
     RIGHT_PARENTHESIS: )
     RPAR: )
     SEMI: ;
     SEMICOLON: ;
-    SINGLE_QUOTE: ''''
+    SINGLE_QUOTE: "'"
     SLASH: /
-    SQT: ''''
-    STAR: '*'
-    TILDE: '~'
-    TILDE2: '~'
+    SQT: "'"
+    STAR: "*"
+    TILDE: "~"
+    TILDE2: "~"
     UNDER: _
     UNDERSCORE: _
 

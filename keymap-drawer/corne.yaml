@@ -403,10 +403,18 @@ combos:
   l: [dh, night]
   draw_separate: true
 - p: [14, 3]
-  k: '~'
+  k: ':'
   l: [dh, night]
   draw_separate: true
 - p: [21, 8]
+  k: ':'
+  l: [dh, night]
+  draw_separate: true
+- p: [15, 4]
+  k: '~'
+  l: [dh, night]
+  draw_separate: true
+- p: [20, 7]
   k: '`'
   l: [dh, night]
   draw_separate: true
