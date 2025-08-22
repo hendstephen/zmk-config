@@ -28,7 +28,14 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 ![Keymap Representation](./keymap-drawer/corne.svg?raw=true "Keymap Representation")
 
 ## Night Layout
-I'm in the process of switching to Valorance's [night layout](https://luminespire.github.io/night/home.html), with some changes:
+I'm in the process of switching to Valorance's [night layout](https://luminespire.github.io/night/home.html), with some changes.  
+ASCII version of my variant:
+```
+x f l d v  p w o u ,
+n s h t m  y c a e i
+b z j k q  ' g ; / .
+        r
+```
 
 ### BX swap
 I'm not a fan of top row pinkies (QWERTY `q` position) on my corne, because it forces me to move my whole hand up. I swap `b` with `x` to put it in the bottom row. With some other similar layouts that use a `bnx` column and have `l` on the left hand (gallium, graphite), this would cause a bad scissor because of the `l` position, but with night's `l` being on the top middle instead of top ring it feels fine.
