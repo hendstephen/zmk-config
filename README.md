@@ -38,7 +38,7 @@ b z j k q  ' g ; / .
 ```
 
 ### BX swap
-I'm not a fan of top row pinkies (QWERTY `q` position) on my corne, because it forces me to move my whole hand up. I swap `b` with `x` to put it in the bottom row. With some other similar layouts that use a `bnx` column and have `l` on the left hand (gallium, graphite), this would cause a bad scissor because of the `l` position, but with night's `l` being on the top middle instead of top ring it feels fine.
+I'm not a fan of top row pinkies (QWERTY `q` position) on my corne, because it forces me to move my whole hand up. I swap `b` with `x` to put it in the bottom row. With some other similar layouts that use a `bnx` column and have `l` on the left hand (gallium, graphite), this would cause a bad scissor because of the `l` position on the top ring, but with night's `l` being on the top middle instead of ring it feels fine.
 
 ### Left Hand
 I use the nightingale left hand, which notably:
