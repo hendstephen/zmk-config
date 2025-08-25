@@ -29,7 +29,7 @@ This ZMK config is for split ergo 3x6 boards like the Corne. The repo also build
 
 ## Night Layout
 I'm in the process of switching to Valorance's [night layout](https://luminespire.github.io/night/home.html), with some changes.  
-ASCII version of my variant:
+ASCII version of my variant (besides `;.,` placements, which I am experimenting with):
 ```
 x f l d v  p w o u ,
 n s h t m  y c a e i
@@ -59,10 +59,10 @@ var x = myOtherVar; // No guarantee that the last letter will be on opposite han
 ```
 
 ## Mod Morphs
-| Tap            | Shift + Tap | 
-| -------------- | ----------- | 
-| `.`            | `:`         | 
-| `,`            | `;`         | 
+| Tap            | Shift + Tap |
+| -------------- | ----------- |
+| `.`            | `:`         |
+| `,`            | `;`         |
 | `/`            | `?`         |
-| `⌫`            | `⌦`         | 
-| `Sticky Shift` | `Caps Word` | 
+| `⌫`            | `⌦`         |
+| `Sticky Shift` | `Caps Word` |
