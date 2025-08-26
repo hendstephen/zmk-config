@@ -306,12 +306,6 @@ combos:
 - p: [27, 28]
   k: Paste
   l: [dh, night, nav]
-- p: [28, 29]
-  k: '!'
-  l: [dh, night, nav]
-- p: [30, 31]
-  k: _
-  l: [dh, night, nav]
 - p: [31, 32]
   k: '-'
   l: [dh, night, nav]
@@ -418,6 +412,12 @@ combos:
   k: _
   l: [dh, night]
   draw_separate: true
+- p: [28, 29]
+  k: '!'
+  l: [dh, night, nav]
+- p: [31, 30]
+  k: '!'
+  l: [dh, night, nav]
 - p: [15, 4]
   k: '~'
   l: [dh, night]
