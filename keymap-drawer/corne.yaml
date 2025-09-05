@@ -396,19 +396,19 @@ combos:
   k: '-'
   l: [dh, night]
   draw_separate: true
+- p: [26, 15]
+  k: ':'
+  l: [dh, night]
+  draw_separate: true
+- p: [33, 20]
+  k: ':'
+  l: [dh, night]
+  draw_separate: true
 - p: [14, 3]
-  k: ':'
-  l: [dh, night]
-  draw_separate: true
-- p: [21, 8]
-  k: ':'
-  l: [dh, night]
-  draw_separate: true
-- p: [14, 27]
   k: _
   l: [dh, night]
   draw_separate: true
-- p: [21, 32]
+- p: [21, 8]
   k: _
   l: [dh, night]
   draw_separate: true
@@ -426,11 +426,11 @@ combos:
   k: '`'
   l: [dh, night]
   draw_separate: true
-- p: [26, 15]
+- p: [27, 14]
   k: '%'
   l: [dh, night]
   draw_separate: true
-- p: [33, 20]
+- p: [32, 21]
   k: '#'
   l: [dh, night]
   draw_separate: true
