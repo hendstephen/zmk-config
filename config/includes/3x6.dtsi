@@ -114,7 +114,7 @@ ZMK_HOLD_TAP(ht_es_u,
 #define ES_U &ht_es_u 0 0
 
 // tap: LC(BSPC) | ctrl + tap: BSPC
-SIMPLE_MORPH(bspc_wrd, CTL, &kp LC(BSPC), &kp BSPC)
+SIMPLE_MORPH(bspc_wrd, CTL, &kp LA(BSPC), &kp BSPC)
 
 // tap: / | hold: // | shift + tap: ?
 ZMK_HOLD_TAP(ht_dblslsh, 

@@ -25,7 +25,7 @@ layers:
   - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: ⌫ Word, s: ⌫}
+  - {t: Alt+⌫, s: ⌫}
   - B
   - Z
   - J
@@ -36,7 +36,7 @@ layers:
   - ','
   - /
   - .
-  - {t: ⌫ Word, s: ⌫}
+  - {t: Alt+⌫, s: ⌫}
   - fun
   - {t: sym, h: sticky}
   - {t: R, h: sym}
@@ -68,7 +68,7 @@ layers:
   - {t: I, h: Ctrl}
   - {t: O, h: Alt}
   - {t: Shift, h: sticky, s: Caps Word}
-  - {t: ⌫ Word, s: ⌫}
+  - {t: Alt+⌫, s: ⌫}
   - Z
   - X
   - C
@@ -79,7 +79,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
-  - {t: ⌫ Word, s: ⌫}
+  - {t: Alt+⌫, s: ⌫}
   - {t: alt, h: fun}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫, s: ⌦}
