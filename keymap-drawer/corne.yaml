@@ -4,25 +4,25 @@ layers:
   - {t: nav, h: sticky}
   - X
   - F
-  - {t: L, h: Gui}
+  - {t: L, h: Ctrl}
   - D
   - V
   - P
   - W
-  - {t: O, h: Gui}
+  - {t: O, h: Ctrl}
   - U
   - _
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: N, h: Alt}
-  - {t: S, h: Ctrl}
+  - {t: S, h: Gui}
   - {t: H, h: Shift}
   - {t: T, h: nav}
   - M
   - Y
   - {t: C, h: nav}
   - {t: A, h: Shift}
-  - {t: E, h: Ctrl}
+  - {t: E, h: Gui}
   - {t: I, h: Alt}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: Alt+⌫, s: ⌫}
@@ -47,25 +47,25 @@ layers:
   - ' '
   - Q
   - W
-  - {t: F, h: Gui}
+  - {t: F, h: Ctrl}
   - P
   - B
   - J
   - L
-  - {t: U, h: Gui}
+  - {t: U, h: Ctrl}
   - Y
   - {t: '''', s: '"'}
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: A, h: Alt}
-  - {t: R, h: Ctrl}
+  - {t: R, h: Gui}
   - {t: S, h: Shift}
   - {t: T, h: nav}
   - G
   - M
   - {t: N, h: nav}
   - {t: E, h: Shift}
-  - {t: I, h: Ctrl}
+  - {t: I, h: Gui}
   - {t: O, h: Alt}
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: Alt+⌫, s: ⌫}
@@ -100,16 +100,16 @@ layers:
   - '`'
   - ' '
   - ' '
-  - {t: '!', h: Gui}
+  - {t: '!', h: Ctrl}
   - {t: '-', h: Alt}
-  - {t: +, h: Ctrl}
+  - {t: +, h: Gui}
   - {t: '=', h: Shift}
   - '#'
   - '&'
   - {t: ':', h: Shift}
-  - {t: (, h: Ctrl}
+  - {t: (, h: Gui}
   - {t: ), h: Alt}
-  - {t: ;, h: Gui}
+  - {t: ;, h: Ctrl}
   - ' '
   - ' '
   - \
@@ -144,15 +144,15 @@ layers:
   - ' '
   - .
   - {t: '-', h: Alt}
-  - {t: '4', h: Ctrl}
+  - {t: '4', h: Gui}
   - {t: '5', h: Shift}
   - '6'
   - +
   - Page Up
   - {t: ←, h: Shift}
-  - {t: ↓, h: Ctrl}
+  - {t: ↓, h: Gui}
   - {t: ↑, h: Alt}
-  - {t: →, h: Gui}
+  - {t: →, h: Ctrl}
   - ' '
   - ' '
   - '0'
