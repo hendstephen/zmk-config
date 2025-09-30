@@ -294,17 +294,17 @@ combos:
   k: '}'
   l: [dh, night, nav]
 - p: [25, 28]
-  k: Select All
+  k: Gui+A
   l: [dh, night, nav]
   a: bottom
 - p: [25, 26]
-  k: Cut
+  k: Gui+X
   l: [dh, night, nav]
 - p: [26, 27]
-  k: Copy
+  k: Gui+C
   l: [dh, night, nav]
 - p: [27, 28]
-  k: Paste
+  k: Gui+V
   l: [dh, night, nav]
 - p: [31, 32]
   k: '-'

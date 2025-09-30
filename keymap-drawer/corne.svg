@@ -361,21 +361,19 @@ path.combo { stroke: #7f7f7f; }
 <path d="M168,190 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M168,190 h78 a6.0,6.0 0 0 0 6.0,-6.0 v-18" class="combo"/>
 <rect rx="6" ry="6" x="154" y="177" width="28" height="26" class="combo"/>
-<text x="168" y="190" class="combo tap">
-<tspan x="168" dy="-0.6em">Select</tspan><tspan x="168" dy="1.2em">All</tspan>
-</text>
+<text x="168" y="190" class="combo tap">Gui+A</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Cut</text>
+<text x="112" y="154" class="combo tap">Gui+X</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap">Copy</text>
+<text x="168" y="144" class="combo tap">Gui+C</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">Paste</text>
+<text x="224" y="144" class="combo tap">Gui+V</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
@@ -700,21 +698,19 @@ path.combo { stroke: #7f7f7f; }
 <path d="M168,190 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M168,190 h78 a6.0,6.0 0 0 0 6.0,-6.0 v-18" class="combo"/>
 <rect rx="6" ry="6" x="154" y="177" width="28" height="26" class="combo"/>
-<text x="168" y="190" class="combo tap">
-<tspan x="168" dy="-0.6em">Select</tspan><tspan x="168" dy="1.2em">All</tspan>
-</text>
+<text x="168" y="190" class="combo tap">Gui+A</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Cut</text>
+<text x="112" y="154" class="combo tap">Gui+X</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap">Copy</text>
+<text x="168" y="144" class="combo tap">Gui+C</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">Paste</text>
+<text x="224" y="144" class="combo tap">Gui+V</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
@@ -1182,21 +1178,19 @@ path.combo { stroke: #7f7f7f; }
 <path d="M168,190 h-78 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M168,190 h78 a6.0,6.0 0 0 0 6.0,-6.0 v-18" class="combo"/>
 <rect rx="6" ry="6" x="154" y="177" width="28" height="26" class="combo"/>
-<text x="168" y="190" class="combo tap">
-<tspan x="168" dy="-0.6em">Select</tspan><tspan x="168" dy="1.2em">All</tspan>
-</text>
+<text x="168" y="190" class="combo tap">Gui+A</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">Cut</text>
+<text x="112" y="154" class="combo tap">Gui+X</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
-<text x="168" y="144" class="combo tap">Copy</text>
+<text x="168" y="144" class="combo tap">Gui+C</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">Paste</text>
+<text x="224" y="144" class="combo tap">Gui+V</text>
 </g>
 <g class="combo combopos-10">
 <rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
