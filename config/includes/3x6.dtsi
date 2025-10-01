@@ -72,8 +72,8 @@
 };
 
 /* CUSTOM KEYCODES */
-#define WIN_LEFT LG(LC(LEFT))
-#define WIN_RIGHT LG(LC(RIGHT))
+#define WIN_LEFT LC(LEFT)
+#define WIN_RIGHT LC(RIGHT)
 
 /* Homerow mods */
 // Default HRM config

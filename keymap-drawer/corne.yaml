@@ -137,10 +137,10 @@ layers:
   - '9'
   - '*'
   - ' '
-  - Desk Left
+  - Ctl+←
   - Sft+↹
   - ↹
-  - Desk Right
+  - Ctl+→
   - ' '
   - .
   - {t: '-', h: Alt}
