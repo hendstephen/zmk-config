@@ -7,8 +7,8 @@
 #define IDLE_SLOW 50
 
 // Make homerow combos tap-only (so HRMs can be chorded instantaneously)
-#define HRC_LBRC &hml LC(LSFT) LBRC
-#define HRC_RBRC &hmr RC(RSFT) RBRC
+#define HRC_LBRC &hml LG(LSFT) LBRC
+#define HRC_RBRC &hmr RG(RSFT) RBRC
 
 ZMK_HOLD_TAP(lt_numwrd,
     flavor = "tap-preferred";

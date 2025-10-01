@@ -161,10 +161,10 @@ layers:
   - '3'
   - '='
   - Page Down
-  - Home
+  - Gui+←
   - Page Down
   - Page Up
-  - End
+  - Gui+→
   - ' '
   - ' '
   - ' '
