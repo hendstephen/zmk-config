@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   night:
-  - {t: nav, h: sticky}
+  - Ctl+↑
   - X
   - F
   - {t: L, h: Ctrl}
@@ -130,7 +130,7 @@ layers:
   - ' '
   - ' '
   nav:
-  - {t: ':', type: held}
+  - ':'
   - /
   - '7'
   - '8'
@@ -146,7 +146,7 @@ layers:
   - {t: '-', h: Alt}
   - {t: '4', h: Gui}
   - {t: '5', h: Shift}
-  - '6'
+  - {t: '6', type: held}
   - +
   - Page Up
   - {t: ←, h: Shift}
@@ -339,6 +339,10 @@ combos:
 - p: [10, 9]
   k: '#'
   l: [dh, night, nav]
+- p: [1, 4]
+  k: Screenshot
+  l: [dh, night, nav]
+  draw_separate: true
 - p: [4, 3, 2]
   k: <
   l: [dh, night, nav]
