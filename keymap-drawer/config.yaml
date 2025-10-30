@@ -10,6 +10,9 @@ parse_config:
     combo_gt: { align: "top" }
     combo_numwrd: { align: "bottom" }
 
+    combo_screen:
+      draw_separate: true
+      key: "Screenshot"
     combo_eq_r: { draw_separate: true }
     combo_eq_l: { draw_separate: true }
     combo_semi_r: { draw_separate: true }
