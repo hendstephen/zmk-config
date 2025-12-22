@@ -1,5 +1,5 @@
 #define LILY58_STANDARD_LABELS
-#include "includes/zmk-helpers/key-labels/lily58.h"
+#include "includes/lily58.h"
 
 // Define Lily58's extra keys
 #define X_F &none &none &none &none &none &none    &none &none &none &none &none &none
