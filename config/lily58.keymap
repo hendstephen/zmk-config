@@ -1,3 +1,4 @@
+#define LILY58_STANDARD_LABELS
 #include "zmk-helpers/key-labels/lily58.h"
 
 // Define Lily58's extra keys
