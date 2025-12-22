@@ -1,4 +1,4 @@
-#include "includes/zmk-helpers/key-labels/lily58.h"
+#include "zmk-helpers/key-labels/lily58.h"
 
 // Define Lily58's extra keys
 #define X_F &none &none &none &none &none &none    &none &none &none &none &none &none
