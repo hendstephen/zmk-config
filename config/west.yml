@@ -42,6 +42,7 @@ manifest:
     - name: zmk-adaptive-key # For magic key
     - name: zmk-auto-layer
     - name: zmk-helpers
+      revision: main
 
     - name: nice-view-gem
       remote: m165437
