@@ -1,6 +1,7 @@
 manifest:
   defaults:
     remote: urob
+    revision: main
     # revision: v0.2
 
   remotes:
