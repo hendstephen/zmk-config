@@ -41,7 +41,7 @@ layers:
   - {t: sym, h: sticky}
   - {t: R, h: sym}
   - ␣
-  - ⌫
+  - {t: ⌫, h: Alt}
   - fun
   dh:
   - ' '
@@ -80,10 +80,10 @@ layers:
   - {t: ., s: ':'}
   - {t: /, h: //, s: '?'}
   - {t: Alt+⌫, s: ⌫}
-  - {t: alt, h: fun}
+  - fun
   - {t: Shift, h: sticky, s: Caps Word}
   - {t: ⌫, s: ⌦}
-  - {t: ␣, h: sym}
+  - ␣
   - ⏎
   - {t: Num Word, h: fun}
   sym:
@@ -209,7 +209,7 @@ layers:
   - ¡
   - ¿
   - ' '
-  - {t: ' ', type: held}
+  - ' '
   - ' '
   - ' '
   - ' '
