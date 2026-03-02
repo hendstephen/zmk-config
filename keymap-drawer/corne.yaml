@@ -34,14 +34,14 @@ layers:
   - ''''
   - G
   - ','
-  - /
+  - {t: /, h: //, s: '?'}
   - .
   - {t: Alt+⌫, s: ⌫}
   - fun
   - {t: sym, h: sticky}
   - {t: R, h: sym}
   - ␣
-  - {t: ⌫, h: Alt}
+  - ⌫
   - fun
   dh:
   - ' '
